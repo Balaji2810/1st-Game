@@ -42,7 +42,9 @@ public class spider_bot : MonoBehaviour
         
         foreach(Collider obj in colliders)
         {
-            
+
+            //GameObject mesh = gameObject.
+            transform.Find("SPIDER_BOT").gameObject.SetActive(false);
 
             if (obj.gameObject.layer==15)
             {

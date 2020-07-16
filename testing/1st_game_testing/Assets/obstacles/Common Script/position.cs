@@ -11,7 +11,9 @@ public class position : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         transform.position = new Vector3(Random.Range(min, max+1), transform.position.y, transform.position.z);
+        print("check");
     }
 
     // Update is called once per frame

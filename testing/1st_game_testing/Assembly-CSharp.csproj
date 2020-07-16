@@ -63,7 +63,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CameraControl.cs" />
     <Compile Include="Assets\CharacterControl.cs" />
+    <Compile Include="Assets\CollisionPoint.cs" />
     <Compile Include="Assets\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Ramps\Runtime\RampAsset.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\AdjustTimeScale.cs" />
@@ -83,12 +85,17 @@
     <Compile Include="Assets\HitReaction.cs" />
     <Compile Include="Assets\look.cs" />
     <Compile Include="Assets\obstacles\Common Script\position.cs" />
+    <Compile Include="Assets\obstacles\Common Script\ReturnGameObject.cs" />
     <Compile Include="Assets\obstacles\package\NonConvexMeshCollider\NonConvexMeshCollider.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\CopyMove.cs" />
+    <Compile Include="Assets\obstacles\Sci-Fic\scripts\DoubleBarrels.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\jump.cs" />
+    <Compile Include="Assets\obstacles\Sci-Fic\scripts\SingleBarrel.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\spider_bot.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\walking.cs" />
+    <Compile Include="Assets\PlayerStatus.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\TripleBarrels.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
