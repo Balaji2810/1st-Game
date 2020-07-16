@@ -8,6 +8,7 @@ public class CharacterControl : MonoBehaviour
     public Animator animator;
     public PuppetMaster pm;
     public BehaviourPuppet BP;
+    public PlayerStatus status;
     private int right, left;
 
     public int type = 2;
@@ -74,7 +75,7 @@ public class CharacterControl : MonoBehaviour
            moveDirection = Vector3.zero;
         }
 
-        if (controller.isGrounded && pm.state == PuppetMaster.State.Alive && !sliding)
+        if (controller.isGrounded && pm.state == PuppetMaster.State.Alive && !sliding  &&!status.AnimationDeath)
         {
             animator.SetBool("jump", false);
             moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
@@ -93,6 +94,12 @@ public class CharacterControl : MonoBehaviour
                 StartCoroutine(SlideEnd());
             }
         }
+
+        if(status.AnimationDeath)
+        {
+            moveDirection = Vector3.Lerp(moveDirection,Vector3.zero,Time.deltaTime);
+        }
+
         moveDirection.y -= gravity * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
 

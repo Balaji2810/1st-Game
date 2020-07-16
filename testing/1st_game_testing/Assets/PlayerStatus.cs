@@ -10,6 +10,7 @@ public class PlayerStatus : MonoBehaviour
     public Transform Root;
     public Transform BodyPart;
     public PuppetMaster puppet;
+    public bool AnimationDeath = false;
 
     private float groundLevel = 0.5f;
     private float movedDistance;
@@ -33,6 +34,20 @@ public class PlayerStatus : MonoBehaviour
             movedDistance = BodyPart.position.z ;
             leftRight = Root.position.x;
         }
+    }
+
+    IEnumerator DelayDeath(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        puppet.state = PuppetMaster.State.Dead;
+    }
+
+    public void ElectricShock()
+    {
+        AnimationDeath = true;
+        animator.SetBool("ElectricShock",true);
+        StartCoroutine(DelayDeath(2.2f));
     }
 
     public Transform LookAt { get { return BodyPart; } }
