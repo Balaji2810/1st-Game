@@ -11,6 +11,7 @@ public class PlayerStatus : MonoBehaviour
     public Transform BodyPart;
     public PuppetMaster puppet;
     public bool AnimationDeath = false;
+    public GameObject Shock;
 
     private float groundLevel = 0.5f;
     private float movedDistance;
@@ -31,13 +32,15 @@ public class PlayerStatus : MonoBehaviour
             {
                 groundLevel = Root.position.y; 
             }
-            movedDistance = BodyPart.position.z ;
+           
             leftRight = Root.position.x;
         }
+        movedDistance = BodyPart.position.z;
     }
 
     IEnumerator DelayDeath(float time)
     {
+       
         yield return new WaitForSeconds(time);
 
         puppet.state = PuppetMaster.State.Dead;
@@ -46,8 +49,10 @@ public class PlayerStatus : MonoBehaviour
     public void ElectricShock()
     {
         AnimationDeath = true;
+        Shock.SetActive(true);
+        animator.SetFloat("Blend", Random.Range(0, 4));
         animator.SetBool("ElectricShock",true);
-        StartCoroutine(DelayDeath(2.2f));
+        StartCoroutine(DelayDeath(1.5f));
     }
 
     public Transform LookAt { get { return BodyPart; } }

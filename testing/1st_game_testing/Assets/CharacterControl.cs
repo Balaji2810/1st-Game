@@ -98,6 +98,17 @@ public class CharacterControl : MonoBehaviour
         if(status.AnimationDeath)
         {
             moveDirection = Vector3.Lerp(moveDirection,Vector3.zero,Time.deltaTime);
+            Quaternion target;
+            if (Random.Range(1,3)==1)
+            {
+                target = Quaternion.Euler(0, -175, 0);
+            }
+            else
+            {
+                target = Quaternion.Euler(0, -181, 0);
+            }
+             
+            controller.gameObject.transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime);
         }
 
         moveDirection.y -= gravity * Time.deltaTime;

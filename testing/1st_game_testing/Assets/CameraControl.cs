@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using RootMotion.Dynamics;
 
 public class CameraControl : MonoBehaviour
 {
@@ -33,8 +34,15 @@ public class CameraControl : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, LookAtSpeed*Time.deltaTime);
 
         //Camera move forward
-        transform.position = new Vector3(transform.position.x, transform.position.y, player.MovedDistance+offset.z);
+        if(player.puppet.state== PuppetMaster.State.Alive)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, player.MovedDistance + offset.z);
 
+        }
+        else
+        {
+            transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, transform.position.y, player.MovedDistance + offset.z),0.75f*Time.deltaTime);
+        }
         //Camera Ground level
         transform.position = Vector3.Lerp(transform.position, new Vector3(player.LeftRight, player.GroundLevel + offset.y, transform.position.z), Time.deltaTime * JumpSpeed);
         //camera Left Right move
