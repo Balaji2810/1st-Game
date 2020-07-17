@@ -182,7 +182,7 @@ GameObject:
   - component: {fileID: 3057471518378050802}
   - component: {fileID: 3057471518378050803}
   - component: {fileID: 3057471518378050800}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -306,7 +306,7 @@ GameObject:
   - component: {fileID: 3057471518469629520}
   - component: {fileID: 3057471518469629521}
   - component: {fileID: 3057471518469629526}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -970,7 +970,7 @@ GameObject:
   - component: {fileID: 3057471518996640546}
   - component: {fileID: 3057471518996640547}
   - component: {fileID: 3057471518996640544}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1182,7 +1182,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3057471519285839205}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Hammer Holder Mid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1214,7 +1214,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3057471519395398295}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: support
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1251,7 +1251,7 @@ GameObject:
   - component: {fileID: 3057471519707528638}
   - component: {fileID: 3057471519707528639}
   - component: {fileID: 3057471519707528636}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1342,7 +1342,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3057471519760609226}
   - component: {fileID: 3057471519760609269}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: MovingHammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1393,7 +1393,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3057471519036073649}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Hammer Holder Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1425,7 +1425,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3057471519879676330}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Hammer Holder Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1460,7 +1460,7 @@ GameObject:
   - component: {fileID: 3057471519958589790}
   - component: {fileID: 3057471519958589791}
   - component: {fileID: 3057471519958589788}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7290678193822632211}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: support
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7290678193982000865}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Hammer Holder Mid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78,7 +78,7 @@ GameObject:
   - component: {fileID: 7290678194319043290}
   - component: {fileID: 7290678194319043291}
   - component: {fileID: 7290678194319043288}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -336,7 +336,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7290678195275640117}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Hammer Holder Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -368,7 +368,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7290678194575673902}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Hammer Holder Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -403,7 +403,7 @@ GameObject:
   - component: {fileID: 7290678194604717626}
   - component: {fileID: 7290678194604717627}
   - component: {fileID: 7290678194604717624}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -494,7 +494,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7290678194655962190}
   - component: {fileID: 7290678194655962225}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: DoubleHammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -550,7 +550,7 @@ GameObject:
   - component: {fileID: 7290678194776206804}
   - component: {fileID: 7290678194776206805}
   - component: {fileID: 7290678194776206802}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -767,7 +767,7 @@ GameObject:
   - component: {fileID: 7290678194886119286}
   - component: {fileID: 7290678194886119287}
   - component: {fileID: 7290678194886119284}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1152,7 +1152,7 @@ GameObject:
   - component: {fileID: 7290678195303020710}
   - component: {fileID: 7290678195303020711}
   - component: {fileID: 7290678195303020708}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}

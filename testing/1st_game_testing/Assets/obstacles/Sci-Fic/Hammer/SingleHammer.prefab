@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8404479283075218493}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: support
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 8404479283644162036}
   - component: {fileID: 8404479283644162037}
   - component: {fileID: 8404479283644162038}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,7 +137,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8404479283842011488}
   - component: {fileID: 8404479283842011487}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: SingleHammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -191,7 +191,7 @@ GameObject:
   - component: {fileID: 8404479283895354132}
   - component: {fileID: 8404479283895354133}
   - component: {fileID: 8404479283895354134}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -470,6 +470,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hammer Holder Left
       objectReference: {fileID: 0}
+    - target: {fileID: 7508365856508572566, guid: e542993685dee8e42b87cf2cd06a8c0b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7508365856508572567, guid: e542993685dee8e42b87cf2cd06a8c0b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -525,6 +530,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7508365855845349893, guid: e542993685dee8e42b87cf2cd06a8c0b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7508365856555833018, guid: e542993685dee8e42b87cf2cd06a8c0b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7508365857810925896, guid: e542993685dee8e42b87cf2cd06a8c0b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e542993685dee8e42b87cf2cd06a8c0b, type: 3}
 --- !u!1 &2058610767715965010 stripped
@@ -550,6 +570,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Hammer Holder Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 7508365856508572566, guid: e542993685dee8e42b87cf2cd06a8c0b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7508365856508572567, guid: e542993685dee8e42b87cf2cd06a8c0b,
         type: 3}
@@ -606,6 +631,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7508365855845349893, guid: e542993685dee8e42b87cf2cd06a8c0b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7508365856555833018, guid: e542993685dee8e42b87cf2cd06a8c0b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7508365857810925896, guid: e542993685dee8e42b87cf2cd06a8c0b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e542993685dee8e42b87cf2cd06a8c0b, type: 3}
 --- !u!1 &2058610768687246218 stripped
@@ -631,6 +671,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Hammer Holder Mid
+      objectReference: {fileID: 0}
+    - target: {fileID: 7508365856508572566, guid: e542993685dee8e42b87cf2cd06a8c0b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7508365856508572567, guid: e542993685dee8e42b87cf2cd06a8c0b,
         type: 3}
@@ -686,6 +731,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7508365855845349893, guid: e542993685dee8e42b87cf2cd06a8c0b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7508365856555833018, guid: e542993685dee8e42b87cf2cd06a8c0b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7508365857810925896, guid: e542993685dee8e42b87cf2cd06a8c0b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e542993685dee8e42b87cf2cd06a8c0b, type: 3}
