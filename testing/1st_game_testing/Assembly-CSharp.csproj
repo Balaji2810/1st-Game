@@ -89,10 +89,13 @@
     <Compile Include="Assets\obstacles\package\NonConvexMeshCollider\NonConvexMeshCollider.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\CopyMove.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\DoubleBarrels.cs" />
+    <Compile Include="Assets\obstacles\Sci-Fic\scripts\ElectricRod.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\ElectricShock.cs" />
+    <Compile Include="Assets\obstacles\Sci-Fic\scripts\Hammer.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\jump.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\SingleBarrel.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\spider_bot.cs" />
+    <Compile Include="Assets\obstacles\Sci-Fic\scripts\Spinner.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\walking.cs" />
     <Compile Include="Assets\PlayerStatus.cs" />
     <Compile Include="Assets\ProceduralLightning\Demo\Scripts\DemoConfigureScript.cs" />
