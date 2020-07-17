@@ -91,12 +91,16 @@
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\DoubleBarrels.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\ElectricRod.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\ElectricShock.cs" />
+    <Compile Include="Assets\obstacles\Sci-Fic\scripts\GuardRail.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\Hammer.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\jump.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\SingleBarrel.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\spider_bot.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\Spinner.cs" />
+    <Compile Include="Assets\obstacles\Sci-Fic\scripts\TripleBarrels.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\walking.cs" />
+    <Compile Include="Assets\obstacles\Sci-Fic\scripts\WallBarrel.cs" />
+    <Compile Include="Assets\obstacles\standard\scripts\ChangeColorofObject.cs" />
     <Compile Include="Assets\PlayerStatus.cs" />
     <Compile Include="Assets\ProceduralLightning\Demo\Scripts\DemoConfigureScript.cs" />
     <Compile Include="Assets\ProceduralLightning\Demo\Scripts\DemoMeshScript.cs" />
@@ -141,7 +145,6 @@
     <Compile Include="Assets\ProceduralLightning\Prefab\Scripts\Spells\LightningWhipSpell.cs" />
     <Compile Include="Assets\ProceduralLightning\Prefab\Scripts\ThunderAndLightningScript.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\TripleBarrels.cs" />
     <None Include="Assets\ProceduralLightning\Prefab\Materials\AdditiveSoftTintableShader.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
