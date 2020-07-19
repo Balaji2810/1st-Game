@@ -7,11 +7,15 @@ public class Spinner : MonoBehaviour
     // Start is called before the first frame update
     public Vector3 Angle;
     public float speed = 10;
+    public Vector3 StartingAngle = new Vector3(1, 0, 0);
+    
     private int ChangeInSpeed;
     private int SpinAngle;
+
     void Start()
     {
-        transform.Rotate(Random.Range(0,360),0,0);
+        transform.Rotate(Random.Range(0,360)* StartingAngle);
+        
         if (Random.Range(0, 2) == 1)
         {
             SpinAngle = 1;
@@ -26,7 +30,6 @@ public class Spinner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         gameObject.GetComponent<Rigidbody>().angularVelocity = SpinAngle *(Time.deltaTime*Angle*(ChangeInSpeed+speed));
     }
 }

@@ -13,7 +13,7 @@ public class position : MonoBehaviour
     {
         
         transform.position = new Vector3(Random.Range(min, max+1), transform.position.y, transform.position.z);
-        print("check");
+        
     }
 
     // Update is called once per frame

@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class walking : MonoBehaviour
 {
-    
+    public float baseHeight = 0.5f;
     public float speed = 1f;
+    public bool DoRotateAtEnd = true;
     bool goLeft = true;
     
     // Start is called before the first frame update
@@ -20,21 +21,28 @@ public class walking : MonoBehaviour
         if(transform.position.x <= -2)
         {
             goLeft = true;
-            transform.Rotate(new Vector3(0,180,0));
+            if(DoRotateAtEnd)
+            {
+                transform.Rotate(new Vector3(0, 180, 0));
+            }
+            
         }
 
         if (transform.position.x >= 2)
         {
             goLeft = false;
-            transform.Rotate(new Vector3(0, 180, 0));
+            if (DoRotateAtEnd)
+            {
+                transform.Rotate(new Vector3(0, 180, 0));
+            }
         }
         if (goLeft)
         {
-            transform.position = Vector3.MoveTowards(transform.position, new Vector3(2, 0.5f, 0), speed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(2, baseHeight, 0), speed * Time.deltaTime);
         }
         else
         {
-            transform.position = Vector3.MoveTowards(transform.position, new Vector3(-2, 0.5f, 0), speed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(-2, baseHeight, 0), speed * Time.deltaTime);
         }
 
     }

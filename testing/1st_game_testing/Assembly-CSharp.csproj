@@ -100,6 +100,8 @@
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\TripleBarrels.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\walking.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\WallBarrel.cs" />
+    <Compile Include="Assets\obstacles\Sci-Fic\Wooden Block\Scripts\WoodenBlock.cs" />
+    <Compile Include="Assets\obstacles\Sci-Fic\Wooden Dummy\Scripts\WoodenDummy.cs" />
     <Compile Include="Assets\obstacles\standard\scripts\ChangeColorofObject.cs" />
     <Compile Include="Assets\PlayerStatus.cs" />
     <Compile Include="Assets\ProceduralLightning\Demo\Scripts\DemoConfigureScript.cs" />
@@ -145,6 +147,7 @@
     <Compile Include="Assets\ProceduralLightning\Prefab\Scripts\Spells\LightningWhipSpell.cs" />
     <Compile Include="Assets\ProceduralLightning\Prefab\Scripts\ThunderAndLightningScript.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\WoodenDummySpin.cs" />
     <None Include="Assets\ProceduralLightning\Prefab\Materials\AdditiveSoftTintableShader.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />

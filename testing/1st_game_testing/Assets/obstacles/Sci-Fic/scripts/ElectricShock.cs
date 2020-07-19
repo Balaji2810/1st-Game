@@ -19,10 +19,14 @@ public class ElectricShock : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         
-       PlayerStatus status = GameObject.Find("player Root").GetComponentInChildren<PlayerStatus>();
-        if(!status.AnimationDeath)
+        if(other.gameObject.layer==14) //"Pupet" layer
         {
-            status.ElectricShock();
+            PlayerStatus status = GameObject.Find("player Root").GetComponentInChildren<PlayerStatus>();
+            if (!status.AnimationDeath)
+            {
+                status.ElectricShock();
+            }
         }
+      
     }
 }

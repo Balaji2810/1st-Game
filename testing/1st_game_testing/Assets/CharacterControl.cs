@@ -75,25 +75,39 @@ public class CharacterControl : MonoBehaviour
            moveDirection = Vector3.zero;
         }
 
-        if (controller.isGrounded && pm.state == PuppetMaster.State.Alive && !sliding  &&!status.AnimationDeath)
+        if (pm.state == PuppetMaster.State.Alive && !sliding  &&!status.AnimationDeath)
         {
-            animator.SetBool("jump", false);
-            moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-            moveDirection = transform.TransformDirection(moveDirection);
-            moveDirection *= speed;
-            if (Input.GetButton("Jump"))
+            if(controller.isGrounded)
             {
-                moveDirection.y = jumpSpeed;
+                animator.SetBool("jump", false);
+                moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+                moveDirection = transform.TransformDirection(moveDirection);
+                moveDirection *= speed;
+                if (Input.GetButton("Jump"))
+                {
+                    moveDirection.y = jumpSpeed;
+                    animator.SetBool("jump", true);
+                }
+
+                if (Input.GetKey(KeyCode.S))
+                {
+                    sliding = true;
+                    animator.SetBool("Slide", true);
+                    StartCoroutine(SlideEnd());
+                }
+            }
+            else
+            {
                 animator.SetBool("jump", true);
             }
-
-            if(Input.GetKey(KeyCode.S) )
-            {
-                sliding = true;
-                animator.SetBool("Slide",true);
-                StartCoroutine(SlideEnd());
-            }
+            
         }
+        else
+        {
+            animator.SetBool("jump", false);
+        }
+
+
 
         if(status.AnimationDeath)
         {

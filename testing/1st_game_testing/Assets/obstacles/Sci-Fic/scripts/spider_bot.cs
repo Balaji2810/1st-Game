@@ -67,7 +67,7 @@ public class spider_bot : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         
-        if(collision.gameObject.layer==14 && !Exploded)
+        if(collision.gameObject.layer==14 && !Exploded) // "Puppet" layer
         {
             Exploded = true;
 

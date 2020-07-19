@@ -16,26 +16,33 @@ public class PlayerStatus : MonoBehaviour
     private float groundLevel = 0.5f;
     private float movedDistance;
     private float leftRight = 0;
+    private float groundLevelTemp;
     // Start is called before the first frame update
     void Start()
     {
+       
 
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-       if(puppet.state == PuppetMaster.State.Alive)
+       if(puppet.state == PuppetMaster.State.Alive && !AnimationDeath)
         {
             if(controller.isGrounded)
             {
-                groundLevel = Root.position.y; 
+                groundLevel = Root.position.y;
+
+                
             }
+
            
+
             leftRight = Root.position.x;
         }
         movedDistance = BodyPart.position.z;
+
+        
     }
 
     IEnumerator DelayDeath(float time)
