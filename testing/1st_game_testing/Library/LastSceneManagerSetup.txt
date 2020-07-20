@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/obstacle.unity
+- path: Assets/Scenes/RoadGen.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

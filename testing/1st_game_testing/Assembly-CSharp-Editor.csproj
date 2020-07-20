@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\EffectExamples\Shared\Ramps\Editor\RampAssetEditor.cs" />
     <Compile Include="Assets\EffectExamples\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
+    <Compile Include="Assets\LowPolyWater_Pack\Scripts\Editor\GeneratePlane.cs" />
     <Compile Include="Assets\obstacles\package\AssetStoreOriginals\_SNAPS_PrototypingAssets\Scripts\Editor\PackageChecker\PackageChecker.cs" />
     <Compile Include="Assets\ProceduralLightning\Prefab\Editor\LightningBoltEditor.cs" />
     <Compile Include="Assets\ProceduralLightning\Prefab\Editor\MoveGizmosScript.cs" />

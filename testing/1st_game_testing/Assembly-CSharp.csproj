@@ -84,6 +84,7 @@
     <Compile Include="Assets\HeroicTraversal\SmoothFollow.cs" />
     <Compile Include="Assets\HitReaction.cs" />
     <Compile Include="Assets\look.cs" />
+    <Compile Include="Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
     <Compile Include="Assets\obstacles\Common Script\position.cs" />
     <Compile Include="Assets\obstacles\Common Script\ReturnGameObject.cs" />
     <Compile Include="Assets\obstacles\package\NonConvexMeshCollider\NonConvexMeshCollider.cs" />
@@ -146,9 +147,13 @@
     <Compile Include="Assets\ProceduralLightning\Prefab\Scripts\Spells\LightningSpellScript.cs" />
     <Compile Include="Assets\ProceduralLightning\Prefab\Scripts\Spells\LightningWhipSpell.cs" />
     <Compile Include="Assets\ProceduralLightning\Prefab\Scripts\ThunderAndLightningScript.cs" />
+    <Compile Include="Assets\RoadGen\Script\PathGen.cs" />
+    <Compile Include="Assets\RoadGen\Script\SideColor.cs" />
+    <Compile Include="Assets\RoadGen\Script\SimpleRoad.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\WoodenDummySpin.cs" />
     <None Include="Assets\ProceduralLightning\Prefab\Materials\AdditiveSoftTintableShader.shader" />
+    <None Include="Assets\LowPolyWater_Pack\LowPoly Island\Credits.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
@@ -158,6 +163,7 @@
     <None Include="Assets\EffectExamples\Misc Effects\Shaders\Dissolve.shader" />
     <None Include="Assets\EffectExamples\Misc Effects\Shaders\FireFly.shader" />
     <None Include="Assets\ProceduralLightning\Prefab\Materials\LightningBoltShaderMesh.shader" />
+    <None Include="Assets\LowPolyWater_Pack\Shaders\WaterShaded.shader" />
     <None Include="Assets\obstacles\package\NonConvexMeshCollider\ReadMe.txt" />
     <None Include="Assets\ProceduralLightning\Readme.txt" />
     <None Include="Assets\EffectExamples\Misc Effects\Prefabs\Readme_Dissolve_Respawn_.txt" />
