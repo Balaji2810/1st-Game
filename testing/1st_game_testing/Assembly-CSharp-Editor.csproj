@@ -63,12 +63,41 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\character\RootMotion\Editor\Baker\BakerInspector.cs" />
+    <Compile Include="Assets\character\RootMotion\Editor\Baker\GenericBakerInspector.cs" />
+    <Compile Include="Assets\character\RootMotion\Editor\Baker\Helpers\AnimationUtilityExtended.cs" />
+    <Compile Include="Assets\character\RootMotion\Editor\Baker\Helpers\SaveClipFolderPanel.cs" />
+    <Compile Include="Assets\character\RootMotion\Editor\Baker\HumanoidBakerInspector.cs" />
+    <Compile Include="Assets\character\RootMotion\Editor\PuppetMaster\_DEMOS\CharacterMeleeDemoInspector.cs" />
+    <Compile Include="Assets\character\RootMotion\Editor\PuppetMaster\_DEMOS\CharacterPuppetInspector.cs" />
+    <Compile Include="Assets\character\RootMotion\Editor\PuppetMaster\BehaviourPuppetMasterPropsDrawer.cs" />
+    <Compile Include="Assets\character\RootMotion\Editor\PuppetMaster\PropMuscleInspector.cs" />
+    <Compile Include="Assets\character\RootMotion\Editor\PuppetMaster\PuppetMasterHumanoidConfigInspector.cs" />
+    <Compile Include="Assets\character\RootMotion\Editor\PuppetMaster\PuppetMasterInspector.cs" />
+    <Compile Include="Assets\character\RootMotion\Editor\PuppetMaster\PuppetMasterPropInspector.cs" />
+    <Compile Include="Assets\character\RootMotion\Editor\PuppetMaster\WeightDrawer.cs" />
+    <Compile Include="Assets\character\RootMotion\Editor\RagdollManager\BipedRagdollCreatorInspector.cs" />
+    <Compile Include="Assets\character\RootMotion\Editor\RagdollManager\CharacterJointInspector.cs" />
+    <Compile Include="Assets\character\RootMotion\Editor\RagdollManager\ColliderTools.cs" />
+    <Compile Include="Assets\character\RootMotion\Editor\RagdollManager\ConfigurableJointInspector.cs" />
+    <Compile Include="Assets\character\RootMotion\Editor\RagdollManager\ConvertToConfigurableJoints.cs" />
+    <Compile Include="Assets\character\RootMotion\Editor\RagdollManager\JointInspector.cs" />
+    <Compile Include="Assets\character\RootMotion\Editor\RagdollManager\JointTools.cs" />
+    <Compile Include="Assets\character\RootMotion\Editor\RagdollManager\RagdollEditorInspector.cs" />
+    <Compile Include="Assets\character\RootMotion\Editor\RagdollManager\SymmetryTools.cs" />
+    <Compile Include="Assets\character\RootMotion\Editor\Shared Demo Scripts\CameraControllerInspector.cs" />
+    <Compile Include="Assets\character\RootMotion\Editor\Shared Scripts\BipedReferencesInspector.cs" />
+    <Compile Include="Assets\character\RootMotion\Editor\Shared Scripts\CommentsInspector.cs" />
+    <Compile Include="Assets\character\RootMotion\Editor\Shared Scripts\Inspector.cs" />
+    <Compile Include="Assets\character\RootMotion\Editor\Shared Scripts\InspectorCommentDrawer.cs" />
+    <Compile Include="Assets\character\RootMotion\Editor\Shared Scripts\LargeHeaderDrawer.cs" />
+    <Compile Include="Assets\character\RootMotion\Editor\Shared Scripts\SerializedContent.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Ramps\Editor\RampAssetEditor.cs" />
     <Compile Include="Assets\EffectExamples\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
-    <Compile Include="Assets\LowPolyWater_Pack\Scripts\Editor\GeneratePlane.cs" />
     <Compile Include="Assets\obstacles\package\AssetStoreOriginals\_SNAPS_PrototypingAssets\Scripts\Editor\PackageChecker\PackageChecker.cs" />
     <Compile Include="Assets\ProceduralLightning\Prefab\Editor\LightningBoltEditor.cs" />
     <Compile Include="Assets\ProceduralLightning\Prefab\Editor\MoveGizmosScript.cs" />
+    <Compile Include="Assets\water effect\LowPolyWater_Pack\Scripts\Editor\GeneratePlane.cs" />
     <None Include="Assets\EffectExamples\Editor\PackageManagerAssembly\PackageImportList.txt" />
     <None Include="Assets\obstacles\package\AssetStoreOriginals\_SNAPS_PrototypingAssets\Scripts\Editor\PackageChecker\PackageImportList.txt" />
     <None Include="Assets\obstacles\package\AssetStoreOriginals\_SNAPS_PrototypingAssets\Scripts\Editor\PackageChecker\settings\PackageImportList_ShaderGraph.txt" />
@@ -716,17 +745,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{2E59F3F7-B81A-5628-FE1C-4CB1D5BF9E78}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{788CF988-D500-D4B8-0DD0-613815112984}</Project>
       <Name>Assembly-CSharp</Name>
-    </ProjectReference>
-    <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj">
-      <Project>{9F062B7B-3BF9-D30D-5D4A-DBDCC0340A80}</Project>
-      <Name>Assembly-CSharp-Editor-firstpass</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

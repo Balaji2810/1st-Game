@@ -75,8 +75,9 @@ public class PathGen : MonoBehaviour
                 if(path[length][i+2]==1)
                 {
                     GameObject go = Instantiate(roadCube);
+                    go.transform.parent = gameObject.transform;
                     go.transform.localPosition = new Vector3(i, 0, length);
-                    go.transform.parent = transform;
+                    
                     if ((i + length + 2) % 2 == 1)
                     {
                         go.GetComponent<MeshRenderer>().material = sideColor;
