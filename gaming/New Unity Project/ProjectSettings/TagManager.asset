@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Shootable
   - Floor
+  - body
+  - LeftHand
+  - RightHand
   layers:
   - Default
   - TransparentFX

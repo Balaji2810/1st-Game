@@ -35,8 +35,9 @@ public class CharacterControl : MonoBehaviour
 
     public void DeadRagdoll()
     {
-        timeManager.DoSlowMotion();
+        
         pm.state = PuppetMaster.State.Dead;
+        timeManager.DoSlowMotion();
     }
 
     // Start is called before the first frame update
@@ -92,7 +93,14 @@ public class CharacterControl : MonoBehaviour
         //animator.SetInteger("turn",right+left);
         if (pm.state != PuppetMaster.State.Alive)
         {
-           moveDirection = Vector3.Lerp(moveDirection, Vector3.zero,5*Time.deltaTime);
+            moveDirection = Vector3.zero;
+           //moveDirection = Vector3.Lerp(moveDirection, Vector3.zero,2*Time.deltaTime);
+           
+        }
+        else
+        {
+            moveDirection.y -= gravity * Time.deltaTime;
+            controller.Move(moveDirection * Time.deltaTime);
         }
 
         if (pm.state == PuppetMaster.State.Alive && !sliding  &&!status.AnimationDeath)
@@ -126,7 +134,9 @@ public class CharacterControl : MonoBehaviour
                 //animator.SetBool("jump", true);
                 FallTime += Time.deltaTime;
             }
-            
+
+           
+
         }
         else
         {
@@ -154,8 +164,7 @@ public class CharacterControl : MonoBehaviour
             controller.gameObject.transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime);
         }
 
-        moveDirection.y -= gravity * Time.deltaTime;
-        controller.Move(moveDirection * Time.deltaTime);
+       
 
         
 

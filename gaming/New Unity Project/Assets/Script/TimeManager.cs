@@ -1,5 +1,7 @@
 ﻿
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class TimeManager : MonoBehaviour
 {
@@ -10,13 +12,16 @@ public class TimeManager : MonoBehaviour
     public void DoSlowMotion()
     {
         Time.timeScale = slowDownFactor;
-        Time.fixedDeltaTime = Time.timeScale * .02f;
+        StartCoroutine(delay(Time.fixedDeltaTime));
+        Time.fixedDeltaTime = Time.timeScale * TimeConstant;
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator delay(float time)
     {
-        Time.timeScale += (TimeConstant / slowDownLength) * Time.unscaledDeltaTime;
-        Time.timeScale = Mathf.Clamp(Time.timeScale, 0f, 1f);
+        
+        yield return new WaitForSeconds(slowDownLength);
+        Time.fixedDeltaTime = time;
+        Time.timeScale = 1;
+       
     }
 }

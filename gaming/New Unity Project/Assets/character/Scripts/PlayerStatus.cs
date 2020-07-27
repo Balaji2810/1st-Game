@@ -42,7 +42,7 @@ public class PlayerStatus : MonoBehaviour
         }
         movedDistance = BodyPart.position.z;
 
-        print(controller.velocity);
+        //print(controller.velocity);
         
     }
 

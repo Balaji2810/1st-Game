@@ -20,10 +20,7 @@ public class RoadGenerator : MonoBehaviour
     void Start()
     {
         Roads = AP.returnObject();
-        SpawnRoad();
-        SpawnRoad();
-        SpawnRoad();
-        SpawnRoad();
+       
     }
 
     // Update is called once per frame
