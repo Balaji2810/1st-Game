@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RoadGenerator : MonoBehaviour
 {
+   
     public float roadLength = 40;
     public int roadOnScreen = 10;
     public float roadSpawn = 0;

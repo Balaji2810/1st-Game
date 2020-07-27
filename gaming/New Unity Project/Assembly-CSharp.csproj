@@ -215,6 +215,7 @@
     <Compile Include="Assets\Script\DeleteBlock.cs" />
     <Compile Include="Assets\Script\FileHandler.cs" />
     <Compile Include="Assets\Script\RoadGenerator.cs" />
+    <Compile Include="Assets\Script\TimeManager.cs" />
     <Compile Include="Assets\water effect\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
     <None Include="Assets\water effect\LowPolyWater_Pack\LowPoly Island\Credits.txt" />
     <None Include="Assets\Particle Effect\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />

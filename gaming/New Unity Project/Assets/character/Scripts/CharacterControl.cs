@@ -31,8 +31,11 @@ public class CharacterControl : MonoBehaviour
     public float FallDeathTime = 1;
     float FallTime = 0;
 
+    public TimeManager timeManager;
+
     public void DeadRagdoll()
     {
+        timeManager.DoSlowMotion();
         pm.state = PuppetMaster.State.Dead;
     }
 

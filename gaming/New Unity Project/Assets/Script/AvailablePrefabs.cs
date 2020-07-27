@@ -14,7 +14,7 @@ public class AvailablePrefabs : MonoBehaviour
         public string name;
         
     }
-
+    public bool Testing = false;
     [SerializeField]
     public FileHandler File;
     
@@ -34,37 +34,50 @@ public class AvailablePrefabs : MonoBehaviour
           list = Obsatcles;
         }
 
-        List<GameObject> roads = new List<GameObject>();
-        foreach(Object road in list)
+        List<GameObject> returnObjects = new List<GameObject>();
+        foreach(Object obj in list)
         {
-            String name;
-            if(road.name =="")
+            if(Testing)
             {
-                name = road.go.name;
+                string status;
+                status = obj.status.ToString();
+                if (status == "active")
+                {
+                    returnObjects.Add(obj.go);
+                }
             }
             else
             {
-                name = road.name;
-            }
-            string status;
-            if(File.exist(name))
-            {
-                
-                status = File.load(name);
-            }
-            else
-            {
-                File.save(name,road.status.ToString());
-                status = road.status.ToString();
-            }
-           
-            if (status=="active")
-            {
-                roads.Add(road.go);
+                String name;
+                if (obj.name == "")
+                {
+                    name = obj.go.name;
+                }
+                else
+                {
+                    name = obj.name;
+                }
+                string status;
+                if (File.exist(name))
+                {
+
+                    status = File.load(name);
+                }
+                else
+                {
+                    File.save(name, obj.status.ToString());
+                    status = obj.status.ToString();
+                }
+
+                if (status == "active")
+                {
+                    returnObjects.Add(obj.go);
+                }
             }
             
+            
         }
-        return roads;
+        return returnObjects;
     }
     
     
