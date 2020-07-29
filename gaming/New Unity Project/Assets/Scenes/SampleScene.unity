@@ -284,7 +284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slowDownFactor: 0.05
-  slowDownLength: 0.1
+  slowDownLength: 0.3
   TimeConstant: 0.04
 --- !u!4 &1028548983
 Transform:
@@ -507,7 +507,7 @@ MonoBehaviour:
   File: {fileID: 2013637001}
   Roads:
   - go: {fileID: 9189929428369261660, guid: e5955d3704dc6da44ba373456bb7df89, type: 3}
-    status: 1
+    status: 0
     name: 
   - go: {fileID: 6814111129673750620, guid: f45957fca11a92045b2d476eb7678815, type: 3}
     status: 0
@@ -525,10 +525,10 @@ MonoBehaviour:
     status: 0
     name: 
   - go: {fileID: 5410531607079905802, guid: cc423288295be2344a838b4c7b1fe2ca, type: 3}
-    status: 1
+    status: 0
     name: 
   - go: {fileID: 9145479352048597890, guid: a258815824f3cec429b0fd0f725f6f97, type: 3}
-    status: 1
+    status: 0
     name: 
   - go: {fileID: 7607269478515411344, guid: fb6d389c4d6a4d2429fe69b11502e547, type: 3}
     status: 1
@@ -2800,7 +2800,7 @@ ConfigurableJoint:
   m_ProjectionAngle: 180
   m_ConfiguredInWorldSpace: 0
   m_SwapBodies: 0
-  m_BreakForce: 60000
+  m_BreakForce: 10000
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
@@ -2908,7 +2908,7 @@ ConfigurableJoint:
   m_ProjectionAngle: 180
   m_ConfiguredInWorldSpace: 0
   m_SwapBodies: 0
-  m_BreakForce: 60000
+  m_BreakForce: 10000
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
@@ -4988,8 +4988,8 @@ MonoBehaviour:
   turnTime: 10
   playerRoot: {fileID: 8077239999899897902}
   controller: {fileID: 8077239999899897901}
-  speed: 20
-  maxspeed: 20
+  speed: 0
+  maxspeed: 35
   inverseAxcel: 1
   jumpSpeed: 9.5
   gravity: 25
@@ -5677,7 +5677,7 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 512
     multiplier: 1
-    collisionThreshold: 150
+    collisionThreshold: 175
   maxCollisions: 30
   regainPinSpeed: 10
   boostFalloff: 1

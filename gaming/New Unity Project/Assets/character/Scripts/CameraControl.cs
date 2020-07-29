@@ -63,7 +63,7 @@ public class CameraControl : MonoBehaviour
                 //transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, LookAtSpeed * Time.deltaTime);
 
                 //Camera move forward
-                transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, transform.position.y, player.MovedDistance + (offset.z- offset.z)), 2* Time.deltaTime);
+                transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, transform.position.y, player.MovedDistance + (offset.z- offset.z)), 6* Time.deltaTime);
                
                 //Camera Ground level
                 transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, player.GroundLevel + offset.y, transform.position.z), Time.deltaTime * JumpSpeed);

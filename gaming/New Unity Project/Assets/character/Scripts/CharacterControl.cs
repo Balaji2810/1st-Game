@@ -89,12 +89,41 @@ public class CharacterControl : MonoBehaviour
             right = turnAngle;
         }
 
-        speed += Time.deltaTime/inverseAxcel;
+        if (speed > 30)
+        {
+            speed += Time.deltaTime / (inverseAxcel*50);
+        }
+        else if (speed > 25)
+        {
+            speed += Time.deltaTime / (inverseAxcel*30);
+        }
+        else if (speed > 20)
+        {
+            speed += Time.deltaTime / (inverseAxcel*20f);
+        }
+        else if (speed > 17)
+        {
+            speed += Time.deltaTime / (inverseAxcel*15f);
+        }
+        else if (speed > 10)
+        {
+            speed += Time.deltaTime / (inverseAxcel * 8f);
+        }
+        else if (speed > 5)
+        {
+            speed += Time.deltaTime / (inverseAxcel*1.5f);
+        }
+        else 
+        {
+            speed += Time.deltaTime / (inverseAxcel*1f);
+        }
+        
 
         //Speed Accelarator
         if (speed > maxspeed)
             speed = maxspeed;
 
+        print(speed);
 
 
         //animator.SetInteger("turn",right+left);
@@ -175,14 +204,7 @@ public class CharacterControl : MonoBehaviour
 
         
 
-        if(controller.velocity.z == 0)
-        {
-            animator.SetInteger("speed", 0);
-        }
-        else
-        {
-            animator.SetInteger("speed", type);
-        }
+       
     }
 }
 

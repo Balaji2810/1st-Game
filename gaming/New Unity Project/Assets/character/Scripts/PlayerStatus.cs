@@ -43,7 +43,34 @@ public class PlayerStatus : MonoBehaviour
         movedDistance = BodyPart.position.z;
 
         //print(controller.velocity);
-        
+
+        if (controller.velocity.z == 0)
+        {
+            
+        }
+        else
+        {
+           
+
+        }
+
+        if(controller.velocity.z>17)
+        {
+            animator.SetInteger("speed", 3);
+        }
+        else if(controller.velocity.z>5)
+        {
+            animator.SetInteger("speed",2 );
+        }
+        else if (controller.velocity.z>0)
+        {
+            animator.SetInteger("speed", 1);
+        }
+        else if (controller.velocity.z==0)
+        {
+            animator.SetInteger("speed", 0);
+        }
+
     }
 
     IEnumerator DelayDeath(float time)
