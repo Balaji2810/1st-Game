@@ -33,11 +33,18 @@ public class CharacterControl : MonoBehaviour
 
     public TimeManager timeManager;
 
+    bool slowmotion = true;
+
     public void DeadRagdoll()
     {
-        
+       
         pm.state = PuppetMaster.State.Dead;
-        timeManager.DoSlowMotion();
+        if(slowmotion)
+        {
+            slowmotion = false;
+            timeManager.DoSlowMotion();
+        }
+        
     }
 
     // Start is called before the first frame update

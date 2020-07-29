@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 9145479352048597892}
   - component: {fileID: 9145479352048597893}
-  m_Layer: 0
+  - component: {fileID: 8938987658032273990}
+  m_Layer: 9
   m_Name: Path
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48,3 +49,17 @@ MonoBehaviour:
     type: 3}
   mainColor: {fileID: 2100000, guid: 49423a7b78198ea4d976598545ee4f22, type: 2}
   sideColor: {fileID: 2100000, guid: 8d93bd46e774ae34b936b97a9aa88f7f, type: 2}
+  marker: {fileID: 7889926838344174013, guid: a819bd23177d6684f9994e9988df97c9, type: 3}
+--- !u!65 &8938987658032273990
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9145479352048597890}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 5, y: 0.85, z: 40}
+  m_Center: {x: 0, y: 0, z: 0}

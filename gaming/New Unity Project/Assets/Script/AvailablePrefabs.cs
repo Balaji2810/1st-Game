@@ -43,6 +43,7 @@ public class AvailablePrefabs : MonoBehaviour
                 status = obj.status.ToString();
                 if (status == "active")
                 {
+                   
                     returnObjects.Add(obj.go);
                 }
             }

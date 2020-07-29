@@ -227,8 +227,14 @@
     <Reference Include="Unity.ProGrids.Editor">
       <HintPath>C:/Users/Balaji/Documents/1st-Game/gaming/New Unity Project/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Recorder.Editor">
+      <HintPath>C:/Users/Balaji/Documents/1st-Game/gaming/New Unity Project/Library/ScriptAssemblies/Unity.Recorder.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Balaji/Documents/1st-Game/gaming/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Recorder">
+      <HintPath>C:/Users/Balaji/Documents/1st-Game/gaming/New Unity Project/Library/ScriptAssemblies/Unity.Recorder.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>C:/Users/Balaji/Documents/1st-Game/gaming/New Unity Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
