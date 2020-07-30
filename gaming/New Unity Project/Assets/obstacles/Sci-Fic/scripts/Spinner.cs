@@ -14,7 +14,7 @@ public class Spinner : MonoBehaviour
 
     void Start()
     {
-        transform.Rotate(Random.Range(0,360)* StartingAngle);
+        //transform.Rotate(Random.Range(0,360)* StartingAngle);
         
         if (Random.Range(0, 2) == 1)
         {
@@ -24,11 +24,11 @@ public class Spinner : MonoBehaviour
         {
             SpinAngle = -1;
         }
-        ChangeInSpeed = Random.Range(-50, 150);
+        ChangeInSpeed = Random.Range(-50, 50);
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         gameObject.GetComponent<Rigidbody>().angularVelocity = SpinAngle *(Time.deltaTime*Angle*(ChangeInSpeed+speed));
     }

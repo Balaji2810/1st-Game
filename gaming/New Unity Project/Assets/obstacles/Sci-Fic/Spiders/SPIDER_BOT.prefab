@@ -316,9 +316,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2965190426113373332}
   - component: {fileID: 2965190426103853432}
-  - component: {fileID: 2965190425285590816}
   - component: {fileID: 2965190425285590817}
-  - component: {fileID: -5195117386113230677}
+  - component: {fileID: 2555503456210451835}
+  - component: {fileID: 700156094824935910}
   m_Layer: 16
   m_Name: SPIDER_BOT
   m_TagString: Untagged
@@ -334,7 +334,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2965190426113861812}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -8.68, y: 0.5, z: -4.05}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 0.8, y: 1, z: 1}
   m_Children:
   - {fileID: 2965190426113373340}
@@ -361,20 +361,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
---- !u!136 &2965190425285590816
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2965190426113861812}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.58
-  m_Height: 1.51
-  m_Direction: 2
-  m_Center: {x: 0, y: 0.59, z: -0.24}
 --- !u!114 &2965190425285590817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -388,10 +374,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 3
-  force: 3
+  force: 1.75
   delayTime: 1.9
   Explosion: {fileID: 1828176872806910, guid: 64891a0eb28db934898420d80ca07cb3, type: 3}
---- !u!54 &-5195117386113230677
+--- !u!54 &2555503456210451835
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -405,8 +391,22 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 122
   m_CollisionDetection: 0
+--- !u!136 &700156094824935910
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2965190426113861812}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.58
+  m_Height: 1.33
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.64, z: -0.24}
 --- !u!1 &2965190426113861814
 GameObject:
   m_ObjectHideFlags: 0

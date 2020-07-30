@@ -14,7 +14,7 @@ public class CharacterControl : MonoBehaviour
     
     public float LeftRightSpeed;
     public int type = 2;
-    public int turnAngle =0 ;
+    public int turnAngle = 0;
     public float turnTime = 10;
     public Transform playerRoot;
     public CharacterController controller;
@@ -22,10 +22,12 @@ public class CharacterControl : MonoBehaviour
     public float maxspeed;
     public float inverseAxcel = 10f;
     public float jumpSpeed = 8.0F;
+    public float jumpDelayTime = 0.25f;
     public float gravity = 20.0F;
     public float SlideDelayTime = 2;
     private Vector3 moveDirection = Vector3.zero;
 
+    private float jump = 0;
     private bool sliding = false;
 
     public float FallDeathTime = 1;
@@ -38,13 +40,14 @@ public class CharacterControl : MonoBehaviour
     public void DeadRagdoll()
     {
        
-        pm.state = PuppetMaster.State.Dead;
+       
         if(slowmotion)
         {
             slowmotion = false;
             timeManager.DoSlowMotion();
         }
-        
+        pm.state = PuppetMaster.State.Dead;
+
     }
 
     // Start is called before the first frame update
@@ -61,6 +64,7 @@ public class CharacterControl : MonoBehaviour
         moveDirection.y = jumpSpeed * force;
         moveDirection.y -= gravity * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
+        DeadRagdoll();
     }
 
     IEnumerator SlideEnd()
@@ -79,6 +83,8 @@ public class CharacterControl : MonoBehaviour
         left = 0;
         right = 0;
 
+        
+
         if(Input.GetKey(KeyCode.A))
         {
             left = -turnAngle;
@@ -89,25 +95,18 @@ public class CharacterControl : MonoBehaviour
             right = turnAngle;
         }
 
-        if (speed > 30)
+        
+        else if (speed > 25)
         {
             speed += Time.deltaTime / (inverseAxcel*50);
         }
-        else if (speed > 25)
-        {
-            speed += Time.deltaTime / (inverseAxcel*30);
-        }
         else if (speed > 20)
         {
-            speed += Time.deltaTime / (inverseAxcel*20f);
-        }
-        else if (speed > 17)
-        {
-            speed += Time.deltaTime / (inverseAxcel*15f);
+            speed += Time.deltaTime / (inverseAxcel*30f);
         }
         else if (speed > 10)
         {
-            speed += Time.deltaTime / (inverseAxcel * 8f);
+            speed += Time.deltaTime / (inverseAxcel * 5f);
         }
         else if (speed > 5)
         {
@@ -123,7 +122,7 @@ public class CharacterControl : MonoBehaviour
         if (speed > maxspeed)
             speed = maxspeed;
 
-        print(speed);
+        
 
 
         //animator.SetInteger("turn",right+left);
@@ -143,11 +142,14 @@ public class CharacterControl : MonoBehaviour
         {
             if(controller.isGrounded)
             {
+                jump += Time.deltaTime;
+                jump = Mathf.Clamp(jump,0,jumpDelayTime);
+
                 animator.SetBool("jump", false);
                 moveDirection = new Vector3(0, 0, 1);
                 moveDirection = transform.TransformDirection(moveDirection);
                 moveDirection *= speed;
-                if (Input.GetButton("Jump"))
+                if (Input.GetButton("Jump") && jumpDelayTime==jump)
                 {
                     moveDirection.y = jumpSpeed;
                     animator.SetBool("jump", true);
@@ -169,6 +171,7 @@ public class CharacterControl : MonoBehaviour
             {
                 //animator.SetBool("jump", true);
                 FallTime += Time.deltaTime;
+                jump = 0;
             }
 
            

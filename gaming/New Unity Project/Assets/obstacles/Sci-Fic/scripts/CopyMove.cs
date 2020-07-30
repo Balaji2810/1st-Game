@@ -4,15 +4,32 @@ using UnityEngine;
 
 public class CopyMove : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private PlayerStatus player;
+    public Animation animation;
 
     // Update is called once per frame
     void Update()
     {
-        
+        try
+        {
+            player = GameObject.Find("player Root").GetComponentInChildren<PlayerStatus>();
+
+            transform.position = Vector3.Lerp(transform.position, new Vector3(player.LeftRight, transform.position.y, transform.position.z), Time.deltaTime * 10f);
+            Mathf.Clamp(transform.position .x,- 2.0f, 2.01f);
+
+            if((int)(transform.position.x*100) == (int)(100*player.LeftRight))
+            {
+                animation.Play("idle");
+            }
+            else
+            {
+                animation.Play("walk");
+            }
+           
+        }
+        catch
+        {
+
+        }
     }
 }
