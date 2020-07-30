@@ -19,11 +19,12 @@ public class SimpleRoad : MonoBehaviour
                 GameObject go = Instantiate(roadCube);
                 go.transform.parent = gameObject.transform;
                 go.transform.localPosition = new Vector3(i,0,length);
-                if((i+ length +2)%2 == 1)
+               // if((i+ length +2)%2 == 1)
                 {
-                    if(i==-2 || i==2)
+                    //if(i==-2 || i==2)
+                   // if(length%5==0)
                     {
-                        go.GetComponent<MeshRenderer>().material = sideColor;
+                       // go.GetComponent<MeshRenderer>().material = sideColor;
                     }
                     
                 }

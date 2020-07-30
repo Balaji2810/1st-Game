@@ -1251,7 +1251,7 @@ PrefabInstance:
     - target: {fileID: 782262955398395742, guid: b3c68806722a82948bb83f676ea40c52,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.94
+      value: 9.5
       objectReference: {fileID: 0}
     - target: {fileID: 782262955398395742, guid: b3c68806722a82948bb83f676ea40c52,
         type: 3}
@@ -1407,6 +1407,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 5253329103568448163, guid: 8cafe11bde7c67349bbf5c60c82da9da,
+        type: 3}
+      propertyPath: puppet
+      value: 
+      objectReference: {fileID: 5402970078493741893}
     - target: {fileID: 5253329103568448156, guid: 8cafe11bde7c67349bbf5c60c82da9da,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1462,11 +1467,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5253329103568448163, guid: 8cafe11bde7c67349bbf5c60c82da9da,
-        type: 3}
-      propertyPath: puppet
-      value: 
-      objectReference: {fileID: 5402970078493741893}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cafe11bde7c67349bbf5c60c82da9da, type: 3}
 --- !u!114 &5402970078493741893 stripped

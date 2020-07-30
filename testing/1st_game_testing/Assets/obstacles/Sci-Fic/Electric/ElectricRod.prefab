@@ -184,7 +184,8 @@ MonoBehaviour:
   LightningMaterialMeshNoGlow: {fileID: 2100000, guid: db76dde8469c5834887c024ae9f43289,
     type: 2}
   LightningTexture: {fileID: 2800000, guid: 51e598d31382bd740958e33ab6c64a66, type: 3}
-  LightningGlowTexture: {fileID: 0}
+  LightningGlowTexture: {fileID: 2800000, guid: f1a26705790419b4e9300a2bf89c22c9,
+    type: 3}
   LightningOriginParticleSystem: {fileID: 0}
   LightningDestinationParticleSystem: {fileID: 0}
   LightningTintColor: {r: 1, g: 1, b: 1, a: 1}

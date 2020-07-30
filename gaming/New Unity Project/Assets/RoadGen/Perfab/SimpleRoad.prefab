@@ -45,6 +45,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roadCube: {fileID: 5460084653567072355, guid: cf4a164bc16e10b42aea6f06de60c706,
     type: 3}
-  mainColor: {fileID: 2100000, guid: 49423a7b78198ea4d976598545ee4f22, type: 2}
+  mainColor: {fileID: 2100000, guid: 401ad4983cc206c4f923a26dd2542db1, type: 2}
   sideColor: {fileID: 2100000, guid: 8d93bd46e774ae34b936b97a9aa88f7f, type: 2}
   roadLength: 40

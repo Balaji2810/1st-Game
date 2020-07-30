@@ -93,6 +93,8 @@
     <Compile Include="Assets\character\RootMotion\Editor\Shared Scripts\LargeHeaderDrawer.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\Shared Scripts\SerializedContent.cs" />
     <Compile Include="Assets\Editor\AvailablePrefabsEditor.cs" />
+    <Compile Include="Assets\Electric\ProceduralLightning\Prefab\Editor\LightningBoltEditor.cs" />
+    <Compile Include="Assets\Electric\ProceduralLightning\Prefab\Editor\MoveGizmosScript.cs" />
     <Compile Include="Assets\obstacles\package\AssetStoreOriginals\_SNAPS_PrototypingAssets\Scripts\Editor\PackageChecker\PackageChecker.cs" />
     <Compile Include="Assets\Particle Effect\Shared\Ramps\Editor\RampAssetEditor.cs" />
     <Compile Include="Assets\Particle Effect\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
