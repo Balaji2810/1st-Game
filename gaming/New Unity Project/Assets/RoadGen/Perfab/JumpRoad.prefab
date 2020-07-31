@@ -94,6 +94,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f2a47633926064884c23c3ab94e6b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  changeColor: 0
+  doAnimation: 1
+  material: {fileID: 2100000, guid: f888f4ae956d182448f2e287f9d177e1, type: 2}
+  color: []
 --- !u!111 &6233264831235303799
 Animation:
   m_ObjectHideFlags: 0
@@ -234,6 +238,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f2a47633926064884c23c3ab94e6b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  changeColor: 0
+  doAnimation: 1
+  material: {fileID: 2100000, guid: f888f4ae956d182448f2e287f9d177e1, type: 2}
+  color: []
 --- !u!111 &7553753521487568436
 Animation:
   m_ObjectHideFlags: 0

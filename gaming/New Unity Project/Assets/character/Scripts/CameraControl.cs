@@ -15,77 +15,140 @@ public class CameraControl : MonoBehaviour
     public float LeftRightSpeed=150;
     public float JumpSpeed=1;
     public float LookAtSpeed = 2;
+    public GameManager gameManager;
 
     private PlayerStatus player;
+    private bool init = true;
 
-
+    private Vector3 temp;
     // Start is called before the first frame update
     void Start()
     {
+        temp = new Vector3(offset.x,offset.y,offset.z);
         
     }
+
+    bool camToPosition = false;
+
+    IEnumerator delay()
+    {
+
+        yield return new WaitForSeconds(1f);
+        camToPosition = true;
+        
+
+
+        StartCoroutine(delay2());
+    }
+
+    IEnumerator delay2()
+    {
+
+        yield return new WaitForSeconds(2);
+
+        init = false;
+        
+
+    }
+
 
     // Update is called once per frame
     void LateUpdate()
     {
+
         try
         {
             player = GameObject.Find("player Root").GetComponentInChildren<PlayerStatus>();
-           
-
-           
-            if (player.puppet.state == PuppetMaster.State.Alive)
+            if (init)
             {
+                if (!gameManager.Startgame)
+                {
+                    offset = new Vector3(temp.x * 1, temp.y - 1.5f, temp.z * -1);
 
-                //transform.LookAt(player.LookAt);
-                var targetRotation = Quaternion.LookRotation(player.LookAt.position - transform.position);
-                // Smoothly rotate towards the target point.
-                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, LookAtSpeed * Time.deltaTime);
+                    transform.position = Vector3.Lerp(transform.position, new Vector3(player.LeftRight, player.GroundLevel + offset.y + offset.y, player.MovedDistance + offset.z), Time.deltaTime);
+                    transform.LookAt(player.LookAt);
+                }
+                else
+                {
+                    offset = temp;
 
-                //Camera move forward
-                transform.position = new Vector3(transform.position.x, transform.position.y, player.MovedDistance + offset.z);
-               
-                //Camera Ground level
-                transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, player.GroundLevel + offset.y, transform.position.z), Time.deltaTime * JumpSpeed);
-                //camera Left Right move
-                //transform.position = new Vector3(player.LeftRight, transform.position.y, transform.position.z);
-                transform.position = Vector3.Lerp(transform.position, new Vector3(player.LeftRight, transform.position.y, transform.position.z), Time.deltaTime * LeftRightSpeed);
+                    if (camToPosition)
+                    {
+                        transform.position = Vector3.Lerp(transform.position, new Vector3(player.LeftRight, transform.position.y, transform.position.z), Time.deltaTime * LeftRightSpeed);
+                        transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, player.GroundLevel + offset.y, transform.position.z), Time.deltaTime * JumpSpeed);
+                        transform.position = new Vector3(transform.position.x, transform.position.y, player.MovedDistance + offset.z);
 
+                    }
+                    else
+                    {
+                        transform.position = Vector3.Lerp(transform.position, new Vector3(player.LeftRight, player.GroundLevel + offset.y, player.MovedDistance + offset.z), Time.deltaTime * 5);
 
-
-
+                    }
+                    transform.LookAt(player.LookAt);
+                    StartCoroutine(delay());
+                }
             }
             else
             {
-                transform.LookAt(player.LookAt);
-                //var targetRotation = Quaternion.LookRotation(player.LookAt.position - transform.position);
-                // Smoothly rotate towards the target point.
-                //transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, LookAtSpeed * Time.deltaTime);
+                
 
-                //Camera move forward
-                transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, transform.position.y, player.MovedDistance + (offset.z- offset.z)), 3* Time.deltaTime);
-               
-                //Camera Ground level
-               // transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, player.GroundLevel + offset.y, transform.position.z), Time.deltaTime * JumpSpeed);
-                //camera Left Right move
-                //transform.position = new Vector3(player.LeftRight+offset.x, transform.position.y, transform.position.z);
-                if (player.BodyPart.position.x > 0.75)
+
+
+                if (player.puppet.state == PuppetMaster.State.Alive)
                 {
-                    transform.position = Vector3.Lerp(transform.position, new Vector3(player.BodyPart.position.x + offset.x, transform.position.y, transform.position.z), Time.deltaTime * 7.5f);
+
+                    //transform.LookAt(player.LookAt);
+                    var targetRotation = Quaternion.LookRotation(player.LookAt.position - transform.position);
+                    // Smoothly rotate towards the target point.
+                    transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, LookAtSpeed * Time.deltaTime);
+
+                    //Camera move forward
+                    transform.position = new Vector3(transform.position.x, transform.position.y, player.MovedDistance + offset.z);
+
+                    //Camera Ground level
+                    transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, player.GroundLevel + offset.y, transform.position.z), Time.deltaTime * JumpSpeed);
+                    //camera Left Right move
+                    //transform.position = new Vector3(player.LeftRight, transform.position.y, transform.position.z);
+                    transform.position = Vector3.Lerp(transform.position, new Vector3(player.LeftRight, transform.position.y, transform.position.z), Time.deltaTime * LeftRightSpeed);
+
+
+
 
                 }
                 else
                 {
-                    transform.position = Vector3.Lerp(transform.position, new Vector3(player.BodyPart.position.x - offset.x, transform.position.y, transform.position.z), Time.deltaTime *7.5f);
+                    transform.LookAt(player.LookAt);
+                    //var targetRotation = Quaternion.LookRotation(player.LookAt.position - transform.position);
+                    // Smoothly rotate towards the target point.
+                    //transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, LookAtSpeed * Time.deltaTime);
+
+                    //Camera move forward
+                    transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, transform.position.y, player.MovedDistance + (offset.z - offset.z)), 3 * Time.deltaTime);
+
+                    //Camera Ground level
+                    // transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, player.GroundLevel + offset.y, transform.position.z), Time.deltaTime * JumpSpeed);
+                    //camera Left Right move
+                    //transform.position = new Vector3(player.LeftRight+offset.x, transform.position.y, transform.position.z);
+                    if (player.BodyPart.position.x > 0.75)
+                    {
+                        transform.position = Vector3.Lerp(transform.position, new Vector3(player.BodyPart.position.x + offset.x, transform.position.y, transform.position.z), Time.deltaTime * 7.5f);
+
+                    }
+                    else
+                    {
+                        transform.position = Vector3.Lerp(transform.position, new Vector3(player.BodyPart.position.x - offset.x, transform.position.y, transform.position.z), Time.deltaTime * 7.5f);
+                    }
+
+
                 }
-
-
             }
+           
+            
 
         }
         catch
         {
-
+            Debug.LogError("Camera");
         }
 
     }

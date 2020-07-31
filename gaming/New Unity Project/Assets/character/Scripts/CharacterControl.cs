@@ -11,7 +11,7 @@ public class CharacterControl : MonoBehaviour
     public PlayerStatus status;
     private int right, left;
 
-    
+    public GameManager gameManager;
     public float LeftRightSpeed;
     public int type = 2;
     public int turnAngle = 0;
@@ -37,15 +37,16 @@ public class CharacterControl : MonoBehaviour
 
     bool slowmotion = true;
 
-    public void DeadRagdoll()
+    public void DeadRagdoll(bool activate = true)
     {
        
        
-        if(slowmotion)
+        if(slowmotion && activate &&!(status.AnimationDeath))
         {
             slowmotion = false;
             timeManager.DoSlowMotion();
         }
+
         pm.state = PuppetMaster.State.Dead;
 
     }
@@ -80,6 +81,11 @@ public class CharacterControl : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if(!gameManager.Startgame)
+        {
+            return;
+        }
+
         left = 0;
         right = 0;
 
@@ -96,25 +102,25 @@ public class CharacterControl : MonoBehaviour
         }
 
         
-        else if (speed > 25)
-        {
-            speed += Time.deltaTime / (inverseAxcel*50);
-        }
         else if (speed > 20)
         {
-            speed += Time.deltaTime / (inverseAxcel*30f);
+            speed += Time.deltaTime / (inverseAxcel*60);
+        }
+        else if (speed > 15)
+        {
+            speed += Time.deltaTime / (inverseAxcel * 30f);
         }
         else if (speed > 10)
         {
-            speed += Time.deltaTime / (inverseAxcel * 5f);
+            speed += Time.deltaTime / (inverseAxcel * 10f);
         }
         else if (speed > 5)
         {
-            speed += Time.deltaTime / (inverseAxcel*1.5f);
+            speed += Time.deltaTime / (inverseAxcel*5f);
         }
         else 
         {
-            speed += Time.deltaTime / (inverseAxcel*1f);
+            speed += Time.deltaTime / (inverseAxcel*1.5f);
         }
         
 
@@ -164,7 +170,9 @@ public class CharacterControl : MonoBehaviour
                 FallTime = 0;
 
                 //left right
-                playerRoot.position = new Vector3(playerRoot.position.x + (Input.GetAxis("Horizontal") * LeftRightSpeed * Time.deltaTime), playerRoot.position.y, playerRoot.position.z );
+                float leftright = playerRoot.position.x + (Input.GetAxis("Horizontal") * LeftRightSpeed * Time.deltaTime);
+                leftright = Mathf.Clamp(leftright, -2, 2);
+                playerRoot.position = new Vector3(leftright, playerRoot.position.y, playerRoot.position.z );
 
             }
             else

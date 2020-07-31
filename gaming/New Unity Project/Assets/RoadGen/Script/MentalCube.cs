@@ -4,11 +4,33 @@ using UnityEngine;
 
 public class MentalCube : MonoBehaviour
 {
+    public bool changeColor = true;
+    public bool doAnimation = true;
+    public Material material;
+    [ColorUsage(true, true)]
+    public List<Color> color;
+
+    Material newMaterial;
 
     // Start is called before the first frame update
+    [System.Obsolete]
     void Start()
     {
-        StartCoroutine(delay(Random.Range(0.1f,5.9f)));
+        if(changeColor)
+        {
+            newMaterial = new Material(Shader.Find("Standard"));
+            material.SetColor("_EmissionColor", color[Random.Range(0, color.Count)]);
+            newMaterial.CopyPropertiesFromMaterial(material);
+            gameObject.GetComponent<MeshRenderer>().material = newMaterial;
+        }
+        
+        if(doAnimation)
+        {
+            StartCoroutine(delay(Random.Range(0.1f, 5.9f)));
+        }
+       
+
+        
         
     }
 

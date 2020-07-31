@@ -46,9 +46,13 @@ public class SkipRoad : MonoBehaviour
                                 GameObject go = Instantiate(roadCube);
                                 go.transform.parent = gameObject.transform;
                                 go.transform.localPosition = new Vector3(i, 0, length);
-                                if ((i + length + 2) % 2 == 1)
+                                //if ((i + length + 2) % 2 == 1)
                                 {
-                                    if (i == -2 || i == 2)
+                                    if ((i == -2 || i == 2) && (10 + length) % 20 == 0)
+                                    {
+                                        go.GetComponent<MeshRenderer>().material = sideColor;
+                                    }
+                                    if (length % 20 == 0 && i == 0)
                                     {
                                         go.GetComponent<MeshRenderer>().material = sideColor;
                                     }

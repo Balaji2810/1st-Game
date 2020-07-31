@@ -5,10 +5,14 @@ using UnityEngine;
 public class SideColor : MonoBehaviour
 {
     public Material material;
+    [ColorUsage(true, true)]
+    public List<Color> color;
     // Start is called before the first frame update
     void Start()
     {
-        material.color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
+       
+        //material.color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
+        material.SetColor("_EmissionColor", color[Random.Range(0,color.Count)]);
     }
 
     

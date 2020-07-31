@@ -44,15 +44,7 @@ public class PlayerStatus : MonoBehaviour
 
         //print(controller.velocity);
 
-        if (controller.velocity.z == 0)
-        {
-            
-        }
-        else
-        {
-           
-
-        }
+       
 
         if(controller.velocity.z>17)
         {

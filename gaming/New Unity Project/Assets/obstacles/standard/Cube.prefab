@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3674462426380903666}
   - component: {fileID: 3674462426380903665}
   - component: {fileID: 3674462426380903566}
-  - component: {fileID: -5429985669653519849}
+  - component: {fileID: 6572115731417066393}
   m_Layer: 16
   m_Name: Cube
   m_TagString: Untagged
@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 44b7b8d68a68e0a44b5d5ab95e21dff9, type: 2}
+  - {fileID: 2100000, guid: f888f4ae956d182448f2e287f9d177e1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -110,7 +110,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-5429985669653519849
+--- !u!114 &6572115731417066393
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -119,6 +119,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 3674462426380903664}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e807159d5164f64ba9bbd2a9894596e, type: 3}
+  m_Script: {fileID: 11500000, guid: 46f2a47633926064884c23c3ab94e6b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doAnimation: 0
+  material: {fileID: 2100000, guid: f888f4ae956d182448f2e287f9d177e1, type: 2}
+  color:
+  - {r: 1.4980392, g: 0.40784314, b: 0, a: 2.5}
+  - {r: 1.4980392, g: 1.3803922, b: 0, a: 2.5}
+  - {r: 0.23529412, g: 1.4980392, b: 0, a: 2.5}
+  - {r: 0, g: 1.4980392, b: 1.1058824, a: 2.5}
+  - {r: 0, g: 0.69803923, b: 1.4980392, a: 2.5}
+  - {r: 1.3041189, g: 0, b: 0.7100962, a: 2.5}
+  - {r: 1.7207954, g: 1.0631092, b: 0, a: 2.5}
+  - {r: 1.4980392, g: 0.05490196, b: 0, a: 2.5}
+  - {r: 1.7207954, g: 0, b: 1.0090528, a: 2.5}
+  - {r: 0, g: 1.4980392, b: 0.42352942, a: 2.5}
+  - {r: 1.4980392, g: 0, b: 0.38431373, a: 2.5}
+  - {r: 0, g: 1.4980392, b: 0.08627451, a: 2.5}
+  - {r: 1.3041189, g: 1.3041189, b: 1.3041189, a: 2.5}
+  - {r: 1.3041189, g: 0.1706962, b: 0, a: 2.5}
