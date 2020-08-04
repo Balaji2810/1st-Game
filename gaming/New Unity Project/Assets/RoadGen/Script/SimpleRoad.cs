@@ -8,6 +8,7 @@ public class SimpleRoad : MonoBehaviour
     public Material mainColor;
     public Material sideColor;
     public int roadLength;
+    public bool JumpRoad = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,10 @@ public class SimpleRoad : MonoBehaviour
                 GameObject go = Instantiate(roadCube);
                 go.transform.parent = gameObject.transform;
                 go.transform.localPosition = new Vector3(i,0,length);
+                if(JumpRoad && length==0)
+                {
+                    go.layer = 18; // ObstacleGround layer 18
+                }
                // if((i+ length +2)%2 == 1)
                 {
                     if((i==-2 || i==2)&& (10+length) % 20 == 0)
@@ -29,7 +34,16 @@ public class SimpleRoad : MonoBehaviour
                     {
                         go.GetComponent<MeshRenderer>().material = sideColor;
                     }
-                    
+                    if ((i == -1 || i == 1) && (5 + length) % 20 == 0)
+                    {
+                        go.GetComponent<MeshRenderer>().material = sideColor;
+                    }
+                    if ((i == -1 || i == 1) && (15 + length) % 20 == 0)
+                    {
+                        go.GetComponent<MeshRenderer>().material = sideColor;
+                    }
+
+
                 }
             }
            
