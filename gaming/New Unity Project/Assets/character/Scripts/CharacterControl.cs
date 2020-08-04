@@ -144,18 +144,23 @@ public class CharacterControl : MonoBehaviour
             controller.Move(moveDirection * Time.deltaTime);
         }
 
-        if (pm.state == PuppetMaster.State.Alive && !sliding  &&!status.AnimationDeath)
+        if (pm.state == PuppetMaster.State.Alive  &&!status.AnimationDeath)
         {
-            if(controller.isGrounded)
+            //left right
+            float leftright = playerRoot.position.x + (Input.GetAxis("Horizontal") * LeftRightSpeed * Time.deltaTime);
+            leftright = Mathf.Clamp(leftright, -2, 2);
+            playerRoot.position = new Vector3(leftright, playerRoot.position.y, playerRoot.position.z);
+
+            if (controller.isGrounded && !sliding)
             {
                 jump += Time.deltaTime;
-                jump = Mathf.Clamp(jump,0,jumpDelayTime);
+                jump = Mathf.Clamp(jump, 0, jumpDelayTime);
 
                 animator.SetBool("jump", false);
                 moveDirection = new Vector3(0, 0, 1);
                 moveDirection = transform.TransformDirection(moveDirection);
                 moveDirection *= speed;
-                if (Input.GetButton("Jump") && jumpDelayTime==jump)
+                if ((Input.GetButton("Jump") || Input.GetKey(KeyCode.W)) && jumpDelayTime==jump)
                 {
                     moveDirection.y = jumpSpeed;
                     animator.SetBool("jump", true);
@@ -163,16 +168,14 @@ public class CharacterControl : MonoBehaviour
 
                 if (Input.GetKey(KeyCode.S))
                 {
+                    
                     sliding = true;
                     animator.SetBool("Slide", true);
                     StartCoroutine(SlideEnd());
                 }
                 FallTime = 0;
 
-                //left right
-                float leftright = playerRoot.position.x + (Input.GetAxis("Horizontal") * LeftRightSpeed * Time.deltaTime);
-                leftright = Mathf.Clamp(leftright, -2, 2);
-                playerRoot.position = new Vector3(leftright, playerRoot.position.y, playerRoot.position.z );
+                
 
             }
             else
