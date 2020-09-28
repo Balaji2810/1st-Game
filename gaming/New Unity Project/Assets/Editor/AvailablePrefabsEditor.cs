@@ -6,6 +6,7 @@ using UnityEditor;
 [CustomEditor(typeof(AvailablePrefabs))]
 public class AvailablePrefabsEditor : Editor
 {
+    [System.Obsolete]
     public override void OnInspectorGUI()
     {
         AvailablePrefabs availablePrefabs = (AvailablePrefabs)target;

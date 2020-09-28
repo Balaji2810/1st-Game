@@ -19,6 +19,7 @@ public class CameraControl : MonoBehaviour
 
     private PlayerStatus player;
     private bool init = true;
+    private bool afterDead = false;
 
     private Vector3 temp;
     // Start is called before the first frame update
@@ -51,9 +52,20 @@ public class CameraControl : MonoBehaviour
 
     }
 
+    public float deadDelayCameraMove = 1;
+    IEnumerator deadCamera(float delayTime)
+    {
+
+        yield return new WaitForSeconds(delayTime);
+
+        afterDead = true;
+
+
+    }
+
 
     // Update is called once per frame
-    void LateUpdate()
+    void FixedUpdate()
     {
 
         try
@@ -122,23 +134,34 @@ public class CameraControl : MonoBehaviour
                     // Smoothly rotate towards the target point.
                     //transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, LookAtSpeed * Time.deltaTime);
 
-                    //Camera move forward
-                    transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, transform.position.y, player.MovedDistance + (offset.z - offset.z)), 3 * Time.deltaTime);
-
-                    //Camera Ground level
-                    // transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, player.GroundLevel + offset.y, transform.position.z), Time.deltaTime * JumpSpeed);
-                    //camera Left Right move
-                    //transform.position = new Vector3(player.LeftRight+offset.x, transform.position.y, transform.position.z);
-                    if (player.BodyPart.position.x > 0.75)
+                    
+                    if(afterDead)
                     {
-                        transform.position = Vector3.Lerp(transform.position, new Vector3(player.BodyPart.position.x + offset.x, transform.position.y, transform.position.z), Time.deltaTime * 7.5f);
+                        //Camera move forward
+                        transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, transform.position.y, player.MovedDistance + (offset.z - offset.z)), 3 * Time.deltaTime);
 
+                        //Camera Ground level
+                        // transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, player.GroundLevel + offset.y, transform.position.z), Time.deltaTime * JumpSpeed);
+                        //camera Left Right move
+                        //transform.position = new Vector3(player.LeftRight+offset.x, transform.position.y, transform.position.z);
+
+                        if (player.BodyPart.position.x > 0.75)
+                        {
+                            transform.position = Vector3.Lerp(transform.position, new Vector3(player.BodyPart.position.x + offset.x, transform.position.y, transform.position.z), Time.deltaTime * 7.5f);
+
+                        }
+                        else
+                        {
+                            transform.position = Vector3.Lerp(transform.position, new Vector3(player.BodyPart.position.x - offset.x, transform.position.y, transform.position.z), Time.deltaTime * 7.5f);
+                        }
                     }
                     else
                     {
-                        transform.position = Vector3.Lerp(transform.position, new Vector3(player.BodyPart.position.x - offset.x, transform.position.y, transform.position.z), Time.deltaTime * 7.5f);
+                        StartCoroutine(deadCamera(deadDelayCameraMove));
                     }
-
+                    
+                    
+                   
 
                 }
             }

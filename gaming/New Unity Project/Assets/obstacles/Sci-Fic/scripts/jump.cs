@@ -5,7 +5,7 @@ using UnityEngine;
 public class jump : MonoBehaviour
 {
     private PlayerStatus player;
-    public Animation animation;
+    public new Animation animation;
 
     public float jumpForce;
     public float gravity;

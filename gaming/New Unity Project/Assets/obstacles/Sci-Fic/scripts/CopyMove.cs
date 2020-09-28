@@ -5,7 +5,7 @@ using UnityEngine;
 public class CopyMove : MonoBehaviour
 {
     private PlayerStatus player;
-    public Animation animation;
+    public new Animation animation;
 
     // Update is called once per frame
     void Update()

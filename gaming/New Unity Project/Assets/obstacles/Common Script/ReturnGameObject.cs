@@ -6,7 +6,7 @@ public class ReturnGameObject : MonoBehaviour
 {
     // Start is called before the first frame update
     private GameObject go;
-    public string name;
+    public new string name;
     void Start()
     {
         go = this.gameObject;
