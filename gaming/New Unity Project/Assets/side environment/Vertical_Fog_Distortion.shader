@@ -1,4 +1,4 @@
-﻿Shader "Unlit/Vertical_Fog_Distortion"
+﻿Shader "Unlit/Vertical_Fog_Distortion" //https://www.youtube.com/watch?v=q16aPykZa8Q Vertical Fog Distortion Shader by aramanamu
 {
 	Properties
 	{

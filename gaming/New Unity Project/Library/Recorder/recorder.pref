@@ -36,7 +36,7 @@ MonoBehaviour:
   m_Name: Movie
   m_EditorClassIdentifier: 
   enabled: 1
-  take: 10
+  take: 12
   captureEveryNthFrame: 1
   fileNameGenerator:
     m_Path:
@@ -56,7 +56,7 @@ MonoBehaviour:
   encoderColorDefinitionSelected: 0
   encoderCustomOptions: 
   m_ImageInputSelector:
-    m_Selected: camera360InputSettings
+    m_Selected: gameViewInputSettings
     gameViewInputSettings:
       m_OutputResolution:
         m_CustomWidth: 1024

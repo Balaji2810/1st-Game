@@ -409,7 +409,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 0
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -547,8 +547,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enable: 1
   slowDownFactor: 0.05
-  slowDownLength: 0.05
-  TimeConstant: 0.02
+  slowDownLength: 0.5
+  TimeConstant: 0.065
 --- !u!4 &1028548983
 Transform:
   m_ObjectHideFlags: 0
@@ -1315,7 +1315,7 @@ MonoBehaviour:
   JumpSpeed: 1
   LookAtSpeed: 2
   gameManager: {fileID: 899817128}
-  deadDelayCameraMove: 1
+  deadDelayCameraMove: 0.025
 --- !u!4 &1960034609
 Transform:
   m_ObjectHideFlags: 0

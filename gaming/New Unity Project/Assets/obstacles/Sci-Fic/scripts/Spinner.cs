@@ -24,12 +24,12 @@ public class Spinner : MonoBehaviour
         {
             SpinAngle = -1;
         }
-        ChangeInSpeed = Random.Range(-50, 50);
+        ChangeInSpeed = Random.Range(-150, 750);
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        gameObject.GetComponent<Rigidbody>().angularVelocity = SpinAngle *(Time.deltaTime*Angle*(ChangeInSpeed+speed));
+        gameObject.GetComponent<Rigidbody>().angularVelocity = SpinAngle *(Time.unscaledDeltaTime*Angle*(ChangeInSpeed+speed));
     }
 }

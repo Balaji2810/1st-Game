@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Angle: {x: -1, y: 0, z: 0}
-  speed: 250
+  speed: 500
   StartingAngle: {x: 1, y: 0, z: 0}
 --- !u!54 &7508365855845349894
 Rigidbody:
