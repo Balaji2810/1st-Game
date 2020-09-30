@@ -47,6 +47,14 @@ MonoBehaviour:
   outputFormat: 0
   videoBitRateMode: 2
   captureAlpha: 0
+  containerFormatSelected: 0
+  encoderSelected: 0
+  encoderPresetSelected: 0
+  encoderPresetSelectedName: 
+  encoderPresetSelectedOptions: 
+  encoderPresetSelectedSuffixes: 
+  encoderColorDefinitionSelected: 0
+  encoderCustomOptions: 
   m_ImageInputSelector:
     m_Selected: camera360InputSettings
     gameViewInputSettings:

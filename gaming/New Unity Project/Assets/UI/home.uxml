@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="main" style="flex-grow: 1; flex-direction: row; justify-content: space-between;">
+        <Style src="home.uss" />
+        <ui:VisualElement name="left" style="justify-content: space-between; align-items: stretch; margin-bottom: 25px; padding-bottom: 15px;">
+            <ui:VisualElement name="left_up">
+                <ui:Button name="settings" class="home_buttons" style="height: 45px; width: 45px; background-image: url(&apos;/Assets/UI/settings.png&apos;); -unity-slice-bottom: 0; -unity-slice-right: 0; -unity-slice-top: 0; -unity-slice-left: 0; -unity-background-scale-mode: stretch-to-fill; justify-content: flex-start;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="left_down">
+                <ui:Button name="shop" class="home_buttons" style="background-image: url(&apos;/Assets/UI/shop.png&apos;); height: 45px; width: 45px;" />
+                <ui:Button name="no_ads" class="home_buttons" style="width: 45px; background-image: url(&apos;/Assets/UI/no_ads2.png&apos;);" />
+                <ui:Button text="i" name="info" class="home_buttons" style="width: 45px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="right" style="flex-direction: column; margin-right: 0; justify-content: flex-end; align-items: stretch; margin-bottom: 25px; padding-bottom: 15px;">
+            <ui:Button text="Play" name="play" class="home_buttons" />
+            <ui:Button text="Assets" name="assets" class="home_buttons" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
