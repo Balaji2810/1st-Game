@@ -36,11 +36,11 @@ public class SimpleRoad : MonoBehaviour
                     }
                     if ((i == -1 || i == 1) && (5 + length) % 20 == 0)
                     {
-                        go.GetComponent<MeshRenderer>().material = sideColor;
+                        //go.GetComponent<MeshRenderer>().material = sideColor;
                     }
                     if ((i == -1 || i == 1) && (15 + length) % 20 == 0)
                     {
-                        go.GetComponent<MeshRenderer>().material = sideColor;
+                        //go.GetComponent<MeshRenderer>().material = sideColor;
                     }
 
 

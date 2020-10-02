@@ -171,7 +171,7 @@ public class CameraControl : MonoBehaviour
         }
         catch
         {
-            Debug.LogError("Camera");
+            Debug.Log("Camera");
         }
 
     }
