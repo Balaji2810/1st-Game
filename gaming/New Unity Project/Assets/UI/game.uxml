@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="top" style="flex-direction: column; align-items: stretch; justify-content: space-between;">
+        <Style src="home.uss" />
+        <ui:VisualElement name="top_left" style="flex-direction: row; justify-content: space-between;">
+            <ui:Button name="pause" class="home_buttons" style="width: 45px; background-image: url(&apos;/Assets/UI/pause.png&apos;); -unity-background-scale-mode: scale-to-fit; -unity-slice-left: 5; -unity-slice-top: 5; -unity-slice-right: 5; -unity-slice-bottom: 5;" />
+            <ui:Label text="5646366" name="points" class="score" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

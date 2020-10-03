@@ -146,6 +146,7 @@
     <Compile Include="Assets\Script\DeleteBlock.cs" />
     <Compile Include="Assets\Script\FileHandler.cs" />
     <Compile Include="Assets\Script\RoadGenerator.cs" />
+    <Compile Include="Assets\Script\ScoreCounter.cs" />
     <Compile Include="Assets\Script\TimeManager.cs" />
     <Compile Include="Assets\Script\UIPosition.cs" />
     <Compile Include="Assets\Script\water.cs" />
@@ -362,6 +363,7 @@
     <None Include="Assets\Particle Effect\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\DynamicFog\Resources\Shaders\DynamicFogCommon.cginc" />
     <None Include="Assets\DynamicFog\Resources\Shaders\DFRStandardShaderSolid.shader" />
+    <None Include="Assets\UI\game.uxml" />
     <None Include="Assets\DynamicFog\Resources\Shaders\DFGBasic.shader" />
     <None Include="Assets\DynamicFog\Resources\Shaders\DFOOrthogonal.shader" />
     <None Include="Assets\DynamicFog\Resources\Shaders\FogOfWar.shader" />

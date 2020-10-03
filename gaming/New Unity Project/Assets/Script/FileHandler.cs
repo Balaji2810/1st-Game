@@ -6,32 +6,75 @@ public class FileHandler : MonoBehaviour
 {
     // Start is called before the first frame update
     public string filename;
+    public string ScoreFile;
+    public string temp;
     public string password;
 
     
 
-    public void save(string key,string data)
+    public void save(string key,int data,string file="score")
     {
         var settings = new ES3Settings(ES3.EncryptionType.AES, password);
-        ES3.Save(key,data,filename,settings);
+        if(file == "score")
+        {
+            ES3.Save(key, data, ScoreFile, settings);
+        }
+        else
+        {
+            ES3.Save(key, data, temp, settings);
+        }
+        
     }
 
-    public bool exist(string key)
+    public bool exist(string key,string file= "object")
     {
         var settings = new ES3Settings(ES3.EncryptionType.AES, password);
-        return ES3.KeyExists(key, filename, settings);
+        if(file == "object")
+        {
+            return ES3.KeyExists(key, filename, settings);
+        }
+        else if(file == "score")
+        {
+            return ES3.KeyExists(key, ScoreFile, settings);
+        }
+        else
+        {
+            return ES3.KeyExists(key, temp, settings);
+        }
+        
     }
 
-    public string load(string key)
+    public int load(string key, string file = "score")
     {
         var settings = new ES3Settings(ES3.EncryptionType.AES, password);
-       return (string)ES3.Load(key,filename, settings);
+        if (file == "score")
+        {
+            return (int)ES3.Load(key, ScoreFile,0, settings);
+        }
+        else
+        {
+            return (int)ES3.Load(key, temp,0, settings);
+        }
+        
     }
+
 
     
-    public void deleteFile()
+    public void deleteFile(string file="object")
     {
         var settings = new ES3Settings(ES3.EncryptionType.AES, password);
-        ES3.DeleteFile(filename,settings);
+        if(file=="object")
+        {
+            ES3.DeleteFile(filename, settings);
+        }
+        else if (file == "score")
+        {
+            ES3.DeleteFile(ScoreFile, settings);
+        }
+        else if (file == "temp")
+        {
+            ES3.DeleteFile(temp, settings);
+        }
+
     }
 }

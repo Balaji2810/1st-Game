@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 762578151199370685}
   - component: {fileID: 762578151199370686}
   - component: {fileID: 762578151199370687}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 762578152028430745}
   - component: {fileID: 762578152028430746}
   - component: {fileID: 1836037733543977937}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: side_env
   m_TagString: Untagged
   m_Icon: {fileID: 0}
