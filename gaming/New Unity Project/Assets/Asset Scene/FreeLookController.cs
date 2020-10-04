@@ -1,28 +1,50 @@
-﻿using System.Collections;
+﻿using Cinemachine;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class FreeLookController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float TouchSensitivity_x = 10f;
+    public float TouchSensitivity_y = 10f;
+
+    // Use this for initialization
     void Start()
     {
-        
+        CinemachineCore.GetInputAxis = HandleAxisInputDelegate;
     }
 
-    private Touch touch;
-    public float speed;
-    // Update is called once per frame
-    void Update()
+    float HandleAxisInputDelegate(string axisName)
     {
-        if(Input.touchCount>0)
+        switch (axisName)
         {
-            touch = Input.GetTouch(0);
 
-            if(touch.phase == TouchPhase.Moved)
-            {
-                print(touch.deltaPosition);
-            }
+            case "Mouse X":
+
+                if (Input.touchCount > 0)
+                {
+                    return Input.touches[0].deltaPosition.x / TouchSensitivity_x;
+                }
+                else
+                {
+                    return Input.GetAxis(axisName);
+                }
+
+            case "Mouse Y":
+                if (Input.touchCount > 0)
+                {
+                    return Input.touches[0].deltaPosition.y / TouchSensitivity_y;
+                }
+                else
+                {
+                    return Input.GetAxis(axisName);
+                }
+
+            default:
+                Debug.LogError("Input <" + axisName + "> not recognyzed.", this);
+                break;
         }
+
+        return 0f;
     }
 }
