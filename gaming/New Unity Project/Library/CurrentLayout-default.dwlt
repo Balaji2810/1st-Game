@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: Builder
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -72,7 +72,7 @@ MonoBehaviour:
     height: 635
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 22}
+  m_ActualView: {fileID: 11}
   m_Panes:
   - {fileID: 20}
   - {fileID: 22}
@@ -81,7 +81,7 @@ MonoBehaviour:
   - {fileID: 14}
   - {fileID: 13}
   - {fileID: 11}
-  m_Selected: 1
+  m_Selected: 6
   m_LastSelected: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 231, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 42
+  controlID: 102
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -186,7 +186,7 @@ MonoBehaviour:
   m_MinSize: {x: 609, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 122
+  controlID: 72
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -319,7 +319,7 @@ MonoBehaviour:
     m_ControlHash: 1412526313
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
-  m_LastInspectedObjectInstanceID: 17020
+  m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
 --- !u!114 &13
 MonoBehaviour:
@@ -374,7 +374,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 17020
+  m_LastSelectedObjectID: 16960
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -504,20 +504,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Electric/ProceduralLightning/Prefab/Scripts
+    - Assets/Script
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Electric/ProceduralLightning/Prefab/Scripts
+  - Assets/Script
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 143}
-    m_SelectedIDs: 88690000
-    m_LastClickedID: 27016
-    m_ExpandedIDs: 00000000205e0000225e0000245e0000325e00008468000000ca9a3b
+    scrollPos: {x: 0, y: 426}
+    m_SelectedIDs: 485e0000
+    m_LastClickedID: 24136
+    m_ExpandedIDs: 00000000205e0000225e0000245e00002e5e0000345e0000565e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -668,9 +668,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 7c420000
-      m_LastClickedID: 17020
-      m_ExpandedIDs: 6008fcff32fbffff56420000704200007c42000096430000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: f213fdff3a14fdff6a72fdff32fbffff5642000098420000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -730,9 +730,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -5.597729, y: -0.42393902, z: 4.373031}
+    m_Target: {x: 1.4649917, y: -1.950109, z: -10.905485}
     speed: 2
-    m_Value: {x: -5.597729, y: -0.42393902, z: 4.373031}
+    m_Value: {x: 1.4649917, y: -1.950109, z: -10.905485}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -778,9 +778,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.18137501, y: -0.51335496, z: 0.1120115, w: 0.83135164}
+    m_Target: {x: -0.009717012, y: -0.9849528, z: 0.16280068, w: -0.058559455}
     speed: 2
-    m_Value: {x: 0.18136393, y: -0.51332355, z: 0.11200465, w: 0.8313008}
+    m_Value: {x: -0.009716236, y: -0.9848741, z: 0.16278768, w: -0.05855478}
   m_Size:
     m_Target: 9.939372
     speed: 2

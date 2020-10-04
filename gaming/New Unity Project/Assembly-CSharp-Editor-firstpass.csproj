@@ -751,6 +751,12 @@
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/Balaji/Documents/GitHub/1st-Game/gaming/New Unity Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>C:/Users/Balaji/Documents/GitHub/1st-Game/gaming/New Unity Project/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>C:/Users/Balaji/Documents/GitHub/1st-Game/gaming/New Unity Project/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">

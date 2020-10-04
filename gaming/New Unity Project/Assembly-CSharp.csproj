@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Asset Scene\FreeLookController.cs" />
     <Compile Include="Assets\DynamicFog\Demos\Demo1 Static\Demo1.cs" />
     <Compile Include="Assets\DynamicFog\Demos\Demo2 FirstPerson Desktop\Demo2.cs" />
     <Compile Include="Assets\DynamicFog\Demos\Demo2 FirstPerson Desktop\RotatingSign.cs" />
@@ -989,6 +990,12 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/Balaji/Documents/GitHub/1st-Game/gaming/New Unity Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>C:/Users/Balaji/Documents/GitHub/1st-Game/gaming/New Unity Project/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>C:/Users/Balaji/Documents/GitHub/1st-Game/gaming/New Unity Project/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
