@@ -278,8 +278,8 @@
     <Compile Include="Assets\environment_generator.cs" />
     <Compile Include="Assets\obstacles\Common Script\ReturnGameObject.cs" />
     <Compile Include="Assets\obstacles\Common Script\position.cs" />
-    <Compile Include="Assets\obstacles\Sci-Fic\Wooden Block\Scripts\WoodenBlock.cs" />
-    <Compile Include="Assets\obstacles\Sci-Fic\Wooden Dummy\Scripts\WoodenDummy.cs" />
+    <Compile Include="Assets\obstacles\Sci-Fic\Spin Way Block\Scripts\WoodenDummy.cs" />
+    <Compile Include="Assets\obstacles\Sci-Fic\Way Block\Scripts\WoodenBlock.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\CopyMove.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\DoubleBarrels.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\ElectricRod.cs" />

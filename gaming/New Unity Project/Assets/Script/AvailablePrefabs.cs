@@ -107,7 +107,7 @@ public class AvailablePrefabs : MonoBehaviour
         }
         catch
         {
-            Debug.LogError("err");
+            
             File.deleteFile();
             return getObjectDetails(type);
         }

@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 public class AssetUIRenderer : MonoBehaviour
 {
     public PanelRenderer AssetUI;
-
+    public GameObject Asset;
 
     private void OnEnable()
     {
@@ -17,14 +17,17 @@ public class AssetUIRenderer : MonoBehaviour
     }
 
 
-    private Label key,items;
+    private Label key,items,points,cost;
 
     private int keyIndex, itemIndex;
 
     public AssetManager assetManager;
+    public AvailablePrefabs AP;
 
     Dictionary<string, List<string>> AllAssets;
     List<string> keys;
+
+    string previousChild, currentChild;
 
     // Start is called before the first frame update
     void Start()
@@ -32,13 +35,14 @@ public class AssetUIRenderer : MonoBehaviour
         keyIndex = 0;
         keys = assetManager.keys;
         AllAssets = assetManager.getAllAssets();
+        previousChild = AllAssets[keys[0]][0];
         getKey(keyIndex);
     }
 
     string key_text, items_text;
     void getKey(int index)
     {
-        print((-1) % 8);
+        
         key.text = keys[index];
        
         itemIndex = 0;
@@ -48,13 +52,16 @@ public class AssetUIRenderer : MonoBehaviour
     void getItem(string key,int i_index)
     {
         items.text = AllAssets[key][i_index];
+
+       
+       Asset.transform.Find(previousChild).gameObject.SetActive(false);
+       previousChild = items.text;
+       points.text = AP.AllObjectValues[previousChild].points.ToString();
+       cost.text = AP.AllObjectValues[previousChild].cost.ToString();
+       Asset.transform.Find(previousChild).gameObject.SetActive(true);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
     int mod(int x, int m)
     {
@@ -68,6 +75,8 @@ public class AssetUIRenderer : MonoBehaviour
 
         key = root.Q<Label>("key_mid_lable");
         items = root.Q<Label>("item_mid_lable");
+        points = root.Q<Label>("points");
+        cost = root.Q<Label>("cost");
 
         var keyLeft = root.Q<Button>("key_left_button");
         if (keyLeft != null)
