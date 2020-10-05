@@ -6,7 +6,7 @@ public class walking : MonoBehaviour
 {
 
 
-    void Start()
+    void start()
     {
         StartCoroutine(delay(Random.Range(0.001f, 1.999f)));
 

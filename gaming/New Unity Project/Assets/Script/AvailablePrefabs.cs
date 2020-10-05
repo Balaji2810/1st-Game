@@ -159,7 +159,7 @@ public class AvailablePrefabs : MonoBehaviour
 
     public Dictionary<string, data> AllObjectValues;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         AllObjectValues = getObjectDetails(3);
         

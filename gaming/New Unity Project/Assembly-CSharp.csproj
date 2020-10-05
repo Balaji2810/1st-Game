@@ -335,6 +335,7 @@
     <None Include="Assets\DynamicFog\Resources\Shaders\DFRStandardShader.shader" />
     <None Include="Assets\UI\Asset.uxml" />
     <None Include="Assets\Particle Effect\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\UI\Asset_info.uxml" />
     <None Include="Assets\Particle Effect\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\UIERuntime\Samples\RepeatGame\Resources\RepeatGame\RepeatGame.uss" />
     <None Include="Assets\DynamicFog\Resources\Shaders\DFGDesktopPlusOrthogonal.shader" />

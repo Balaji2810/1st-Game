@@ -129,7 +129,7 @@ FixedJoint:
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
   m_MassScale: 10
-  m_ConnectedMassScale: 1
+  m_ConnectedMassScale: 10
 --- !u!65 &3057471518210334081
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -738,7 +738,7 @@ FixedJoint:
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
   m_MassScale: 10
-  m_ConnectedMassScale: 1
+  m_ConnectedMassScale: 10
 --- !u!65 &3057471518664516418
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1685,7 +1685,7 @@ FixedJoint:
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
   m_MassScale: 10
-  m_ConnectedMassScale: 1
+  m_ConnectedMassScale: 10
 --- !u!65 &3057471519984115436
 BoxCollider:
   m_ObjectHideFlags: 0

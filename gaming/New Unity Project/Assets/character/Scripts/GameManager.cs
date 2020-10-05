@@ -4,6 +4,7 @@ using UnityEngine;
 using RootMotion.Dynamics;
 using Unity.UIElements.Runtime;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -73,7 +74,16 @@ public class GameManager : MonoBehaviour
             };
         }
 
-     
+        var assets = root.Q<Button>("assets");
+        if (assets != null)
+        {
+            assets.clickable.clicked += () =>
+            {
+                SceneManager.LoadScene("Asset", LoadSceneMode.Single);
+            };
+        }
+
+
 
         return null;
     }

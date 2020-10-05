@@ -31,9 +31,7 @@
                     "type": 3
                 },
                 "m_ActiveStyleSheet": {
-                    "fileID": 7433441132597879392,
-                    "guid": "c64f7eb2d38c1bb41ad4f668e3f10c8a",
-                    "type": 3
+                    "instanceID": 0
                 },
                 "m_Settings": {
                     "UxmlGuid": "38136e1611e9d7046abe0ae68906d0e0",
@@ -43,10 +41,10 @@
                     "CanvasWidth": 280,
                     "CanvasHeight": 450,
                     "MatchGameView": false,
-                    "ZoomScale": 1.0,
+                    "ZoomScale": 0.75,
                     "PanOffset": {
-                        "x": 34.0,
-                        "y": 47.5
+                        "x": 59.499977111816409,
+                        "y": 104.875
                     },
                     "ColorModeBackgroundOpacity": 1.0,
                     "ImageModeCanvasBackgroundOpacity": 1.0,

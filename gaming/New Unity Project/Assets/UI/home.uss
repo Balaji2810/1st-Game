@@ -73,7 +73,7 @@
 }
 
 .transperent_back {
-    background-color: rgba(0, 0, 0, 0.21);
+    background-color: rgba(0, 0, 0, 0.64);
 }
 
 .asset_label {

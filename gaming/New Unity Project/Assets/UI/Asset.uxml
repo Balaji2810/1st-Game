@@ -1,12 +1,12 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
-    <ui:VisualElement name="outter" style="flex-grow: 1; justify-content: space-between; margin-bottom: 0; padding-right: 0; padding-left: 0;">
+    <ui:VisualElement name="outter" style="flex-grow: 1; justify-content: space-between; margin-bottom: 0; padding-right: 0; padding-left: 0; display: flex;">
         <Style src="home.uss" />
         <ui:VisualElement name="top">
             <ui:Button text="X" name="goto_home" class="home_buttons" style="width: 45px; -unity-font-style: bold;" />
         </ui:VisualElement>
         <ui:VisualElement name="bottom">
             <ui:VisualElement style="flex-direction: row; justify-content: space-between; padding-right: 20px; padding-left: 0;">
-                <ui:Button text="i" class="home_buttons" style="width: 45px; -unity-font-style: bold;" />
+                <ui:Button text="i" name="info_button" class="home_buttons" style="width: 45px; -unity-font-style: bold;" />
                 <ui:VisualElement style="flex-direction: row; justify-content: flex-end;">
                     <ui:Label text="Points : " style="font-size: 25px; color: rgb(255, 255, 255); -unity-text-align: middle-left; -unity-font: url(&apos;/Assets/Fonts/Roboto/Roboto-Light.ttf&apos;);" />
                     <ui:Label text="5" name="points" style="font-size: 25px; -unity-text-align: middle-left; color: rgb(255, 255, 255); -unity-font: url(&apos;/Assets/Fonts/Roboto/Roboto-Light.ttf&apos;);" />
@@ -20,9 +20,9 @@
                     <ui:Button text="Buy" name="buy_button" class="buy_button_uss" style="margin-left: 0; margin-right: 0; margin-top: 10px; margin-bottom: 10px;" />
                 </ui:VisualElement>
                 <ui:VisualElement name="mid" style="justify-content: center; align-items: center; margin-bottom: 0;">
-                    <ui:Label text="Label" name="key_mid_lable" style="color: rgb(255, 255, 255); font-size: 25px; -unity-text-align: middle-center; height: 45px; flex-grow: 1; -unity-font: url(&apos;/Assets/Fonts/Roboto/Roboto-Light.ttf&apos;); white-space: normal; padding-left: 2px; padding-top: 0; padding-bottom: 0; border-bottom-width: 0; border-bottom-color: rgba(255, 255, 255, 255); border-left-width: 0; border-right-width: 0; border-top-width: 0; align-items: center; justify-content: center; margin-bottom: 10px; margin-top: 10px;" />
-                    <ui:Label text="Label" name="item_mid_lable" focusable="false" style="height: 45px; -unity-text-align: middle-center; font-size: 25px; color: rgb(255, 255, 255); flex-grow: 1; -unity-font: url(&apos;/Assets/Fonts/Roboto/Roboto-Light.ttf&apos;); white-space: normal; padding-left: 2px; padding-top: 0; padding-bottom: 0; border-bottom-width: 0; border-bottom-color: rgba(255, 255, 255, 255); border-left-width: 0; border-right-width: 0; border-top-width: 0; margin-top: 10px; margin-bottom: 10px;" />
-                    <ui:Label text="Active" style="font-size: 25px; color: rgb(255, 255, 255); -unity-text-align: middle-center; justify-content: center; height: 45px; flex-grow: 1; -unity-font: url(&apos;/Assets/Fonts/Roboto/Roboto-Light.ttf&apos;); padding-left: 2px; padding-top: 0; padding-bottom: 0; border-bottom-width: 0; border-bottom-color: rgba(255, 255, 255, 255); border-left-width: 0; border-right-width: 0; border-top-width: 0; white-space: normal; margin-top: 10px; margin-bottom: 10px;" />
+                    <ui:Label text="Label" name="key_mid_lable" style="color: rgb(255, 255, 255); font-size: 25px; -unity-text-align: middle-center; height: 45px; flex-grow: 1; -unity-font: url(&apos;/Assets/Fonts/Roboto/Roboto-Light.ttf&apos;); white-space: normal; padding-left: 2px; padding-top: 0; padding-bottom: 0; border-bottom-width: 0; border-bottom-color: rgb(255, 255, 255); border-left-width: 0; border-right-width: 0; border-top-width: 0; align-items: center; justify-content: center; margin-bottom: 10px; margin-top: 10px;" />
+                    <ui:Label text="Label" name="item_mid_lable" focusable="false" style="height: 45px; -unity-text-align: middle-center; font-size: 25px; color: rgb(255, 255, 255); flex-grow: 1; -unity-font: url(&apos;/Assets/Fonts/Roboto/Roboto-Light.ttf&apos;); white-space: normal; padding-left: 2px; padding-top: 0; padding-bottom: 0; border-bottom-width: 0; border-bottom-color: rgb(255, 255, 255); border-left-width: 0; border-right-width: 0; border-top-width: 0; margin-top: 10px; margin-bottom: 10px;" />
+                    <ui:Label text="Active" style="font-size: 25px; color: rgb(255, 255, 255); -unity-text-align: middle-center; justify-content: center; height: 45px; flex-grow: 1; -unity-font: url(&apos;/Assets/Fonts/Roboto/Roboto-Light.ttf&apos;); padding-left: 2px; padding-top: 0; padding-bottom: 0; border-bottom-width: 0; border-bottom-color: rgb(255, 255, 255); border-left-width: 0; border-right-width: 0; border-top-width: 0; white-space: normal; margin-top: 10px; margin-bottom: 10px;" />
                     <ui:Label text="99999" name="cost" style="font-size: 25px; color: rgb(255, 255, 255); -unity-text-align: middle-center; height: 45px; flex-grow: 1; justify-content: space-between; -unity-font: url(&apos;/Assets/Fonts/Roboto/Roboto-Light.ttf&apos;); padding-left: 2px; padding-top: 0; padding-bottom: 0; margin-top: 10px; margin-bottom: 10px;" />
                 </ui:VisualElement>
                 <ui:VisualElement name="left" style="justify-content: space-between; align-items: center; -unity-text-align: middle-left; margin-bottom: 0;">
