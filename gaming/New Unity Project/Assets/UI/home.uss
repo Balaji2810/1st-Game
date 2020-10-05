@@ -31,19 +31,15 @@
     margin-top: 10px;
 }
 
-.home_buttons:active {
-    border-left-color: rgb(0, 0, 0);
-    border-right-color: rgb(0, 0, 0);
-    border-top-color: rgb(0, 0, 0);
-    border-bottom-color: rgb(0, 0, 0);
-    background-color: rgb(0, 0, 0);
-}
-
 .home_buttons:hover {
     border-left-color: rgb(0, 0, 0);
     border-right-color: rgb(0, 0, 0);
     border-top-color: rgb(0, 0, 0);
     border-bottom-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    -unity-font-style: bold;
+    background-color: rgb(255, 255, 255);
+    -unity-background-image-tint-color: rgb(0, 0, 0);
 }
 
 .score {
@@ -62,4 +58,93 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     -unity-font: url('/Assets/Fonts/Roboto/Roboto-Light.ttf');
+}
+
+.side_keys {
+    width: 45px;
+    height: 45px;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.transperent_back {
+    background-color: rgba(0, 0, 0, 0.21);
+}
+
+.asset_label {
+    height: 45px;
+    -unity-text-align: middle-left;
+    font-size: 400%;
+    color: rgb(255, 255, 255);
+    flex-grow: 1;
+}
+
+.buy_button_uss {
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 30px;
+    width: 75px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    height: 45px;
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    -unity-font-style: bold;
+}
+
+.buy_button_uss:hover {
+    color: rgb(0, 0, 0);
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    -unity-font-style: bold;
+}
+
+.side_keys:hover {
+    background-color: rgb(255, 255, 255);
+    -unity-background-image-tint-color: rgb(0, 0, 0);
+}
+
+.side_keys:active {
+    background-color: rgb(142, 142, 142);
+    -unity-background-image-tint-color: rgb(0, 0, 0);
+}
+
+.home_buttons:active {
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+    background-color: rgb(0, 0, 0);
+    -unity-background-image-tint-color: rgb(202, 202, 202);
+}
+
+.buy_button_uss:active {
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
 }

@@ -63,7 +63,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Asset Scene\AssetManager.cs" />
     <Compile Include="Assets\Asset Scene\FreeLookController.cs" />
+    <Compile Include="Assets\AssetUIRenderer.cs" />
     <Compile Include="Assets\DynamicFog\Demos\Demo1 Static\Demo1.cs" />
     <Compile Include="Assets\DynamicFog\Demos\Demo2 FirstPerson Desktop\Demo2.cs" />
     <Compile Include="Assets\DynamicFog\Demos\Demo2 FirstPerson Desktop\RotatingSign.cs" />
@@ -331,6 +333,7 @@
     <None Include="Assets\Electric\ProceduralLightning\Prefab\Materials\LightningBoltShaderMesh.shader" />
     <None Include="Assets\water effect\LowPolyWater_Pack\LowPoly Island\Credits.txt" />
     <None Include="Assets\DynamicFog\Resources\Shaders\DFRStandardShader.shader" />
+    <None Include="Assets\UI\Asset.uxml" />
     <None Include="Assets\Particle Effect\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
     <None Include="Assets\Particle Effect\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\UIERuntime\Samples\RepeatGame\Resources\RepeatGame\RepeatGame.uss" />
@@ -922,6 +925,9 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Balaji/Documents/GitHub/1st-Game/gaming/New Unity Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>C:/Users/Balaji/Documents/GitHub/1st-Game/gaming/New Unity Project/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.ProGrids">
       <HintPath>C:/Users/Balaji/Documents/GitHub/1st-Game/gaming/New Unity Project/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
     </Reference>
@@ -976,6 +982,9 @@
     <Reference Include="Unity.2D.Tilemap.Editor">
       <HintPath>C:/Users/Balaji/Documents/GitHub/1st-Game/gaming/New Unity Project/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>C:/Users/Balaji/Documents/GitHub/1st-Game/gaming/New Unity Project/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>C:/Users/Balaji/Documents/GitHub/1st-Game/gaming/New Unity Project/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
@@ -990,12 +999,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/Balaji/Documents/GitHub/1st-Game/gaming/New Unity Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Cinemachine">
-      <HintPath>C:/Users/Balaji/Documents/GitHub/1st-Game/gaming/New Unity Project/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>C:/Users/Balaji/Documents/GitHub/1st-Game/gaming/New Unity Project/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

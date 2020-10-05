@@ -761,6 +761,9 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Balaji/Documents/GitHub/1st-Game/gaming/New Unity Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>C:/Users/Balaji/Documents/GitHub/1st-Game/gaming/New Unity Project/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.ProGrids">
       <HintPath>C:/Users/Balaji/Documents/GitHub/1st-Game/gaming/New Unity Project/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
     </Reference>
@@ -815,6 +818,9 @@
     <Reference Include="Unity.2D.Tilemap.Editor">
       <HintPath>C:/Users/Balaji/Documents/GitHub/1st-Game/gaming/New Unity Project/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>C:/Users/Balaji/Documents/GitHub/1st-Game/gaming/New Unity Project/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>C:/Users/Balaji/Documents/GitHub/1st-Game/gaming/New Unity Project/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
@@ -829,12 +835,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/Balaji/Documents/GitHub/1st-Game/gaming/New Unity Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Cinemachine">
-      <HintPath>C:/Users/Balaji/Documents/GitHub/1st-Game/gaming/New Unity Project/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>C:/Users/Balaji/Documents/GitHub/1st-Game/gaming/New Unity Project/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

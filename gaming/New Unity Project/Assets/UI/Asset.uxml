@@ -1,0 +1,37 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="outter" style="flex-grow: 1; justify-content: space-between; margin-bottom: 0; padding-right: 0; padding-left: 0;">
+        <Style src="home.uss" />
+        <ui:VisualElement name="top">
+            <ui:Button text="X" name="goto_home" class="home_buttons" style="width: 45px; -unity-font-style: bold;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="bottom">
+            <ui:VisualElement style="flex-direction: row; justify-content: space-between; padding-right: 20px; padding-left: 0;">
+                <ui:Button text="i" class="home_buttons" style="width: 45px; -unity-font-style: bold;" />
+                <ui:VisualElement style="flex-direction: row; justify-content: flex-end;">
+                    <ui:Label text="Points : " style="font-size: 30px; color: rgb(255, 255, 255); -unity-text-align: middle-left; -unity-font: url(&apos;/Assets/Fonts/Roboto/Roboto-Light.ttf&apos;);" />
+                    <ui:Label text="5" name="points" style="font-size: 30px; -unity-text-align: middle-left; color: rgb(255, 255, 255); -unity-font: url(&apos;/Assets/Fonts/Roboto/Roboto-Light.ttf&apos;);" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="transperent_back" style="flex-direction: row-reverse; align-items: center; justify-content: space-between; padding-bottom: 20px; margin-bottom: 10px; padding-right: 20px; padding-left: 20px;">
+                <ui:VisualElement name="right" style="justify-content: space-between; align-items: center; margin-bottom: 0;">
+                    <ui:Button name="key_right_button" class="side_keys" style="background-image: url(&apos;/Assets/UI/Right button.png&apos;); align-items: center;" />
+                    <ui:Button name="item_right_button" class="side_keys" style="background-image: url(&apos;/Assets/UI/Right button.png&apos;); align-items: center;" />
+                    <ui:Button name="active_button" style="background-color: rgba(93, 93, 93, 0); background-image: url(&apos;/Assets/UI/off button.png&apos;); -unity-slice-left: 3; -unity-slice-top: 3; -unity-slice-right: 3; -unity-slice-bottom: 3; align-items: center; justify-content: center; height: 45px; width: 45px;" />
+                    <ui:Button text="Buy" name="buy_button" class="buy_button_uss" />
+                </ui:VisualElement>
+                <ui:VisualElement name="mid" style="justify-content: center; align-items: center; margin-bottom: 0;">
+                    <ui:Label text="Label" name="key_mid_lable" style="color: rgb(255, 255, 255); font-size: 30px; -unity-text-align: middle-left; height: 50px; flex-grow: 1; -unity-font: url(&apos;/Assets/Fonts/Roboto/Roboto-Light.ttf&apos;);" />
+                    <ui:Label text="Label" name="item_mid_lable" focusable="false" style="height: 45px; -unity-text-align: middle-center; font-size: 30px; color: rgb(255, 255, 255); flex-grow: 1; -unity-font: url(&apos;/Assets/Fonts/Roboto/Roboto-Light.ttf&apos;); white-space: normal;" />
+                    <ui:Label text="Active" style="font-size: 30px; color: rgb(255, 255, 255); -unity-text-align: middle-center; justify-content: center; height: 45px; flex-grow: 1; -unity-font: url(&apos;/Assets/Fonts/Roboto/Roboto-Light.ttf&apos;);" />
+                    <ui:Label text="99999" name="cost" style="font-size: 30px; color: rgb(255, 255, 255); -unity-text-align: middle-left; height: 50px; flex-grow: 1; justify-content: space-between; -unity-font: url(&apos;/Assets/Fonts/Roboto/Roboto-Light.ttf&apos;);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="left" style="justify-content: space-between; align-items: center; -unity-text-align: middle-left; margin-bottom: 0;">
+                    <ui:Button name="key_left_button" class="side_keys" style="align-items: center; background-image: url(&apos;/Assets/UI/Left button.png&apos;);" />
+                    <ui:Button name="item_left_button" class="side_keys" style="background-image: url(&apos;/Assets/UI/Left button.png&apos;); align-items: center;" />
+                    <ui:VisualElement style="flex-direction: row; justify-content: center; align-items: center; flex-grow: 0; width: 45px; height: 45px;" />
+                    <ui:Label text="Cost" style="font-size: 30px; color: rgb(255, 255, 255); -unity-text-align: middle-left; justify-content: space-between; height: 45px; align-items: center; -unity-font: url(&apos;/Assets/Fonts/Roboto/Roboto-Light.ttf&apos;);" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
