@@ -3,7 +3,7 @@
         <Style src="home.uss" />
         <ui:VisualElement name="left" style="justify-content: space-between; align-items: stretch; margin-bottom: 25px; padding-bottom: 15px;">
             <ui:VisualElement name="left_up">
-                <ui:Button name="settings" class="home_buttons" style="height: 45px; width: 45px; background-image: url(&apos;/Assets/UI/settings.png&apos;); -unity-slice-bottom: 0; -unity-slice-right: 0; -unity-slice-top: 0; -unity-slice-left: 0; -unity-background-scale-mode: stretch-to-fill; justify-content: flex-start;" />
+                <ui:Button name="settings" class="home_buttons" style="height: 100%; width: 100%; background-image: url(&apos;/Assets/UI/settings.png&apos;); -unity-slice-bottom: 0; -unity-slice-right: 0; -unity-slice-top: 0; -unity-slice-left: 0; -unity-background-scale-mode: stretch-to-fill; justify-content: flex-start;" />
             </ui:VisualElement>
             <ui:VisualElement name="left_down">
                 <ui:Button name="shop" class="home_buttons" style="background-image: url(&apos;/Assets/UI/shop.png&apos;); height: 45px; width: 45px;" />

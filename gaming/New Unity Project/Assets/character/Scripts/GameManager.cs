@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     public FileHandler File;
     public PanelRenderer m_MainMenuScreen;
     public PanelRenderer m_GameScreen;
+    public CharacterFix fix;
+    public GameObject ball;
 
 
     private Label currentPoints;
@@ -112,6 +114,8 @@ public class GameManager : MonoBehaviour
     private void StartRound()
     {
         File.deleteFile("temp");
+        fix.FixCharacter();
+        Destroy(ball);
         Startgame = true;
         StartCoroutine(TransitionScreens(m_MainMenuScreen, m_GameScreen));
     }

@@ -20,7 +20,11 @@ public class ScoreCounter : MonoBehaviour
             string name = other.gameObject.name.Replace("(Clone)", "");
             
             int currentPoints = (int)File.load("points", "temp");
-            File.save("points", ap.AllObjectValues[name].points + currentPoints,"temp"); 
+            if(ap.AllObjectValues.ContainsKey(name))
+            {
+                File.save("points", ap.AllObjectValues[name].points + currentPoints, "temp");
+            }
+            
         }
         else
         {

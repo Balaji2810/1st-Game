@@ -24,7 +24,7 @@ public class Spinner : MonoBehaviour
         {
             SpinAngle = -1;
         }
-        ChangeInSpeed = Random.Range(500, 850);
+        ChangeInSpeed = Random.Range(400, 950);
     }
 
     // Update is called once per frame

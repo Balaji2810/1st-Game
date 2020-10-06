@@ -66,6 +66,7 @@
     <Compile Include="Assets\Asset Scene\AssetManager.cs" />
     <Compile Include="Assets\Asset Scene\FreeLookController.cs" />
     <Compile Include="Assets\AssetUIRenderer.cs" />
+    <Compile Include="Assets\CharacterFix.cs" />
     <Compile Include="Assets\DynamicFog\Demos\Demo1 Static\Demo1.cs" />
     <Compile Include="Assets\DynamicFog\Demos\Demo2 FirstPerson Desktop\Demo2.cs" />
     <Compile Include="Assets\DynamicFog\Demos\Demo2 FirstPerson Desktop\RotatingSign.cs" />
@@ -157,6 +158,8 @@
     <Compile Include="Assets\SlowMotionController\Demo\Movement.cs" />
     <Compile Include="Assets\SlowMotionController\Scripts\SingletonMonoBehavior.cs" />
     <Compile Include="Assets\SlowMotionController\Scripts\SlowMotionController.cs" />
+    <Compile Include="Assets\ThrowBall\BallDestroy.cs" />
+    <Compile Include="Assets\ThrowBall\ThrowBall.cs" />
     <Compile Include="Assets\UIERuntime\Samples\RepeatGame\RepeatGame.cs" />
     <Compile Include="Assets\UIERuntime\Samples\TaskList\TaskList.cs" />
     <Compile Include="Assets\UIERuntime\Samples\TouchMove\TouchMove.cs" />
