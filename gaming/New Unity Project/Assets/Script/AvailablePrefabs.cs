@@ -9,7 +9,7 @@ public class AvailablePrefabs : MonoBehaviour
     [Serializable]
     public struct Object
     {
-        public enum Status { Not_Owned = 0, active = 1, deactive = 2 };
+        public enum Status { not_owned = 0, active = 1, deactive = 2,disabled=3 };
         public GameObject go;
         public Status status;
         public string name;
@@ -165,10 +165,5 @@ public class AvailablePrefabs : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    public void Score(string name)
-    {
-        print(name);
-        
-    }
+    
 }

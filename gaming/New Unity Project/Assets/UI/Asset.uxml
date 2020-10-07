@@ -4,7 +4,7 @@
         <ui:VisualElement name="top" style="padding-left: 2.5%; padding-right: 2.5%; padding-top: 2.5%; padding-bottom: 2.5%;">
             <ui:Button text="X" name="goto_home" class="home_buttons" style="width: 45px; -unity-font-style: bold; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
         </ui:VisualElement>
-        <ui:VisualElement name="bottom" style="padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;">
+        <ui:VisualElement name="bottom" style="padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; margin-top: 0;">
             <ui:VisualElement style="flex-direction: row; justify-content: space-between; padding-right: 2.5%; padding-left: 2.5%; padding-top: 2.5%; padding-bottom: 1%;">
                 <ui:Button text="i" name="info_button" class="home_buttons" style="width: 45px; -unity-font-style: bold; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
                 <ui:VisualElement style="flex-direction: row; justify-content: flex-end; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;">
@@ -13,25 +13,38 @@
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement class="transperent_back" style="flex-direction: row-reverse; align-items: center; justify-content: space-between; padding-bottom: 2.5%; margin-bottom: 0; padding-right: 2.5%; padding-left: 2.5%; margin-left: 0; margin-right: 0; margin-top: 0; padding-top: 0;">
-                <ui:VisualElement name="right" style="justify-content: space-between; align-items: center; margin-bottom: 0;">
+                <ui:VisualElement name="right" style="justify-content: space-between; align-items: center;">
                     <ui:Button name="key_right_button" class="side_keys padding" style="background-image: url(&apos;/Assets/UI/Right button.png&apos;); align-items: center;" />
                     <ui:Button name="item_right_button" class="side_keys padding" style="background-image: url(&apos;/Assets/UI/Right button.png&apos;); align-items: center;" />
-                    <ui:Button name="active_button" class="side_keys padding" style="align-items: center; justify-content: center; height: 45px; width: 45px; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; background-image: url(&apos;/Assets/UI/off button.png&apos;);" />
+                    <ui:Button name="active_button" class="side_keys padding" style="align-items: center; justify-content: center; height: 45px; width: 45px; background-image: url(&apos;/Assets/UI/off button.png&apos;);" />
                     <ui:Button text="Buy" name="buy_button" class="buy_button_uss padding" />
                 </ui:VisualElement>
-                <ui:VisualElement name="mid" style="justify-content: center; align-items: center; margin-bottom: 0; flex-grow: 1;">
-                    <ui:Label text="Label" name="key_mid_lable" class="padding" style="color: rgb(255, 255, 255); font-size: 25px; -unity-text-align: middle-center; height: 45px; flex-grow: 1; -unity-font: url(&apos;/Assets/Fonts/Roboto/Roboto-Light.ttf&apos;); white-space: nowrap; align-items: center; justify-content: center;" />
+                <ui:VisualElement name="mid" style="justify-content: space-between; align-items: center; flex-grow: 0;">
+                    <ui:Label text="Label" name="key_mid_lable" class="padding" style="color: rgb(255, 255, 255); font-size: 25px; -unity-text-align: middle-center; height: 45px; flex-grow: 1; -unity-font: url(&apos;/Assets/Fonts/Roboto/Roboto-Light.ttf&apos;); white-space: nowrap; align-items: center; justify-content: center; -unity-font-style: normal;" />
                     <ui:Label text="Label" name="item_mid_lable" focusable="false" class="padding" style="height: 45px; -unity-text-align: middle-center; font-size: 25px; color: rgb(255, 255, 255); flex-grow: 1; -unity-font: url(&apos;/Assets/Fonts/Roboto/Roboto-Light.ttf&apos;); white-space: nowrap;" />
                     <ui:Label text="Active" name="active_label" class="padding" style="font-size: 25px; color: rgb(255, 255, 255); -unity-text-align: middle-center; justify-content: center; height: 45px; flex-grow: 1; -unity-font: url(&apos;/Assets/Fonts/Roboto/Roboto-Light.ttf&apos;); white-space: normal;" />
                     <ui:Label text="99999" name="cost" class="padding" style="font-size: 25px; color: rgb(255, 255, 255); -unity-text-align: middle-center; height: 45px; flex-grow: 1; justify-content: space-between; -unity-font: url(&apos;/Assets/Fonts/Roboto/Roboto-Light.ttf&apos;);" />
                 </ui:VisualElement>
-                <ui:VisualElement name="left" style="justify-content: space-between; align-items: center; -unity-text-align: middle-left; margin-bottom: 0;">
+                <ui:VisualElement name="left" style="justify-content: space-between; align-items: center; -unity-text-align: middle-left;">
                     <ui:Button name="key_left_button" class="side_keys padding" style="align-items: center; background-image: url(&apos;/Assets/UI/Left button.png&apos;); height: 45px;" />
                     <ui:Button name="item_left_button" class="side_keys padding" style="background-image: url(&apos;/Assets/UI/Left button.png&apos;); align-items: center;" />
                     <ui:VisualElement name="empty" class="padding" style="flex-direction: row; justify-content: center; align-items: center; flex-grow: 0; width: 45px; height: 45px;" />
                     <ui:Label text="Cost" name="cost_lable" class="padding" style="font-size: 25px; color: rgb(255, 255, 255); -unity-text-align: middle-center; justify-content: space-between; height: 45px; align-items: center; -unity-font: url(&apos;/Assets/Fonts/Roboto/Roboto-Light.ttf&apos;);" />
                 </ui:VisualElement>
             </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="info_ui" class="transperent_back" style="flex-grow: 1; flex-direction: column; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; margin-left: 10px; margin-right: 10px; margin-top: 25px; margin-bottom: 25px; display: none;">
+        <Style src="home.uss" />
+        <ui:VisualElement style="flex-direction: row; justify-content: space-between; padding-left: 2.5%; padding-right: 2.5%; padding-top: 2.5%; padding-bottom: 2.5%;">
+            <ui:Label text="Label" name="asset_title" style="color: rgb(255, 255, 255); font-size: 20px; -unity-font-style: bold; white-space: nowrap; -unity-text-align: middle-left; align-items: center; justify-content: flex-start; -unity-font: url(&apos;/Assets/Fonts/Roboto/Roboto-Black.ttf&apos;); padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
+            <ui:Button text="X" name="go_back" class="home_buttons" style="width: 45px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; padding-left: 2.5%; padding-right: 2.5px; padding-top: 5%;">
+            <ui:ListView focusable="True" style="flex-grow: 1;">
+                <ui:Label text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." name="about" style="color: rgb(255, 255, 255); white-space: normal; -unity-text-align: upper-center;" />
+                <ui:VisualElement name="blank" style="flex-grow: 1; width: auto; height: auto;" />
+            </ui:ListView>
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
