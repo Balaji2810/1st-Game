@@ -1,19 +1,19 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
-    <ui:VisualElement name="main" style="flex-grow: 1; flex-direction: row; justify-content: space-between;">
+    <ui:VisualElement name="main" style="flex-grow: 1; flex-direction: row; justify-content: space-between; display: flex; padding-left: 2.5%; padding-right: 2.5%; padding-top: 2.5%; padding-bottom: 2.5%;">
         <Style src="home.uss" />
-        <ui:VisualElement name="left" style="justify-content: space-between; align-items: stretch; margin-bottom: 25px; padding-bottom: 15px;">
+        <ui:VisualElement name="left" style="justify-content: space-between; align-items: stretch; margin-bottom: 0; padding-bottom: 0; margin-left: 0; margin-right: 0; margin-top: 0; padding-left: 0; padding-right: 0; padding-top: 0;">
             <ui:VisualElement name="left_up">
-                <ui:Button name="settings" class="home_buttons" style="height: 100%; width: 100%; background-image: url(&apos;/Assets/UI/settings.png&apos;); -unity-slice-bottom: 0; -unity-slice-right: 0; -unity-slice-top: 0; -unity-slice-left: 0; -unity-background-scale-mode: stretch-to-fill; justify-content: flex-start;" />
+                <ui:Button name="settings" class="home_buttons" style="height: 45px; width: 45px; background-image: url(&apos;/Assets/UI/settings.png&apos;); -unity-slice-bottom: 0; -unity-slice-right: 0; -unity-slice-top: 0; -unity-slice-left: 0; -unity-background-scale-mode: stretch-to-fill; justify-content: flex-start; flex-grow: 0; flex-basis: auto;" />
             </ui:VisualElement>
             <ui:VisualElement name="left_down">
                 <ui:Button name="shop" class="home_buttons" style="background-image: url(&apos;/Assets/UI/shop.png&apos;); height: 45px; width: 45px;" />
                 <ui:Button name="no_ads" class="home_buttons" style="width: 45px; background-image: url(&apos;/Assets/UI/no_ads2.png&apos;);" />
-                <ui:Button text="i" name="info" class="home_buttons" style="width: 45px;" />
+                <ui:Button text="i" name="info" class="home_buttons" style="width: 45px; font-size: 20px;" />
             </ui:VisualElement>
         </ui:VisualElement>
-        <ui:VisualElement name="right" style="flex-direction: column; margin-right: 0; justify-content: flex-end; align-items: stretch; margin-bottom: 25px; padding-bottom: 15px;">
-            <ui:Button text="Play" name="play" class="home_buttons" />
-            <ui:Button text="Assets" name="assets" class="home_buttons" />
+        <ui:VisualElement name="right" style="flex-direction: column; margin-right: 0; justify-content: flex-end; align-items: stretch; margin-bottom: 0; padding-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; margin-left: 0; margin-top: 0;">
+            <ui:Button text="Play" name="play" class="home_buttons" style="font-size: 175%;" />
+            <ui:Button text="Assets" name="assets" class="home_buttons" style="font-size: 175%;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

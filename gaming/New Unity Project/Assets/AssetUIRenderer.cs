@@ -215,4 +215,61 @@ public class AssetUIRenderer : MonoBehaviour
         from.enabled = false;
     }
 
+    int lastScreenWidth = 0;
+    int lastScreenHeight = 0;
+
+    private void Update()
+    {
+        if (lastScreenWidth != Screen.width || lastScreenHeight != Screen.height)
+        {
+            lastScreenWidth = Screen.width;
+            lastScreenHeight = Screen.height;
+
+            int size = (lastScreenWidth < lastScreenHeight) ? lastScreenWidth : lastScreenHeight;
+            size = (int)(size * 0.125f);
+
+            var ui_list = new List<(string, float)>();
+            ui_list.Add(("goto_home", 1));
+            ui_list.Add(("info_button", 1));
+            ui_list.Add(("key_left_button", 1));
+            ui_list.Add(("item_left_button", 1));
+            ui_list.Add(("key_right_button", 1));
+            ui_list.Add(("item_right_button", 1));
+            ui_list.Add(("active_button", 1));
+            ui_list.Add(("buy_button", 1.5F));
+            ui_list.Add(("empty", 1));
+            ui_list.Add(("cost_lable", 2));
+            ui_list.Add(("key_mid_lable", 2));
+            ui_list.Add(("item_mid_lable", 2));
+            ui_list.Add(("cost", 2));
+            ui_list.Add(("points_label", 2));
+            ui_list.Add(("points", 1));
+            ui_list.Add(("active_label", 2));
+            
+
+            resizeUI(AssetUI, ui_list, size);
+        }
+
+    }
+
+    void resizeUI(PanelRenderer ui, List<(string, float)> elements, int size)
+    {
+        var radius = size * 0.15f;
+        var text = size * 0.5f;
+        var border = size * 0.02f;
+        for (int i = 0; i < elements.Count; i++)
+        {
+            ui.visualTree.Q(elements[i].Item1).style.height = size;
+            ui.visualTree.Q(elements[i].Item1).style.width = size * elements[i].Item2;
+            ui.visualTree.Q(elements[i].Item1).style.borderBottomLeftRadius = radius;
+            ui.visualTree.Q(elements[i].Item1).style.borderBottomRightRadius = radius;
+            ui.visualTree.Q(elements[i].Item1).style.borderTopLeftRadius = radius;
+            ui.visualTree.Q(elements[i].Item1).style.borderTopRightRadius = radius;
+            ui.visualTree.Q(elements[i].Item1).style.fontSize = text;
+            ui.visualTree.Q(elements[i].Item1).style.borderBottomWidth = border;
+            ui.visualTree.Q(elements[i].Item1).style.borderRightWidth = border;
+            ui.visualTree.Q(elements[i].Item1).style.borderLeftWidth = border;
+            ui.visualTree.Q(elements[i].Item1).style.borderTopWidth = border;
+        }
+    }
 }

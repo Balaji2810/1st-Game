@@ -5,6 +5,7 @@ using RootMotion.Dynamics;
 using Unity.UIElements.Runtime;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
+using System.Runtime.CompilerServices;
 
 public class GameManager : MonoBehaviour
 {
@@ -25,10 +26,16 @@ public class GameManager : MonoBehaviour
         
     }
 
+    
+
+
     // Start is called before the first frame update
     void Start()
     {
         GoToMainMenu();
+        
+
+       
     }
 
     void SetScreenEnableState(PanelRenderer screen, bool state)
@@ -53,6 +60,10 @@ public class GameManager : MonoBehaviour
         SetScreenEnableState(m_GameScreen, false);
     }
 
+
+    int lastScreenWidth = 0;
+    int lastScreenHeight = 0;
+
     // Update is called once per frame
     void Update()
     {
@@ -60,12 +71,63 @@ public class GameManager : MonoBehaviour
         {
            currentPoints.text = File.load("points", "temp").ToString();
         }
+
+        if (lastScreenWidth != Screen.width || lastScreenHeight != Screen.height)
+        {
+            lastScreenWidth = Screen.width;
+            lastScreenHeight = Screen.height;
+
+            int size = (lastScreenWidth < lastScreenHeight) ? lastScreenWidth: lastScreenHeight;
+            size = (int) (size * 0.125f);
+
+
+            var main_ui_list = new List<(string,int)>();
+            //main ui elements
+            main_ui_list.Add(("settings",1));
+            main_ui_list.Add(("shop", 1));
+            main_ui_list.Add(("no_ads", 1));
+            main_ui_list.Add(("info", 1));
+            main_ui_list.Add(("assets", 2));
+            main_ui_list.Add(("play", 2));
+
+            var game_ui_list = new List<(string, int)>();
+            game_ui_list.Add(("points_back", 2));
+            game_ui_list.Add(("points", 1));
+            game_ui_list.Add(("pause", 1));
+
+            resizeUI(m_MainMenuScreen, main_ui_list, size);
+            resizeUI(m_GameScreen, game_ui_list, size);
+        }
     }
 
+    void resizeUI(PanelRenderer ui,List<(string,int)> elements,int size)
+    {
+        var radius = size * 0.15f;
+        var text = size * 0.5f;
+        var border = size * 0.02f;
+        for(int i=0;i<elements.Count;i++)
+        {
+            ui.visualTree.Q(elements[i].Item1).style.height = size;
+            ui.visualTree.Q(elements[i].Item1).style.width = size*elements[i].Item2;
+            ui.visualTree.Q(elements[i].Item1).style.borderBottomLeftRadius = radius;
+            ui.visualTree.Q(elements[i].Item1).style.borderBottomRightRadius = radius;
+            ui.visualTree.Q(elements[i].Item1).style.borderTopLeftRadius = radius;
+            ui.visualTree.Q(elements[i].Item1).style.borderTopRightRadius = radius;
+            ui.visualTree.Q(elements[i].Item1).style.fontSize = text;
+            ui.visualTree.Q(elements[i].Item1).style.borderBottomWidth = border;
+            ui.visualTree.Q(elements[i].Item1).style.borderRightWidth = border;
+            ui.visualTree.Q(elements[i].Item1).style.borderLeftWidth = border;
+            ui.visualTree.Q(elements[i].Item1).style.borderTopWidth = border;
+        }
+    }
+
+    
 
     private IEnumerable<Object> BindMainMenuScreen()
     {
         var root = m_MainMenuScreen.visualTree;
+        
+        
 
         var startButton = root.Q<Button>("play");
         if (startButton != null)

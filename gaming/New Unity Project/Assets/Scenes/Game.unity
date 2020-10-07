@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 1
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 311514dffe5f0e748be32bb3e3942906, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028377, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.42172477, g: 0.42731756, b: 0.464956, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -334,7 +334,7 @@ PrefabInstance:
     - target: {fileID: 3206858371130517351, guid: 1457bcbfe6873d14b9116d11f3de76d8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -30
       objectReference: {fileID: 0}
     - target: {fileID: 3206858371130517351, guid: 1457bcbfe6873d14b9116d11f3de76d8,
         type: 3}
@@ -691,7 +691,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.20095082, g: 0.024519395, b: 0.2735849, a: 1}
+  m_Color: {r: 0.006674973, g: 0.011854761, b: 0.2830189, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -5835,8 +5835,8 @@ MonoBehaviour:
   turnTime: 10
   playerRoot: {fileID: 8077239999899897902}
   controller: {fileID: 8077239999899897901}
-  speed: 17
-  maxspeed: 15
+  speed: 20
+  maxspeed: 20
   inverseAxcel: 1
   jumpSpeed: 9.3
   jumpDelayTime: 0
