@@ -6,7 +6,8 @@ public class ThrowBall : MonoBehaviour
 {
     public GameObject prefab;
     public Camera cam;
-    public float force;
+    public Vector2 force;
+    
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -16,11 +17,23 @@ public class ThrowBall : MonoBehaviour
             Vector3 dir = r.GetPoint(1) - r.GetPoint(0);
 
             // position of spanwed object could be 'GetPoint(0).. 1.. 2' half random choice ;)
-            GameObject bullet = Instantiate(prefab, r.GetPoint(2), Quaternion.LookRotation(dir));
+            GameObject gameObject = Instantiate(prefab, r.GetPoint(2), Quaternion.LookRotation(dir));
 
-            bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * force;
+            Material newMaterial = new Material(Shader.Find("Standard"));
+            newMaterial.SetColor("_EmissionColor", GameObject.Find("SideColor").GetComponent<SideColor>().getColor());
+            newMaterial.EnableKeyword("_EMISSION");
+            gameObject.GetComponent<MeshRenderer>().material = newMaterial;
 
-            Destroy(bullet, 5);
+           
+            float radius = Random.Range(0.25f,0.61f);
+            gameObject.GetComponent<Rigidbody>().mass = gameObject.GetComponent<Rigidbody>().mass * (radius / gameObject.transform.localScale.x);
+            gameObject.transform.localScale = Vector3.one* radius;
+                
+            
+
+            gameObject.GetComponent<Rigidbody>().velocity = gameObject.transform.forward * Random.Range(force.x,force.y);
+
+            Destroy(gameObject, 5);
         }
     }
 

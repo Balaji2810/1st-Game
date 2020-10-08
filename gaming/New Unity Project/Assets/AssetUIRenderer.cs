@@ -66,8 +66,6 @@ public class AssetUIRenderer : MonoBehaviour
        points.text = AP.AllObjectValues[previousChild].points.ToString();
        cost.text = AP.AllObjectValues[previousChild].cost.ToString();
        Asset.transform.Find(previousChild).gameObject.SetActive(true);
-
-       print(previousChild+" "+ AP.AllObjectValues[previousChild].status);
        
        if(AP.AllObjectValues[previousChild].status == "disabled")
        {
@@ -309,33 +307,47 @@ public class AssetUIRenderer : MonoBehaviour
 
     void resizeUI(PanelRenderer ui, List<(string, float,float)> elements, int size)
     {
-        var radius = size * 0.15f;
-        var text = size * 0.5f;
-        var border = size * 0.02f;
-        for (int i = 0; i < elements.Count; i++)
+        try
         {
-            ui.visualTree.Q(elements[i].Item1).style.height = size * elements[i].Item3;
-            ui.visualTree.Q(elements[i].Item1).style.width = size * elements[i].Item2;
-            ui.visualTree.Q(elements[i].Item1).style.borderBottomLeftRadius = radius;
-            ui.visualTree.Q(elements[i].Item1).style.borderBottomRightRadius = radius;
-            ui.visualTree.Q(elements[i].Item1).style.borderTopLeftRadius = radius;
-            ui.visualTree.Q(elements[i].Item1).style.borderTopRightRadius = radius;
-            ui.visualTree.Q(elements[i].Item1).style.fontSize = text;
-            ui.visualTree.Q(elements[i].Item1).style.borderBottomWidth = border;
-            ui.visualTree.Q(elements[i].Item1).style.borderRightWidth = border;
-            ui.visualTree.Q(elements[i].Item1).style.borderLeftWidth = border;
-            ui.visualTree.Q(elements[i].Item1).style.borderTopWidth = border;
+            var radius = size * 0.15f;
+            var text = size * 0.5f;
+            var border = size * 0.02f;
+            for (int i = 0; i < elements.Count; i++)
+            {
+                ui.visualTree.Q(elements[i].Item1).style.height = size * elements[i].Item3;
+                ui.visualTree.Q(elements[i].Item1).style.width = size * elements[i].Item2;
+                ui.visualTree.Q(elements[i].Item1).style.borderBottomLeftRadius = radius;
+                ui.visualTree.Q(elements[i].Item1).style.borderBottomRightRadius = radius;
+                ui.visualTree.Q(elements[i].Item1).style.borderTopLeftRadius = radius;
+                ui.visualTree.Q(elements[i].Item1).style.borderTopRightRadius = radius;
+                ui.visualTree.Q(elements[i].Item1).style.fontSize = text;
+                ui.visualTree.Q(elements[i].Item1).style.borderBottomWidth = border;
+                ui.visualTree.Q(elements[i].Item1).style.borderRightWidth = border;
+                ui.visualTree.Q(elements[i].Item1).style.borderLeftWidth = border;
+                ui.visualTree.Q(elements[i].Item1).style.borderTopWidth = border;
+            }
+        }
+        catch
+        {
+            resizeUI(ui, elements,size);
         }
     }
 
     void resizeUI2(PanelRenderer ui, List<(string, float,float)> elements, int size)
     {
-       
-        var text = size * 0.5f;
-        
-        for (int i = 0; i < elements.Count; i++)
+       try
         {
-           ui.visualTree.Q(elements[i].Item1).style.fontSize = text;
+            var text = size * 0.5f;
+
+            for (int i = 0; i < elements.Count; i++)
+            {
+                ui.visualTree.Q(elements[i].Item1).style.fontSize = text;
+            }
         }
+        catch
+        {
+            resizeUI2(ui, elements, size);
+        }
+
     }
 }

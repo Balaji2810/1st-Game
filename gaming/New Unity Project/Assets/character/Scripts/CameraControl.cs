@@ -70,12 +70,13 @@ public class CameraControl : MonoBehaviour
 
         try
         {
-            player = GameObject.Find("player Root").GetComponentInChildren<PlayerStatus>();
+            player = GameObject.Find(PlayerPrefs.GetString("name", "player") + " Root").GetComponentInChildren<PlayerStatus>();
+            
             if (init)
             {
                 if (!gameManager.Startgame)
                 {
-                    offset = new Vector3(temp.x * 1, temp.y - 1.5f, temp.z * -1);
+                    offset = new Vector3(temp.x * 1, temp.y - 1.5f, temp.z * -1f);
 
                     transform.position = Vector3.Lerp(transform.position, new Vector3(player.LeftRight, player.GroundLevel + offset.y + offset.y, player.MovedDistance + offset.z), Time.deltaTime);
                     transform.LookAt(player.LookAt);

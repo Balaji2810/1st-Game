@@ -7,6 +7,7 @@ public class SideColor : MonoBehaviour
     public Material material;
     [ColorUsage(true, true)]
     public List<Color> color;
+    public int Option = -1;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,5 +16,13 @@ public class SideColor : MonoBehaviour
         material.SetColor("_EmissionColor", color[Random.Range(0,color.Count)]);
     }
 
+    public Color getColor()
+    {
+        if(Option !=-1)
+        {
+            return color[Option];
+        }
+        return color[Random.Range(0, color.Count)];
+    }
     
 }

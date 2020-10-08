@@ -295,6 +295,7 @@
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\WallBarrel.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\WoodenDummySpin.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\jump.cs" />
+    <Compile Include="Assets\obstacles\Sci-Fic\scripts\randomJump.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\spider_bot.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\walking.cs" />
     <Compile Include="Assets\obstacles\package\NonConvexMeshCollider\NonConvexMeshCollider.cs" />

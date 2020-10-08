@@ -7,8 +7,8 @@ public class MentalCube : MonoBehaviour
     public bool changeColor = true;
     public bool doAnimation = true;
     public Material material;
-    [ColorUsage(true, true)]
-    public List<Color> color;
+    
+    
 
     Material newMaterial;
 
@@ -19,7 +19,7 @@ public class MentalCube : MonoBehaviour
         if(changeColor)
         {
             newMaterial = new Material(Shader.Find("Standard"));
-            material.SetColor("_EmissionColor", color[Random.Range(0, color.Count)]);
+            material.SetColor("_EmissionColor", GameObject.Find("SideColor").GetComponent<SideColor>().getColor());
             newMaterial.CopyPropertiesFromMaterial(material);
             gameObject.GetComponent<MeshRenderer>().material = newMaterial;
         }

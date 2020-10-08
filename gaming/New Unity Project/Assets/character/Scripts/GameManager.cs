@@ -9,6 +9,7 @@ using System.Runtime.CompilerServices;
 
 public class GameManager : MonoBehaviour
 {
+    public string playerName = "player";
     public bool Startgame = false;
     public FileHandler File;
     public PanelRenderer m_MainMenuScreen;
@@ -19,6 +20,10 @@ public class GameManager : MonoBehaviour
 
     private Label currentPoints;
 
+    private void Awake()
+    {
+        PlayerPrefs.SetString("name", playerName);
+    }
     private void OnEnable()
     {
         m_MainMenuScreen.postUxmlReload = BindMainMenuScreen;

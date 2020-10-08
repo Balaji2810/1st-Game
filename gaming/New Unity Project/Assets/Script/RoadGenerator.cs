@@ -28,7 +28,7 @@ public class RoadGenerator : MonoBehaviour
     {
         try
         {
-            player = GameObject.Find("player Root").GetComponentInChildren<PlayerStatus>();
+            player = GameObject.Find(PlayerPrefs.GetString("name","player")+" Root").GetComponentInChildren<PlayerStatus>();
             if(player.MovedDistance>roadSpawn-roadOnScreen*roadLength)
             {
                 SpawnRoad();

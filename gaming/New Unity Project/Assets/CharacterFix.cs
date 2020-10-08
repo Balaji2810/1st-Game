@@ -7,10 +7,12 @@ public class CharacterFix : MonoBehaviour
 {
     public float muscleSpring=100, muscleDampper=0, pinPow=4, pinDistanceFalloff=5;
     float oldMuscleSpring, oldMuscleDampper, oldPinPow, oldPinDistanceFalloff;
+
+    float time;
     // Start is called before the first frame update
     void Start()
     {
-        PuppetMaster pm = GameObject.Find("player Root").GetComponentInChildren<PuppetMaster>();
+        PuppetMaster pm = GameObject.Find(PlayerPrefs.GetString("name", "player") + " Root").GetComponentInChildren<PuppetMaster>();
         if(pm!=null)
         {
             oldMuscleSpring = pm.muscleSpring;
@@ -22,23 +24,25 @@ public class CharacterFix : MonoBehaviour
             pm.muscleDamper = muscleDampper;
             pm.pinPow = pinPow;
             pm.pinDistanceFalloff = pinDistanceFalloff;
+
+            time = Time.fixedDeltaTime;
+            Time.fixedDeltaTime = 0.02f;
         }
-        print(oldMuscleSpring);
-        print(oldMuscleDampper);
-        print(oldPinPow);
-        print(oldPinDistanceFalloff);
+       
     }
 
     public void FixCharacter()
     {
-        PuppetMaster pm = GameObject.Find("player Root").GetComponentInChildren<PuppetMaster>();
+        PuppetMaster pm = GameObject.Find(PlayerPrefs.GetString("name", "player") + " Root").GetComponentInChildren<PuppetMaster>();
         if (pm != null)
         {
              pm.muscleSpring = oldMuscleSpring;
              pm.muscleDamper = oldMuscleDampper;
              pm.pinPow = oldPinPow;
              pm.pinDistanceFalloff = oldPinDistanceFalloff;
+            
         }
+        Time.fixedDeltaTime = time;
     }
     // Update is called once per frame
     void Update()
