@@ -145,12 +145,12 @@ MonoBehaviour:
   - go: {fileID: 8715935978295408183, guid: f37129d128f90b8439fa37e2890fddaf, type: 3}
     status: 1
     name: 
-    points: 2
+    points: 3
     cost: 0
   - go: {fileID: 5031236830024090922, guid: de1c1366c1f25444d97849f7f2c4998c, type: 3}
     status: 1
     name: 
-    points: 3
+    points: 4
     cost: 0
   - go: {fileID: 1169113368989327912, guid: 1c4fa094be98a4142a89b5abe0d070f2, type: 3}
     status: 2
@@ -243,12 +243,12 @@ MonoBehaviour:
     points: 3
     cost: 0
   - go: {fileID: 3829554405656638560, guid: 2063ea3f6a503714b9f1e6c0b1a6423a, type: 3}
-    status: 2
+    status: 0
     name: 
     points: 4
     cost: 0
   - go: {fileID: 4984308032968957808, guid: 7d90b84510485c64caaa8130b9fc72bf, type: 3}
-    status: 2
+    status: 0
     name: 
     points: 4
     cost: 0

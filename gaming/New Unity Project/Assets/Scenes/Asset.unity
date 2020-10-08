@@ -661,7 +661,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283072663}
-  m_LocalRotation: {x: 0.24824077, y: -0.373508, z: 0.1044531, w: 0.8876699}
+  m_LocalRotation: {x: 0.24824077, y: -0.37350804, z: 0.10445311, w: 0.8876699}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1593,7 +1593,7 @@ PrefabInstance:
     - target: {fileID: 8715935978295408183, guid: f37129d128f90b8439fa37e2890fddaf,
         type: 3}
       propertyPath: m_Name
-      value: Guard Rail 2
+      value: Crazy Box 2
       objectReference: {fileID: 0}
     - target: {fileID: 8715935978295408183, guid: f37129d128f90b8439fa37e2890fddaf,
         type: 3}
@@ -1705,7 +1705,7 @@ PrefabInstance:
     - target: {fileID: 5367196415989296537, guid: 8a712e4854e7a964abbfe562fb59fef3,
         type: 3}
       propertyPath: m_Name
-      value: Guard Rail 1
+      value: Crazy Box 1
       objectReference: {fileID: 0}
     - target: {fileID: 5367196415989296537, guid: 8a712e4854e7a964abbfe562fb59fef3,
         type: 3}
@@ -2455,7 +2455,7 @@ MonoBehaviour:
   keys:
   - Basics
   - Barrels
-  - Guard Rail
+  - Crazy Box
   - Way Blocks
   - Spiders
   - Spin Way Blocks
@@ -2473,9 +2473,9 @@ MonoBehaviour:
     - Barrels 3
     - Barrels Wall
   - myList:
-    - Guard Rail 1
-    - Guard Rail 2
-    - Guard Rail 3
+    - Crazy Box 1
+    - Crazy Box 2
+    - Crazy Box 3
   - myList:
     - Way Block 1
     - Way Block 2
@@ -3449,7 +3449,7 @@ PrefabInstance:
     - target: {fileID: 5031236830024090922, guid: de1c1366c1f25444d97849f7f2c4998c,
         type: 3}
       propertyPath: m_Name
-      value: Guard Rail 3
+      value: Crazy Box 3
       objectReference: {fileID: 0}
     - target: {fileID: 5031236830024090922, guid: de1c1366c1f25444d97849f7f2c4998c,
         type: 3}

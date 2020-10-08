@@ -10,6 +10,8 @@ public class AssetUIRenderer : MonoBehaviour
     public PanelRenderer AssetUI,info;
     public GameObject Asset;
 
+    
+
     private void OnEnable()
     {
         info.postUxmlReload = Bindinfo;
@@ -70,26 +72,29 @@ public class AssetUIRenderer : MonoBehaviour
        if(AP.AllObjectValues[previousChild].status == "disabled")
        {
             AssetUI.visualTree.Q("active_label").style.visibility = Visibility.Hidden;
-            AssetUI.visualTree.Q("active_button").style.visibility = Visibility.Hidden;
+            AssetUI.visualTree.Q("active_button_on").style.visibility = Visibility.Hidden;
             AssetUI.visualTree.Q("empty").style.visibility = Visibility.Hidden;
             AssetUI.visualTree.Q("cost_lable").style.visibility = Visibility.Hidden;
             AssetUI.visualTree.Q("cost").style.visibility = Visibility.Hidden;
             AssetUI.visualTree.Q("buy_button").style.visibility = Visibility.Hidden;
+            AssetUI.visualTree.Q("active_button_off").style.visibility = Visibility.Hidden;
         }
        else
         {
             AssetUI.visualTree.Q("active_label").style.visibility = Visibility.Visible;
-            AssetUI.visualTree.Q("active_button").style.visibility = Visibility.Visible;
+            AssetUI.visualTree.Q("active_button_on").style.visibility = Visibility.Visible;
             AssetUI.visualTree.Q("empty").style.visibility = Visibility.Visible;
             AssetUI.visualTree.Q("cost_lable").style.visibility = Visibility.Visible;
             AssetUI.visualTree.Q("cost").style.visibility = Visibility.Visible;
             AssetUI.visualTree.Q("buy_button").style.visibility = Visibility.Visible;
+            AssetUI.visualTree.Q("active_button_off").style.visibility = Visibility.Visible;
         }
        
        if(AP.AllObjectValues[previousChild].status == "not_owned")
         {
             AssetUI.visualTree.Q("active_label").style.display = DisplayStyle.None;
-            AssetUI.visualTree.Q("active_button").style.display = DisplayStyle.None;
+            AssetUI.visualTree.Q("active_button_on").style.display = DisplayStyle.None;
+            AssetUI.visualTree.Q("active_button_off").style.display = DisplayStyle.None;
             AssetUI.visualTree.Q("empty").style.display = DisplayStyle.None;
 
             AssetUI.visualTree.Q("cost_lable").style.display = DisplayStyle.Flex;
@@ -102,8 +107,18 @@ public class AssetUIRenderer : MonoBehaviour
             AssetUI.visualTree.Q("cost").style.display = DisplayStyle.None;
             AssetUI.visualTree.Q("buy_button").style.display = DisplayStyle.None;
 
+            if(AP.AllObjectValues[previousChild].status=="active")
+            {
+                AssetUI.visualTree.Q("active_button_off").style.display = DisplayStyle.None;
+                AssetUI.visualTree.Q("active_button_on").style.display = DisplayStyle.Flex;
+            }
+            else
+            {
+                AssetUI.visualTree.Q("active_button_on").style.display = DisplayStyle.None;
+                AssetUI.visualTree.Q("active_button_off").style.display = DisplayStyle.Flex;
+            }
+
             AssetUI.visualTree.Q("active_label").style.display = DisplayStyle.Flex;
-            AssetUI.visualTree.Q("active_button").style.display = DisplayStyle.Flex;
             AssetUI.visualTree.Q("empty").style.display = DisplayStyle.Flex;
         }
        
@@ -179,7 +194,7 @@ public class AssetUIRenderer : MonoBehaviour
         {
             goto_home.clickable.clicked += () =>
             {
-                SceneManager.LoadScene("Game", LoadSceneMode.Single);
+                //SceneManager.LoadScene("Game", LoadSceneMode.Single);
             };
         }
 
@@ -276,10 +291,11 @@ public class AssetUIRenderer : MonoBehaviour
             ui_list.Add(("item_left_button", 1,1));
             ui_list.Add(("key_right_button", 1,1));
             ui_list.Add(("item_right_button", 1,1));
-            ui_list.Add(("active_button", 1,1));
+            ui_list.Add(("active_button_on", 1,1));
+            ui_list.Add(("active_button_off", 1, 1));
             ui_list.Add(("buy_button", 1,1));
-            ui_list.Add(("empty", 2,1));
-            ui_list.Add(("cost_lable", 2,1));
+            ui_list.Add(("empty", 1,1));
+            ui_list.Add(("cost_lable", 1,1));
             ui_list.Add(("key_mid_lable", 2,1));
             ui_list.Add(("item_mid_lable", 2,1));
             ui_list.Add(("cost", 2,1));
@@ -296,19 +312,28 @@ public class AssetUIRenderer : MonoBehaviour
             info_list_only_text_size.Add(("asset_title", 0,0));
             info_list_only_text_size.Add(("about", 0,0));
 
-            resizeUI(AssetUI, ui_list, size);
-            resizeUI(info, info_list, size);
+            resizeUI(1, ui_list, size);
+            resizeUI(2, info_list, size);
 
-            resizeUI2(info, info_list_only_text_size, size);
+            resizeUI2(2, info_list_only_text_size, size);
 
         }
 
     }
 
-    void resizeUI(PanelRenderer ui, List<(string, float,float)> elements, int size)
+    void resizeUI(int type, List<(string, float,float)> elements, int size)
     {
         try
         {
+            PanelRenderer ui;
+            if (type == 1)
+            {
+                ui = AssetUI;
+            }
+            else
+            {
+                ui = info;
+            }
             var radius = size * 0.15f;
             var text = size * 0.5f;
             var border = size * 0.02f;
@@ -329,14 +354,23 @@ public class AssetUIRenderer : MonoBehaviour
         }
         catch
         {
-            resizeUI(ui, elements,size);
+            StartCoroutine(delay(type, elements, size, 1));
         }
     }
 
-    void resizeUI2(PanelRenderer ui, List<(string, float,float)> elements, int size)
+    void resizeUI2(int type, List<(string, float,float)> elements, int size)
     {
        try
         {
+            PanelRenderer ui;
+            if (type==1)
+            {
+                ui = AssetUI;
+            }
+            else
+            {
+                ui = info;
+            }
             var text = size * 0.5f;
 
             for (int i = 0; i < elements.Count; i++)
@@ -346,8 +380,22 @@ public class AssetUIRenderer : MonoBehaviour
         }
         catch
         {
-            resizeUI2(ui, elements, size);
+            StartCoroutine(delay(type, elements, size, 2));
         }
 
+    }
+
+    IEnumerator delay(int type, List<(string, float, float)> elements, int size,int opt)
+    {
+        yield return new WaitForSeconds(0.1f);
+        
+        if(opt==1)
+        {
+            resizeUI(type, elements, size);
+        }
+        else
+        {
+            resizeUI2(type, elements, size);
+        }
     }
 }

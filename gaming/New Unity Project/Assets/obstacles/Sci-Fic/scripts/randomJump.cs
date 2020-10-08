@@ -10,7 +10,12 @@ public class randomJump : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(jump(Random.Range(1.25f, 4f)));
+        StartCoroutine(jump(Random.Range(2f, 4f)));
+    }
+
+    void OnEnable()
+    {
+        StartCoroutine(jump(Random.Range(2f, 4f)));
     }
 
     // Update is called once per frame
@@ -23,7 +28,7 @@ public class randomJump : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0,1,0)*Force;
-        StartCoroutine(jump(Random.Range(1.25f, 4f)));
+        StartCoroutine(jump(Random.Range(2f, 4f)));
     }
 
     
