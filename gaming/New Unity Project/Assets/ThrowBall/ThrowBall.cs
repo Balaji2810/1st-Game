@@ -19,7 +19,7 @@ public class ThrowBall : MonoBehaviour
             // position of spanwed object could be 'GetPoint(0).. 1.. 2' half random choice ;)
             GameObject gameObject = Instantiate(prefab, r.GetPoint(2), Quaternion.LookRotation(dir));
 
-            Material newMaterial = new Material(Shader.Find("Standard"));
+            Material newMaterial = new Material(Shader.Find("Universal Render Pipeline/Lit"));
             newMaterial.SetColor("_EmissionColor", GameObject.Find("SideColor").GetComponent<SideColor>().getColor());
             newMaterial.EnableKeyword("_EMISSION");
             gameObject.GetComponent<MeshRenderer>().material = newMaterial;

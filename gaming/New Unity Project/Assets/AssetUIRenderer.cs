@@ -48,14 +48,27 @@ public class AssetUIRenderer : MonoBehaviour
         
     }
 
-    string key_text, items_text;
+    IEnumerator DelayFunction(float time, int index)
+    {
+        yield return new WaitForSeconds(time);
+
+        getKey(index);
+    }
+
     void getKey(int index)
     {
-        
-        key.text = keys[index];
-       
-        itemIndex = 0;
-        getItem(key.text, itemIndex);
+        try
+        {
+            key.text = keys[index];
+
+            itemIndex = 0;
+            getItem(key.text, itemIndex);
+        }
+        catch
+        {
+            StartCoroutine(DelayFunction(0.1f, index));
+        }
+
     }
 
     void getItem(string key,int i_index)
@@ -194,7 +207,7 @@ public class AssetUIRenderer : MonoBehaviour
         {
             goto_home.clickable.clicked += () =>
             {
-                //SceneManager.LoadScene("Game", LoadSceneMode.Single);
+                SceneManager.LoadScene("Game", LoadSceneMode.Single);
             };
         }
 

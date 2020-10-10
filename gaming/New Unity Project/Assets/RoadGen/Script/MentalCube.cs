@@ -18,7 +18,7 @@ public class MentalCube : MonoBehaviour
     {
         if(changeColor)
         {
-            newMaterial = new Material(Shader.Find("Standard"));
+            newMaterial = new Material(Shader.Find("Universal Render Pipeline/Lit"));
             material.SetColor("_EmissionColor", GameObject.Find("SideColor").GetComponent<SideColor>().getColor());
             newMaterial.CopyPropertiesFromMaterial(material);
             gameObject.GetComponent<MeshRenderer>().material = newMaterial;
