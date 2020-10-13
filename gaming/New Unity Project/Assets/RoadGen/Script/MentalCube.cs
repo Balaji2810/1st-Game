@@ -12,6 +12,14 @@ public class MentalCube : MonoBehaviour
 
     Material newMaterial;
 
+    private void OnEnable()
+    {
+        if (doAnimation)
+        {
+            StartCoroutine(delay(Random.Range(0.1f, 5.9f)));
+        }
+    }
+
     // Start is called before the first frame update
     [System.Obsolete]
     void Start()

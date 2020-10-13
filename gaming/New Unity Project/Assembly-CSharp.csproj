@@ -97,6 +97,7 @@
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\Behaviours\BehaviourPuppetDamage.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\PressureSensor.cs" />
     <Compile Include="Assets\Script\UIPosition.cs" />
+    <Compile Include="Assets\roads\Road_Renderer.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\FXCollisionBlood.cs" />
     <Compile Include="Assets\character\RootMotion\Shared Demo Assets\Scripts\Character Controllers\UserControlAI.cs" />
     <Compile Include="Assets\water effect\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
@@ -203,6 +204,7 @@
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\RaycastShooter.cs" />
     <Compile Include="Assets\ThrowBall\BallDestroy.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\Behaviours\BehaviourPuppetHelpers.cs" />
+    <Compile Include="Assets\roads\RoadsAssets.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\SkeletonShooter.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\PuppetMasterPropMelee.cs" />
     <Compile Include="Assets\character\RootMotion\Shared Scripts\Interp.cs" />
@@ -229,11 +231,13 @@
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\PhysXTools.cs" />
     <Compile Include="Assets\character\RootMotion\Shared Scripts\Hierarchy.cs" />
     <Compile Include="Assets\UIERuntime\Samples\RepeatGame\RepeatGame.cs" />
+    <Compile Include="Assets\Script\GetObject.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\UIERuntime\Samples\RepeatGame\Resources\RepeatGame\RepeatGame.uxml" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\UI\Roads.uxml" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\UIERuntime\Samples\TouchMove\Resources\TouchMove\TouchMove.uxml" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />

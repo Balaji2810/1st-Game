@@ -99,10 +99,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5281873427733365440}
     m_Modifications:
-    - target: {fileID: 2965190426113861812, guid: 31137cdbd3056f442b460a8f4f101ba0,
+    - target: {fileID: 2965190425285590816, guid: 31137cdbd3056f442b460a8f4f101ba0,
         type: 3}
-      propertyPath: m_Name
-      value: SPIDER_BOT
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965190426102293944, guid: 31137cdbd3056f442b460a8f4f101ba0,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60855436a6747154d948d3fb55933c53, type: 2}
+    - target: {fileID: 2965190426103853432, guid: 31137cdbd3056f442b460a8f4f101ba0,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965190426103853432, guid: 31137cdbd3056f442b460a8f4f101ba0,
+        type: 3}
+      propertyPath: m_Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: 99e6c52476f1d254b81b9299fe09c639, type: 3}
+    - target: {fileID: 2965190426103853432, guid: 31137cdbd3056f442b460a8f4f101ba0,
+        type: 3}
+      propertyPath: m_PlayAutomatically
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2965190426113373332, guid: 31137cdbd3056f442b460a8f4f101ba0,
         type: 3}
@@ -164,26 +184,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2965190425285590816, guid: 31137cdbd3056f442b460a8f4f101ba0,
+    - target: {fileID: 2965190426113861812, guid: 31137cdbd3056f442b460a8f4f101ba0,
         type: 3}
-      propertyPath: m_Enabled
-      value: 1
+      propertyPath: m_Name
+      value: SPIDER_BOT
       objectReference: {fileID: 0}
-    - target: {fileID: 2965190426103853432, guid: 31137cdbd3056f442b460a8f4f101ba0,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2965190426103853432, guid: 31137cdbd3056f442b460a8f4f101ba0,
-        type: 3}
-      propertyPath: m_Animation
-      value: 
-      objectReference: {fileID: 7400000, guid: 99e6c52476f1d254b81b9299fe09c639, type: 3}
-    - target: {fileID: 2965190426102293944, guid: 31137cdbd3056f442b460a8f4f101ba0,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 60855436a6747154d948d3fb55933c53, type: 2}
     m_RemovedComponents:
     - {fileID: -5195117386113230677, guid: 31137cdbd3056f442b460a8f4f101ba0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 31137cdbd3056f442b460a8f4f101ba0, type: 3}

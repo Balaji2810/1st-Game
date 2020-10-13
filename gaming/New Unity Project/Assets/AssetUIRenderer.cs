@@ -69,7 +69,7 @@ public class AssetUIRenderer : MonoBehaviour
         }
         catch
         {
-            StartCoroutine(DelayFunction(0.1f, index));
+            StartCoroutine(DelayFunction(0.01f, index));
         }
 
     }
@@ -198,7 +198,7 @@ public class AssetUIRenderer : MonoBehaviour
         {
             roads.clickable.clicked += () =>
             {
-               
+                SceneManager.LoadScene("roads", LoadSceneMode.Single);
             };
         }
 
@@ -244,6 +244,28 @@ public class AssetUIRenderer : MonoBehaviour
             goto_home.clickable.clicked += () =>
             {
                 SceneManager.LoadScene("Game", LoadSceneMode.Single);
+            };
+        }
+
+        var on = root.Q<UnityEngine.UIElements.Button>("active_button_on");
+        var off = root.Q<UnityEngine.UIElements.Button>("active_button_off");
+
+        if (on != null)
+        {
+            on.clickable.clicked += () =>
+            {
+                on.style.display = DisplayStyle.None;
+                off.style.display = DisplayStyle.Flex;
+            };
+        }
+
+        
+        if (off != null)
+        {
+            off.clickable.clicked += () =>
+            {
+                off.style.display = DisplayStyle.None;
+                on.style.display = DisplayStyle.Flex;
             };
         }
 
@@ -334,14 +356,7 @@ public class AssetUIRenderer : MonoBehaviour
             ui_list.Add(("goto_roads", 3, 1));
             ui_list.Add(("goto_obstacles", 3, 1));
 
-            var info_list = new List<(string, float,float)>();
-            info_list.Add(("go_back", 1,1));
-            info_list.Add(("blank", 1,1.5f));
-
-
-            var info_list_only_text_size = new List<(string, float, float)>();
-            info_list_only_text_size.Add(("asset_title", 0,0));
-            info_list_only_text_size.Add(("about", 0,0));
+            
 
             resizeUI(1, ui_list, size);
             

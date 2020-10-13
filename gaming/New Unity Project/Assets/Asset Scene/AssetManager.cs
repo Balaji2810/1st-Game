@@ -33,9 +33,5 @@ public class AssetManager : MonoBehaviour
         return AllAssets;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
