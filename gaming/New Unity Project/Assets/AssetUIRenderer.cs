@@ -3,18 +3,23 @@ using System.Collections.Generic;
 using Unity.UIElements.Runtime;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using UnityEngine.UIElements;
 
 public class AssetUIRenderer : MonoBehaviour
 {
-    public PanelRenderer AssetUI,info;
+    public PanelRenderer AssetUI;
     public GameObject Asset;
+
+    public GameObject info;
+    public ScrollRect SR;
+
 
     
 
     private void OnEnable()
     {
-        info.postUxmlReload = Bindinfo;
+        
         AssetUI.postUxmlReload = BindAssetUI;
         
 
@@ -37,9 +42,7 @@ public class AssetUIRenderer : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
-        SetScreenEnableState(AssetUI, true);
-        SetScreenEnableState(info, false);
+    {   
         keyIndex = 0;
         keys = assetManager.keys;
         AllAssets = assetManager.getAllAssets();
@@ -144,7 +147,11 @@ public class AssetUIRenderer : MonoBehaviour
         return (x % m + m) % m;
     }
 
-    
+    public void go_back()
+    {
+        info.SetActive(false);
+        SetScreenEnableState(AssetUI, true);
+    }
 
     private IEnumerable<Object> BindAssetUI()
     {
@@ -155,18 +162,47 @@ public class AssetUIRenderer : MonoBehaviour
         points = root.Q<Label>("points");
         cost = root.Q<Label>("cost");
 
-        var info_button = root.Q<Button>("info_button");
+        var info_button = root.Q<UnityEngine.UIElements.Button>("info_button");
         if (info_button != null)
         {
             info_button.clickable.clicked += () =>
             {
-                StartCoroutine(TransitionScreens(AssetUI, info));
+                SetScreenEnableState(AssetUI, false);
+                info.SetActive(true);
+                SR.verticalNormalizedPosition = 1;
             };
         }
 
-        
+        var tech = root.Q<UnityEngine.UIElements.Button>("tech");
+        if (tech != null)
+        {
+            tech.clickable.clicked += () =>
+            {
+                root.Q<VisualElement>("outter").style.display = DisplayStyle.None;
+                root.Q<VisualElement>("tech_options").style.display = DisplayStyle.Flex;
+            };
+        }
 
-        var keyLeft = root.Q<Button>("key_left_button");
+        var goto_obstacles = root.Q<UnityEngine.UIElements.Button>("goto_obstacles");
+        if (goto_obstacles != null)
+        {
+            goto_obstacles.clickable.clicked += () =>
+            {
+                root.Q<VisualElement>("outter").style.display = DisplayStyle.Flex;
+                root.Q<VisualElement>("tech_options").style.display = DisplayStyle.None;
+            };
+        }
+
+        var roads = root.Q<UnityEngine.UIElements.Button>("goto_roads");
+        if (roads != null)
+        {
+            roads.clickable.clicked += () =>
+            {
+               
+            };
+        }
+
+        var keyLeft = root.Q<UnityEngine.UIElements.Button>("key_left_button");
         if (keyLeft != null)
         {
             keyLeft.clickable.clicked += () =>
@@ -175,7 +211,7 @@ public class AssetUIRenderer : MonoBehaviour
             };
         }
 
-        var keyRight = root.Q<Button>("key_right_button");
+        var keyRight = root.Q<UnityEngine.UIElements.Button>("key_right_button");
         if (keyRight != null)
         {
             keyRight.clickable.clicked += () =>
@@ -184,7 +220,7 @@ public class AssetUIRenderer : MonoBehaviour
             };
         }
 
-        var itemLeft = root.Q<Button>("item_left_button");
+        var itemLeft = root.Q<UnityEngine.UIElements.Button>("item_left_button");
         if (itemLeft != null)
         {
             itemLeft.clickable.clicked += () =>
@@ -193,7 +229,7 @@ public class AssetUIRenderer : MonoBehaviour
             };
         }
 
-        var itemRight = root.Q<Button>("item_right_button");
+        var itemRight = root.Q<UnityEngine.UIElements.Button>("item_right_button");
         if (itemRight != null)
         {
             itemRight.clickable.clicked += () =>
@@ -202,7 +238,7 @@ public class AssetUIRenderer : MonoBehaviour
             };
         }
 
-        var goto_home = root.Q<Button>("goto_home");
+        var goto_home = root.Q<UnityEngine.UIElements.Button>("goto_home");
         if (goto_home != null)
         {
             goto_home.clickable.clicked += () =>
@@ -231,28 +267,7 @@ public class AssetUIRenderer : MonoBehaviour
         }
     }
 
-    private IEnumerable<Object> Bindinfo()
-    {
-        var root = info.visualTree;
-
-        title = root.Q<Label>("asset_title");
-        about = root.Q<Label>("about");
-        
-
-        var back = root.Q<Button>("go_back");
-        if (back != null)
-        {
-            back.clickable.clicked += () =>
-            {
-                StartCoroutine(TransitionScreens(info, AssetUI));
-
-            };
-        }
-
-
-
-        return null;
-    }
+    
 
     IEnumerator TransitionScreens(PanelRenderer from, PanelRenderer to)
     {
@@ -315,7 +330,10 @@ public class AssetUIRenderer : MonoBehaviour
             ui_list.Add(("points_label", 2,1));
             ui_list.Add(("points", 1,1));
             ui_list.Add(("active_label", 2,1));
-            
+            ui_list.Add(("tech", 1, 1));
+            ui_list.Add(("goto_roads", 3, 1));
+            ui_list.Add(("goto_obstacles", 3, 1));
+
             var info_list = new List<(string, float,float)>();
             info_list.Add(("go_back", 1,1));
             info_list.Add(("blank", 1,1.5f));
@@ -326,9 +344,7 @@ public class AssetUIRenderer : MonoBehaviour
             info_list_only_text_size.Add(("about", 0,0));
 
             resizeUI(1, ui_list, size);
-            resizeUI(2, info_list, size);
-
-            resizeUI2(2, info_list_only_text_size, size);
+            
 
         }
 
@@ -345,7 +361,7 @@ public class AssetUIRenderer : MonoBehaviour
             }
             else
             {
-                ui = info;
+                ui = AssetUI;
             }
             var radius = size * 0.15f;
             var text = size * 0.5f;
@@ -371,32 +387,7 @@ public class AssetUIRenderer : MonoBehaviour
         }
     }
 
-    void resizeUI2(int type, List<(string, float,float)> elements, int size)
-    {
-       try
-        {
-            PanelRenderer ui;
-            if (type==1)
-            {
-                ui = AssetUI;
-            }
-            else
-            {
-                ui = info;
-            }
-            var text = size * 0.5f;
-
-            for (int i = 0; i < elements.Count; i++)
-            {
-                ui.visualTree.Q(elements[i].Item1).style.fontSize = text;
-            }
-        }
-        catch
-        {
-            StartCoroutine(delay(type, elements, size, 2));
-        }
-
-    }
+    
 
     IEnumerator delay(int type, List<(string, float, float)> elements, int size,int opt)
     {
@@ -408,7 +399,7 @@ public class AssetUIRenderer : MonoBehaviour
         }
         else
         {
-            resizeUI2(type, elements, size);
+            resizeUI(type, elements, size);
         }
     }
 }

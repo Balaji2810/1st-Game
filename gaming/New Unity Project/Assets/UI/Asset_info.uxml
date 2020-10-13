@@ -6,10 +6,10 @@
             <ui:Button text="X" name="go_back" class="home_buttons" style="width: 45px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
         </ui:VisualElement>
         <ui:VisualElement style="flex-grow: 1; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;">
-            <ui:ListView focusable="True" selection-type="None" style="flex-grow: 1; display: flex;">
-                <ui:Label text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." name="about" style="color: rgb(255, 255, 255); white-space: normal; -unity-text-align: upper-center;" />
-                <ui:VisualElement name="blank" style="flex-grow: 1; width: auto; height: auto;" />
-            </ui:ListView>
+            <ui:ScrollView>
+                <ui:Label text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." display-tooltip-when-elided="True" name="about" style="color: rgba(255, 255, 255, 255); -unity-text-align: upper-center; white-space: normal;" />
+                <ui:VisualElement name="blank" />
+            </ui:ScrollView>
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

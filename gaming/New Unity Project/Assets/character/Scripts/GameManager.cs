@@ -6,6 +6,7 @@ using Unity.UIElements.Runtime;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
 using System.Runtime.CompilerServices;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public class GameManager : MonoBehaviour
     public PanelRenderer m_GameScreen;
     public CharacterFix fix;
     public GameObject ball;
+
+    public GameObject info;
+    public ScrollRect SR;
 
 
     private Label currentPoints;
@@ -126,7 +130,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    
+    public void back_main()
+    {
+        m_MainMenuScreen.visualTree.Q<VisualElement>("main").style.display = DisplayStyle.Flex;
+        info.SetActive(false);
+    }
 
     private IEnumerable<Object> BindMainMenuScreen()
     {
@@ -134,7 +142,7 @@ public class GameManager : MonoBehaviour
         
         
 
-        var startButton = root.Q<Button>("play");
+        var startButton = root.Q<UnityEngine.UIElements.Button>("play");
         if (startButton != null)
         {
             startButton.clickable.clicked += () =>
@@ -143,7 +151,18 @@ public class GameManager : MonoBehaviour
             };
         }
 
-        var assets = root.Q<Button>("assets");
+        var info_b = root.Q<UnityEngine.UIElements.Button>("info");
+        if (info_b != null)
+        {
+            info_b.clickable.clicked += () =>
+            {
+                root.Q<VisualElement>("main").style.display = DisplayStyle.None;
+                info.SetActive(true);
+                SR.verticalNormalizedPosition = 1;
+            };
+        }
+
+        var assets = root.Q<UnityEngine.UIElements.Button>("assets");
         if (assets != null)
         {
             assets.clickable.clicked += () =>
@@ -163,7 +182,7 @@ public class GameManager : MonoBehaviour
         
         currentPoints = root.Q<Label>("points");
 
-        var pause = root.Q<Button>("pause");
+        var pause = root.Q<UnityEngine.UIElements.Button>("pause");
         if (pause != null)
         {
             pause.clickable.clicked += () =>

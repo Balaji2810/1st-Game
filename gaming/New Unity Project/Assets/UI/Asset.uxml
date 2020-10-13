@@ -4,6 +4,9 @@
         <ui:VisualElement name="top" style="padding-left: 2.5%; padding-right: 2.5%; padding-top: 2.5%; padding-bottom: 2.5%;">
             <ui:Button text="X" name="goto_home" class="home_buttons" style="width: 45px; -unity-font-style: bold; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
         </ui:VisualElement>
+        <ui:VisualElement name="middle" style="padding-left: 2.5%; padding-right: 2.5%; padding-top: 2.5%; padding-bottom: 2.5%; height: auto;">
+            <ui:Button text="&#10;" display-tooltip-when-elided="True" name="tech" class="home_buttons" style="width: 45px; background-image: url(&apos;/Assets/UI/tech.png&apos;); margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; -unity-slice-left: 10; -unity-slice-top: 10; -unity-slice-right: 10; -unity-slice-bottom: 10;" />
+        </ui:VisualElement>
         <ui:VisualElement name="bottom" style="padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; margin-top: 0;">
             <ui:VisualElement style="flex-direction: row; justify-content: space-between; padding-right: 2.5%; padding-left: 2.5%; padding-top: 2.5%; padding-bottom: 1%;">
                 <ui:Button text="i" name="info_button" class="home_buttons" style="width: 45px; -unity-font-style: bold; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
@@ -33,6 +36,13 @@
                     <ui:Label text="Cost" name="cost_lable" class="padding" style="font-size: 25px; color: rgb(255, 255, 255); -unity-text-align: middle-center; justify-content: space-between; height: 45px; align-items: center; -unity-font: url(&apos;/Assets/Fonts/Roboto/Roboto-Light.ttf&apos;);" />
                 </ui:VisualElement>
             </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="tech_options" style="height: auto; flex-grow: 1; justify-content: center; display: none;">
+        <Style src="home.uss" />
+        <ui:VisualElement class="transperent_back" style="flex-direction: row; justify-content: space-around; height: 25%; align-items: center;">
+            <ui:Button text="Obstacles" display-tooltip-when-elided="True" name="goto_obstacles" class="home_buttons" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
+            <ui:Button text="Roads" display-tooltip-when-elided="True" name="goto_roads" class="home_buttons" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
