@@ -26,9 +26,9 @@ public class TimeManager : MonoBehaviour
     {
 
         yield return new WaitForSeconds(slowDownLength);
-        //Time.fixedDeltaTime = time;
+        Time.fixedDeltaTime = time;
         Time.timeScale = 1;
-        //Time.fixedDeltaTime = Time.timeScale * Time.fixedDeltaTime;
+        //Time.fixedDeltaTime = 0.001f;
 
     }
 

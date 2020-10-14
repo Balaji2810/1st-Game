@@ -13492,7 +13492,7 @@ PrefabInstance:
     - target: {fileID: 6016960436287872625, guid: b3c68806722a82948bb83f676ea40c52,
         type: 3}
       propertyPath: LeftRightSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6016960436287872625, guid: b3c68806722a82948bb83f676ea40c52,
         type: 3}
@@ -13996,7 +13996,7 @@ PrefabInstance:
     - target: {fileID: 7964912009784657613, guid: cdaef4c8e5a72584183254fd4ecb8da5,
         type: 3}
       propertyPath: TimeConstant
-      value: 0.02
+      value: 0.001
       objectReference: {fileID: 0}
     - target: {fileID: 7964912009784657613, guid: cdaef4c8e5a72584183254fd4ecb8da5,
         type: 3}
