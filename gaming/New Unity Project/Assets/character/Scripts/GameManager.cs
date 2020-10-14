@@ -221,7 +221,7 @@ public class GameManager : MonoBehaviour
     {
         var root = pause.visualTree;
 
-        currentPoints = root.Q<Label>("points");
+       
 
         var resume = root.Q<UnityEngine.UIElements.Button>("resume");
         if (resume != null)

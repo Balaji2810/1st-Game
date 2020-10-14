@@ -1378,7 +1378,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3057471519760609226}
   - component: {fileID: 3057471519760609269}
-  m_Layer: 16
+  - component: {fileID: -92887662283483640}
+  m_Layer: 19
   m_Name: Moving Hammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1420,6 +1421,19 @@ MonoBehaviour:
   Right: {fileID: 3057471519823403607}
   Type: 3
   speed: 1.5
+--- !u!65 &-92887662283483640
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3057471519760609227}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3057471519823403607
 GameObject:
   m_ObjectHideFlags: 0

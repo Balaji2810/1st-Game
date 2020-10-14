@@ -14,7 +14,7 @@ public class AssetUIRenderer : MonoBehaviour
     public GameObject info;
     public ScrollRect SR;
 
-
+    public FileHandler file;
     
 
     private void OnEnable()
@@ -85,7 +85,7 @@ public class AssetUIRenderer : MonoBehaviour
        cost.text = AP.AllObjectValues[previousChild].cost.ToString();
        Asset.transform.Find(previousChild).gameObject.SetActive(true);
        
-       if(AP.AllObjectValues[previousChild].status == "disabled")
+       if(AP.AllObjectValues[previousChild].status == "disabled" || AP.AllObjectValues[previousChild].status == "none")
        {
             AssetUI.visualTree.Q("active_label").style.visibility = Visibility.Hidden;
             AssetUI.visualTree.Q("active_button_on").style.visibility = Visibility.Hidden;
@@ -254,8 +254,18 @@ public class AssetUIRenderer : MonoBehaviour
         {
             on.clickable.clicked += () =>
             {
-                on.style.display = DisplayStyle.None;
-                off.style.display = DisplayStyle.Flex;
+                ES3Settings settings = new ES3Settings(ES3.EncryptionType.AES, file.password);
+                if (file.exist(previousChild))
+                {
+                    AvailablePrefabs.data temp = (AvailablePrefabs.data)ES3.Load(previousChild, file.filename, settings);
+                    temp.status = "deactive";
+                    AP.AllObjectValues[previousChild] = temp;
+                    on.style.display = DisplayStyle.None;
+                    off.style.display = DisplayStyle.Flex;
+                    ES3.Save(previousChild, temp, file.filename, settings);
+                    
+                }
+                
             };
         }
 
@@ -264,8 +274,20 @@ public class AssetUIRenderer : MonoBehaviour
         {
             off.clickable.clicked += () =>
             {
-                off.style.display = DisplayStyle.None;
-                on.style.display = DisplayStyle.Flex;
+                
+                ES3Settings settings = new ES3Settings(ES3.EncryptionType.AES, file.password);
+                if (file.exist(previousChild))
+                {
+                    AvailablePrefabs.data temp = (AvailablePrefabs.data)ES3.Load(previousChild, file.filename, settings);
+                    temp.status = "active";
+                    AP.AllObjectValues[previousChild] = temp;
+                    off.style.display = DisplayStyle.None;
+                    on.style.display = DisplayStyle.Flex;
+                    ES3.Save(previousChild, temp, file.filename, settings);
+                    
+                }
+
+                
             };
         }
 
@@ -417,4 +439,6 @@ public class AssetUIRenderer : MonoBehaviour
             resizeUI(type, elements, size);
         }
     }
+
+    
 }

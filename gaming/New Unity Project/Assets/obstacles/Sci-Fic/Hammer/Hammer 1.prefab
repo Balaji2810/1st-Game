@@ -140,7 +140,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8404479283842011488}
   - component: {fileID: 8404479283842011487}
-  m_Layer: 0
+  - component: {fileID: 6599881360867896080}
+  m_Layer: 19
   m_Name: Hammer 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -182,6 +183,19 @@ MonoBehaviour:
   Right: {fileID: 2058610768687246218}
   Type: 1
   speed: 1.5
+--- !u!65 &6599881360867896080
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8404479283842011489}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8404479283895354136
 GameObject:
   m_ObjectHideFlags: 0

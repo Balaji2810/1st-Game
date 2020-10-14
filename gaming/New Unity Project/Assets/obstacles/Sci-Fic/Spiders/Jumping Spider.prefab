@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6184742390921012624}
   - component: {fileID: 6184742390921012625}
-  m_Layer: 0
+  - component: {fileID: -7420099122233044703}
+  m_Layer: 19
   m_Name: Jumping Spider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,6 +47,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   min: -2
   max: 2
+--- !u!65 &-7420099122233044703
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6184742390921012627}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &1743121028660184324
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -98,11 +112,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6184742390921012624}
     m_Modifications:
-    - target: {fileID: 2965190426113861812, guid: 31137cdbd3056f442b460a8f4f101ba0,
+    - target: {fileID: 2965190425285590816, guid: 31137cdbd3056f442b460a8f4f101ba0,
         type: 3}
-      propertyPath: m_Name
-      value: SPIDER_BOT
+      propertyPath: m_Center.y
+      value: 0.59
       objectReference: {fileID: 0}
+    - target: {fileID: 2965190425285590816, guid: 31137cdbd3056f442b460a8f4f101ba0,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965190425285590816, guid: 31137cdbd3056f442b460a8f4f101ba0,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965190425285590816, guid: 31137cdbd3056f442b460a8f4f101ba0,
+        type: 3}
+      propertyPath: m_Direction
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965190425285590816, guid: 31137cdbd3056f442b460a8f4f101ba0,
+        type: 3}
+      propertyPath: m_Height
+      value: 1.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965190426102293944, guid: 31137cdbd3056f442b460a8f4f101ba0,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f33721c63f2b2b447b984b4d8fc2c7c8, type: 2}
+    - target: {fileID: 2965190426103853432, guid: 31137cdbd3056f442b460a8f4f101ba0,
+        type: 3}
+      propertyPath: m_Animation
+      value: 
+      objectReference: {fileID: 7400006, guid: 99e6c52476f1d254b81b9299fe09c639, type: 3}
     - target: {fileID: 2965190426113373332, guid: 31137cdbd3056f442b460a8f4f101ba0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -158,41 +202,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2965190425285590816, guid: 31137cdbd3056f442b460a8f4f101ba0,
+    - target: {fileID: 2965190426113861812, guid: 31137cdbd3056f442b460a8f4f101ba0,
         type: 3}
-      propertyPath: m_Center.y
-      value: 0.59
+      propertyPath: m_Name
+      value: SPIDER_BOT
       objectReference: {fileID: 0}
-    - target: {fileID: 2965190425285590816, guid: 31137cdbd3056f442b460a8f4f101ba0,
-        type: 3}
-      propertyPath: m_Radius
-      value: 0.58
-      objectReference: {fileID: 0}
-    - target: {fileID: 2965190425285590816, guid: 31137cdbd3056f442b460a8f4f101ba0,
-        type: 3}
-      propertyPath: m_Center.z
-      value: -0.24
-      objectReference: {fileID: 0}
-    - target: {fileID: 2965190425285590816, guid: 31137cdbd3056f442b460a8f4f101ba0,
-        type: 3}
-      propertyPath: m_Direction
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2965190425285590816, guid: 31137cdbd3056f442b460a8f4f101ba0,
-        type: 3}
-      propertyPath: m_Height
-      value: 1.51
-      objectReference: {fileID: 0}
-    - target: {fileID: 2965190426103853432, guid: 31137cdbd3056f442b460a8f4f101ba0,
-        type: 3}
-      propertyPath: m_Animation
-      value: 
-      objectReference: {fileID: 7400006, guid: 99e6c52476f1d254b81b9299fe09c639, type: 3}
-    - target: {fileID: 2965190426102293944, guid: 31137cdbd3056f442b460a8f4f101ba0,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: f33721c63f2b2b447b984b4d8fc2c7c8, type: 2}
     m_RemovedComponents:
     - {fileID: 3327732614337130468, guid: 31137cdbd3056f442b460a8f4f101ba0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 31137cdbd3056f442b460a8f4f101ba0, type: 3}

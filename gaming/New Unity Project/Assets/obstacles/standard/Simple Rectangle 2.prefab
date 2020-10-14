@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1107681007080945060}
   - component: {fileID: 1107681007080945063}
-  m_Layer: 0
+  - component: {fileID: 4964747058349848307}
+  m_Layer: 19
   m_Name: Simple Rectangle 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,6 +47,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   min: -2
   max: 1
+--- !u!65 &4964747058349848307
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107681007080945062}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1107681007646894042
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53,11 +67,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1107681007080945060}
     m_Modifications:
-    - target: {fileID: 3674462426380903664, guid: b2bf70120b0a47f428179f8a248a0965,
-        type: 3}
-      propertyPath: m_Name
-      value: Cube
-      objectReference: {fileID: 0}
     - target: {fileID: 3674462426380903564, guid: b2bf70120b0a47f428179f8a248a0965,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -132,6 +141,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_CollisionDetection
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674462426380903664, guid: b2bf70120b0a47f428179f8a248a0965,
+        type: 3}
+      propertyPath: m_Name
+      value: Cube
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2bf70120b0a47f428179f8a248a0965, type: 3}

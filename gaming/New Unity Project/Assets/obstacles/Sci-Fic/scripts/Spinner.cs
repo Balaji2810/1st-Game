@@ -33,7 +33,7 @@ public class Spinner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gameObject.GetComponent<Rigidbody>().AddTorque( SpinAngle *Time.unscaledDeltaTime*Angle*ChangeInSpeed*speed);
+        gameObject.GetComponent<Rigidbody>().AddTorque( SpinAngle *Time.unscaledDeltaTime*Angle*ChangeInSpeed*speed,ForceMode.VelocityChange);
         
         
     }

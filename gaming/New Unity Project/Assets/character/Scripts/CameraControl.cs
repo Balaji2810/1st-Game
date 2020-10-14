@@ -65,7 +65,7 @@ public class CameraControl : MonoBehaviour
 
 
     // Update is called once per frame
-    void FixedUpdate()
+    void LateUpdate()
     {
 
         try
@@ -122,7 +122,7 @@ public class CameraControl : MonoBehaviour
                     transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, player.GroundLevel + offset.y, transform.position.z), Time.deltaTime * JumpSpeed);
                     //camera Left Right move
                     //transform.position = new Vector3(player.LeftRight, transform.position.y, transform.position.z);
-                    transform.position = Vector3.Lerp(transform.position, new Vector3(player.LeftRight, transform.position.y, transform.position.z), Time.deltaTime * LeftRightSpeed);
+                    transform.position = Vector3.Lerp(transform.position, new Vector3(player.LeftRight, transform.position.y, transform.position.z),  LeftRightSpeed);
 
 
 
@@ -172,7 +172,7 @@ public class CameraControl : MonoBehaviour
         }
         catch
         {
-            Debug.Log("Camera");
+            Debug.Log(PlayerPrefs.GetString("name", "player"));
         }
 
     }

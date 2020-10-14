@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3168240464410043592}
   - component: {fileID: 3168240464410043593}
-  m_Layer: 0
-  m_Name: TripleBarrels
+  - component: {fileID: -2429787635916955302}
+  m_Layer: 19
+  m_Name: Barrels 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,3 +49,16 @@ MonoBehaviour:
   - {fileID: -7840471735308948729, guid: 5583d737da0fce140a09cacd500a7cea, type: 3}
   - {fileID: 8777414835643282064, guid: 7b7f24fe2b3bd6f4585d3fd8672eaa06, type: 3}
   - {fileID: -9117092963641148799, guid: e9ab82dd6c3b228409e63e906d7684bc, type: 3}
+--- !u!65 &-2429787635916955302
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3168240464410043598}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}

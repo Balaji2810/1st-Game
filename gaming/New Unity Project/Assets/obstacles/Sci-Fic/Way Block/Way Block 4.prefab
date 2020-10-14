@@ -136,8 +136,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3442275439826948675}
-  m_Layer: 16
-  m_Name: WoodenBlock-4
+  - component: {fileID: 2746119352704064068}
+  m_Layer: 19
+  m_Name: Way Block 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -158,6 +159,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2746119352704064068
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3442275439826948700}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5036501906210594935
 GameObject:
   m_ObjectHideFlags: 0

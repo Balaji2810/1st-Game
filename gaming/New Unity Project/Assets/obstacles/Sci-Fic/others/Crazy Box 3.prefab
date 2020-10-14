@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4855897602968454342}
   - component: {fileID: 8222328379263115608}
-  m_Layer: 16
-  m_Name: Guard Rail 3
+  - component: {fileID: -1145200567154853322}
+  m_Layer: 19
+  m_Name: Crazy Box 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,3 +46,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obj: {fileID: 8885974717196862086, guid: 2d754f22f4c73eb41b22a243203573e2, type: 3}
   Type: 3
+--- !u!65 &-1145200567154853322
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5031236830024090922}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}

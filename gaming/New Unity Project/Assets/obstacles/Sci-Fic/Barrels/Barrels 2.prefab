@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6406434603467546607}
   - component: {fileID: 6406434603467546606}
-  m_Layer: 0
-  m_Name: DoubleBarrels
+  - component: {fileID: 5426370192373357496}
+  m_Layer: 19
+  m_Name: Barrels 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,3 +49,16 @@ MonoBehaviour:
   - {fileID: -1530846345672252169, guid: ed87ea31c1facc143a0dbaa1ce01b8b4, type: 3}
   - {fileID: 8777414835643282064, guid: 7b7f24fe2b3bd6f4585d3fd8672eaa06, type: 3}
   - {fileID: -9117092963641148799, guid: e9ab82dd6c3b228409e63e906d7684bc, type: 3}
+--- !u!65 &5426370192373357496
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6406434603467546605}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}

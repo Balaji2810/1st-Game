@@ -24,29 +24,27 @@
                 "m_VisualTreeAssetBackup": {
                     "instanceID": 0
                 },
-                "m_OpenendVisualTreeAssetOldPath": "Assets/pause.uxml",
+                "m_OpenendVisualTreeAssetOldPath": "Assets/UI/game.uxml",
                 "m_VisualTreeAsset": {
                     "fileID": 9197481963319205126,
-                    "guid": "8751bbf3e94036a498b522cb3a1766e1",
+                    "guid": "6e774ca9542c3d5459c935afcbebeca3",
                     "type": 3
                 },
                 "m_ActiveStyleSheet": {
-                    "fileID": 7433441132597879392,
-                    "guid": "c64f7eb2d38c1bb41ad4f668e3f10c8a",
-                    "type": 3
+                    "instanceID": 0
                 },
                 "m_Settings": {
-                    "UxmlGuid": "8751bbf3e94036a498b522cb3a1766e1",
-                    "UxmlPath": "Assets/pause.uxml",
+                    "UxmlGuid": "6e774ca9542c3d5459c935afcbebeca3",
+                    "UxmlPath": "Assets/UI/game.uxml",
                     "CanvasX": 0,
                     "CanvasY": 0,
-                    "CanvasWidth": 350,
+                    "CanvasWidth": 146,
                     "CanvasHeight": 450,
                     "MatchGameView": false,
                     "ZoomScale": 1.0,
                     "PanOffset": {
-                        "x": 21.0,
-                        "y": 90.0
+                        "x": 23.0,
+                        "y": 47.5
                     },
                     "ColorModeBackgroundOpacity": 1.0,
                     "ImageModeCanvasBackgroundOpacity": 1.0,
