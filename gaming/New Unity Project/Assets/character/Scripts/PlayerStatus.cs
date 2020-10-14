@@ -46,7 +46,7 @@ public class PlayerStatus : MonoBehaviour
 
        
 
-        if(controller.velocity.z>17)
+        if(controller.velocity.z>20)
         {
             animator.SetInteger("speed", 3);
         }

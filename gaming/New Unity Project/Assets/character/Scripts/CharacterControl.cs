@@ -72,7 +72,7 @@ public class CharacterControl : MonoBehaviour
     {
         yield return new WaitForSeconds(SlideDelayTime);
 
-        sliding = false;
+        //sliding = false;
         animator.SetBool("Slide", false);
 
     }
@@ -104,30 +104,21 @@ public class CharacterControl : MonoBehaviour
         
         else if (speed > 20)
         {
-            speed += Time.deltaTime / (inverseAxcel*60);
+            speed += Time.deltaTime / (inverseAxcel*70);
         }
-        else if (speed > 15)
+        else if (speed >= 17)
         {
-            speed += Time.deltaTime / (inverseAxcel * 30f);
+            speed += Time.deltaTime / (inverseAxcel * 40f);
         }
-        else if (speed > 10)
+        else if (speed < 17)
         {
-            speed += Time.deltaTime / (inverseAxcel * 10f);
+            speed += Time.deltaTime / (inverseAxcel*0.5f);
         }
-        else if (speed > 5)
-        {
-            speed += Time.deltaTime / (inverseAxcel*5f);
-        }
-        else 
-        {
-            speed += Time.deltaTime / (inverseAxcel*1.5f);
-        }
+        
         
 
         //Speed Accelarator
-        if (speed > maxspeed)
-            speed = maxspeed;
-
+        speed = Mathf.Clamp(speed, 0, maxspeed);
         
 
 
@@ -163,13 +154,15 @@ public class CharacterControl : MonoBehaviour
                 if ((Input.GetButton("Jump") || Input.GetKey(KeyCode.W)) && jumpDelayTime==jump)
                 {
                     moveDirection.y = jumpSpeed;
+                    animator.SetBool("Slide", false);
                     animator.SetBool("jump", true);
+                    
                 }
 
                 if (Input.GetKey(KeyCode.S))
                 {
                     
-                    sliding = true;
+                    //sliding = true;
                     animator.SetBool("Slide", true);
                     StartCoroutine(SlideEnd());
                 }
