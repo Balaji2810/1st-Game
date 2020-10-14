@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; flex-direction: row; align-items: center; justify-content: center;">
+        <Style src="UI/home.uss" />
+        <ui:VisualElement class="transperent_back" style="justify-content: center; align-items: center; flex-grow: 0.5; height: 100%;">
+            <ui:Button text="Resume" display-tooltip-when-elided="True" name="resume" class="home_buttons" />
+            <ui:VisualElement name="empty" />
+            <ui:Button text="Home" display-tooltip-when-elided="True" name="home" class="home_buttons" />
+            <ui:Label text="Label" display-tooltip-when-elided="True" name="count" style="-unity-text-align: middle-left; color: rgba(255, 255, 255, 255); -unity-font-style: bold; display: none;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

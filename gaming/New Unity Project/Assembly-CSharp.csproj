@@ -139,6 +139,7 @@
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\PropMelee.cs" />
     <Compile Include="Assets\character\RootMotion\Shared Scripts\SolverManager.cs" />
     <Compile Include="Assets\ProceduralUIImage\Scripts\Modifiers\FreeModifier.cs" />
+    <Compile Include="Assets\Script\GetObject.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\Dying.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\Behaviours\BehaviourPuppetStateSwitching.cs" />
     <Compile Include="Assets\character\RootMotion\Shared Demo Assets\Scripts\Character Controllers\CharacterThirdPerson.cs" />
@@ -231,7 +232,6 @@
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\PhysXTools.cs" />
     <Compile Include="Assets\character\RootMotion\Shared Scripts\Hierarchy.cs" />
     <Compile Include="Assets\UIERuntime\Samples\RepeatGame\RepeatGame.cs" />
-    <Compile Include="Assets\Script\GetObject.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -249,6 +249,7 @@
      <None Include="Assets\UI\home.uss" />
      <None Include="Assets\Fonts\Mansalva\OFL.txt" />
      <None Include="Assets\ProceduralUIImage\Resources\Shaders\ProceduralImageRuntime.shader" />
+     <None Include="Assets\pause.uxml" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\water effect\LowPolyWater_Pack\LowPoly Island\Credits.txt" />
      <None Include="Assets\UI\Asset.uxml" />

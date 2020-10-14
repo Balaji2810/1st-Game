@@ -15,11 +15,13 @@ public class GameManager : MonoBehaviour
     public FileHandler File;
     public PanelRenderer m_MainMenuScreen;
     public PanelRenderer m_GameScreen;
+    public PanelRenderer pause;
     public CharacterFix fix;
     public GameObject ball;
 
     public GameObject info;
     public ScrollRect SR;
+    public TimeManager timeManage;
 
 
     private Label currentPoints;
@@ -32,7 +34,7 @@ public class GameManager : MonoBehaviour
     {
         m_MainMenuScreen.postUxmlReload = BindMainMenuScreen;
         m_GameScreen.postUxmlReload = BindGameScreen;
-        
+        pause.postUxmlReload = BindPause;
     }
 
     
@@ -46,6 +48,8 @@ public class GameManager : MonoBehaviour
 
        
     }
+
+
 
     void SetScreenEnableState(PanelRenderer screen, bool state)
     {
@@ -67,6 +71,7 @@ public class GameManager : MonoBehaviour
     {
         SetScreenEnableState(m_MainMenuScreen, true);
         SetScreenEnableState(m_GameScreen, false);
+        SetScreenEnableState(pause, false);
     }
 
 
@@ -90,33 +95,43 @@ public class GameManager : MonoBehaviour
             size = (int) (size * 0.125f);
 
 
-            var main_ui_list = new List<(string,int)>();
+            var main_ui_list = new List<(string,float,float)>();
             //main ui elements
-            main_ui_list.Add(("settings",1));
-            main_ui_list.Add(("shop", 1));
-            main_ui_list.Add(("no_ads", 1));
-            main_ui_list.Add(("info", 1));
-            main_ui_list.Add(("assets", 2));
-            main_ui_list.Add(("play", 2));
+            main_ui_list.Add(("settings",1,1));
+            main_ui_list.Add(("shop", 1,1));
+            main_ui_list.Add(("no_ads", 1,1));
+            main_ui_list.Add(("info", 1,1));
+            main_ui_list.Add(("assets", 2,1));
+            main_ui_list.Add(("play", 2,1));
 
-            var game_ui_list = new List<(string, int)>();
-            game_ui_list.Add(("points_back", 2));
-            game_ui_list.Add(("points", 1));
-            game_ui_list.Add(("pause", 1));
+            var game_ui_list = new List<(string, float,float)>();
+            game_ui_list.Add(("points_back", 2,1));
+            game_ui_list.Add(("points", 1,1));
+            game_ui_list.Add(("pause", 1,1));
+
+            var pause_ui_list = new List<(string, float, float)>();
+            pause_ui_list.Add(("resume", 3, 1));
+            pause_ui_list.Add(("home", 3, 1));
+            pause_ui_list.Add(("empty", 1, 1));
+
 
             resizeUI(m_MainMenuScreen, main_ui_list, size);
             resizeUI(m_GameScreen, game_ui_list, size);
+            resizeUI(pause, pause_ui_list, size);
+
+            pause.visualTree.Q<Label>("count").style.fontSize = size*2;
+
         }
     }
 
-    void resizeUI(PanelRenderer ui,List<(string,int)> elements,int size)
+    void resizeUI(PanelRenderer ui,List<(string,float,float)> elements,int size)
     {
         var radius = size * 0.15f;
         var text = size * 0.5f;
         var border = size * 0.02f;
         for(int i=0;i<elements.Count;i++)
         {
-            ui.visualTree.Q(elements[i].Item1).style.height = size;
+            ui.visualTree.Q(elements[i].Item1).style.height = size*elements[i].Item3;
             ui.visualTree.Q(elements[i].Item1).style.width = size*elements[i].Item2;
             ui.visualTree.Q(elements[i].Item1).style.borderBottomLeftRadius = radius;
             ui.visualTree.Q(elements[i].Item1).style.borderBottomRightRadius = radius;
@@ -182,18 +197,103 @@ public class GameManager : MonoBehaviour
         
         currentPoints = root.Q<Label>("points");
 
-        var pause = root.Q<UnityEngine.UIElements.Button>("pause");
-        if (pause != null)
+        var pause_b = root.Q<UnityEngine.UIElements.Button>("pause");
+        if (pause_b != null)
         {
-            pause.clickable.clicked += () =>
+            pause_b.clickable.clicked += () =>
             {
-                print("pause clicked");
+                StartCoroutine(TransitionScreens(m_GameScreen, pause));
+                timeManage.pause(true);
+                pause.visualTree.Q<Label>("count").style.display = DisplayStyle.None;
+                pause.visualTree.Q<UnityEngine.UIElements.Button>("resume").style.display = DisplayStyle.Flex;
+                pause.visualTree.Q<VisualElement>("empty").style.display = DisplayStyle.Flex;
+                pause.visualTree.Q<UnityEngine.UIElements.Button>("home").style.display = DisplayStyle.Flex;
             };
         }
 
 
 
         return null;
+    }
+
+
+    private IEnumerable<Object> BindPause()
+    {
+        var root = pause.visualTree;
+
+        currentPoints = root.Q<Label>("points");
+
+        var resume = root.Q<UnityEngine.UIElements.Button>("resume");
+        if (resume != null)
+        {
+            resume.clickable.clicked += () =>
+            {
+                
+                pause.visualTree.Q<Label>("count").style.display = DisplayStyle.Flex;
+                pause.visualTree.Q<UnityEngine.UIElements.Button>("resume").style.display = DisplayStyle.None;
+                pause.visualTree.Q<VisualElement>("empty").style.display = DisplayStyle.None;
+                pause.visualTree.Q<UnityEngine.UIElements.Button>("home").style.display = DisplayStyle.None;
+                StartCoroutine(count(3));
+            };
+        }
+
+        var home = root.Q<UnityEngine.UIElements.Button>("home");
+        if (home != null)
+        {
+            home.clickable.clicked += () =>
+            {
+                timeManage.pause(false);
+                SceneManager.LoadScene("Game", LoadSceneMode.Single);
+            };
+        }
+
+
+
+        return null;
+    }
+
+    IEnumerator count(int type)
+    {
+        if(type==3)
+        {
+            pause.visualTree.Q<Label>("count").text = "3";
+            yield return StartCoroutine(WaitForRealSeconds(0.75f));
+            StartCoroutine(count(2));
+        }
+        else if(type==2)
+        {
+            pause.visualTree.Q<Label>("count").text = "2";
+            yield return StartCoroutine(WaitForRealSeconds(0.75f));
+            StartCoroutine(count(1));
+        }
+        else if(type==1)
+        {
+            pause.visualTree.Q<Label>("count").text = "1";
+            yield return StartCoroutine(WaitForRealSeconds(0.75f));
+            StartCoroutine(count(0));
+        }
+        else
+        {
+            pause.visualTree.Q<Label>("count").text = "RuN!!";
+            yield return StartCoroutine(WaitForRealSeconds(0.25f));
+            StartCoroutine(TransitionScreens(pause, m_GameScreen));
+            timeManage.pause(false);
+        }
+        
+        
+        
+        
+
+        
+    }
+
+    public static IEnumerator WaitForRealSeconds(float time)
+    {
+        float start = Time.realtimeSinceStartup;
+        while (Time.realtimeSinceStartup < start + time)
+        {
+            yield return null;
+        }
     }
 
 

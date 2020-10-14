@@ -31,4 +31,17 @@ public class TimeManager : MonoBehaviour
         //Time.fixedDeltaTime = Time.timeScale * Time.fixedDeltaTime;
 
     }
+
+    public void pause(bool state)
+    {
+        if(state)
+        {
+            Time.timeScale = 0;
+        }
+        else
+        {
+
+            Time.timeScale = 1;
+        }
+    }
 }
