@@ -112,21 +112,10 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
-    Unity.UI.Builder.Editor.dll:
-    - Unity.UI.Builder.Builder
-    - Unity.UI.Builder.BuilderDocument
     Unity.UI.Runtime.dll:
     - Unity.UIElements.Runtime.PanelRenderer
     - Unity.UIElements.Runtime.PanelScaler
     - Unity.UIElements.Runtime.UIElementsEventSystem
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
-    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -1366,7 +1355,7 @@ ScriptsOnlyBuild:
     className: RectMask2D
   - hash:
       serializedVersion: 2
-      Hash: 57d4dd6c1552b3e2deec86788ac642be
+      Hash: 2d8fd51688be44ac31c4864b9e119c7d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Road_Renderer
@@ -2188,7 +2177,7 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
-      Hash: ab3479a60038a9af8b1f0c9a053ffecd
+      Hash: 0ef1f7cf7b416133f03428347becdd93
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AssetUIRenderer

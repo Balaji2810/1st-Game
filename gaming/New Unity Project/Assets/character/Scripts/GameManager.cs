@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         PlayerPrefs.SetString("name", playerName);
+        Application.targetFrameRate = 60;
+        
     }
     private void OnEnable()
     {
@@ -83,7 +85,8 @@ public class GameManager : MonoBehaviour
     {
         if(currentPoints != null)
         {
-           currentPoints.text = File.load("points", "temp").ToString();
+            currentPoints.text = Mathf.Ceil(1.0f / Time.deltaTime).ToString();
+           //currentPoints.text = File.load("points", "temp").ToString();
         }
 
         if (lastScreenWidth != Screen.width || lastScreenHeight != Screen.height)

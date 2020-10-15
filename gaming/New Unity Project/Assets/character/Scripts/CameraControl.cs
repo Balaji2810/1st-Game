@@ -130,10 +130,10 @@ public class CameraControl : MonoBehaviour
                 }
                 else
                 {
-                    transform.LookAt(player.LookAt);
-                    //var targetRotation = Quaternion.LookRotation(player.LookAt.position - transform.position);
+                    //transform.LookAt(player.LookAt);
+                    var targetRotation = Quaternion.LookRotation(player.LookAt.position - transform.position);
                     // Smoothly rotate towards the target point.
-                    //transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, LookAtSpeed * Time.deltaTime);
+                    transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, LookAtSpeed * Time.deltaTime);
 
                     
                     if(afterDead)

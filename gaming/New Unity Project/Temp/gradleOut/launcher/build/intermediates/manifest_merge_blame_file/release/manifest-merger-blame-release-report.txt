@@ -28,108 +28,114 @@
 20    <uses-feature android:glEsVersion="0x00020000" />
 20-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:13:5-54
 20-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:13:19-51
-21
-22    <uses-permission android:name="android.permission.INTERNET" />
-22-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:15:5-67
-22-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:15:22-64
-23
-24    <uses-feature
-24-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:17:5-19:36
-25        android:name="android.hardware.touchscreen"
-25-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:18:9-52
-26        android:required="false" />
-26-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:19:9-33
+21    <uses-feature
+21-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:14:5-16:36
+22        android:name="android.hardware.vulkan.version"
+22-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:15:9-55
+23        android:required="false" />
+23-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:16:9-33
+24
+25    <uses-permission android:name="android.permission.INTERNET" />
+25-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:18:5-67
+25-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:18:22-64
+26
 27    <uses-feature
 27-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:20:5-22:36
-28        android:name="android.hardware.touchscreen.multitouch"
-28-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:21:9-63
+28        android:name="android.hardware.touchscreen"
+28-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:21:9-52
 29        android:required="false" />
 29-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:22:9-33
 30    <uses-feature
 30-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:23:5-25:36
-31        android:name="android.hardware.touchscreen.multitouch.distinct"
-31-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:24:9-72
+31        android:name="android.hardware.touchscreen.multitouch"
+31-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:24:9-63
 32        android:required="false" />
 32-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:25:9-33
-33
-34    <application
-34-->C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:5:3-154
-35        android:banner="@drawable/app_banner"
-35-->C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:5:114-151
-36        android:extractNativeLibs="true"
-36-->C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:5:16-48
-37        android:icon="@mipmap/app_icon"
-37-->C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:5:82-113
-38        android:isGame="true"
-38-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:27:18-39
-39        android:label="@string/app_name" >
-39-->C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:5:49-81
-40        <activity
-40-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:28:9-48:20
-41            android:name="com.unity3d.player.UnityPlayerActivity"
-41-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:29:13-66
-42            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
-42-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:30:13-194
-43            android:hardwareAccelerated="false"
-43-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:31:13-48
-44            android:launchMode="singleTask"
-44-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:32:13-44
-45            android:screenOrientation="portrait"
-45-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:33:13-49
-46            android:theme="@style/UnityThemeSelector" >
-46-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:34:13-54
-47            <intent-filter>
-47-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:35:13-40:29
-48                <action android:name="android.intent.action.MAIN" />
-48-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:36:17-69
-48-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:36:25-66
-49
-50                <category android:name="android.intent.category.LAUNCHER" />
-50-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:38:17-77
-50-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:38:27-74
-51                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-51-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:39:17-86
-51-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:39:27-83
-52            </intent-filter>
-53
-54            <meta-data
-54-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:42:13-44:40
-55                android:name="unityplayer.UnityActivity"
-55-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:43:17-57
-56                android:value="true" />
-56-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:44:17-37
+33    <uses-feature
+33-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:26:5-28:36
+34        android:name="android.hardware.touchscreen.multitouch.distinct"
+34-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:27:9-72
+35        android:required="false" />
+35-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:28:9-33
+36
+37    <application
+37-->C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:5:3-154
+38        android:banner="@drawable/app_banner"
+38-->C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:5:114-151
+39        android:extractNativeLibs="true"
+39-->C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:5:16-48
+40        android:icon="@mipmap/app_icon"
+40-->C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:5:82-113
+41        android:isGame="true"
+41-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:30:18-39
+42        android:label="@string/app_name" >
+42-->C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\launcher\src\main\AndroidManifest.xml:5:49-81
+43        <activity
+43-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:31:9-51:20
+44            android:name="com.unity3d.player.UnityPlayerActivity"
+44-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:32:13-66
+45            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+45-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:33:13-194
+46            android:hardwareAccelerated="false"
+46-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:34:13-48
+47            android:launchMode="singleTask"
+47-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:35:13-44
+48            android:screenOrientation="portrait"
+48-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:36:13-49
+49            android:theme="@style/UnityThemeSelector" >
+49-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:37:13-54
+50            <intent-filter>
+50-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:38:13-43:29
+51                <action android:name="android.intent.action.MAIN" />
+51-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:39:17-69
+51-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:39:25-66
+52
+53                <category android:name="android.intent.category.LAUNCHER" />
+53-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:41:17-77
+53-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:41:27-74
+54                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+54-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:42:17-86
+54-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:42:27-83
+55            </intent-filter>
+56
 57            <meta-data
 57-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:45:13-47:40
-58                android:name="android.notch_support"
-58-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:46:17-53
+58                android:name="unityplayer.UnityActivity"
+58-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:46:17-57
 59                android:value="true" />
 59-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:47:17-37
-60        </activity>
-61
-62        <meta-data
-62-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:50:9-52:33
-63            android:name="unity.splash-mode"
-63-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:51:13-45
-64            android:value="0" />
-64-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:52:13-30
+60            <meta-data
+60-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:48:13-50:40
+61                android:name="android.notch_support"
+61-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:49:17-53
+62                android:value="true" />
+62-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:50:17-37
+63        </activity>
+64
 65        <meta-data
-65-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:53:9-55:36
-66            android:name="unity.splash-enable"
-66-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:54:13-47
-67            android:value="True" />
-67-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:55:13-33
+65-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:53:9-55:33
+66            android:name="unity.splash-mode"
+66-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:54:13-45
+67            android:value="0" />
+67-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:55:13-30
 68        <meta-data
-68-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:56:9-58:50
-69            android:name="notch.config"
-69-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:57:13-40
-70            android:value="portrait|landscape" />
-70-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:58:13-47
+68-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:56:9-58:36
+69            android:name="unity.splash-enable"
+69-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:57:13-47
+70            android:value="True" />
+70-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:58:13-33
 71        <meta-data
-71-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:59:9-61:68
-72            android:name="unity.build-id"
-72-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:60:13-42
-73            android:value="bf0b8a1c-fb5c-4bf3-ad73-d4ec1fddd549" />
-73-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:61:13-65
-74    </application>
-75
-76</manifest>
+71-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:59:9-61:50
+72            android:name="notch.config"
+72-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:60:13-40
+73            android:value="portrait|landscape" />
+73-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:61:13-47
+74        <meta-data
+74-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:62:9-64:68
+75            android:name="unity.build-id"
+75-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:63:13-42
+76            android:value="ee891d96-1a52-433c-a97a-ecec3a866154" />
+76-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:64:13-65
+77    </application>
+78
+79</manifest>

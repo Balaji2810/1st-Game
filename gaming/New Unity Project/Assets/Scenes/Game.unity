@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 1
+  m_Fog: 0
   m_FogColor: {r: 1, g: 1, b: 1, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.005
@@ -1342,7 +1342,7 @@ PrefabInstance:
     - target: {fileID: 3206858371130517350, guid: 1457bcbfe6873d14b9116d11f3de76d8,
         type: 3}
       propertyPath: bufferLength
-      value: 14
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3206858371130517351, guid: 1457bcbfe6873d14b9116d11f3de76d8,
         type: 3}
@@ -3741,13 +3741,13 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 4.2314e-41, z: 0, w: -21.25}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -8274,7 +8274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roadLength: 40
-  roadOnScreen: 5
+  roadOnScreen: 3
   roadSpawn: 40.5
   DummyRoad: {fileID: 1377412316973669087, guid: c893f584e0376484c838f40932fdeac1,
     type: 3}
@@ -11979,11 +11979,6 @@ PrefabInstance:
       propertyPath: File
       value: 
       objectReference: {fileID: 2013637001}
-    - target: {fileID: 147993806045504639, guid: 938060679b6028740afb5b2c6bfbec09,
-        type: 3}
-      propertyPath: Roads.Array.data[8].status
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 938060679b6028740afb5b2c6bfbec09, type: 3}
 --- !u!1 &680716737330848336
@@ -13552,7 +13547,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_RenderPostProcessing: 1
-  m_Antialiasing: 2
+  m_Antialiasing: 1
   m_AntialiasingQuality: 2
   m_StopNaN: 0
   m_Dithering: 0
@@ -13991,17 +13986,17 @@ PrefabInstance:
     - target: {fileID: 7964912009784657613, guid: cdaef4c8e5a72584183254fd4ecb8da5,
         type: 3}
       propertyPath: slowDownLength
-      value: 0.25
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7964912009784657613, guid: cdaef4c8e5a72584183254fd4ecb8da5,
         type: 3}
       propertyPath: TimeConstant
-      value: 0.001
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 7964912009784657613, guid: cdaef4c8e5a72584183254fd4ecb8da5,
         type: 3}
       propertyPath: slowDownFactor
-      value: 0.05
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 7964912009784657614, guid: cdaef4c8e5a72584183254fd4ecb8da5,
         type: 3}
