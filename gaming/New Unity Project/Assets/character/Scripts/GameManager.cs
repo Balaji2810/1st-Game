@@ -26,10 +26,12 @@ public class GameManager : MonoBehaviour
 
     private Label currentPoints;
 
+    public int frameTraget;
     private void Awake()
     {
         PlayerPrefs.SetString("name", playerName);
-        Application.targetFrameRate = 60;
+        Application.targetFrameRate = frameTraget;
+        //QualitySettings.vSyncCount = 2;
         
     }
     private void OnEnable()
@@ -45,13 +47,19 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //StartCoroutine(delay());
         GoToMainMenu();
         
 
        
     }
 
-
+    IEnumerator delay()
+    {
+        yield return new WaitForSeconds(1);
+        Time.fixedDeltaTime = Mathf.Ceil(1.0f / Time.deltaTime) * (0.001f / 30);
+        print(Mathf.Ceil(1.0f / Time.deltaTime) + " " + Time.fixedDeltaTime);
+    }
 
     void SetScreenEnableState(PanelRenderer screen, bool state)
     {
@@ -83,7 +91,9 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(currentPoints != null)
+        
+
+        if (currentPoints != null)
         {
             currentPoints.text = Mathf.Ceil(1.0f / Time.deltaTime).ToString();
            //currentPoints.text = File.load("points", "temp").ToString();

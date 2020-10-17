@@ -81,6 +81,7 @@ public class CharacterControl : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        
         if(!gameManager.Startgame)
         {
             return;
@@ -131,8 +132,8 @@ public class CharacterControl : MonoBehaviour
         }
         else
         {
-            moveDirection.y -= gravity * Time.deltaTime;
-            controller.Move(moveDirection * Time.deltaTime);
+            moveDirection.y -= gravity * Time.unscaledDeltaTime;
+            controller.Move(moveDirection * Time.unscaledDeltaTime);
         }
 
         if (pm.state == PuppetMaster.State.Alive  &&!status.AnimationDeath)
@@ -157,6 +158,10 @@ public class CharacterControl : MonoBehaviour
                     animator.SetBool("Slide", false);
                     animator.SetBool("jump", true);
                     
+                }
+                else
+                {
+                    moveDirection.y = 0f;
                 }
 
                 if (Input.GetKey(KeyCode.S))

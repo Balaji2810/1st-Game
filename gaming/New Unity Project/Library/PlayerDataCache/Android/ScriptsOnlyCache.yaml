@@ -34,7 +34,6 @@ ScriptsOnlyBuild:
     - RootMotion.Dynamics.PuppetMaster
     - ScoreCounter
     - SideColor
-    - SimpleRoad
     - SingleBarrel
     - SkipRoad
     - Spinner
@@ -68,6 +67,11 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.PostProcessing.PostProcessLayer
     - UnityEngine.Rendering.PostProcessing.PostProcessResources
     - UnityEngine.Rendering.PostProcessing.PostProcessVolume
+    Unity.ProBuilder.Editor.dll:
+    - UnityEditor.ProBuilder.EditorToolbar
+    - UnityEditor.ProBuilder.ProBuilderEditor
+    Unity.ProBuilder.dll:
+    - UnityEngine.ProBuilder.ProBuilderMesh
     Unity.RenderPipelines.Core.Runtime.dll:
     - UnityEngine.Rendering.UI.DebugUIHandlerBitField
     - UnityEngine.Rendering.UI.DebugUIHandlerButton
@@ -211,6 +215,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13244}
     - Class: 114
+      Script: {instanceID: 13402}
+    - Class: 114
       Script: {instanceID: 13420}
     - Class: 114
       Script: {instanceID: 13486}
@@ -224,8 +230,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14190}
     - Class: 114
       Script: {instanceID: 14224}
-    - Class: 114
-      Script: {instanceID: 14412}
     - Class: 114
       Script: {instanceID: 14664}
     - Class: 114
@@ -428,6 +432,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13288}
     - Class: 114
+      Script: {instanceID: 13402}
+    - Class: 114
       Script: {instanceID: 13420}
     - Class: 114
       Script: {instanceID: 13424}
@@ -447,8 +453,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14316}
     - Class: 114
       Script: {instanceID: 14394}
-    - Class: 114
-      Script: {instanceID: 14412}
     - Class: 114
       Script: {instanceID: 14434}
     - Class: 114
@@ -669,6 +673,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13244}
     - Class: 114
+      Script: {instanceID: 13402}
+    - Class: 114
       Script: {instanceID: 13420}
     - Class: 114
       Script: {instanceID: 13486}
@@ -684,8 +690,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14190}
     - Class: 114
       Script: {instanceID: 14224}
-    - Class: 114
-      Script: {instanceID: 14412}
     - Class: 114
       Script: {instanceID: 14664}
     - Class: 114
@@ -2639,7 +2643,7 @@ ScriptsOnlyBuild:
     className: PropPickUpTrigger
   - hash:
       serializedVersion: 2
-      Hash: 56d628e02640daba4136ab757386396f
+      Hash: 004f6a468f2da3ca2e7296efba153935
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MentalRoad

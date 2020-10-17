@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class MentalRoad : MonoBehaviour
 {
-    public GameObject roadCube;
+
     public GameObject MentalCube;
-    public Material mainColor;
-    public Material sideColor;
     public int roadLength;
     public int CubesCount =10 ;
 
@@ -60,18 +58,7 @@ public class MentalRoad : MonoBehaviour
                     
                     continue;
                 }
-                go = Instantiate(roadCube);
-                go.transform.parent = gameObject.transform;
-                go.transform.localPosition = new Vector3(i, 0, length);
-
-                if ((i == -2 || i == 2) && (10 + length) % 20 == 0)
-                {
-                    go.GetComponent<MeshRenderer>().material = sideColor;
-                }
-                if (length % 20 == 0 && i == 0)
-                {
-                    go.GetComponent<MeshRenderer>().material = sideColor;
-                }
+                
             }
 
         }
