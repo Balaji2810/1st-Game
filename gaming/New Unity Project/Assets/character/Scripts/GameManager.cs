@@ -47,20 +47,14 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //StartCoroutine(delay());
+        
         GoToMainMenu();
         
 
        
     }
 
-    IEnumerator delay()
-    {
-        yield return new WaitForSeconds(1);
-        Time.fixedDeltaTime = Mathf.Ceil(1.0f / Time.deltaTime) * (0.001f / 30);
-        print(Mathf.Ceil(1.0f / Time.deltaTime) + " " + Time.fixedDeltaTime);
-    }
-
+   
     void SetScreenEnableState(PanelRenderer screen, bool state)
     {
         if (state)

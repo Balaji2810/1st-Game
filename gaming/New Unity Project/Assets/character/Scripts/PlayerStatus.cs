@@ -25,7 +25,7 @@ public class PlayerStatus : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
        if(puppet.state == PuppetMaster.State.Alive && !AnimationDeath)
         {
@@ -48,19 +48,19 @@ public class PlayerStatus : MonoBehaviour
 
         if(controller.velocity.z>20)
         {
-            //animator.SetInteger("speed", 3);
+            animator.SetInteger("speed", 3);
         }
         else if(controller.velocity.z>5)
         {
-            //animator.SetInteger("speed",2 );
+            animator.SetInteger("speed",2 );
         }
         else if (controller.velocity.z>0)
         {
-           // animator.SetInteger("speed", 1);
+            animator.SetInteger("speed", 1);
         }
         else if (controller.velocity.z==0)
         {
-           // animator.SetInteger("speed", 0);
+            animator.SetInteger("speed", 0);
         }
 
     }

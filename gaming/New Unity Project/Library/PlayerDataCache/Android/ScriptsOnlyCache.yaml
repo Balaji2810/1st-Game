@@ -6,6 +6,7 @@ ScriptsOnlyBuild:
     - AssetManager
     - AssetUIRenderer
     - AvailablePrefabs
+    - CC_MOVE
     - CameraControl
     - CharacterControl
     - CharacterFix
@@ -279,21 +280,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16742}
     - Class: 114
-      Script: {instanceID: 17034}
+      Script: {instanceID: 17036}
     - Class: 114
-      Script: {instanceID: 17198}
+      Script: {instanceID: 17200}
     - Class: 114
-      Script: {instanceID: 17582}
+      Script: {instanceID: 17584}
     - Class: 114
-      Script: {instanceID: 17956}
+      Script: {instanceID: 17958}
     - Class: 114
-      Script: {instanceID: 18246}
+      Script: {instanceID: 18248}
     - Class: 114
-      Script: {instanceID: 18452}
+      Script: {instanceID: 18454}
     - Class: 114
-      Script: {instanceID: 18532}
+      Script: {instanceID: 18534}
     - Class: 114
-      Script: {instanceID: 18682}
+      Script: {instanceID: 18684}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -354,10 +355,6 @@ ScriptsOnlyBuild:
     - Class: 65
       Script: {instanceID: 0}
     - Class: 74
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 82
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
@@ -532,41 +529,43 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16742}
     - Class: 114
-      Script: {instanceID: 17034}
+      Script: {instanceID: 17006}
     - Class: 114
-      Script: {instanceID: 17206}
+      Script: {instanceID: 17036}
     - Class: 114
-      Script: {instanceID: 17310}
+      Script: {instanceID: 17208}
     - Class: 114
-      Script: {instanceID: 17342}
+      Script: {instanceID: 17312}
     - Class: 114
-      Script: {instanceID: 17582}
+      Script: {instanceID: 17344}
     - Class: 114
-      Script: {instanceID: 17798}
+      Script: {instanceID: 17584}
     - Class: 114
-      Script: {instanceID: 17870}
+      Script: {instanceID: 17800}
     - Class: 114
-      Script: {instanceID: 17956}
+      Script: {instanceID: 17872}
     - Class: 114
-      Script: {instanceID: 18092}
+      Script: {instanceID: 17958}
     - Class: 114
-      Script: {instanceID: 18156}
+      Script: {instanceID: 18094}
     - Class: 114
-      Script: {instanceID: 18246}
+      Script: {instanceID: 18158}
     - Class: 114
-      Script: {instanceID: 18484}
+      Script: {instanceID: 18248}
     - Class: 114
-      Script: {instanceID: 18488}
+      Script: {instanceID: 18486}
     - Class: 114
-      Script: {instanceID: 18532}
+      Script: {instanceID: 18490}
     - Class: 114
-      Script: {instanceID: 18578}
+      Script: {instanceID: 18534}
     - Class: 114
-      Script: {instanceID: 18682}
+      Script: {instanceID: 18580}
     - Class: 114
-      Script: {instanceID: 18784}
+      Script: {instanceID: 18684}
     - Class: 114
-      Script: {instanceID: 18792}
+      Script: {instanceID: 18786}
+    - Class: 114
+      Script: {instanceID: 18794}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -735,23 +734,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16742}
     - Class: 114
-      Script: {instanceID: 17034}
+      Script: {instanceID: 17036}
     - Class: 114
-      Script: {instanceID: 17198}
+      Script: {instanceID: 17200}
     - Class: 114
-      Script: {instanceID: 17582}
+      Script: {instanceID: 17584}
     - Class: 114
-      Script: {instanceID: 17660}
+      Script: {instanceID: 17662}
     - Class: 114
-      Script: {instanceID: 17956}
+      Script: {instanceID: 17958}
     - Class: 114
-      Script: {instanceID: 18246}
+      Script: {instanceID: 18248}
     - Class: 114
-      Script: {instanceID: 18452}
+      Script: {instanceID: 18454}
     - Class: 114
-      Script: {instanceID: 18532}
+      Script: {instanceID: 18534}
     - Class: 114
-      Script: {instanceID: 18682}
+      Script: {instanceID: 18684}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1557,7 +1556,7 @@ ScriptsOnlyBuild:
     className: SimpleRoad
   - hash:
       serializedVersion: 2
-      Hash: 157e2c9852a1aede6ab038cda8382459
+      Hash: 2fcea99fe549c384dc66761c08ea85d4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -2353,6 +2352,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineImpulseSource
+  - hash:
+      serializedVersion: 2
+      Hash: 83594161ef80b976b461e0a358508707
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CC_MOVE
   - hash:
       serializedVersion: 2
       Hash: 760787567e1b60d64a3e421ab83ee14a

@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2002583072873103634}
   - component: {fileID: 2002583072873103635}
-  m_Layer: 0
+  - component: {fileID: 3113237264366757561}
+  m_Layer: 19
   m_Name: MentalRoad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,14 +45,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5d4888e4e092c043ac3ec6e1e9f7aa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roadCube: {fileID: 5460084653567072355, guid: cf4a164bc16e10b42aea6f06de60c706,
-    type: 3}
   MentalCube: {fileID: 2629148488832285499, guid: 1a15188a901e0fd48845241e36dec2ff,
     type: 3}
-  mainColor: {fileID: 2100000, guid: 49423a7b78198ea4d976598545ee4f22, type: 2}
-  sideColor: {fileID: 2100000, guid: 8d93bd46e774ae34b936b97a9aa88f7f, type: 2}
   roadLength: 40
   CubesCount: 7
+--- !u!65 &3113237264366757561
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002583072873103633}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 40}
 --- !u!1001 &4197100750199207688
 PrefabInstance:
   m_ObjectHideFlags: 0
