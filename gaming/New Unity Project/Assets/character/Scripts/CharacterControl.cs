@@ -9,10 +9,9 @@ public class CharacterControl : MonoBehaviour
     public PuppetMaster pm;
     public BehaviourPuppet BP;
     public PlayerStatus status;
-    private int right, left;
+    
 
     public GameManager gameManager;
-    public float LeftRightSpeed;
     public int type = 2;
     public int turnAngle = 0;
     public float turnTime = 10;
@@ -34,6 +33,7 @@ public class CharacterControl : MonoBehaviour
     float FallTime = 0;
 
     public TimeManager timeManager;
+    public Swipe swipe;
 
     bool slowmotion = true;
 
@@ -51,12 +51,7 @@ public class CharacterControl : MonoBehaviour
 
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-        
-    }
+    
 
     public void ExplodeJump(float force)
     {
@@ -84,37 +79,37 @@ public class CharacterControl : MonoBehaviour
         
         if(!gameManager.Startgame)
         {
+            animator.SetInteger("speed", 0);
             return;
         }
 
-        left = 0;
-        right = 0;
+       
+               
+        if(speed>20.0f)
+        {
+            speed += (Time.deltaTime / 60.0f);
+            animator.SetInteger("speed", 3);
+        }
+        else if(speed>17.0f)
+        {
+            speed += (Time.deltaTime / 35.0f);
+            animator.SetInteger("speed", 2);
+        }
+        else if(speed>6.0f)
+        {
+            speed += Time.deltaTime;
+            animator.SetInteger("speed", 2);
+        }
+        else
+        {
+            speed += Time.deltaTime;
+            animator.SetInteger("speed", 1);
+        }
 
         
 
-        if(Input.GetKey(KeyCode.A))
-        {
-            left = -turnAngle;
-        }
-
-        if (Input.GetKey(KeyCode.D))
-        {
-            right = turnAngle;
-        }
-
         
-        else if (speed > 20)
-        {
-            speed += Time.deltaTime / (inverseAxcel*70);
-        }
-        else if (speed >= 17)
-        {
-            speed += Time.deltaTime / (inverseAxcel * 40f);
-        }
-        else if (speed < 17)
-        {
-            speed += Time.deltaTime / (inverseAxcel*0.5f);
-        }
+        
         
         
 
@@ -126,8 +121,8 @@ public class CharacterControl : MonoBehaviour
         //animator.SetInteger("turn",right+left);
         if (pm.state != PuppetMaster.State.Alive)
         {
-            moveDirection = Vector3.zero;
-           //moveDirection = Vector3.Lerp(moveDirection, Vector3.zero,2*Time.deltaTime);
+            //moveDirection = Vector3.zero;
+           moveDirection = Vector3.Lerp(moveDirection, Vector3.zero,2*Time.deltaTime);
            
         }
         else
@@ -138,10 +133,7 @@ public class CharacterControl : MonoBehaviour
 
         if (pm.state == PuppetMaster.State.Alive  &&!status.AnimationDeath)
         {
-            //left right
-            float leftright = playerRoot.position.x + (Input.GetAxis("Horizontal") * LeftRightSpeed * Time.deltaTime);
-            leftright = Mathf.Clamp(leftright, -2, 2);
-            playerRoot.position = new Vector3(leftright, playerRoot.position.y, playerRoot.position.z);
+            
 
             if (controller.isGrounded && !sliding)
             {
@@ -152,7 +144,7 @@ public class CharacterControl : MonoBehaviour
                 moveDirection = new Vector3(0, 0, 1);
                 moveDirection = transform.TransformDirection(moveDirection);
                 moveDirection *= speed;
-                if ((Input.GetButton("Jump") || Input.GetKey(KeyCode.W)) && jumpDelayTime==jump)
+                if ((Input.GetButton("Jump") || Input.GetKey(KeyCode.W)||swipe.SwipeUp) && jumpDelayTime==jump)
                 {
                     moveDirection.y = jumpSpeed;
                     animator.SetBool("Slide", false);
@@ -164,7 +156,7 @@ public class CharacterControl : MonoBehaviour
                     moveDirection.y = 0f;
                 }
 
-                if (Input.GetKey(KeyCode.S))
+                if (Input.GetKey(KeyCode.S)||swipe.SwipeDown)
                 {
                     
                     //sliding = true;

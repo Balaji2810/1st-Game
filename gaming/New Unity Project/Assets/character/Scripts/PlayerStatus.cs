@@ -18,11 +18,7 @@ public class PlayerStatus : MonoBehaviour
     private float leftRight = 0;
     private float groundLevelTemp;
     // Start is called before the first frame update
-    void Start()
-    {
-       
-
-    }
+    
 
     // Update is called once per frame
     void FixedUpdate()
@@ -46,22 +42,7 @@ public class PlayerStatus : MonoBehaviour
 
        
 
-        if(controller.velocity.z>20)
-        {
-            animator.SetInteger("speed", 3);
-        }
-        else if(controller.velocity.z>5)
-        {
-            animator.SetInteger("speed",2 );
-        }
-        else if (controller.velocity.z>0)
-        {
-            animator.SetInteger("speed", 1);
-        }
-        else if (controller.velocity.z==0)
-        {
-            animator.SetInteger("speed", 0);
-        }
+        
 
     }
 

@@ -58,11 +58,13 @@
   <ItemGroup>
     <Compile Include="Assets\character\RootMotion\Editor\RagdollManager\ConfigurableJointInspector.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\RagdollManager\JointInspector.cs" />
+    <Compile Include="Assets\PolyFew\Scripts\Editor\PolyfewMenu.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\PuppetMaster\_DEMOS\CharacterPuppetInspector.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\Baker\Helpers\AnimationUtilityExtended.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\Shared Scripts\InspectorCommentDrawer.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\PuppetMaster\PuppetMasterHumanoidConfigInspector.cs" />
     <Compile Include="Assets\ProceduralUIImage\Editor\FreeModifierEditor.cs" />
+    <Compile Include="Assets\PolyFew\Scripts\Editor\DecoratorEditor.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\Shared Scripts\SerializedContent.cs" />
     <Compile Include="Assets\water effect\LowPolyWater_Pack\Scripts\Editor\GeneratePlane.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\Shared Scripts\CommentsInspector.cs" />
@@ -75,9 +77,11 @@
     <Compile Include="Assets\character\RootMotion\Editor\RagdollManager\ColliderTools.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\RagdollManager\BipedRagdollCreatorInspector.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\PuppetMaster\PuppetMasterPropInspector.cs" />
+    <Compile Include="Assets\PolyFew\Scripts\Editor\InspectorAttacher.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\Baker\HumanoidBakerInspector.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\Baker\BakerInspector.cs" />
     <Compile Include="Assets\obstacles\package\AssetStoreOriginals\_SNAPS_PrototypingAssets\Scripts\Editor\PackageChecker\PackageChecker.cs" />
+    <Compile Include="Assets\PolyFew\BatchFewShader\Editor\BatchFewShaderGUI.cs" />
     <Compile Include="Assets\ProceduralUIImage\Editor\ModifierUtility.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\PuppetMaster\PropMuscleInspector.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\Baker\GenericBakerInspector.cs" />
@@ -86,7 +90,9 @@
     <Compile Include="Assets\ProceduralUIImage\Editor\ProceduralImageEditor.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\PuppetMaster\_DEMOS\CharacterMeleeDemoInspector.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\RagdollManager\RagdollEditorInspector.cs" />
+    <Compile Include="Assets\PolyFew\Scripts\Editor\InspectorDrawer.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\PuppetMaster\BehaviourPuppetMasterPropsDrawer.cs" />
+    <Compile Include="Assets\PolyFew\ThirdParty\AsImpL\Scripts\Editor\ObjImportWindow.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\RagdollManager\SymmetryTools.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\Shared Scripts\LargeHeaderDrawer.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\Shared Scripts\BipedReferencesInspector.cs" />
@@ -810,6 +816,14 @@
     <ProjectReference Include="Unity.InternalAPIEditorBridge.006.csproj">
       <Project>{F422DA6A-BF98-E2DA-9498-A19A54C1253C}</Project>
       <Name>Unity.InternalAPIEditorBridge.006</Name>
+    </ProjectReference>
+    <ProjectReference Include="Whinarn.UnityMeshSimplifier.Runtime.csproj">
+      <Project>{06A5B1FC-0C1D-64EA-24A1-D6417464D9F2}</Project>
+      <Name>Whinarn.UnityMeshSimplifier.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Whinarn.UnityMeshSimplifier.Editor.csproj">
+      <Project>{DB2BA5B5-2C17-71CD-D322-674ADA8B7D50}</Project>
+      <Name>Whinarn.UnityMeshSimplifier.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.InternalAPIEngineBridge.006.csproj">
       <Project>{65E538E0-E5EC-D409-9491-E9888E5F2F90}</Project>

@@ -83,13 +83,13 @@ public class GameManager : MonoBehaviour
     int lastScreenHeight = 0;
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         
 
         if (currentPoints != null)
         {
-            currentPoints.text = Mathf.Ceil(1.0f / Time.deltaTime).ToString();
+            currentPoints.text =( GameObject.Find(PlayerPrefs.GetString("name", "player") + " Root").GetComponentInChildren<PlayerStatus>().controller.velocity.z).ToString();//Mathf.Ceil(1.0f / Time.deltaTime).ToString();
            //currentPoints.text = File.load("points", "temp").ToString();
         }
 

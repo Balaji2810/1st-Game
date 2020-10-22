@@ -32,6 +32,8 @@ MonoBehaviour:
     - Assembly-CSharp-firstpass
     - Cinemachine
     - Assembly-CSharp
+    - Whinarn.UnityMeshSimplifier.Runtime
+    - Whinarn.UnityMeshSimplifier.Editor
     showAdvancedSettings: 0
   addMgrToSceneAutomatically: 0
   autoUpdateReferences: 1

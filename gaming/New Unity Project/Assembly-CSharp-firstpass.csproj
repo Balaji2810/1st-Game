@@ -856,6 +856,14 @@
       <Project>{F422DA6A-BF98-E2DA-9498-A19A54C1253C}</Project>
       <Name>Unity.InternalAPIEditorBridge.006</Name>
     </ProjectReference>
+    <ProjectReference Include="Whinarn.UnityMeshSimplifier.Runtime.csproj">
+      <Project>{06A5B1FC-0C1D-64EA-24A1-D6417464D9F2}</Project>
+      <Name>Whinarn.UnityMeshSimplifier.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Whinarn.UnityMeshSimplifier.Editor.csproj">
+      <Project>{DB2BA5B5-2C17-71CD-D322-674ADA8B7D50}</Project>
+      <Name>Whinarn.UnityMeshSimplifier.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.InternalAPIEngineBridge.006.csproj">
       <Project>{65E538E0-E5EC-D409-9491-E9888E5F2F90}</Project>
       <Name>Unity.InternalAPIEngineBridge.006</Name>
