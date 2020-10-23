@@ -44,6 +44,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sideEnv: {fileID: 762578152028430747, guid: 4db90e3f878f2464fb410253d2a13562, type: 3}
-  ps: {fileID: 0}
-  bufferLength: 7
+  bufferLength: 1
   length: 25

@@ -89,8 +89,8 @@ public class GameManager : MonoBehaviour
 
         if (currentPoints != null)
         {
-            currentPoints.text =( GameObject.Find(PlayerPrefs.GetString("name", "player") + " Root").GetComponentInChildren<PlayerStatus>().controller.velocity.z).ToString();//Mathf.Ceil(1.0f / Time.deltaTime).ToString();
-           //currentPoints.text = File.load("points", "temp").ToString();
+            //currentPoints.text =( GameObject.Find(PlayerPrefs.GetString("name", "player") + " Root").GetComponentInChildren<PlayerStatus>().controller.velocity.z).ToString();//Mathf.Ceil(1.0f / Time.deltaTime).ToString();
+           currentPoints.text = File.load("points", "temp").ToString();
         }
 
         if (lastScreenWidth != Screen.width || lastScreenHeight != Screen.height)

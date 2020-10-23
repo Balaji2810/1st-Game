@@ -11,7 +11,7 @@ public class CharacterControl : MonoBehaviour
     public PlayerStatus status;
     
 
-    public GameManager gameManager;
+    private GameManager gameManager;
     public int type = 2;
     public int turnAngle = 0;
     public float turnTime = 10;
@@ -32,11 +32,16 @@ public class CharacterControl : MonoBehaviour
     public float FallDeathTime = 1;
     float FallTime = 0;
 
-    public TimeManager timeManager;
+    private TimeManager timeManager;
     public Swipe swipe;
 
     bool slowmotion = true;
 
+    private void Start()
+    {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        timeManager = GameObject.Find("Time Manager").GetComponent<TimeManager>();
+    }
     public void DeadRagdoll(bool activate = true)
     {
        
@@ -121,8 +126,8 @@ public class CharacterControl : MonoBehaviour
         //animator.SetInteger("turn",right+left);
         if (pm.state != PuppetMaster.State.Alive)
         {
-            //moveDirection = Vector3.zero;
-           moveDirection = Vector3.Lerp(moveDirection, Vector3.zero,2*Time.deltaTime);
+            moveDirection = Vector3.zero;
+           //moveDirection = Vector3.Lerp(moveDirection, Vector3.zero,2*Time.deltaTime);
            
         }
         else

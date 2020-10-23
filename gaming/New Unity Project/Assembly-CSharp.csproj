@@ -158,6 +158,7 @@
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\Behaviours\BehaviourPuppetStateSwitching.cs" />
     <Compile Include="Assets\PolyFew\Scripts\Runtime\SystemServices.cs" />
     <Compile Include="Assets\character\RootMotion\Shared Demo Assets\Scripts\Character Controllers\CharacterThirdPerson.cs" />
+    <Compile Include="Assets\character\Scripts\SwipeMove.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\Behaviours\SubBehaviours\SubBehaviourBase.cs" />
     <Compile Include="Assets\character\RootMotion\Shared Scripts\Warning.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\PuppetMasterStates.cs" />
@@ -238,6 +239,7 @@
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\RaycastShooter.cs" />
     <Compile Include="Assets\ThrowBall\BallDestroy.cs" />
     <Compile Include="Assets\PolyFew\ThirdParty\AsImpL\Scripts\Loaders\LoaderObj.cs" />
+    <Compile Include="Assets\character\Scripts\DragMove.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\Behaviours\BehaviourPuppetHelpers.cs" />
     <Compile Include="Assets\roads\RoadsAssets.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\SkeletonShooter.cs" />
@@ -272,10 +274,8 @@
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\CopyMove.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\PhysXTools.cs" />
     <Compile Include="Assets\character\RootMotion\Shared Scripts\Hierarchy.cs" />
-    <Compile Include="Assets\UIERuntime\Samples\RepeatGame\RepeatGame.cs" />
     <Compile Include="Assets\character\Scripts\Swipe.cs" />
-    <Compile Include="Assets\character\Scripts\DragMove.cs" />
-    <Compile Include="Assets\character\Scripts\SwipeMove.cs" />
+    <Compile Include="Assets\UIERuntime\Samples\RepeatGame\RepeatGame.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
