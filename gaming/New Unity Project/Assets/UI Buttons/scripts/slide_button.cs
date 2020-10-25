@@ -6,8 +6,8 @@ public class slide_button : MonoBehaviour
 {
     public Animation animation;
     bool slide = false;
-    
 
+    //-133.55
     public void sliding()
     {
         if (slide)
