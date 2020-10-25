@@ -15,7 +15,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3206858371130517351
 Transform:
@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sideEnv: {fileID: 762578152028430747, guid: 4db90e3f878f2464fb410253d2a13562, type: 3}
-  bufferLength: 1
-  length: 25
+  bufferLength: 3
+  length: 50

@@ -12,12 +12,13 @@ GameObject:
   - component: {fileID: 762578152028430746}
   - component: {fileID: -5702755985310737403}
   - component: {fileID: -3707343737284891619}
-  m_Layer: 16
+  - component: {fileID: -471747620535987115}
+  m_Layer: 19
   m_Name: side_env
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &762578152028430745
 Transform:
@@ -46,12 +47,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roadsize: 7
-  cubeCount: {x: 15, y: 25}
-  cubeHeight: {x: 30, y: 50}
+  cubeCount: {x: 7, y: 15}
+  cubeHeight: {x: -17, y: -12}
   height: 50
   width: 50
-  down: 20
-  cube: {fileID: 885358124387861437, guid: fe62a0fa7638e5048b50bf06a7c06f99, type: 3}
+  down: 0
+  cube: {fileID: 173796383167407472, guid: a72d30e0d48bfe049948a809cbf6085b, type: 3}
 --- !u!33 &-5702755985310737403
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -101,3 +102,15 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-471747620535987115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762578152028430747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd7f4c8c0229cc74f89d3b42ed07e027, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

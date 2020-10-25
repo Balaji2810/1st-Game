@@ -17,16 +17,15 @@ public class side_environment : MonoBehaviour
         {
             GameObject go = Instantiate(cube);
             go.transform.parent = transform;
-            go.transform.localPosition = new Vector3(Random.Range(-width,-roadsize / 2), go.transform.localPosition.y-down, Random.Range(-height, height));
-            go.transform.localScale = new Vector3(Random.Range(1f,3f), Random.Range(cubeHeight.x, cubeHeight.y), Random.Range(1f, 5f));
+            go.transform.localPosition = new Vector3(Random.Range(-width,-roadsize / 2), Random.Range(cubeHeight.x, cubeHeight.y) - down, Random.Range(-height, height));
+            
         }
 
         for (int i = 0; i < Random.Range(cubeCount.x, cubeCount.y + 1); i++)
         {
             GameObject go = Instantiate(cube);
             go.transform.parent = transform;
-            go.transform.localPosition = new Vector3(Random.Range(roadsize / 2,width), go.transform.localPosition.y - down, Random.Range(-height, height));
-            go.transform.localScale = new Vector3(Random.Range(1f,3f), Random.Range(cubeHeight.x, cubeHeight.y), Random.Range(1f, 5f));
+            go.transform.localPosition = new Vector3(Random.Range(roadsize / 2,width), Random.Range(cubeHeight.x, cubeHeight.y) - down, Random.Range(-height, height));         
         }
     }
 

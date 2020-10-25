@@ -132,8 +132,8 @@ public class CharacterControl : MonoBehaviour
         }
         else
         {
-            moveDirection.y -= gravity * Time.unscaledDeltaTime;
-            controller.Move(moveDirection * Time.unscaledDeltaTime);
+            moveDirection.y -= gravity * Time.deltaTime;
+            controller.Move(moveDirection * Time.deltaTime);
         }
 
         if (pm.state == PuppetMaster.State.Alive  &&!status.AnimationDeath)
