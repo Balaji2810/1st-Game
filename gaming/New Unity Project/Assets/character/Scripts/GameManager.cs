@@ -7,6 +7,7 @@ using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
 using System.Runtime.CompilerServices;
 using UnityEngine.UI;
+using System.Linq.Expressions;
 
 public class GameManager : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class GameManager : MonoBehaviour
     public CharacterFix fix;
     public GameObject ball;
 
-    public GameObject main,game,info,pause,resume;
+    public GameObject main,game,info,pause,resume,setting;
     public Text resumeCount;
     public ScrollRect SR;
     public TimeManager timeManage;
@@ -50,6 +51,11 @@ public class GameManager : MonoBehaviour
         go.SetActive(false);
     }
 
+    public void goto_setting()
+    {
+        main.SetActive(false);
+        setting.SetActive(true);
+    }
     
 
     public void goto_info()
