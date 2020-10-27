@@ -5,35 +5,45 @@ using UnityEngine.Rendering;
 
 public class ScoreCounter : MonoBehaviour
 {
-    public FileHandler File;
-    public AvailablePrefabs ap;
-   
-    void Update()
+    FileHandler File;
+    AvailablePrefabs ap;
+
+    private void Start()
     {
-        
+        File = GameObject.Find("FileHandler").GetComponent<FileHandler>();
+        ap = GameObject.Find("Available Prefabs").GetComponent<AvailablePrefabs>();
     }
-    
-    
-    void OnTriggerEnter(Collider other)
+    PlayerStatus player;
+    void LateUpdate()
     {
-        if (ap != null)
+
+        try
         {
-            
-            string name = other.gameObject.name.Replace("(Clone)", "");
-            
-            int currentPoints = (int)File.load("points", "temp");
-            
-            if (ap.AllObjectValues.ContainsKey(name))
+            player = GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<PlayerStatus>();
+            if(transform.position.z<player.MovedDistance)
             {
-                File.save("points", ap.AllObjectValues[name].points + currentPoints, "temp");
+                if (ap != null)
+                {
+
+                    string name = gameObject.name.Replace("(Clone)", "");
+
+                    int currentPoints = (int)File.load("points", "temp");
+
+                    if (ap.AllObjectValues.ContainsKey(name))
+                    {
+                        File.save("points", ap.AllObjectValues[name].points + currentPoints, "temp");
+                    }
+                    GameObject.Find("GameManager").GetComponent<GameManager>().updatePoints();
+                    Destroy(this);
+                }
             }
-            
         }
-        else
+        catch
         {
-           
+
         }
     }
+
 }
 
 

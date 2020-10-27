@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
     }
 
     public GameObject Char, HDChar;
-    void loadPlayer(int pos = 4)
+    public void loadPlayer(int pos = 4)
     {
 
         GameObject go;
@@ -71,7 +71,7 @@ public class GameManager : MonoBehaviour
     }
 
 
-    // Update is called once per frame
+    
     public void updatePoints()
     {
         //currentPoints.text =( GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<PlayerStatus>().controller.velocity.z).ToString();//Mathf.Ceil(1.0f / Time.deltaTime).ToString();

@@ -18,6 +18,7 @@ public class TimeManager : MonoBehaviour
             StartCoroutine(delay(Time.fixedDeltaTime));
             Time.fixedDeltaTime = Time.timeScale * TimeConstant;
             //Time.fixedDeltaTime = Time.timeScale * Time.fixedDeltaTime;
+            FindObjectOfType<AudioManager>().ChangePitch(0.5f);
         }
 
     }
@@ -29,6 +30,7 @@ public class TimeManager : MonoBehaviour
         Time.fixedDeltaTime = time;
         Time.timeScale = 1;
         //Time.fixedDeltaTime = 0.001f;
+        FindObjectOfType<AudioManager>().ChangePitch(1f);
 
     }
 
@@ -40,7 +42,6 @@ public class TimeManager : MonoBehaviour
         }
         else
         {
-
             Time.timeScale = 1;
         }
     }

@@ -7,7 +7,7 @@ public class AudioManager : MonoBehaviour
 
 	public static AudioManager instance;
 
-	
+	public AudioSource AS;
 
 	public Sound[] sounds;
 
@@ -31,9 +31,24 @@ public class AudioManager : MonoBehaviour
 
 			
 		}
+		
+	}
+	public void ChangePitch(float pitch)
+    {
+		AS.pitch = pitch;
+    }
+	public void Play(string sound)
+    {
+		
+		AS.Play();
+    }
+	public void Stop(string sound)
+	{
+		
+		AS.Stop();
 	}
 
-	public void Play(string sound)
+	public void AudioPlay(string sound,float pitch=1)
 	{
 		Sound s = Array.Find(sounds, item => item.name == sound);
 		if (s == null)
@@ -43,12 +58,21 @@ public class AudioManager : MonoBehaviour
 		}
 
 		s.source.volume = s.volume * (1f + UnityEngine.Random.Range(-s.volumeVariance / 2f, s.volumeVariance / 2f));
-		s.source.pitch = s.pitch * (1f + UnityEngine.Random.Range(-s.pitchVariance / 2f, s.pitchVariance / 2f));
+		if (pitch != 1)
+		{
+			s.source.pitch = pitch;
+
+		}
+		else
+        {
+			s.source.pitch = s.pitch * (1f + UnityEngine.Random.Range(-s.pitchVariance / 2f, s.pitchVariance / 2f));
+		}
+		
 
 		s.source.Play();
 	}
 
-	public void Stop(string sound)
+	public void AudioStop(string sound)
 	{
 		Sound s = Array.Find(sounds, item => item.name == sound);
 		if (s == null)

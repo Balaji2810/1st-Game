@@ -55,6 +55,19 @@ public class settings_button : MonoBehaviour
                         go.SetActive(false);
                     }
                     break;
+                case "HDCharacter":
+                    {
+                        GameObject go1;
+                        go1 = GameObject.Find(PlayerPrefs.GetString("name", null));
+
+                        if (go1 != null)
+                        {
+                            Destroy(go1);
+                        }
+                        PlayerPrefs.SetInt("HDCharacter",0);
+                        GameObject.Find("GameManager").GetComponent<GameManager>().loadPlayer();
+                    }
+                    break;
             }
         }
         else
@@ -76,6 +89,19 @@ public class settings_button : MonoBehaviour
                 case "fog&others":
                     {
                         go.SetActive(true);
+                    }
+                    break;
+                case "HDCharacter":
+                    {
+                        GameObject go1;
+                        go1 = GameObject.Find(PlayerPrefs.GetString("name", null));
+
+                        if (go1 != null)
+                        {
+                            Destroy(go1);
+                        }
+                        PlayerPrefs.SetInt("HDCharacter", 1);
+                        GameObject.Find("GameManager").GetComponent<GameManager>().loadPlayer();
                     }
                     break;
             }

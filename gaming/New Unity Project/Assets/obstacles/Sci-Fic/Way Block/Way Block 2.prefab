@@ -1141,6 +1141,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8143527664087775452}
   - component: {fileID: -5423644523874211065}
+  - component: {fileID: -2406956706656871573}
   m_Layer: 19
   m_Name: Way Block 2
   m_TagString: Untagged
@@ -1176,6 +1177,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-2406956706656871573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8143527664087775427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 063aa53629d13024db95cdf8cf205afc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8143527665004941999
 GameObject:
   m_ObjectHideFlags: 0
