@@ -10,7 +10,7 @@ public class CC_MOVE : MonoBehaviour
     {
         try
         {
-            player = GameObject.Find(PlayerPrefs.GetString("name", "player") + " Root").GetComponentInChildren<PlayerStatus>();
+            player = GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<PlayerStatus>();
 
             transform.position = new Vector3(offSet.x,0+ offSet.y, player.MovedDistance+ offSet.z);
         }

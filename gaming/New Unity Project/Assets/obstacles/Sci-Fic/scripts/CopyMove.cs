@@ -12,7 +12,7 @@ public class CopyMove : MonoBehaviour
     {
         try
         {
-            player = GameObject.Find(PlayerPrefs.GetString("name", "player") + " Root").GetComponentInChildren<PlayerStatus>();
+            player = GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<PlayerStatus>();
 
             transform.position = Vector3.Lerp(transform.position, new Vector3(player.LeftRight, transform.position.y, transform.position.z), Time.deltaTime * 10f);
             Mathf.Clamp(transform.position .x,- 2.0f, 2.01f);

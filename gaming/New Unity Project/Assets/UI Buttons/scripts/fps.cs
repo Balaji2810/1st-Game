@@ -6,6 +6,33 @@ using UnityEngine.UI;
 
 public class fps : MonoBehaviour
 {
+    public GameObject go;
+    private void Awake()
+    {
+        if(PlayerPrefs.GetInt("showFPS",1)==1)
+        {
+            go.SetActive(true);
+            
+        }
+        else
+        {
+            go.SetActive(false);
+        }
+    }
+
+    private void OnEnable()
+    {
+        if (PlayerPrefs.GetInt("showFPS", 1) == 1)
+        {
+            go.SetActive(true);
+        }
+        else
+        {
+            go.SetActive(false);
+        }
+    }
+
+
     public Text FPS;
 
     int frameCount = 0;

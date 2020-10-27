@@ -141,10 +141,10 @@ public class PathGen : MonoBehaviour
             
             try
             {
-                PlayerStatus player = GameObject.Find(PlayerPrefs.GetString("name", "player") + " Root").GetComponentInChildren<PlayerStatus>();
+                PlayerStatus player = GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<PlayerStatus>();
                 if (player.puppet.state == PuppetMaster.State.Alive)
                 {
-                    GameObject.Find(PlayerPrefs.GetString("name", "player") + " Root").GetComponentInChildren<CharacterControl>().DeadRagdoll();
+                    GameObject.Find((PlayerPrefs.GetString("name") ) ).GetComponentInChildren<CharacterControl>().DeadRagdoll();
                     
                     
                 }

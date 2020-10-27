@@ -283,6 +283,7 @@
     <Compile Include="Assets\UI Buttons\scripts\settings_button.cs" />
     <Compile Include="Assets\AudioManager\Sound.cs" />
     <Compile Include="Assets\AudioManager\AudioManager.cs" />
+    <Compile Include="Assets\side environment\fogFollow.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

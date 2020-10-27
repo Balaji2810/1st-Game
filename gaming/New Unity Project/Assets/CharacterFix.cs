@@ -12,7 +12,7 @@ public class CharacterFix : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PuppetMaster pm = GameObject.Find(PlayerPrefs.GetString("name", "player") + " Root").GetComponentInChildren<PuppetMaster>();
+        PuppetMaster pm = GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<PuppetMaster>();
         if(pm!=null)
         {
             oldMuscleSpring = pm.muscleSpring;
@@ -33,7 +33,7 @@ public class CharacterFix : MonoBehaviour
 
     public void FixCharacter()
     {
-        PuppetMaster pm = GameObject.Find(PlayerPrefs.GetString("name", "player") + " Root").GetComponentInChildren<PuppetMaster>();
+        PuppetMaster pm = GameObject.Find((PlayerPrefs.GetString("name") ) ).GetComponentInChildren<PuppetMaster>();
         if (pm != null)
         {
              pm.muscleSpring = oldMuscleSpring;

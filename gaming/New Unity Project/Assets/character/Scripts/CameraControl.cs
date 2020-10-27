@@ -70,7 +70,7 @@ public class CameraControl : MonoBehaviour
 
         try
         {
-            player = GameObject.Find(PlayerPrefs.GetString("name", "player") + " Root").GetComponentInChildren<PlayerStatus>();
+            player = GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<PlayerStatus>();
             
             if (init)
             {
@@ -172,7 +172,7 @@ public class CameraControl : MonoBehaviour
         }
         catch
         {
-            Debug.Log(PlayerPrefs.GetString("name", "player"));
+            Debug.Log((PlayerPrefs.GetString("name") ));
         }
 
     }

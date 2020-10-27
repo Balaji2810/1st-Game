@@ -30,17 +30,56 @@ public class settings_button : MonoBehaviour
         }
     }
 
+    public GameObject go;
     public void onClick()
     {
         if (PlayerPrefs.GetInt(traget) == 1)
         {
             PlayerPrefs.SetInt(traget, 0);
-            FindObjectOfType<AudioManager>().Stop("Theme");
+            
+            switch(traget)
+            {
+                case "music":
+                    {
+                        FindObjectOfType<AudioManager>().Stop("Theme");
+                    }
+                    break;
+                case "60fps":
+                    {
+                        Application.targetFrameRate = 30;
+                    }
+                    break;
+                case "showFPS":
+                case "fog&others":
+                    {
+                        go.SetActive(false);
+                    }
+                    break;
+            }
         }
         else
         {
             PlayerPrefs.SetInt(traget, 1);
-            FindObjectOfType<AudioManager>().Play("Theme");
+            switch (traget)
+            {
+                case "music":
+                    {
+                        FindObjectOfType<AudioManager>().Play("Theme");
+                    }
+                    break;
+                case "60fps":
+                    {
+                        Application.targetFrameRate = 60;
+                    }
+                    break;
+                case "showFPS":
+                case "fog&others":
+                    {
+                        go.SetActive(true);
+                    }
+                    break;
+            }
+            
         }
 
         palyAnimation();

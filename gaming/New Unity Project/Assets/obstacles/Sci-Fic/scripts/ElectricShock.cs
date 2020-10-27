@@ -21,7 +21,7 @@ public class ElectricShock : MonoBehaviour
         
         if(other.gameObject.layer==14) //"Pupet" layer
         {
-            PlayerStatus status = GameObject.Find(PlayerPrefs.GetString("name", "player") + " Root").GetComponentInChildren<PlayerStatus>();
+            PlayerStatus status = GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<PlayerStatus>();
             if (!status.AnimationDeath)
             {
                 status.ElectricShock();

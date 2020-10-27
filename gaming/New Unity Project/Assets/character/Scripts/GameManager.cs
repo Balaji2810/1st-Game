@@ -14,11 +14,11 @@ public class GameManager : MonoBehaviour
     public string playerName = "player";
     public bool Startgame = false;
     public FileHandler File;
-    
+
     public CharacterFix fix;
     public GameObject ball;
 
-    public GameObject main,game,info,pause,resume,setting;
+    public GameObject main, game, info, pause, resume, setting;
     public Text resumeCount;
     public ScrollRect SR;
     public TimeManager timeManage;
@@ -29,21 +29,56 @@ public class GameManager : MonoBehaviour
     public int frameTraget;
     private void Awake()
     {
-        PlayerPrefs.SetString("name", playerName);
-        Application.targetFrameRate = frameTraget;
+        loadPlayer();
+
+        if (PlayerPrefs.GetInt("60fps", 1) == 1)
+        {
+            Application.targetFrameRate = 60;
+        }
+        else
+        {
+            Application.targetFrameRate = 30;
+        }
+
         //QualitySettings.vSyncCount = 2;
-        
+
     }
-    
+
+    public GameObject Char, HDChar;
+    void loadPlayer(int pos = 4)
+    {
+
+        GameObject go;
+        go = GameObject.Find(PlayerPrefs.GetString("name", null));
+
+        if (go != null)
+        {
+            Destroy(go);
+        }
+
+        if (PlayerPrefs.GetInt("HDCharacter", 1) == 1)
+        {
+            go = Instantiate(HDChar);
+        }
+        else
+        {
+            go = Instantiate(Char);
+        }
+
+        go.transform.position = new Vector3(0, 0.55f, pos);
+        PlayerPrefs.SetString("name", go.name);
+        print(PlayerPrefs.GetString("name", null));
+    }
+
 
     // Update is called once per frame
-    public void  updatePoints()
+    public void updatePoints()
     {
-     //currentPoints.text =( GameObject.Find(PlayerPrefs.GetString("name", "player") + " Root").GetComponentInChildren<PlayerStatus>().controller.velocity.z).ToString();//Mathf.Ceil(1.0f / Time.deltaTime).ToString();
-     currentPoints.text = File.load("points", "temp").ToString();
+        //currentPoints.text =( GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<PlayerStatus>().controller.velocity.z).ToString();//Mathf.Ceil(1.0f / Time.deltaTime).ToString();
+        currentPoints.text = File.load("points", "temp").ToString();
     }
 
-    
+
 
     public void goto_main(GameObject go)
     {
@@ -56,7 +91,7 @@ public class GameManager : MonoBehaviour
         main.SetActive(false);
         setting.SetActive(true);
     }
-    
+
 
     public void goto_info()
     {
@@ -75,7 +110,7 @@ public class GameManager : MonoBehaviour
         game.SetActive(false);
         pause.SetActive(true);
         timeManage.pause(true);
-        
+
     }
 
 
@@ -94,19 +129,19 @@ public class GameManager : MonoBehaviour
 
     IEnumerator count(int type)
     {
-        if(type==3)
+        if (type == 3)
         {
             resumeCount.text = "3";
             yield return StartCoroutine(WaitForRealSeconds(0.75f));
             StartCoroutine(count(2));
         }
-        else if(type==2)
+        else if (type == 2)
         {
             resumeCount.text = "2";
             yield return StartCoroutine(WaitForRealSeconds(0.75f));
             StartCoroutine(count(1));
         }
-        else if(type==1)
+        else if (type == 1)
         {
             resumeCount.text = "1";
             yield return StartCoroutine(WaitForRealSeconds(0.75f));
@@ -120,12 +155,12 @@ public class GameManager : MonoBehaviour
             game.SetActive(true);
             timeManage.pause(false);
         }
-        
-        
-        
-        
 
-        
+
+
+
+
+
     }
 
     public static IEnumerator WaitForRealSeconds(float time)
@@ -150,5 +185,5 @@ public class GameManager : MonoBehaviour
     }
 
 
-    
+
 }

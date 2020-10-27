@@ -26,7 +26,7 @@ public class environment_generator : MonoBehaviour
 
         try
         {
-            ps = GameObject.Find(PlayerPrefs.GetString("name", "player") + " Root").GetComponentInChildren<PlayerStatus>();
+            ps = GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<PlayerStatus>();
             if (ps.MovedDistance > currentPos - (bufferLength * length))
             {
                 Spawn();
