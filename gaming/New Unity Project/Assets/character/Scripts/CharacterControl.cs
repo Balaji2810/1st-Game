@@ -60,12 +60,11 @@ public class CharacterControl : MonoBehaviour
 
     public void ExplodeJump(float force)
     {
-
-        
+        DeadRagdoll();
         moveDirection.y = jumpSpeed * force;
         moveDirection.y -= gravity * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
-        DeadRagdoll();
+        
     }
 
     IEnumerator SlideEnd()

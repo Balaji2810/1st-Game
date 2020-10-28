@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
 
         go.transform.position = new Vector3(0, 0.55f, pos);
         PlayerPrefs.SetString("name", go.name);
-        print(PlayerPrefs.GetString("name", null));
+        
     }
 
 

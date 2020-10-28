@@ -45,23 +45,29 @@ public class spider_bot : MonoBehaviour
 
             //GameObject mesh = gameObject.
             transform.Find("SPIDER_BOT").gameObject.SetActive(false);
-
-            if (obj.gameObject.layer==15)
+            GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<CharacterControl>().DeadRagdoll();
+            if (obj.gameObject.layer==14&&obj.gameObject.GetComponent<Rigidbody>()!=null)
             {
-
-
-                CharacterControl control = obj.gameObject.GetComponentInChildren<CharacterControl>();
-                GameObject go = Instantiate(Explosion, transform.position, transform.rotation);
-                //Destroy(go);
+                float Distance = Vector3.Distance(obj.gameObject.transform.position, this.transform.position);
+                float TempDistance = Mathf.InverseLerp(radius*2, 0f, Distance);
+                float strength = Mathf.Lerp(0f, force, TempDistance);
+                Vector3 DirectionToMagnet = (this.transform.position - obj.gameObject.transform.position).normalized;
+                obj.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(DirectionToMagnet.x, DirectionToMagnet.y*4, DirectionToMagnet.z) * strength, ForceMode.VelocityChange);
                 
-                StartCoroutine(DestroyExplosion(go));
-                
-                control.ExplodeJump(force);
+                //obj.gameObject.GetComponent<Rigidbody>().AddExplosionForce(force,transform.position,radius,500,ForceMode.VelocityChange);
+                //CharacterControl control = obj.gameObject.GetComponentInChildren<CharacterControl>();
+                //control.ExplodeJump(force);
 
             }
-           
+
         }
-       
+        //GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<CharacterControl>().ExplodeJump(force);
+        GameObject go = Instantiate(Explosion, transform.position, transform.rotation);
+
+        //Destroy(go);
+
+        StartCoroutine(DestroyExplosion(go));
+
     }
 
     void OnCollisionEnter(Collision collision)
@@ -69,6 +75,7 @@ public class spider_bot : MonoBehaviour
         
         if(collision.gameObject.layer==14 && !Exploded) // "Puppet" layer
         {
+            
             Exploded = true;
 
             Explode();
