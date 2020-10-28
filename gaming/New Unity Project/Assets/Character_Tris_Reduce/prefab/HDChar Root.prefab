@@ -358,6 +358,7 @@ GameObject:
   - component: {fileID: 4313671623650859639}
   - component: {fileID: 4313671623650859638}
   - component: {fileID: 7026304504949225339}
+  - component: {fileID: 923812364904625873}
   m_Layer: 14
   m_Name: mixamorig:Head
   m_TagString: Untagged
@@ -516,6 +517,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de05f0d5d71ade8409d463fd2d3629de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!81 &923812364904625873
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994077524369040569}
+  m_Enabled: 1
 --- !u!1 &1109133604600448174
 GameObject:
   m_ObjectHideFlags: 0

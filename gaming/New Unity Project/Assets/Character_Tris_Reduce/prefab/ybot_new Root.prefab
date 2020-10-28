@@ -5475,6 +5475,7 @@ GameObject:
   - component: {fileID: 3330747345965114261}
   - component: {fileID: 3330747345965114260}
   - component: {fileID: 3330747345965114263}
+  - component: {fileID: 5996598601393186675}
   m_Layer: 14
   m_Name: mixamorig:Head
   m_TagString: Untagged
@@ -5621,6 +5622,14 @@ ConfigurableJoint:
   m_EnablePreprocessing: 0
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!81 &5996598601393186675
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3330747345965114262}
+  m_Enabled: 1
 --- !u!1 &4651926439234156723
 GameObject:
   m_ObjectHideFlags: 0
@@ -6671,15 +6680,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ceb723285b563394395f4e0e53678b98, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ce4142b18056ab4b813713b878856ca, type: 3}
---- !u!1 &285899679584575108 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1306605793903958, guid: 9ce4142b18056ab4b813713b878856ca,
-    type: 3}
-  m_PrefabInstance: {fileID: 284602433202314194}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &279875341411037300 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4870030517758886, guid: 9ce4142b18056ab4b813713b878856ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 284602433202314194}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &285899679584575108 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1306605793903958, guid: 9ce4142b18056ab4b813713b878856ca,
     type: 3}
   m_PrefabInstance: {fileID: 284602433202314194}
   m_PrefabAsset: {fileID: 0}
