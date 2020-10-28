@@ -89,11 +89,12 @@ public class AudioManager : MonoBehaviour
 
 	private void Start()
     {
-		if(PlayerPrefs.GetInt("music",1)==1)
+		if (PlayerPrefs.GetInt("music",1)==1)
         {
 			Play("Theme");
+			
 		}
 		
-    }
+	}
 
 }

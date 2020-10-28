@@ -66,6 +66,7 @@ public class settings_button : MonoBehaviour
                         }
                         PlayerPrefs.SetInt("HDCharacter",0);
                         GameObject.Find("GameManager").GetComponent<GameManager>().loadPlayer();
+                        GameObject.Find("CharacterFix").GetComponent<CharacterFix>().Flexible();
                     }
                     break;
             }
@@ -102,6 +103,7 @@ public class settings_button : MonoBehaviour
                         }
                         PlayerPrefs.SetInt("HDCharacter", 1);
                         GameObject.Find("GameManager").GetComponent<GameManager>().loadPlayer();
+                        GameObject.Find("CharacterFix").GetComponent<CharacterFix>().Flexible();
                     }
                     break;
             }

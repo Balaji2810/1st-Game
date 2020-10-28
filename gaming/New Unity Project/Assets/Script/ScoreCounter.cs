@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using RootMotion.Dynamics;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -20,7 +21,7 @@ public class ScoreCounter : MonoBehaviour
         try
         {
             player = GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<PlayerStatus>();
-            if(transform.position.z<player.MovedDistance)
+            if(transform.position.z<player.MovedDistance&&player.puppet.state==PuppetMaster.State.Alive)
             {
                 if (ap != null)
                 {

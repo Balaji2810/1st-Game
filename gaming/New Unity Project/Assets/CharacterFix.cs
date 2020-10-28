@@ -1,6 +1,7 @@
 ﻿using RootMotion.Dynamics;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class CharacterFix : MonoBehaviour
@@ -12,8 +13,14 @@ public class CharacterFix : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Flexible();
+       
+    }
+
+    public void Flexible()
+    {
         PuppetMaster pm = GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<PuppetMaster>();
-        if(pm!=null)
+        if (pm != null)
         {
             oldMuscleSpring = pm.muscleSpring;
             oldMuscleDampper = pm.muscleDamper;
@@ -28,7 +35,6 @@ public class CharacterFix : MonoBehaviour
             time = Time.fixedDeltaTime;
             Time.fixedDeltaTime = 0.02f;
         }
-       
     }
 
     public void FixCharacter()
