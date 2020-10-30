@@ -12,10 +12,10 @@ public class FileHandler : MonoBehaviour
 
     
 
-    public void save(string key,int data,string file="score")
+    public void save(string key,int data,string file="main")
     {
         var settings = new ES3Settings(ES3.EncryptionType.AES, password);
-        if(file == "score")
+        if(file == "main")
         {
             ES3.Save(key, data, ScoreFile, settings);
         }
@@ -33,7 +33,7 @@ public class FileHandler : MonoBehaviour
         {
             return ES3.KeyExists(key, filename, settings);
         }
-        else if(file == "score")
+        else if(file == "main")
         {
             return ES3.KeyExists(key, ScoreFile, settings);
         }
@@ -44,10 +44,10 @@ public class FileHandler : MonoBehaviour
         
     }
 
-    public int load(string key, string file = "score")
+    public int load(string key, string file = "main")
     {
         var settings = new ES3Settings(ES3.EncryptionType.AES, password);
-        if (file == "score")
+        if (file == "main")
         {
             return (int)ES3.Load(key, ScoreFile,0, settings);
         }

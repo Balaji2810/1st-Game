@@ -20,11 +20,11 @@ public class RoadGenerator : MonoBehaviour
     void Start()
     {
         Roads = AP.returnObject();
-       
+        dummyRoad();
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         try
         {
@@ -42,17 +42,22 @@ public class RoadGenerator : MonoBehaviour
 
     void SpawnRoad()
     {
+        dummyRoad();
+        GameObject go;
+        //actualRoad
+        go = Instantiate(Roads[Random.Range(0, Roads.Count)]);
+        go.transform.parent = transform;
+        go.transform.position = Vector3.forward * roadSpawn;
+        roadSpawn += roadLength;
+    }
+
+    void dummyRoad()
+    {
         GameObject go;
         //dummyRoad
         go = Instantiate(DummyRoad);
         go.transform.parent = transform;
         go.transform.position = Vector3.forward * roadSpawn;
         roadSpawn += DummyRoadLength;
-
-        //actualRoad
-        go = Instantiate(Roads[Random.Range(0, Roads.Count)]);
-        go.transform.parent = transform;
-        go.transform.position = Vector3.forward * roadSpawn;
-        roadSpawn += roadLength;
     }
 }

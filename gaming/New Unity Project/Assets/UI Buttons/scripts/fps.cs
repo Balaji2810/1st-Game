@@ -9,7 +9,7 @@ public class fps : MonoBehaviour
     public GameObject go;
     private void Awake()
     {
-        if(PlayerPrefs.GetInt("showFPS",1)==1)
+        if(PlayerPrefs.GetInt("showFPS",0)==1)
         {
             go.SetActive(true);
             
@@ -22,7 +22,7 @@ public class fps : MonoBehaviour
 
     private void OnEnable()
     {
-        if (PlayerPrefs.GetInt("showFPS", 1) == 1)
+        if (PlayerPrefs.GetInt("showFPS", 0) == 1)
         {
             go.SetActive(true);
         }

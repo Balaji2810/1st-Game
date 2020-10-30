@@ -10,7 +10,7 @@ public class fogFollow : MonoBehaviour
     public GameObject go;
     private void Awake()
     {
-        if (PlayerPrefs.GetInt("fog&others", 1) == 1)
+        if (PlayerPrefs.GetInt("fog&others", 0) == 1)
         {
             go.SetActive(true);
 
@@ -23,7 +23,7 @@ public class fogFollow : MonoBehaviour
 
     private void OnEnable()
     {
-        if (PlayerPrefs.GetInt("fog&others", 1) == 1)
+        if (PlayerPrefs.GetInt("fog&others", 0) == 1)
         {
             go.SetActive(true);
         }

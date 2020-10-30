@@ -12,7 +12,7 @@ public class ObstacleRoad : MonoBehaviour
     void Start()
     {
         AP = GameObject.Find("Available Prefabs").GetComponent<AvailablePrefabs>();
-        Obstacles = AP.returnObject(2);
+        Obstacles = AP.obstacles;
         for (int i = Random.Range(0,10);i<RoadLength;i+= Random.Range(3, 5)*5)
         {
             if(Random.Range(0,3)!=0)
@@ -25,9 +25,4 @@ public class ObstacleRoad : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

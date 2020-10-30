@@ -157,12 +157,13 @@ public class AvailablePrefabs : MonoBehaviour
         return returnObjects;
     }
 
+    public List<GameObject> obstacles;
     public Dictionary<string, data> AllObjectValues;
     // Start is called before the first frame update
     void Awake()
     {
         AllObjectValues = getObjectDetails(3);
-        
+        obstacles = returnObject(2);
     }
 
     
