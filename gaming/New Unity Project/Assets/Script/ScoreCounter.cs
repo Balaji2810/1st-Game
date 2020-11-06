@@ -21,7 +21,7 @@ public class ScoreCounter : MonoBehaviour
         try
         {
             player = GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<PlayerStatus>();
-            if(transform.position.z<player.MovedDistance&&player.puppet.state==PuppetMaster.State.Alive)
+            if((transform.position.z+5)<player.MovedDistance&&player.puppet.state==PuppetMaster.State.Alive&& !(player.AnimationDeath))
             {
                 if (ap != null)
                 {

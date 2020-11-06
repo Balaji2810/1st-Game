@@ -42,6 +42,13 @@ public class CharacterControl : MonoBehaviour
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         timeManager = GameObject.Find("Time Manager").GetComponent<TimeManager>();
     }
+
+    void Continue()
+    {
+        
+        GameObject.Find("Canvas").transform.Find("continue").gameObject.SetActive(true);
+    }
+
     public void DeadRagdoll(bool activate = true)
     {
        
@@ -53,7 +60,8 @@ public class CharacterControl : MonoBehaviour
         }
 
         pm.state = PuppetMaster.State.Dead;
-
+        GameObject.Find("Canvas").transform.Find("game").gameObject.SetActive(false);
+        Invoke("Continue", 4);
     }
 
     

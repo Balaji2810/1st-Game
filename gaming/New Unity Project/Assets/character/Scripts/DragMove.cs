@@ -17,7 +17,7 @@ public class DragMove : MonoBehaviour
 
     Touch touch;
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         
         if(gameManager.Startgame && status.puppet.state == PuppetMaster.State.Alive && !status.AnimationDeath)
@@ -30,7 +30,7 @@ public class DragMove : MonoBehaviour
                 touch = Input.GetTouch(0);
                 if(touch.phase==TouchPhase.Moved)
                 {
-                    leftright += touch.deltaPosition.x * DragLeftRightSpeed * Time.deltaTime;
+                    leftright += touch.deltaPosition.x * DragLeftRightSpeed ;
                 }
             }
 

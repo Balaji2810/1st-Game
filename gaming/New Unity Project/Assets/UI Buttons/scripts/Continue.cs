@@ -5,9 +5,16 @@ using UnityEngine;
 
 public class Continue : MonoBehaviour
 {
-    public TextMeshProUGUI TEXT;
-    public void ChangeText(string text)
+    public GameObject score;
+    public float delay = 6;
+    
+    void Update()
     {
-        TEXT.text = text;
+        if(delay<0)
+        {
+            score.SetActive(true);
+            gameObject.SetActive(false);
+        }
+        delay -= Time.deltaTime;
     }
 }

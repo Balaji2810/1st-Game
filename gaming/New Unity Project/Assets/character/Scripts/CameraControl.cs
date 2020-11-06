@@ -17,7 +17,7 @@ public class CameraControl : MonoBehaviour
     public float LookAtSpeed = 2;
     public GameManager gameManager;
 
-    private PlayerStatus player;
+    //private PlayerStatus player;
     private bool init = true;
     private bool afterDead = false;
 
@@ -63,6 +63,27 @@ public class CameraControl : MonoBehaviour
 
     }
 
+    private void Update()
+    {
+        try
+        {
+            PlayerStatus player = GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<PlayerStatus>();
+            if (!init)
+            {
+                if (player.puppet.state == PuppetMaster.State.Alive)
+                {
+                    //camera Left Right move
+                    //transform.position = new Vector3(player.LeftRight, transform.position.y, transform.position.z);
+                    transform.position = Vector3.Lerp(transform.position, new Vector3(player.LeftRight, transform.position.y, transform.position.z), Time.deltaTime * LeftRightSpeed);
+
+                }
+            }
+        }
+        catch
+        {
+
+        }
+    }
 
     // Update is called once per frame
     void FixedUpdate()
@@ -70,7 +91,7 @@ public class CameraControl : MonoBehaviour
 
         try
         {
-            player = GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<PlayerStatus>();
+            PlayerStatus player = GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<PlayerStatus>();
             
             if (init)
             {
@@ -120,10 +141,7 @@ public class CameraControl : MonoBehaviour
 
                     //Camera Ground level
                     transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, player.GroundLevel + offset.y, transform.position.z), Time.deltaTime * JumpSpeed);
-                    //camera Left Right move
-                    //transform.position = new Vector3(player.LeftRight, transform.position.y, transform.position.z);
-                    transform.position = Vector3.Lerp(transform.position, new Vector3(player.LeftRight, transform.position.y, transform.position.z), Time.deltaTime* LeftRightSpeed);
-
+                    
 
 
 
