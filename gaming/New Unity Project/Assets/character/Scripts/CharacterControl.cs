@@ -100,7 +100,7 @@ public class CharacterControl : MonoBehaviour
         if(speed>20.0f)
         {
             speed += (Time.deltaTime / 60.0f);
-            animator.SetInteger("speed", 3);
+            //animator.SetInteger("speed", 3);
         }
         else if(speed>17.0f)
         {

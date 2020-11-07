@@ -3284,7 +3284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerRoot: {fileID: 1742787850578019437}
   status: {fileID: 1742787852032646848}
-  DragLeftRightSpeed: 0.0075
+  DragLeftRightSpeed: 0.0035
   LeftRightSpeed: 5
 --- !u!1 &1742787851735514769
 GameObject:
