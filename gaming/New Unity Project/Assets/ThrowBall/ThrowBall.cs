@@ -28,7 +28,7 @@ public class ThrowBall : MonoBehaviour
             float radius = Random.Range(0.25f,0.61f);
             gameObject.GetComponent<Rigidbody>().mass = gameObject.GetComponent<Rigidbody>().mass * (radius / gameObject.transform.localScale.x);
             gameObject.transform.localScale = Vector3.one* radius;
-                
+            gameObject.transform.parent = this.gameObject.transform;
             
 
             gameObject.GetComponent<Rigidbody>().velocity = gameObject.transform.forward * Random.Range(force.x,force.y);

@@ -49,22 +49,40 @@ public class CharacterControl : MonoBehaviour
         GameObject.Find("Canvas").transform.Find("continue").gameObject.SetActive(true);
     }
 
+    [System.NonSerialized]
+    public bool isWalk = true;
+    [System.NonSerialized]
+    public bool CanDie = false;
+
     public void DeadRagdoll(bool activate = true)
     {
-       
-       
-        if(slowmotion && activate &&!(status.AnimationDeath))
+        print("dead "+  CanDie);
+       isWalk = false;
+       if (gameManager.Startgame && CanDie)
         {
-            slowmotion = false;
-            timeManager.DoSlowMotion();
-        }
+            if (slowmotion && activate && !(status.AnimationDeath))
+            {
+                slowmotion = false;
+                timeManager.DoSlowMotion();
+            }
 
-        pm.state = PuppetMaster.State.Dead;
-        GameObject.Find("Canvas").transform.Find("game").gameObject.SetActive(false);
-        Invoke("Continue", 4);
+            //pm.state = PuppetMaster.State.Dead;
+            pm.Kill(PuppetMaster.StateSettings.Default);
+            GameObject.Find("Canvas").transform.Find("game").gameObject.SetActive(false);
+            Invoke("Continue", 3);
+        }
+        
     }
 
-    
+ 
+    public void StandUpWalk()
+    {
+        if (!gameManager.Startgame)
+        {
+            isWalk = true;
+        }
+
+    }
 
     public void ExplodeJump(float force)
     {
@@ -91,7 +109,7 @@ public class CharacterControl : MonoBehaviour
         
         if(!gameManager.Startgame)
         {
-            animator.SetInteger("speed", 0);
+            //animator.SetInteger("speed", 0);
             return;
         }
 
@@ -100,7 +118,7 @@ public class CharacterControl : MonoBehaviour
         if(speed>20.0f)
         {
             speed += (Time.deltaTime / 60.0f);
-            //animator.SetInteger("speed", 3);
+            animator.SetInteger("speed", 3);
         }
         else if(speed>17.0f)
         {

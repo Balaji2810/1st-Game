@@ -43,46 +43,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b6254181ea030645949d9b505a84637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Testing: 0
+  Testing: 1
   File: {fileID: 0}
   Roads:
   - go: {fileID: 9189929428369261660, guid: e5955d3704dc6da44ba373456bb7df89, type: 3}
-    status: 4
+    status: 1
     name: 
     points: 0
     cost: 0
   - go: {fileID: 6814111129673750620, guid: f45957fca11a92045b2d476eb7678815, type: 3}
-    status: 0
+    status: 2
     name: 
     points: 0
     cost: 0
   - go: {fileID: 3493349111649153951, guid: 091e33f5f2493c54ca866250e9d1a057, type: 3}
-    status: 0
+    status: 2
     name: 
     points: 0
     cost: 0
   - go: {fileID: 3557455267316876409, guid: 62a02efef4495be4791694aed3ae2d0d, type: 3}
-    status: 0
+    status: 2
     name: 
     points: 0
     cost: 0
   - go: {fileID: 3900120663482979734, guid: 71b66facf851a064f8b3214a1b6c92b9, type: 3}
-    status: 0
+    status: 2
     name: 
     points: 0
     cost: 0
   - go: {fileID: 2002583072873103633, guid: 62da05746860cc34fadb700a526fc04b, type: 3}
-    status: 0
+    status: 1
     name: 
     points: 0
     cost: 0
   - go: {fileID: 5410531607079905802, guid: cc423288295be2344a838b4c7b1fe2ca, type: 3}
-    status: 0
+    status: 2
     name: 
     points: 0
     cost: 0
   - go: {fileID: 9145479352048597890, guid: a258815824f3cec429b0fd0f725f6f97, type: 3}
-    status: 0
+    status: 2
     name: 
     points: 0
     cost: 0
@@ -248,7 +248,8 @@ MonoBehaviour:
     points: 4
     cost: 0
   - go: {fileID: 4984308032968957808, guid: 7d90b84510485c64caaa8130b9fc72bf, type: 3}
-    status: 0
+    status: 1
     name: 
     points: 4
     cost: 0
+  obstacles: []

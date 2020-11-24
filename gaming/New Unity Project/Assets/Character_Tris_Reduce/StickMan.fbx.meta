@@ -1,0 +1,404 @@
+fileFormatVersion: 2
+guid: ec1a14ebd542dd4409e8545a656992b8
+ModelImporter:
+  serializedVersion: 20101
+  internalIDToNameTable:
+  - first:
+      74: -7726862339940093661
+    second: Base Human|Base HumanHeadGizmo|Take 001|BaseLayer
+  - first:
+      74: 347808886020303108
+    second: Base Human|Base HumanLForearmGizmo|Take 001|BaseLayer
+  - first:
+      74: -7296278439695699529
+    second: Base Human|Base HumanLPalmGizmo|Take 001|BaseLayer
+  - first:
+      74: -6237609991552296486
+    second: Base Human|Base HumanPelvisGizmo|Take 001|BaseLayer
+  - first:
+      74: 397990470018614954
+    second: Base Human|Base HumanRForearmGizmo|Take 001|BaseLayer
+  - first:
+      74: 9103590069621678933
+    second: Base Human|Base HumanRPalmGizmo|Take 001|BaseLayer
+  - first:
+      74: 246020366456278155
+    second: Base Human|Base Human|Take 001|BaseLayer
+  - first:
+      74: 3806007445413109547
+    second: Base Human|Compass001|Take 001|BaseLayer
+  - first:
+      74: 7535759552679295459
+    second: Base Human|Daylight001|Take 001|BaseLayer
+  - first:
+      74: -7549008338277456527
+    second: Base Human|Sun002|Take 001|BaseLayer
+  - first:
+      74: -2857177595670333654
+    second: Base HumanRForearmGizmo|Base HumanHeadGizmo|Take 001|BaseLayer
+  - first:
+      74: 1080975747262051080
+    second: Base HumanRForearmGizmo|Base HumanLForearmGizmo|Take 001|BaseLayer
+  - first:
+      74: -2219453713244254436
+    second: Base HumanRForearmGizmo|Base HumanLPalmGizmo|Take 001|BaseLayer
+  - first:
+      74: 2843749488993523087
+    second: Base HumanRForearmGizmo|Base HumanPelvisGizmo|Take 001|BaseLayer
+  - first:
+      74: 951707257034378655
+    second: Base HumanRForearmGizmo|Base HumanRForearmGizmo|Take 001|BaseLayer
+  - first:
+      74: 1563514028468183091
+    second: Base HumanRForearmGizmo|Base HumanRPalmGizmo|Take 001|BaseLayer
+  - first:
+      74: 1213724207531223017
+    second: Base HumanRForearmGizmo|Base Human|Take 001|BaseLayer
+  - first:
+      74: -1658874511005605902
+    second: Base HumanRForearmGizmo|Compass001|Take 001|BaseLayer
+  - first:
+      74: -1225796644368239501
+    second: Base HumanRForearmGizmo|Daylight001|Take 001|BaseLayer
+  - first:
+      74: -2311433870015763728
+    second: Base HumanRForearmGizmo|Sun002|Take 001|BaseLayer
+  - first:
+      74: 4031585370604002507
+    second: Base HumanLForearmGizmo|Base HumanHeadGizmo|Take 001|BaseLayer
+  - first:
+      74: -3205071430972970721
+    second: Base HumanLForearmGizmo|Base HumanLForearmGizmo|Take 001|BaseLayer
+  - first:
+      74: 2245011855859999543
+    second: Base HumanLForearmGizmo|Base HumanLPalmGizmo|Take 001|BaseLayer
+  - first:
+      74: -5909174695016300470
+    second: Base HumanLForearmGizmo|Base HumanPelvisGizmo|Take 001|BaseLayer
+  - first:
+      74: 459973541280388626
+    second: Base HumanLForearmGizmo|Base HumanRForearmGizmo|Take 001|BaseLayer
+  - first:
+      74: 905707144724169550
+    second: Base HumanLForearmGizmo|Base HumanRPalmGizmo|Take 001|BaseLayer
+  - first:
+      74: -3202576251635802280
+    second: Base HumanLForearmGizmo|Base Human|Take 001|BaseLayer
+  - first:
+      74: -92262426519634655
+    second: Base HumanLForearmGizmo|Compass001|Take 001|BaseLayer
+  - first:
+      74: -7514606138162693095
+    second: Base HumanLForearmGizmo|Daylight001|Take 001|BaseLayer
+  - first:
+      74: 1529301969989568494
+    second: Base HumanLForearmGizmo|Sun002|Take 001|BaseLayer
+  - first:
+      74: -7071647680310814964
+    second: Base HumanRPalmGizmo|Base HumanHeadGizmo|Take 001|BaseLayer
+  - first:
+      74: 9083528209181251579
+    second: Base HumanRPalmGizmo|Base HumanLForearmGizmo|Take 001|BaseLayer
+  - first:
+      74: -3656348272022535199
+    second: Base HumanRPalmGizmo|Base HumanLPalmGizmo|Take 001|BaseLayer
+  - first:
+      74: 8504165372303833568
+    second: Base HumanRPalmGizmo|Base HumanPelvisGizmo|Take 001|BaseLayer
+  - first:
+      74: 2959989912785279768
+    second: Base HumanRPalmGizmo|Base HumanRForearmGizmo|Take 001|BaseLayer
+  - first:
+      74: -2750180398412706944
+    second: Base HumanRPalmGizmo|Base HumanRPalmGizmo|Take 001|BaseLayer
+  - first:
+      74: -3821295407828506245
+    second: Base HumanRPalmGizmo|Base Human|Take 001|BaseLayer
+  - first:
+      74: 4089324058565164828
+    second: Base HumanRPalmGizmo|Compass001|Take 001|BaseLayer
+  - first:
+      74: -1500630330337905142
+    second: Base HumanRPalmGizmo|Daylight001|Take 001|BaseLayer
+  - first:
+      74: -7690585019337652813
+    second: Base HumanRPalmGizmo|Sun002|Take 001|BaseLayer
+  - first:
+      74: 6053201251955009988
+    second: Base HumanLPalmGizmo|Base HumanHeadGizmo|Take 001|BaseLayer
+  - first:
+      74: -7899950215888558680
+    second: Base HumanLPalmGizmo|Base HumanLForearmGizmo|Take 001|BaseLayer
+  - first:
+      74: -1589105523752795781
+    second: Base HumanLPalmGizmo|Base HumanLPalmGizmo|Take 001|BaseLayer
+  - first:
+      74: -8897253706486561518
+    second: Base HumanLPalmGizmo|Base HumanPelvisGizmo|Take 001|BaseLayer
+  - first:
+      74: -2538449301654621068
+    second: Base HumanLPalmGizmo|Base HumanRForearmGizmo|Take 001|BaseLayer
+  - first:
+      74: -4195371341263383665
+    second: Base HumanLPalmGizmo|Base HumanRPalmGizmo|Take 001|BaseLayer
+  - first:
+      74: 3902999357300091913
+    second: Base HumanLPalmGizmo|Base Human|Take 001|BaseLayer
+  - first:
+      74: -6015571482671585560
+    second: Base HumanLPalmGizmo|Compass001|Take 001|BaseLayer
+  - first:
+      74: -5069811094621182114
+    second: Base HumanLPalmGizmo|Daylight001|Take 001|BaseLayer
+  - first:
+      74: -2017270318187653644
+    second: Base HumanLPalmGizmo|Sun002|Take 001|BaseLayer
+  - first:
+      74: -227089970226868868
+    second: Base HumanHeadGizmo|Base HumanHeadGizmo|Take 001|BaseLayer
+  - first:
+      74: 1660389329779264942
+    second: Base HumanHeadGizmo|Base HumanLForearmGizmo|Take 001|BaseLayer
+  - first:
+      74: 1500493392152171280
+    second: Base HumanHeadGizmo|Base HumanLPalmGizmo|Take 001|BaseLayer
+  - first:
+      74: 2306349233543360617
+    second: Base HumanHeadGizmo|Base HumanPelvisGizmo|Take 001|BaseLayer
+  - first:
+      74: 2841494918900588921
+    second: Base HumanHeadGizmo|Base HumanRForearmGizmo|Take 001|BaseLayer
+  - first:
+      74: 991629023095871453
+    second: Base HumanHeadGizmo|Base HumanRPalmGizmo|Take 001|BaseLayer
+  - first:
+      74: -2712074435978181268
+    second: Base HumanHeadGizmo|Base Human|Take 001|BaseLayer
+  - first:
+      74: 7323107365371224451
+    second: Base HumanHeadGizmo|Compass001|Take 001|BaseLayer
+  - first:
+      74: -7288058775742611163
+    second: Base HumanHeadGizmo|Daylight001|Take 001|BaseLayer
+  - first:
+      74: -4457553929529928330
+    second: Base HumanHeadGizmo|Sun002|Take 001|BaseLayer
+  - first:
+      74: -5353161195206259178
+    second: Sun002|Base HumanHeadGizmo|Take 001|BaseLayer
+  - first:
+      74: 4547853095533264894
+    second: Sun002|Base HumanLForearmGizmo|Take 001|BaseLayer
+  - first:
+      74: 3956756866580609101
+    second: Sun002|Base HumanLPalmGizmo|Take 001|BaseLayer
+  - first:
+      74: 4460773293021758378
+    second: Sun002|Base HumanPelvisGizmo|Take 001|BaseLayer
+  - first:
+      74: -5301517834823802278
+    second: Sun002|Base HumanRForearmGizmo|Take 001|BaseLayer
+  - first:
+      74: -917404252257529380
+    second: Sun002|Base HumanRPalmGizmo|Take 001|BaseLayer
+  - first:
+      74: -6569875955739922485
+    second: Sun002|Base Human|Take 001|BaseLayer
+  - first:
+      74: -4842689645685198493
+    second: Sun002|Compass001|Take 001|BaseLayer
+  - first:
+      74: 2156492333905894641
+    second: Sun002|Daylight001|Take 001|BaseLayer
+  - first:
+      74: 5843332689108495645
+    second: Sun002|Sun002|Take 001|BaseLayer
+  - first:
+      74: -2256880570750117691
+    second: Daylight001|Base HumanHeadGizmo|Take 001|BaseLayer
+  - first:
+      74: -8804704762109193455
+    second: Daylight001|Base HumanLForearmGizmo|Take 001|BaseLayer
+  - first:
+      74: -9044507722828625895
+    second: Daylight001|Base HumanLPalmGizmo|Take 001|BaseLayer
+  - first:
+      74: -4166035526003930336
+    second: Daylight001|Base HumanPelvisGizmo|Take 001|BaseLayer
+  - first:
+      74: -2981851866132056246
+    second: Daylight001|Base HumanRForearmGizmo|Take 001|BaseLayer
+  - first:
+      74: 5990676900155562053
+    second: Daylight001|Base HumanRPalmGizmo|Take 001|BaseLayer
+  - first:
+      74: 2124456399544216040
+    second: Daylight001|Base Human|Take 001|BaseLayer
+  - first:
+      74: -8278162540345363342
+    second: Daylight001|Compass001|Take 001|BaseLayer
+  - first:
+      74: -4520828203496571321
+    second: Daylight001|Daylight001|Take 001|BaseLayer
+  - first:
+      74: 8061486082513697616
+    second: Daylight001|Sun002|Take 001|BaseLayer
+  - first:
+      74: -6359532525017346650
+    second: Compass001|Base HumanHeadGizmo|Take 001|BaseLayer
+  - first:
+      74: 1725321822621762772
+    second: Compass001|Base HumanLForearmGizmo|Take 001|BaseLayer
+  - first:
+      74: -8073058128302798674
+    second: Compass001|Base HumanLPalmGizmo|Take 001|BaseLayer
+  - first:
+      74: 2496500634718191271
+    second: Compass001|Base HumanPelvisGizmo|Take 001|BaseLayer
+  - first:
+      74: -5967805288731647341
+    second: Compass001|Base HumanRForearmGizmo|Take 001|BaseLayer
+  - first:
+      74: 5608929462011132680
+    second: Compass001|Base HumanRPalmGizmo|Take 001|BaseLayer
+  - first:
+      74: 5536161007649292182
+    second: Compass001|Base Human|Take 001|BaseLayer
+  - first:
+      74: 5330356557872652104
+    second: Compass001|Compass001|Take 001|BaseLayer
+  - first:
+      74: 5222988850538656082
+    second: Compass001|Daylight001|Take 001|BaseLayer
+  - first:
+      74: -7684274895408862771
+    second: Compass001|Sun002|Take 001|BaseLayer
+  - first:
+      74: 5862543501114407046
+    second: Armature|Armature|Take 001|BaseLayer
+  - first:
+      74: 5043914763763744945
+    second: Armature|Base HumanHeadGizmo|Take 001|BaseLayer
+  - first:
+      74: 2042382947450656600
+    second: Armature|Base HumanLForearmGizmo|Take 001|BaseLayer
+  - first:
+      74: -4507161143941075940
+    second: Armature|Base HumanLPalmGizmo|Take 001|BaseLayer
+  - first:
+      74: 9025002588383239794
+    second: Armature|Base HumanPelvisGizmo|Take 001|BaseLayer
+  - first:
+      74: 5582701779370227173
+    second: Armature|Base HumanRForearmGizmo|Take 001|BaseLayer
+  - first:
+      74: -4808701454097844657
+    second: Armature|Base HumanRPalmGizmo|Take 001|BaseLayer
+  - first:
+      74: -8190301724552014461
+    second: Armature|Base Human|Take 001|BaseLayer
+  - first:
+      74: -2964939274950444916
+    second: Armature|Compass001|Take 001|BaseLayer
+  - first:
+      74: -8803071335784612208
+    second: Armature|Daylight001|Take 001|BaseLayer
+  - first:
+      74: 849490667497394946
+    second: Armature|Sun002|Take 001|BaseLayer
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

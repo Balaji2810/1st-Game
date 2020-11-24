@@ -276,6 +276,7 @@
     <Compile Include="Assets\PolyFew\ThirdParty\AsImpL\Scripts\ImportOptions.cs" />
     <Compile Include="Assets\character\RootMotion\Baker\Scripts\GenericBaker.cs" />
     <Compile Include="Assets\character\RootMotion\Shared Demo Assets\Scripts\Character Controllers\UserControlThirdPerson.cs" />
+    <Compile Include="Assets\Script\StandUpWalk.cs" />
     <Compile Include="Assets\character\RootMotion\Baker\Scripts\Helpers\AvatarUtility.cs" />
     <Compile Include="Assets\PolyFew\Scripts\NonEditor-Scripts\AttributesImage.cs" />
     <Compile Include="Assets\PolyFew\Scripts\NonEditor-Scripts\MaterialCombiner.cs" />

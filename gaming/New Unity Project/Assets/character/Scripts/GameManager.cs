@@ -182,6 +182,7 @@ public class GameManager : MonoBehaviour
         main.SetActive(false);
         updatePoints();
         game.SetActive(true);
+        GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<CharacterControl>().CanDie=true;
     }
 
 

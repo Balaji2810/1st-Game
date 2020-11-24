@@ -56,18 +56,26 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BzKovSoft\RagdollHelper\Editor\RagdollPart.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\RagdollManager\ConfigurableJointInspector.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\RagdollManager\JointInspector.cs" />
     <Compile Include="Assets\PolyFew\Scripts\Editor\PolyfewMenu.cs" />
+    <Compile Include="Assets\BzKovSoft\RagdollHelper\Editor\Ragdoller.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\PuppetMaster\_DEMOS\CharacterPuppetInspector.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\Baker\Helpers\AnimationUtilityExtended.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\Shared Scripts\InspectorCommentDrawer.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\PuppetMaster\PuppetMasterHumanoidConfigInspector.cs" />
     <Compile Include="Assets\ProceduralUIImage\Editor\FreeModifierEditor.cs" />
+    <Compile Include="Assets\BzKovSoft\RagdollHelper\Editor\RigidController.cs" />
     <Compile Include="Assets\PolyFew\Scripts\Editor\DecoratorEditor.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\Shared Scripts\SerializedContent.cs" />
+    <Compile Include="Assets\BzKovSoft\RagdollHelper\Editor\JointController.cs" />
     <Compile Include="Assets\water effect\LowPolyWater_Pack\Scripts\Editor\GeneratePlane.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\Shared Scripts\CommentsInspector.cs" />
+    <Compile Include="Assets\BzKovSoft\RagdollHelper\Editor\ColliderHelper.cs" />
+    <Compile Include="Assets\BzKovSoft\RagdollHelper\Editor\WeightCalculator.cs" />
+    <Compile Include="Assets\BzKovSoft\RagdollHelper\Editor\RagdollProperties.cs" />
+    <Compile Include="Assets\BzKovSoft\RagdollHelper\Editor\ColliderController.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\RagdollManager\CharacterJointInspector.cs" />
     <Compile Include="Assets\Editor\AvailablePrefabsEditor.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\PuppetMaster\PuppetMasterInspector.cs" />
@@ -84,6 +92,8 @@
     <Compile Include="Assets\PolyFew\BatchFewShader\Editor\BatchFewShaderGUI.cs" />
     <Compile Include="Assets\ProceduralUIImage\Editor\ModifierUtility.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\PuppetMaster\PropMuscleInspector.cs" />
+    <Compile Include="Assets\BzKovSoft\RagdollHelper\Editor\BoneHelper.cs" />
+    <Compile Include="Assets\BzKovSoft\RagdollHelper\Editor\RagdollController.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\Baker\GenericBakerInspector.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\PuppetMaster\WeightDrawer.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\Shared Scripts\Inspector.cs" />
