@@ -56,7 +56,7 @@ public class CharacterControl : MonoBehaviour
 
     public void DeadRagdoll(bool activate = true)
     {
-        print("dead "+  CanDie);
+       
        isWalk = false;
        if (gameManager.Startgame && CanDie)
         {

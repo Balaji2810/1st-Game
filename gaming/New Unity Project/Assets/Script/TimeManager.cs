@@ -14,6 +14,7 @@ public class TimeManager : MonoBehaviour
     {
         if (enable)
         {
+            //Time.fixedDeltaTime = 0.02f;
             Time.timeScale = slowDownFactor;
             StartCoroutine(delay(Time.fixedDeltaTime));
             Time.fixedDeltaTime = Time.timeScale * TimeConstant;

@@ -47,7 +47,7 @@ MonoBehaviour:
   File: {fileID: 0}
   Roads:
   - go: {fileID: 9189929428369261660, guid: e5955d3704dc6da44ba373456bb7df89, type: 3}
-    status: 1
+    status: 2
     name: 
     points: 0
     cost: 0
@@ -72,7 +72,7 @@ MonoBehaviour:
     points: 0
     cost: 0
   - go: {fileID: 2002583072873103633, guid: 62da05746860cc34fadb700a526fc04b, type: 3}
-    status: 1
+    status: 2
     name: 
     points: 0
     cost: 0
@@ -93,22 +93,22 @@ MonoBehaviour:
     cost: 0
   Obsatcles:
   - go: {fileID: 2199311556845205924, guid: 79d85a33cb6fbda47bf3e30bf998d4be, type: 3}
-    status: 1
+    status: 2
     name: 
     points: 1
     cost: 0
   - go: {fileID: 2725305168250315284, guid: 83ae2e405a4e19f43b3dd4157591d0da, type: 3}
-    status: 1
+    status: 2
     name: 
     points: 2
     cost: 0
   - go: {fileID: 1107681007080945062, guid: 57b55befb92122d4cb1147ec9a365041, type: 3}
-    status: 1
+    status: 2
     name: 
     points: 2
     cost: 0
   - go: {fileID: 2098464524256356906, guid: e0074f3d46915bc42b72ef5f6c6bc53f, type: 3}
-    status: 1
+    status: 2
     name: 
     points: 2
     cost: 0
@@ -118,12 +118,12 @@ MonoBehaviour:
     points: 2
     cost: 0
   - go: {fileID: 6406434603467546605, guid: 7b4242b6f8412684a9f9658d5b32609b, type: 3}
-    status: 3
+    status: 2
     name: 
     points: 2
     cost: 0
   - go: {fileID: 3168240464410043598, guid: 2506951948fda2a47b48465da2df2f7d, type: 3}
-    status: 1
+    status: 2
     name: 
     points: 3
     cost: 0
@@ -143,22 +143,22 @@ MonoBehaviour:
     points: 2
     cost: 0
   - go: {fileID: 8715935978295408183, guid: f37129d128f90b8439fa37e2890fddaf, type: 3}
-    status: 1
+    status: 2
     name: 
     points: 3
     cost: 0
   - go: {fileID: 5031236830024090922, guid: de1c1366c1f25444d97849f7f2c4998c, type: 3}
-    status: 3
+    status: 2
     name: 
     points: 4
     cost: 0
   - go: {fileID: 1169113368989327912, guid: 1c4fa094be98a4142a89b5abe0d070f2, type: 3}
-    status: 1
+    status: 2
     name: 
     points: 2
     cost: 0
   - go: {fileID: 3685467127081018976, guid: 023ddf6cca8398242802b640428bbdf5, type: 3}
-    status: 3
+    status: 2
     name: 
     points: 3
     cost: 0
@@ -168,32 +168,32 @@ MonoBehaviour:
     points: 4
     cost: 0
   - go: {fileID: 6184742390921012627, guid: 8254181b6943ac243a929cf2f02b5db0, type: 3}
-    status: 3
+    status: 2
     name: 
     points: 4
     cost: 0
   - go: {fileID: 8404479283842011489, guid: ee10d0dc63b5dc640921ebcf564e0c64, type: 3}
-    status: 1
+    status: 2
     name: 
     points: 2
     cost: 0
   - go: {fileID: 7290678194655962191, guid: aa224a5bc7217dd42a56e025b12c17bf, type: 3}
-    status: 3
+    status: 2
     name: 
     points: 4
     cost: 0
   - go: {fileID: 3057471519760609227, guid: 708080f59c6861749bbe6b76df0d9689, type: 3}
-    status: 3
+    status: 2
     name: 
     points: 3
     cost: 0
   - go: {fileID: 5620200743445620014, guid: 794867aef662c3e4dac7514e6ccb8a29, type: 3}
-    status: 3
+    status: 1
     name: 
     points: 2
     cost: 0
   - go: {fileID: 8143527664087775427, guid: 715dea2be27c87e4e8e09b3ffd00909a, type: 3}
-    status: 3
+    status: 1
     name: 
     points: 3
     cost: 0
@@ -203,52 +203,52 @@ MonoBehaviour:
     points: 4
     cost: 0
   - go: {fileID: 3442275439826948700, guid: b6edaf1602bb1e445bd5cf559429d088, type: 3}
-    status: 3
+    status: 1
     name: 
     points: 4
     cost: 0
   - go: {fileID: 3458760691425303837, guid: 1c7ab8b048a9ccb42a3b2483b04bc52c, type: 3}
-    status: 3
+    status: 2
     name: 
     points: 3
     cost: 0
   - go: {fileID: 3050251151963864051, guid: 7fb47141ef5ec344e9ec3f3c720c0a88, type: 3}
-    status: 3
+    status: 2
     name: 
     points: 3
     cost: 0
   - go: {fileID: 4247425750355848050, guid: 2df8c9197f018ed488b55edf50d5225e, type: 3}
-    status: 1
+    status: 2
     name: 
     points: 3
     cost: 0
   - go: {fileID: 983536848453823682, guid: 318f83a1e73af814cb1d4d77b5d3049c, type: 3}
-    status: 3
+    status: 2
     name: 
     points: 4
     cost: 0
   - go: {fileID: 518438799306456364, guid: dbeddfd8c1896cb408b78de0feb77992, type: 3}
-    status: 3
+    status: 2
     name: 
     points: 3
     cost: 0
   - go: {fileID: 3987916678544209799, guid: 8442c13fdc3613d40b936008cbc1824a, type: 3}
-    status: 1
+    status: 2
     name: 
     points: 3
     cost: 0
   - go: {fileID: 685540231067087379, guid: 9d04892da8299c340a12c66a9925063a, type: 3}
-    status: 3
+    status: 2
     name: 
     points: 3
     cost: 0
   - go: {fileID: 3829554405656638560, guid: 2063ea3f6a503714b9f1e6c0b1a6423a, type: 3}
-    status: 3
+    status: 2
     name: 
     points: 4
     cost: 0
   - go: {fileID: 4984308032968957808, guid: 7d90b84510485c64caaa8130b9fc72bf, type: 3}
-    status: 1
+    status: 2
     name: 
     points: 4
     cost: 0

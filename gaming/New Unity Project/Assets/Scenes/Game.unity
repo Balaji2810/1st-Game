@@ -19866,6 +19866,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6016960436356824171, guid: b3c68806722a82948bb83f676ea40c52,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6016960436356824174, guid: b3c68806722a82948bb83f676ea40c52,
         type: 3}
       propertyPath: m_BackGroundColor.r
@@ -19888,8 +19893,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6016960436356824174, guid: b3c68806722a82948bb83f676ea40c52,
         type: 3}
-      propertyPath: m_FOVAxisMode
-      value: 0
+      propertyPath: m_FocalLength
+      value: 28.970562
       objectReference: {fileID: 0}
     - target: {fileID: 6016960436356824175, guid: b3c68806722a82948bb83f676ea40c52,
         type: 3}
