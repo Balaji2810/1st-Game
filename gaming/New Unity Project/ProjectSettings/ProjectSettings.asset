@@ -772,6 +772,7 @@ PlayerSettings:
   incrementalIl2cppBuild:
     iPhone: 0
     tvOS: 0
+  suppressCommonWarnings: 1
   allowUnsafeCode: 0
   useDeterministicCompilation: 1
   additionalIl2CppArgs: 
@@ -840,14 +841,16 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
-    Analytics: 0
+    Analytics: 1
     Build: 0
     Collab: 0
     ErrorHub: 0
+    Game Performance: 0
     Game_Performance: 0
     Hub: 0
-    Purchasing: 0
+    Purchasing: 1
     UNet: 1
+    Unity Ads: 0
     Unity_Ads: 0
   luminIcon:
     m_Name: 
@@ -861,10 +864,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: b3187499-e868-47fc-bf00-bc4e115308ea
   framebufferDepthMemorylessMode: 0
-  projectName: EffectsExamples
-  organizationId: 
+  projectName: The Runner
+  organizationId: jeevanandam
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

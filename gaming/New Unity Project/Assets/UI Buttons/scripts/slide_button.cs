@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class slide_button : MonoBehaviour
 {
-    public Animation animation;
+    public Animation anim;
     bool slide = false;
 
     //-133.55
@@ -13,12 +13,12 @@ public class slide_button : MonoBehaviour
         if (slide)
         {
             slide = false;
-            animation.Play("slide_back");
+            anim.Play("slide_back");
         }
         else
         {
             slide = true;
-            animation.Play("slide");
+            anim.Play("slide");
         }
     }
 }

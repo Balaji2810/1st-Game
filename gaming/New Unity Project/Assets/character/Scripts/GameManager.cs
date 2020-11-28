@@ -172,7 +172,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
+    public FameGenerator FG;
     public void StartRound()
     {
         File.deleteFile("temp");
@@ -183,6 +183,7 @@ public class GameManager : MonoBehaviour
         updatePoints();
         game.SetActive(true);
         GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<CharacterControl>().CanDie=true;
+        FG.startFun();
     }
 
 
