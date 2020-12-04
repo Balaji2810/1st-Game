@@ -13,6 +13,12 @@ public class ObstacleRoad : MonoBehaviour
     {
         AP = GameObject.Find("Available Prefabs").GetComponent<AvailablePrefabs>();
         Obstacles = AP.obstacles;
+
+        if(Obstacles.Count==0)
+        {
+            return;
+        }
+
         for (int i = Random.Range(0,10);i<RoadLength;i+= Random.Range(3, 5)*5)
         {
             if(Random.Range(0,3)!=0)

@@ -119,6 +119,7 @@ public class AvailablePrefabs : MonoBehaviour
 
     public List<GameObject> returnObject(int type = 1 )
     {
+       
         Object[] list;
 
         if (type==1)
@@ -131,6 +132,8 @@ public class AvailablePrefabs : MonoBehaviour
         }
         
         var data = getObjectDetails(type);
+
+        
 
         List<GameObject> returnObjects = new List<GameObject>();
         foreach(Object obj in list)
@@ -149,7 +152,9 @@ public class AvailablePrefabs : MonoBehaviour
                 if (data[name].status == "active" || data[name].status =="none")
                 {
                     returnObjects.Add(obj.go);
+                    
                 }
+                
             }
             
             
@@ -164,6 +169,7 @@ public class AvailablePrefabs : MonoBehaviour
     {
         AllObjectValues = getObjectDetails(3);
         obstacles = returnObject(2);
+        
     }
 
     

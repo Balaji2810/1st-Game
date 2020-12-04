@@ -1134,7 +1134,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5025760560976764019
 Transform:
   m_ObjectHideFlags: 0
@@ -3451,10 +3451,10 @@ MonoBehaviour:
   turnTime: 10
   playerRoot: {fileID: 3206671494185394880}
   controller: {fileID: 8567660514260258174}
-  speed: 10
-  maxspeed: 20
+  speed: 0
+  maxspeed: 21
   inverseAxcel: 1
-  jumpSpeed: 9.3
+  jumpSpeed: 9.6
   jumpDelayTime: 0
   gravity: 25
   SlideDelayTime: 0.9
@@ -5554,14 +5554,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 211412189924327397}
-  - component: {fileID: 684056726818063059}
+  - component: {fileID: 5750687697913246189}
   m_Layer: 14
   m_Name: SwipeMove
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &211412189924327397
 Transform:
   m_ObjectHideFlags: 0
@@ -5576,7 +5576,7 @@ Transform:
   m_Father: {fileID: 6884398164302050398}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &684056726818063059
+--- !u!114 &5750687697913246189
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5585,9 +5585,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 8887405305617854612}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f3837df60c80af458f4e1012d0909e0, type: 3}
+  m_Script: {fileID: 11500000, guid: f81ea3a77937cfe478a74f897e28d4f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerRoot: {fileID: 3206671494185394880}
+  status: {fileID: 2363454551579466792}
+  swipe: {fileID: 1532543811578582556}
+  speed: 5
 --- !u!1 &8963725470744419961
 GameObject:
   m_ObjectHideFlags: 0

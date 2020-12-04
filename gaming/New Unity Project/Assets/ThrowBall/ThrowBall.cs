@@ -7,10 +7,10 @@ public class ThrowBall : MonoBehaviour
     public GameObject prefab;
     public Camera cam;
     public Vector2 force;
-    
+    public GameObject main;
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0)&&main.activeSelf)
         {
             Ray r = cam.ScreenPointToRay(Input.mousePosition);
 

@@ -127,6 +127,13 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Game", LoadSceneMode.Single);
     }
 
+    public GameObject shop;
+    public void goto_shop()
+    {
+        main.SetActive(false);
+        shop.SetActive(true);
+    }
+
     IEnumerator count(int type)
     {
         if (type == 3)
