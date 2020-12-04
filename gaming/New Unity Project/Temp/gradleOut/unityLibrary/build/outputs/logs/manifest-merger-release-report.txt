@@ -1,25 +1,25 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:3:1-24:12
-INJECTED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:3:1-24:12
-INJECTED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:3:1-24:12
-INJECTED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:3:1-24:12
-INJECTED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:3:1-24:12
-INJECTED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:3:1-24:12
-INJECTED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:3:1-24:12
+ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:3:1-25:12
+INJECTED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:3:1-25:12
+INJECTED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:3:1-25:12
+INJECTED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:3:1-25:12
+INJECTED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:3:1-25:12
+INJECTED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:3:1-25:12
+INJECTED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:3:1-25:12
 	package
 		ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:3:70-98
 		INJECTED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:3:1-24:12
+		ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:3:1-25:12
 		INJECTED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:3:99-145
 	android:versionCode
 		INJECTED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:3:1-24:12
+		ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:3:1-25:12
 		INJECTED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:3:11-69
@@ -91,32 +91,38 @@ ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Te
 		ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:17:46-98
 	android:name
 		ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:17:16-45
-uses-feature#0x00020000
+uses-feature#0x00030000
 ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:19:3-52
 	android:glEsVersion
 		ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:19:17-49
+uses-feature#android.hardware.vulkan.version
+ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:20:3-91
+	android:required
+		ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:20:64-88
+	android:name
+		ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:20:17-63
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:20:3-65
+ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:21:3-65
 	android:name
-		ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:20:20-62
+		ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:21:20-62
 uses-feature#android.hardware.touchscreen
-ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:21:3-88
+ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:22:3-88
 	android:required
-		ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:21:61-85
+		ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:22:61-85
 	android:name
-		ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:21:17-60
+		ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:22:17-60
 uses-feature#android.hardware.touchscreen.multitouch
-ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:22:3-99
+ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:23:3-99
 	android:required
-		ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:22:72-96
+		ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:23:72-96
 	android:name
-		ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:22:17-71
+		ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:23:17-71
 uses-feature#android.hardware.touchscreen.multitouch.distinct
-ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:23:3-108
+ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:24:3-108
 	android:required
-		ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:23:81-105
+		ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:24:81-105
 	android:name
-		ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:23:17-80
+		ADDED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml:24:17-80
 uses-sdk
 INJECTED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\src\main\AndroidManifest.xml

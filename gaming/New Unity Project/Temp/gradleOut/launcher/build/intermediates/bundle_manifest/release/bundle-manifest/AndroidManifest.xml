@@ -17,7 +17,10 @@
         android:smallScreens="true"
         android:xlargeScreens="true" />
 
-    <uses-feature android:glEsVersion="0x00020000" />
+    <uses-feature android:glEsVersion="0x00030000" />
+    <uses-feature
+        android:name="android.hardware.vulkan.version"
+        android:required="false" />
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -72,7 +75,7 @@
             android:value="portrait|landscape" />
         <meta-data
             android:name="unity.build-id"
-            android:value="3f2e510f-ebe1-4614-ab6f-13282a2a06fe" />
+            android:value="8a6de489-301c-48bb-8c82-1ce9c5d6541d" />
         <meta-data
             android:name="com.google.android.play.billingclient.version"
             android:value="3.0.1" />

@@ -3451,8 +3451,8 @@ MonoBehaviour:
   turnTime: 10
   playerRoot: {fileID: 3206671494185394880}
   controller: {fileID: 8567660514260258174}
-  speed: 0
-  maxspeed: 21
+  speed: 24
+  maxspeed: 25
   inverseAxcel: 1
   jumpSpeed: 9.6
   jumpDelayTime: 0
