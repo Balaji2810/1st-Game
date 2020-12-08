@@ -23,7 +23,7 @@ public class ScoreCalculate : MonoBehaviour
     {
         scoreObj.SetActive(true);
 
-        score = GameObject.Find("FileHandler").GetComponent<FileHandler>().load("points", "temp");//Random.Range(50, 3000);
+        score = GameObject.Find("FileHandler").GetComponent<FileHandler>().load("fames", "temp");//Random.Range(50, 3000);
         
         StartCoroutine(countScore(0, score));
     }

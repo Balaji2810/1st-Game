@@ -178,8 +178,8 @@ PlayerSettings:
   buildNumber:
     iPhone: 0
   AndroidBundleVersionCode: 1
-  AndroidMinSdkVersion: 19
-  AndroidTargetSdkVersion: 29
+  AndroidMinSdkVersion: 21
+  AndroidTargetSdkVersion: 30
   AndroidPreferredInstallLocation: 1
   aotOptions: 
   stripEngineCode: 1
@@ -869,7 +869,7 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   cloudProjectId: b3187499-e868-47fc-bf00-bc4e115308ea
   framebufferDepthMemorylessMode: 0
-  projectName: The Runner
+  projectName: DERG
   organizationId: jeevanandam
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0

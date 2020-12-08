@@ -5,15 +5,15 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637421650104848764
-    m_Hash: 751015660
+      ticks: 637428566412133014
+    m_Hash: 2593234830
   m_LockFileStatus:
     m_FilePath: C:/Users/Balaji/Documents/GitHub/1st-Game/gaming/New Unity Project/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637421650112192281
+      ticks: 637428566566357312
     m_Hash: 2042904929
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -1189,6 +1189,7 @@ m_PackageAssets:
         - 10.0.0-preview.26
         - 10.1.0
         - 10.2.0
+        - 10.2.1
         compatible:
         - 8.2.0
         - 8.3.1
@@ -3546,6 +3547,7 @@ m_PackageAssets:
         - 10.0.0-preview.30
         - 10.1.0
         - 10.2.0
+        - 10.2.1
         compatible:
         - 8.2.0
         - 8.3.1
@@ -3688,6 +3690,7 @@ m_PackageAssets:
         - 10.0.0-preview.27
         - 10.1.0
         - 10.2.0
+        - 10.2.1
         compatible:
         - 8.2.0
         - 8.3.1

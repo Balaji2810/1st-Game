@@ -53,6 +53,8 @@ public class CharacterControl : MonoBehaviour
     public bool isWalk = true;
     [System.NonSerialized]
     public bool CanDie = false;
+    [System.NonSerialized]
+    public int SpeedMod = 1;
 
     public void DeadRagdoll(bool activate = true)
     {
@@ -123,12 +125,12 @@ public class CharacterControl : MonoBehaviour
         }
         else if(speed>6.0f)
         {
-            speed += Time.deltaTime;
+            speed += Time.deltaTime* SpeedMod;
             animator.SetInteger("speed", 2);
         }
         else
         {
-            speed += Time.deltaTime;
+            speed += Time.deltaTime* SpeedMod;
             animator.SetInteger("speed", 1);
         }
 

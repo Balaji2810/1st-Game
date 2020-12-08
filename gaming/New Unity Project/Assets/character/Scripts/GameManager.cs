@@ -44,8 +44,18 @@ public class GameManager : MonoBehaviour
 
     }
 
+    public void buyCrystals(int crystals) 
+    {
+        int currentcrystals = (int)GameObject.Find("FileHandler").GetComponent<FileHandler>().load("crystals");
+        GameObject.Find("FileHandler").GetComponent<FileHandler>().save("crystals", crystals + currentcrystals);
+        int temp = PlayerPrefs.GetInt("buyCrystals", 0);
+        PlayerPrefs.SetInt("buyCrystals", temp + 1);
+    }
+    
+    
+
     public GameObject Char, HDChar;
-    public void loadPlayer(int pos = 4)
+    public void loadPlayer(float pos = 4)
     {
 
         GameObject go;
@@ -75,7 +85,7 @@ public class GameManager : MonoBehaviour
     public void updatePoints()
     {
         //currentPoints.text =( GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<PlayerStatus>().controller.velocity.z).ToString();//Mathf.Ceil(1.0f / Time.deltaTime).ToString();
-        currentPoints.text = File.load("points", "temp").ToString();
+        currentPoints.text = File.load("fames", "temp").ToString();
     }
 
 
@@ -119,6 +129,16 @@ public class GameManager : MonoBehaviour
         pause.SetActive(false);
         resume.SetActive(true);
         StartCoroutine(count(3));
+    }
+
+    public void ShowInterstitial(int type=1)
+    {
+        GameObject.Find("ADManager").GetComponent<ADManager>().ShowInterstitial(type);
+    }
+
+    public void ShowRewardVideo(int type)
+    {
+        GameObject.Find("ADManager").GetComponent<ADManager>().ShowRewardVideo(type);
     }
 
     public void goto_home()

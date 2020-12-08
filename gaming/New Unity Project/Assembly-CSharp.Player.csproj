@@ -59,9 +59,11 @@
     <Compile Include="Assets\character\RootMotion\RagdollManager\Scripts\RagdollEditor.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\SingleBarrel.cs" />
     <Compile Include="Assets\PolyFew\Scripts\Runtime\MeshCombiner.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceConfig.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\Skeleton.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\BallShooter.cs" />
     <Compile Include="Assets\character\RootMotion\Shared Demo Assets\Scripts\Character Controllers\CharacterAnimationSimple.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceSegment.cs" />
     <Compile Include="Assets\PolyFew\ThirdParty\AsImpL\Scripts\LoadingProgress.cs" />
     <Compile Include="Assets\Script\FileHandler.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\LayerSetup.cs" />
@@ -108,10 +110,12 @@
     <Compile Include="Assets\AudioManager\Sound.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\PressureSensor.cs" />
     <Compile Include="Assets\Script\UIPosition.cs" />
+    <Compile Include="Assets\IronSource\Scripts\UnsupportedPlatformAgent.cs" />
     <Compile Include="Assets\roads\Road_Renderer.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\FXCollisionBlood.cs" />
     <Compile Include="Assets\character\RootMotion\Shared Demo Assets\Scripts\Character Controllers\UserControlAI.cs" />
     <Compile Include="Assets\water effect\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceEvents.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\Behaviours\BehaviourFall.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\PuppetMasterSetup.cs" />
     <Compile Include="Assets\UI Buttons\scripts\load_fame_and_gems.cs" />
@@ -134,16 +138,19 @@
     <Compile Include="Assets\ProceduralUIImage\Scripts\Modifiers\OnlyOneEdgeModifier.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\MuscleCollisionBroadcaster.cs" />
     <Compile Include="Assets\environment_generator.cs" />
+    <Compile Include="Assets\IronSource\Scripts\iOSAgent.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\PuppetMasterValidation.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\Behaviours\BehaviourPuppetBoosting.cs" />
     <Compile Include="Assets\character\RootMotion\Baker\Scripts\HumanoidBaker.cs" />
     <Compile Include="Assets\PolyFew\Scripts\NonEditor-Scripts\PolyFewHost.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\PlanetaryGravity.cs" />
+    <Compile Include="Assets\AD Manager\ADManager.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\WallBarrel.cs" />
     <Compile Include="Assets\CharacterFix.cs" />
     <Compile Include="Assets\character\Scripts\PlayerStatus.cs" />
     <Compile Include="Assets\Script\ScoreCounter.cs" />
     <Compile Include="Assets\ProceduralUIImage\Scripts\EmptySprite.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceUtils.cs" />
     <Compile Include="Assets\RoadGen\Script\MentalCube.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\DoubleBarrels.cs" />
     <Compile Include="Assets\side_environment.cs" />
@@ -154,6 +161,7 @@
     <Compile Include="Assets\character\RootMotion\Shared Demo Assets\Scripts\Character Controllers\SimpleLocomotion.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\Respawning.cs" />
     <Compile Include="Assets\PolyFew\Scripts\NonEditor-Scripts\EditorCoroutines.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceImpressionData.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\PropMelee.cs" />
     <Compile Include="Assets\character\RootMotion\Shared Scripts\SolverManager.cs" />
     <Compile Include="Assets\fame\scripts\FameGenerator.cs" />
@@ -163,8 +171,10 @@
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\Behaviours\BehaviourPuppetStateSwitching.cs" />
     <Compile Include="Assets\PolyFew\Scripts\Runtime\SystemServices.cs" />
     <Compile Include="Assets\character\RootMotion\Shared Demo Assets\Scripts\Character Controllers\CharacterThirdPerson.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourcePlacement.cs" />
     <Compile Include="Assets\character\Scripts\SwipeMove.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\Behaviours\SubBehaviours\SubBehaviourBase.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceIAgent.cs" />
     <Compile Include="Assets\character\RootMotion\Shared Scripts\Warning.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\PuppetMasterStates.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\WoodenDummySpin.cs" />
@@ -180,6 +190,7 @@
     <Compile Include="Assets\Script\DeleteBlock.cs" />
     <Compile Include="Assets\character\RootMotion\Shared Scripts\AxisTools.cs" />
     <Compile Include="Assets\fame\scripts\FameMove.cs" />
+    <Compile Include="Assets\IronSource\DemoScene\IronSourceDemoScript.cs" />
     <Compile Include="Assets\PolyFew\ThirdParty\AsImpL\Scripts\Loaders\Loader.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\Behaviours\SubBehaviours\SubBehaviourCOM.cs" />
     <Compile Include="Assets\character\RootMotion\Shared Scripts\TriggerEventBroadcaster.cs" />
@@ -233,6 +244,7 @@
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\PuppetMasterTools.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\Planet.cs" />
     <Compile Include="Assets\Asset Scene\FreeLookController.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSource.cs" />
     <Compile Include="Assets\character\RootMotion\Shared Demo Assets\Scripts\Character Controllers\CharacterBase.cs" />
     <Compile Include="Assets\ProceduralUIImage\Scripts\Modifiers\CustomPremadeModifier.cs" />
     <Compile Include="Assets\character\RootMotion\RagdollManager\Scripts\RagdollCreator.cs" />
@@ -240,6 +252,7 @@
     <Compile Include="Assets\character\RootMotion\RagdollManager\Scripts\BipedRagdollCreator.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\PuppetBoard.cs" />
     <Compile Include="Assets\character\Scripts\CharacterControl.cs" />
+    <Compile Include="Assets\IronSource\Scripts\AndroidAgent.cs" />
     <Compile Include="Assets\side environment\MeshCombine.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\PropRoot.cs" />
     <Compile Include="Assets\character\RootMotion\Shared Scripts\BipedNaming.cs" />
@@ -251,8 +264,11 @@
     <Compile Include="Assets\ThrowBall\BallDestroy.cs" />
     <Compile Include="Assets\PolyFew\ThirdParty\AsImpL\Scripts\Loaders\LoaderObj.cs" />
     <Compile Include="Assets\character\Scripts\DragMove.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceError.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\Behaviours\BehaviourPuppetHelpers.cs" />
     <Compile Include="Assets\roads\RoadsAssets.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceConstants.cs" />
+    <Compile Include="Assets\IronSource\Scripts\IronSourceJSON.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\SkeletonShooter.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\PuppetMasterPropMelee.cs" />
     <Compile Include="Assets\PolyFew\ThirdParty\AsImpL\Scripts\Dataset\Triangulator.cs" />
@@ -281,6 +297,7 @@
     <Compile Include="Assets\Script\StandUpWalk.cs" />
     <Compile Include="Assets\character\RootMotion\Baker\Scripts\Helpers\AvatarUtility.cs" />
     <Compile Include="Assets\PolyFew\Scripts\NonEditor-Scripts\AttributesImage.cs" />
+    <Compile Include="Assets\obstacles\Sci-Fic\Way Block\Scripts\ReleaseConstrains.cs" />
     <Compile Include="Assets\PolyFew\Scripts\NonEditor-Scripts\MaterialCombiner.cs" />
     <Compile Include="Assets\character\RootMotion\Shared Demo Assets\Scripts\Camera Controllers\CameraControllerFPS.cs" />
     <Compile Include="Assets\UI Buttons\scripts\settings_button.cs" />
@@ -290,7 +307,8 @@
     <Compile Include="Assets\character\RootMotion\Shared Scripts\Hierarchy.cs" />
     <Compile Include="Assets\character\Scripts\Swipe.cs" />
     <Compile Include="Assets\UIERuntime\Samples\RepeatGame\RepeatGame.cs" />
-    <Compile Include="Assets\obstacles\Sci-Fic\Way Block\Scripts\ReleaseConstrains.cs" />
+    <Compile Include="Assets\Script\AutoDisable.cs" />
+    <Compile Include="Assets\Script\MaterialManager.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -312,6 +330,7 @@
      <None Include="Assets\water effect\LowPolyWater_Pack\Shaders\WaterShaded.shader" />
      <None Include="Assets\UIERuntime\Samples\TaskList\todolist.uss" />
      <None Include="Assets\side environment\Vertical_Fog_Distortion.shader" />
+     <None Include="Assets\IronSource\Plugins\Android\IronSource.plugin\AndroidManifest.xml" />
      <None Include="Assets\UI\home.uss" />
      <None Include="Assets\Fonts\Mansalva\OFL.txt" />
      <None Include="Assets\ProceduralUIImage\Resources\Shaders\ProceduralImageRuntime.shader" />
