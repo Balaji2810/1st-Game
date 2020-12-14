@@ -64,7 +64,7 @@ public class Swipe : MonoBehaviour
             }
         }
 
-        if (swipeDelta.magnitude > 125)
+        if (swipeDelta.magnitude > 50)
         {
             float x = swipeDelta.x, y = swipeDelta.y;
             if (Mathf.Abs(x) > Mathf.Abs(y))

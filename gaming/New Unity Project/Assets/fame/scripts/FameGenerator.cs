@@ -5,7 +5,7 @@ using UnityEngine;
 public class FameGenerator : MonoBehaviour
 {
     public GameObject go;
-    public float time, distance = 250;
+    public float time, distance = 250,currentPos=0;
     
     IEnumerator createFame()
     {
@@ -13,10 +13,15 @@ public class FameGenerator : MonoBehaviour
 
         try
         {
-            GameObject fame = Instantiate(go);
-            transform.parent = fame.transform;
-            float d = GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<PlayerStatus>().MovedDistance;
-            fame.transform.position = new Vector3(fame.transform.position.x, fame.transform.position.y,d+distance);
+            float d = GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<PlayerStatus>().MovedDistance + distance;
+            if(d > (currentPos+20))
+            {
+                currentPos = d;
+                GameObject fame = Instantiate(go);
+                fame.transform.parent = gameObject.transform;
+                fame.transform.position = new Vector3(fame.transform.position.x, fame.transform.position.y, d + distance);
+            }
+            
         }
         catch
         {

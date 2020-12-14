@@ -86,6 +86,7 @@
     <Compile Include="Assets\character\RootMotion\PuppetMaster\DoxygenManualPuppetMaster.cs" />
     <Compile Include="Assets\character\RootMotion\Shared Demo Assets\Scripts\Misc\ApplicationQuit.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\Destructor.cs" />
+    <Compile Include="Assets\Script\MaterialManager.cs" />
     <Compile Include="Assets\PolyFew\ThirdParty\AsImpL\Scripts\Loaders\TextureLoader.cs" />
     <Compile Include="Assets\ThrowBall\ThrowBall.cs" />
     <Compile Include="Assets\ProceduralUIImage\Scripts\Modifiers\UniformModifier.cs" />
@@ -119,6 +120,7 @@
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\Behaviours\BehaviourFall.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\PuppetMasterSetup.cs" />
     <Compile Include="Assets\UI Buttons\scripts\load_fame_and_gems.cs" />
+    <Compile Include="Assets\AudioManager\AudioListenerConfig.cs" />
     <Compile Include="Assets\ProceduralUIImage\Scripts\ProceduralImageModifier.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\NavMeshPuppet.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\UserControlAIMelee.cs" />
@@ -174,6 +176,7 @@
     <Compile Include="Assets\IronSource\Scripts\IronSourcePlacement.cs" />
     <Compile Include="Assets\character\Scripts\SwipeMove.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\Behaviours\SubBehaviours\SubBehaviourBase.cs" />
+    <Compile Include="Assets\AudioManager\OnCollisionSound.cs" />
     <Compile Include="Assets\IronSource\Scripts\IronSourceIAgent.cs" />
     <Compile Include="Assets\character\RootMotion\Shared Scripts\Warning.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\PuppetMasterStates.cs" />
@@ -228,6 +231,7 @@
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\CharacterMeleeDemo.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\PropMuscle.cs" />
     <Compile Include="Assets\PolyFew\Scripts\NonEditor-Scripts\DataContainer.cs" />
+    <Compile Include="Assets\Script\AutoDisable.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\AnimatorIKDemo.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\jump.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\PuppetMasterModes.cs" />
@@ -307,8 +311,7 @@
     <Compile Include="Assets\character\RootMotion\Shared Scripts\Hierarchy.cs" />
     <Compile Include="Assets\character\Scripts\Swipe.cs" />
     <Compile Include="Assets\UIERuntime\Samples\RepeatGame\RepeatGame.cs" />
-    <Compile Include="Assets\Script\AutoDisable.cs" />
-    <Compile Include="Assets\Script\MaterialManager.cs" />
+    <Compile Include="Assets\UI Buttons\scripts\TapToContinue.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

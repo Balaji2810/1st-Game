@@ -6,6 +6,7 @@ public class MaterialManager : MonoBehaviour
 {
     public List<Material> materials;
     float delay = 1;
+    public GameObject tapToContinue;
     void OnEnable()
     {
         foreach(Material material in materials)
@@ -13,6 +14,7 @@ public class MaterialManager : MonoBehaviour
             material.SetFloat("Disolve",1);
         }
         Invoke("Close",8);
+        Invoke("TapToContinue", 2.5f);
     }
 
     // Update is called once per frame
@@ -25,6 +27,10 @@ public class MaterialManager : MonoBehaviour
         
     }
 
+    void TapToContinue()
+    {
+        tapToContinue.SetActive(true);
+    }
     void Close()
     {
         foreach (Material material in materials)

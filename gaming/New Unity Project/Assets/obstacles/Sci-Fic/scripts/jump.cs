@@ -33,9 +33,9 @@ public class jump : MonoBehaviour
             {
                 animation.Play("jumpAttack");
 
-                if (transform.position.y < 1)
+                if (player.isJump)
                 {
-                    gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, 1, 0) * Time.deltaTime * jumpForce);
+                    gameObject.GetComponent<Rigidbody>().velocity = (new Vector3(0, 1, 0) * Time.deltaTime * jumpForce);
                 }
 
 
@@ -45,7 +45,7 @@ public class jump : MonoBehaviour
 
                 if (transform.position.y >2f)
             {
-                gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0, -1, 0) * Time.deltaTime * gravity);
+                gameObject.GetComponent<Rigidbody>().velocity = (new Vector3(0, -1, 0) * Time.deltaTime * gravity);
             }
            
 

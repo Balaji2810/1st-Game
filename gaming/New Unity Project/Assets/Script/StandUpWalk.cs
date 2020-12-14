@@ -43,7 +43,7 @@ public class StandUpWalk : MonoBehaviour
         {
             playerPose.localPosition = Vector3.zero;
             playerPose.localRotation = Quaternion.Euler(0, 0, 0);
-            Destroy(gameObject,5);
+            Destroy(gameObject,3);
         }
         
         

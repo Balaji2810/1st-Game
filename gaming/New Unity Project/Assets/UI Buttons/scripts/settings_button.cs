@@ -69,6 +69,11 @@ public class settings_button : MonoBehaviour
                         GameObject.Find("CharacterFix").GetComponent<CharacterFix>().Flexible();
                     }
                     break;
+                case "SwipeToMove":
+                    {
+                        GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<CharacterControl>().MoveType();
+                    }
+                    break;
             }
         }
         else
@@ -104,6 +109,11 @@ public class settings_button : MonoBehaviour
                         PlayerPrefs.SetInt("HDCharacter", 1);
                         GameObject.Find("GameManager").GetComponent<GameManager>().loadPlayer();
                         GameObject.Find("CharacterFix").GetComponent<CharacterFix>().Flexible();
+                    }
+                    break;
+                case "SwipeToMove":
+                    {
+                        GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<CharacterControl>().MoveType();
                     }
                     break;
             }

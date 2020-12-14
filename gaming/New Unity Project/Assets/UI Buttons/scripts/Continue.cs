@@ -9,7 +9,7 @@ public class Continue : MonoBehaviour
 {
     public GameObject score;
     public float delay = 6;
-    public GameObject close, crystal,video,notEnoughCrystals,gamePanel,RoadGen;
+    public GameObject close, crystal,video,notEnoughCrystals,RoadGen;
     public Color fade;
     bool interrupt = false;
     void Update()
@@ -23,27 +23,30 @@ public class Continue : MonoBehaviour
     public GameObject matrialManager;
     public void CharacterContinue()
     {
-        float pos =0;
-        //pos = GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<PlayerStatus>().MovedDistance;
+        
+        float pos =10;
+        GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<CharacterControl>().SpeedMod=3;
         foreach (Transform child in RoadGen.transform)
         {
             if(child.gameObject.name== "DummyRoad(Clone)")
             {
-                pos = child.position.z;
+                pos += child.position.z;
                 break;
             }
         }
         GameObject.Find("GameManager").GetComponent<GameManager>().Startgame = false;
         GameObject.Find("GameManager").GetComponent<GameManager>().loadPlayer(pos);
         matrialManager.SetActive(true);
+        gameObject.SetActive(false);
+        
     }
 
     public void videoButton()
     {
         video.GetComponent<Button>().interactable = false;
-        video.GetComponent<ProceduralImage>().color = fade;
-        
+        video.GetComponent<ProceduralImage>().color = fade;     
         stop();
+        GameObject.Find("ADManager").GetComponent<ADManager>().ShowRewardVideo(1);
     }
 
     public void crystalButton()
@@ -58,9 +61,9 @@ public class Continue : MonoBehaviour
         else
         {
             GameObject.Find("FileHandler").GetComponent<FileHandler>().save("crystals", currentCrystal-10);
-            gamePanel.SetActive(true);
+            
             CharacterContinue();
-            gameObject.SetActive(false);
+            
         }
         stop();
     }

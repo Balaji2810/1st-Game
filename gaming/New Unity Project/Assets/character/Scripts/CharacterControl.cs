@@ -41,6 +41,7 @@ public class CharacterControl : MonoBehaviour
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         timeManager = GameObject.Find("Time Manager").GetComponent<TimeManager>();
+        MoveType();
     }
 
     void Continue()
@@ -51,14 +52,28 @@ public class CharacterControl : MonoBehaviour
 
     [System.NonSerialized]
     public bool isWalk = true;
-    [System.NonSerialized]
+    //[System.NonSerialized]
     public bool CanDie = false;
     [System.NonSerialized]
     public int SpeedMod = 1;
 
-    public void DeadRagdoll(bool activate = true)
+    public GameObject swipe2move, drag2move;
+    public void MoveType()
     {
-       
+        if(PlayerPrefs.GetInt("SwipeToMove",1)==1)
+        {
+            swipe2move.SetActive(true);
+            drag2move.SetActive(false);
+        }
+        else
+        {
+            swipe2move.SetActive(false);
+            drag2move.SetActive(true);
+        }
+    }
+
+    public void DeadRagdoll(bool activate = true)
+    {     
        isWalk = false;
        if (gameManager.Startgame && CanDie)
         {
@@ -83,7 +98,7 @@ public class CharacterControl : MonoBehaviour
         {
             isWalk = true;
         }
-
+        
     }
 
     public void ExplodeJump(float force)
@@ -91,8 +106,7 @@ public class CharacterControl : MonoBehaviour
         DeadRagdoll();
         moveDirection.y = jumpSpeed * force;
         moveDirection.y -= gravity * Time.deltaTime;
-        controller.Move(moveDirection * Time.deltaTime);
-        
+        controller.Move(moveDirection * Time.deltaTime);    
     }
 
     IEnumerator SlideEnd()
@@ -174,6 +188,7 @@ public class CharacterControl : MonoBehaviour
                 moveDirection *= speed;
                 if ((Input.GetButton("Jump") || Input.GetKey(KeyCode.W)||swipe.SwipeUp) && jumpDelayTime==jump)
                 {
+                    status.isJump = true;
                     moveDirection.y = jumpSpeed;
                     animator.SetBool("Slide", false);
                     animator.SetBool("jump", true);
@@ -182,6 +197,7 @@ public class CharacterControl : MonoBehaviour
                 else
                 {
                     moveDirection.y = 0f;
+                    status.isJump = false;
                 }
 
                 if (Input.GetKey(KeyCode.S)||swipe.SwipeDown)

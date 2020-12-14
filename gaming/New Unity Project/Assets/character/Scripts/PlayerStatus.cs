@@ -17,6 +17,9 @@ public class PlayerStatus : MonoBehaviour
     private float movedDistance;
     private float leftRight = 0;
     private float groundLevelTemp;
+
+    [System.NonSerialized]
+    public bool isJump = false;
     // Start is called before the first frame update
     
 

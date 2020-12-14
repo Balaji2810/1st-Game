@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 747052589063129059}
   - component: {fileID: 7380038594619824478}
   - component: {fileID: 6258570229299852945}
-  - component: {fileID: 5329381252895185963}
+  - component: {fileID: 7061944147122375279}
   m_Layer: 14
   m_Name: Bip002 L Calf
   m_TagString: Untagged
@@ -169,7 +169,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 238919993668448758}
   serializedVersion: 2
-  m_Mass: 15
+  m_Mass: 7
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -286,7 +286,7 @@ ConfigurableJoint:
   m_EnablePreprocessing: 0
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!114 &5329381252895185963
+--- !u!114 &7061944147122375279
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -372,7 +372,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 282363427058265102}
   serializedVersion: 2
-  m_Mass: 15
+  m_Mass: 7
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -543,6 +543,7 @@ GameObject:
   - component: {fileID: 2346296674598491414}
   - component: {fileID: 4270776848857536404}
   - component: {fileID: 4759267467605629689}
+  - component: {fileID: 3064313766540423812}
   m_Layer: 14
   m_Name: Bip002 L Thigh
   m_TagString: Untagged
@@ -573,7 +574,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 451767106939331081}
   serializedVersion: 2
-  m_Mass: 15
+  m_Mass: 7
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -690,6 +691,18 @@ ConfigurableJoint:
   m_EnablePreprocessing: 0
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &3064313766540423812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451767106939331081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de05f0d5d71ade8409d463fd2d3629de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &459080732701397562
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,6 +746,7 @@ GameObject:
   - component: {fileID: 4757865622695360970}
   - component: {fileID: 5405262944880295453}
   - component: {fileID: 7744091456541191274}
+  - component: {fileID: 2664758401859794315}
   m_Layer: 14
   m_Name: Bip002 Pelvis
   m_TagString: Untagged
@@ -766,7 +780,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 490545490060201149}
   serializedVersion: 2
-  m_Mass: 15
+  m_Mass: 7
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -881,8 +895,20 @@ CapsuleCollider:
   m_Enabled: 1
   m_Radius: 0.13038106
   m_Height: 0.3976477
-  m_Direction: 0
-  m_Center: {x: -0.122975826, y: -0.0034717154, z: 0.00000017881393}
+  m_Direction: 2
+  m_Center: {x: -0.13, y: -0.0034717154, z: 0.00000017881393}
+--- !u!114 &2664758401859794315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490545490060201149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de05f0d5d71ade8409d463fd2d3629de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &594155017886834605
 GameObject:
   m_ObjectHideFlags: 0
@@ -1108,7 +1134,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5025760560976764019
 Transform:
   m_ObjectHideFlags: 0
@@ -1305,7 +1331,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2096906621329203854}
   serializedVersion: 2
-  m_Mass: 15
+  m_Mass: 7
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1673,6 +1699,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6135975398538310822}
   - component: {fileID: 4651069279023571731}
+  - component: {fileID: 655282658182698921}
   m_Layer: 14
   m_Name: PuppetMaster
   m_TagString: Untagged
@@ -2235,6 +2262,18 @@ MonoBehaviour:
   solvers: []
   mapDisconnectedMuscles: 1
   storeTargetMappedState: 1
+--- !u!114 &655282658182698921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2369887060135124306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de05f0d5d71ade8409d463fd2d3629de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2444773562661469374
 GameObject:
   m_ObjectHideFlags: 0
@@ -2338,7 +2377,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2531157500116776094}
   serializedVersion: 2
-  m_Mass: 15
+  m_Mass: 7
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -2597,7 +2636,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3091032311529853292}
   serializedVersion: 2
-  m_Mass: 15
+  m_Mass: 7
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -2769,7 +2808,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3253052303542676294}
   serializedVersion: 2
-  m_Mass: 15
+  m_Mass: 7
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -3425,7 +3464,7 @@ MonoBehaviour:
   turnTime: 10
   playerRoot: {fileID: 3206671494185394880}
   controller: {fileID: 8567660514260258174}
-  speed: 24
+  speed: 0
   maxspeed: 25
   inverseAxcel: 1
   jumpSpeed: 9.6
@@ -3434,6 +3473,9 @@ MonoBehaviour:
   SlideDelayTime: 0.9
   FallDeathTime: 1.25
   swipe: {fileID: 1532543811578582556}
+  CanDie: 0
+  swipe2move: {fileID: 8887405305617854612}
+  drag2move: {fileID: 1353776319290307488}
 --- !u!1 &4644276873825229507
 GameObject:
   m_ObjectHideFlags: 0
@@ -3446,7 +3488,6 @@ GameObject:
   - component: {fileID: 1867461002120962079}
   - component: {fileID: 1330225675096357314}
   - component: {fileID: 7958122034015959130}
-  - component: {fileID: 5312984980264687020}
   m_Layer: 14
   m_Name: Bip002 Spine2
   m_TagString: Untagged
@@ -3479,7 +3520,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4644276873825229507}
   serializedVersion: 2
-  m_Mass: 15
+  m_Mass: 7
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -3592,22 +3633,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.19
-  m_Height: 0.4
-  m_Direction: 0
-  m_Center: {x: -0.11, y: 0.09, z: 0.000000047240075}
---- !u!114 &5312984980264687020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4644276873825229507}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de05f0d5d71ade8409d463fd2d3629de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Radius: 0.15
+  m_Height: 0.16
+  m_Direction: 2
+  m_Center: {x: -0.12, y: 0.01, z: 0.000000047240075}
 --- !u!1 &4870160052746242804
 GameObject:
   m_ObjectHideFlags: 0
@@ -3681,7 +3710,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4938332688467756925}
   serializedVersion: 2
-  m_Mass: 15
+  m_Mass: 7
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -3853,7 +3882,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4939663276213364282}
   serializedVersion: 2
-  m_Mass: 15
+  m_Mass: 7
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -4025,7 +4054,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4962663046708568918}
   serializedVersion: 2
-  m_Mass: 15
+  m_Mass: 7
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -4291,6 +4320,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8670219958140320697}
   - component: {fileID: 8303304858579613222}
+  - component: {fileID: 2642998865145338760}
   m_Layer: 15
   m_Name: Bip002 Head
   m_TagString: Untagged
@@ -4320,6 +4350,18 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6406040174810989523}
   m_Enabled: 1
+--- !u!114 &2642998865145338760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6406040174810989523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18fd0764ccce6b84f929d5f32de9c81f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6487154965907188076
 GameObject:
   m_ObjectHideFlags: 0
@@ -4738,6 +4780,7 @@ GameObject:
   - component: {fileID: 6900371239600515921}
   - component: {fileID: 6804648285017885687}
   - component: {fileID: 5632440177176672136}
+  - component: {fileID: 2842039509885422232}
   m_Layer: 14
   m_Name: Bip002 R Thigh
   m_TagString: Untagged
@@ -4768,7 +4811,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7998697552310519892}
   serializedVersion: 2
-  m_Mass: 15
+  m_Mass: 7
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -4885,6 +4928,18 @@ ConfigurableJoint:
   m_EnablePreprocessing: 0
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &2842039509885422232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7998697552310519892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de05f0d5d71ade8409d463fd2d3629de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8179212353425690887
 GameObject:
   m_ObjectHideFlags: 0
@@ -4990,7 +5045,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8256635016015764334}
   serializedVersion: 2
-  m_Mass: 15
+  m_Mass: 7
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -5595,7 +5650,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8963725470744419961}
   serializedVersion: 2
-  m_Mass: 15
+  m_Mass: 7
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -5943,15 +5998,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ceb723285b563394395f4e0e53678b98, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ce4142b18056ab4b813713b878856ca, type: 3}
---- !u!1 &1720111854742754875 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1306605793903958, guid: 9ce4142b18056ab4b813713b878856ca,
-    type: 3}
-  m_PrefabInstance: {fileID: 1719166452077187949}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1714456952473008331 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4870030517758886, guid: 9ce4142b18056ab4b813713b878856ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 1719166452077187949}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1720111854742754875 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1306605793903958, guid: 9ce4142b18056ab4b813713b878856ca,
     type: 3}
   m_PrefabInstance: {fileID: 1719166452077187949}
   m_PrefabAsset: {fileID: 0}

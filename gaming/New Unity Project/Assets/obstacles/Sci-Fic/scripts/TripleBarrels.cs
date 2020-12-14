@@ -56,21 +56,17 @@ public class TripleBarrels : MonoBehaviour
             {
                 go = Instantiate(objects[Random.Range(0, objects.Length)].Object());
                 go.transform.parent = gameObject.transform;
-                go.transform.localPosition = new Vector3(p1, 1.5f, 0);
+                go.transform.localPosition = new Vector3(p1, 1.75f, 0);
             }
             else
             {
                 go = Instantiate(objects[Random.Range(0, objects.Length)].Object());
                 go.transform.parent = gameObject.transform;
-                go.transform.localPosition = new Vector3(p2, 1.5f, 0);
+                go.transform.localPosition = new Vector3(p2, 1.75f, 0);
             }
         }
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 }

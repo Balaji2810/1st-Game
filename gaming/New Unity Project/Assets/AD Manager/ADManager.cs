@@ -70,7 +70,7 @@ public class ADManager : MonoBehaviour
 		}
 	}
 
-
+	
 	void RewardedVideoAdRewardedEvent(IronSourcePlacement ssp)
 	{
 
@@ -87,9 +87,13 @@ public class ADManager : MonoBehaviour
             }
 			int fame = mul*(int)GameObject.Find("FileHandler").GetComponent<FileHandler>().load("fames","temp");
 			GameObject.Find("FileHandler").GetComponent<FileHandler>().save("fames", fame,"temp");
-			multiply.GetComponent<TextMeshProUGUI>().text = (fame).ToString();
+			multiply.GetComponent<TextMeshProUGUI>().text = "+"+((mul-1)*(fame/mul)).ToString();
 
 		}
+		else
+        {
+			GameObject.Find("continue").GetComponent<Continue>().CharacterContinue();
+        }
 	}
 
 	void OnApplicationPause(bool isPaused)
