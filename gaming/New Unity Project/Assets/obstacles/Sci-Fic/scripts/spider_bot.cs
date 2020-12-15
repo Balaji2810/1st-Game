@@ -17,12 +17,7 @@ public class spider_bot : MonoBehaviour
         Exploded=false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
     IEnumerator DestroyExplosion(GameObject go)
     {
         yield return new WaitForSeconds(delayTime);

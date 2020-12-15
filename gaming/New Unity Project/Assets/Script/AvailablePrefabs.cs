@@ -15,6 +15,7 @@ public class AvailablePrefabs : MonoBehaviour
         public string name;
         public int points;
         public int cost;
+        public int pos;
         
     }
 
@@ -129,6 +130,7 @@ public class AvailablePrefabs : MonoBehaviour
         else
         {
           list = Obsatcles;
+          obstaclesSinglePos = new List<GameObject>();
         }
         
         var data = getObjectDetails(type);
@@ -136,6 +138,7 @@ public class AvailablePrefabs : MonoBehaviour
         
 
         List<GameObject> returnObjects = new List<GameObject>();
+
         foreach(Object obj in list)
         {
             {
@@ -152,6 +155,10 @@ public class AvailablePrefabs : MonoBehaviour
                 if (data[name].status == "active" || data[name].status =="none")
                 {
                     returnObjects.Add(obj.go);
+                    if(type!=1&&obj.pos==1)
+                    {
+                        obstaclesSinglePos.Add(obj.go);
+                    }
                     
                 }
                 
@@ -162,14 +169,46 @@ public class AvailablePrefabs : MonoBehaviour
         return returnObjects;
     }
 
+    public List<GameObject> ReturnObstacleSinglePos(List<GameObject> obs)
+    {
+        List<GameObject> temp = new List<GameObject>();
+        for (int i = 0; i < obs.Count; i++)
+        {
+            foreach (Object obj in Obsatcles)
+            {
+                {
+                    String name;
+                    if (obj.name == "")
+                    {
+                        name = obj.go.name;
+                    }
+                    else
+                    {
+                        name = obj.name;
+                    }
+
+                    if (obs[i].name == name)
+                    {
+                        temp.Add(obj.go);
+                    }
+
+                }
+
+            }
+        }
+
+        return temp;
+    }
+
     public List<GameObject> obstacles;
+    public List<GameObject> obstaclesSinglePos;
     public Dictionary<string, data> AllObjectValues;
     // Start is called before the first frame update
     void Awake()
     {
         AllObjectValues = getObjectDetails(3);
         obstacles = returnObject(2);
-        
+        //obstaclesSinglePos = ReturnObstacleSinglePos(obstacles);
     }
 
     
