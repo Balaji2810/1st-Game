@@ -49,11 +49,12 @@ public class FileHandler : MonoBehaviour
         var settings = new ES3Settings(ES3.EncryptionType.AES, password);
         if (file == "main")
         {
-            return (ulong)ES3.Load(key, ScoreFile,0, settings);
+            
+            return ES3.Load<ulong>(key, ScoreFile, 0, settings);
         }
         else
         {
-            return (ulong)ES3.Load(key, temp,0, settings);
+            return ES3.Load<ulong>(key, temp,0, settings);
         }
         
     }

@@ -31,31 +31,14 @@ public class GameManager : MonoBehaviour
     {
         loadPlayer();
 
-        if (PlayerPrefs.GetInt("60fps", 1) == 1)
-        {
-            Application.targetFrameRate = 60;
-        }
-        else
-        {
-            Application.targetFrameRate = 30;
-        }
-
-        //QualitySettings.vSyncCount = 2;
-        print(numberMiniFormat(10));
-        print(numberMiniFormat(1000));
-        print(numberMiniFormat(9999));
-        print(numberMiniFormat(10000));
-        print(numberMiniFormat(1000000));
-        print(numberMiniFormat(1000000000));
-        print(numberMiniFormat(1000000000000));
-        print(numberMiniFormat(1000000000000000));
-        print(numberMiniFormat(1000000000000000000));
+       //FPS : 60 
+        Application.targetFrameRate = 60;    
     }
 
-    public void buyCrystals(ulong crystals) 
+    public void buyCrystals(int crystals) 
     {
         ulong currentcrystals = (ulong)GameObject.Find("FileHandler").GetComponent<FileHandler>().load("crystals");
-        GameObject.Find("FileHandler").GetComponent<FileHandler>().save("crystals", crystals + currentcrystals);
+        GameObject.Find("FileHandler").GetComponent<FileHandler>().save("crystals", (ulong)crystals + currentcrystals);
         int temp = PlayerPrefs.GetInt("buyCrystals", 0);
         PlayerPrefs.SetInt("buyCrystals", temp + 1);
     }
@@ -93,7 +76,7 @@ public class GameManager : MonoBehaviour
     public void updatePoints()
     {
         //currentPoints.text =( GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<PlayerStatus>().controller.velocity.z).ToString();//Mathf.Ceil(1.0f / Time.deltaTime).ToString();
-        currentPoints.text = File.load("fames", "temp").ToString();
+        currentPoints.text = numberMiniFormat(File.load("fames", "temp"));
     }
 
 
@@ -140,27 +123,29 @@ public class GameManager : MonoBehaviour
         }
         else if(num< 1000000)
         {
-            value = (num / 1000).ToString("F2").Replace(".00","") + "K";
+            value = (num / 1000f).ToString("F1").Replace(".0","") + "K";
+            print(num + "  " + value);
+            
         }
         else if(num < 1000000000)
         {
-            value = (num / 1000000).ToString("F2").Replace(".00", "") + "M";
+            value = (num / 1000000f).ToString("F1").Replace(".0", "") + "M";
         }
         else if(num < 1000000000000)
         {
-            value = (num / 1000000000).ToString("F2").Replace(".00", "") + "B";
+            value = (num / 1000000000f).ToString("F1").Replace(".0", "") + "B";
         }
         else if(num < 1000000000000000)
         {
-            value = (num / 1000000000000).ToString("F2").Replace(".00", "") + "T";
+            value = (num / 1000000000000f).ToString("F1").Replace(".0", "") + "T";
         }
         else if(num < 1000000000000000000)
         {
-            value = (num / 1000000000000000).ToString("F2").Replace(".00", "") + "q";
+            value = (num / 1000000000000000f).ToString("F1").Replace(".0", "") + "q";
         }
         else
         {
-            value = (num / 1000000000000000000).ToString("F2").Replace(".00", "") + "Q";
+            value = (num / 1000000000000000000f).ToString("F1").Replace(".0", "") + "Q";
         }
         return value;
     }

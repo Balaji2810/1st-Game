@@ -10,6 +10,7 @@ public class load_fame_and_gems : MonoBehaviour
     private void OnEnable()
     {
         FileHandler file = GameObject.Find("FileHandler").GetComponent<FileHandler>();
-        text.text = file.load(key).ToString();
+        GameManager gm = GameObject.Find("GameManager").GetComponent<GameManager>();
+        text.text = gm.numberMiniFormat(file.load(key));
     }
 }
