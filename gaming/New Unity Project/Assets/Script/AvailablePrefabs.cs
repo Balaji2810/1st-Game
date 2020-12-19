@@ -13,8 +13,8 @@ public class AvailablePrefabs : MonoBehaviour
         public GameObject go;
         public Status status;
         public string name;
-        public int points;
-        public int cost;
+        public ulong points;
+        public ulong cost;
         public int pos;
         
     }
@@ -22,8 +22,8 @@ public class AvailablePrefabs : MonoBehaviour
     public struct data
     {
         public string status;
-        public int points;
-        public int cost;
+        public ulong points;
+        public ulong cost;
     }
 
     

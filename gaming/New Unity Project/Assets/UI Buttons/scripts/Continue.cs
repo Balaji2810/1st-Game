@@ -53,7 +53,7 @@ public class Continue : MonoBehaviour
     {
         crystal.GetComponent<Button>().interactable = false;
         crystal.GetComponent<ProceduralImage>().color = fade;
-        int currentCrystal = GameObject.Find("FileHandler").GetComponent<FileHandler>().load("crystals");
+        ulong currentCrystal = GameObject.Find("FileHandler").GetComponent<FileHandler>().load("crystals");
         if(currentCrystal<10)
         {
             notEnoughCrystals.SetActive(true);

@@ -28,7 +28,7 @@ public class ScoreCounter : MonoBehaviour
 
                     string name = gameObject.name.Replace("(Clone)", "");
 
-                    int currentPoints = (int)File.load("fames", "temp");
+                    ulong currentPoints = (ulong)File.load("fames", "temp");
 
                     if (ap.AllObjectValues.ContainsKey(name))
                     {

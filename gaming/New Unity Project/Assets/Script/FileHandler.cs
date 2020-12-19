@@ -12,7 +12,7 @@ public class FileHandler : MonoBehaviour
 
     
 
-    public void save(string key,int data,string file="main")
+    public void save(string key,ulong data,string file="main")
     {
         var settings = new ES3Settings(ES3.EncryptionType.AES, password);
         if(file == "main")
@@ -44,16 +44,16 @@ public class FileHandler : MonoBehaviour
         
     }
 
-    public int load(string key, string file = "main")
+    public ulong load(string key, string file = "main")
     {
         var settings = new ES3Settings(ES3.EncryptionType.AES, password);
         if (file == "main")
         {
-            return (int)ES3.Load(key, ScoreFile,0, settings);
+            return (ulong)ES3.Load(key, ScoreFile,0, settings);
         }
         else
         {
-            return (int)ES3.Load(key, temp,0, settings);
+            return (ulong)ES3.Load(key, temp,0, settings);
         }
         
     }

@@ -244,6 +244,7 @@
     <Compile Include="Assets\PolyFew\ThirdParty\AsImpL\Scripts\MathUtil\MathData\Triangle.cs" />
     <Compile Include="Assets\character\RootMotion\Baker\Scripts\Helpers\BakerUtilities.cs" />
     <Compile Include="Assets\testing\CC_MOVE.cs" />
+    <Compile Include="Assets\testing\ObstacleGen.cs" />
     <Compile Include="Assets\PolyFew\demo\Scripts\FlyCamera.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\PuppetMasterTools.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\Planet.cs" />
@@ -288,6 +289,7 @@
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\PuppetScaling.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\Grab.cs" />
     <Compile Include="Assets\character\RootMotion\Shared Scripts\LayerMaskExtensions.cs" />
+    <Compile Include="Assets\Script\ScrollPosition.cs" />
     <Compile Include="Assets\ProceduralUIImage\Scripts\Modifiers\RoundModifier.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\PropPickUpTrigger.cs" />
     <Compile Include="Assets\RoadGen\Script\MentalRoad.cs" />
@@ -312,7 +314,7 @@
     <Compile Include="Assets\character\Scripts\Swipe.cs" />
     <Compile Include="Assets\UIERuntime\Samples\RepeatGame\RepeatGame.cs" />
     <Compile Include="Assets\UI Buttons\scripts\TapToContinue.cs" />
-    <Compile Include="Assets\testing\ObstacleGen.cs" />
+    <Compile Include="Assets\AD Manager\NoAdsText.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

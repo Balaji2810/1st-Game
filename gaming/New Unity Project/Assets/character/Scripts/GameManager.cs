@@ -41,12 +41,20 @@ public class GameManager : MonoBehaviour
         }
 
         //QualitySettings.vSyncCount = 2;
-
+        print(numberMiniFormat(10));
+        print(numberMiniFormat(1000));
+        print(numberMiniFormat(9999));
+        print(numberMiniFormat(10000));
+        print(numberMiniFormat(1000000));
+        print(numberMiniFormat(1000000000));
+        print(numberMiniFormat(1000000000000));
+        print(numberMiniFormat(1000000000000000));
+        print(numberMiniFormat(1000000000000000000));
     }
 
-    public void buyCrystals(int crystals) 
+    public void buyCrystals(ulong crystals) 
     {
-        int currentcrystals = (int)GameObject.Find("FileHandler").GetComponent<FileHandler>().load("crystals");
+        ulong currentcrystals = (ulong)GameObject.Find("FileHandler").GetComponent<FileHandler>().load("crystals");
         GameObject.Find("FileHandler").GetComponent<FileHandler>().save("crystals", crystals + currentcrystals);
         int temp = PlayerPrefs.GetInt("buyCrystals", 0);
         PlayerPrefs.SetInt("buyCrystals", temp + 1);
@@ -107,7 +115,7 @@ public class GameManager : MonoBehaviour
     {
         main.SetActive(false);
         info.SetActive(true);
-        SR.verticalNormalizedPosition = 1;
+        
     }
 
     public void goto_build()
@@ -123,6 +131,39 @@ public class GameManager : MonoBehaviour
 
     }
 
+    public string numberMiniFormat(ulong  num)
+    {
+        string value = "0";
+        if(num<10000)
+        {
+            value = num + "";
+        }
+        else if(num< 1000000)
+        {
+            value = (num / 1000).ToString("F2").Replace(".00","") + "K";
+        }
+        else if(num < 1000000000)
+        {
+            value = (num / 1000000).ToString("F2").Replace(".00", "") + "M";
+        }
+        else if(num < 1000000000000)
+        {
+            value = (num / 1000000000).ToString("F2").Replace(".00", "") + "B";
+        }
+        else if(num < 1000000000000000)
+        {
+            value = (num / 1000000000000).ToString("F2").Replace(".00", "") + "T";
+        }
+        else if(num < 1000000000000000000)
+        {
+            value = (num / 1000000000000000).ToString("F2").Replace(".00", "") + "q";
+        }
+        else
+        {
+            value = (num / 1000000000000000000).ToString("F2").Replace(".00", "") + "Q";
+        }
+        return value;
+    }
 
     public void goto_resume()
     {
@@ -152,6 +193,13 @@ public class GameManager : MonoBehaviour
     {
         main.SetActive(false);
         shop.SetActive(true);
+    }
+
+    public GameObject NoAds;
+    public void goto_NoAds()
+    {
+        main.SetActive(false);
+        NoAds.SetActive(true);
     }
 
     IEnumerator count(int type)

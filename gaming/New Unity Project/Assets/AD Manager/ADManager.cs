@@ -80,12 +80,12 @@ public class ADManager : MonoBehaviour
 			GameObject multiply = GameObject.Find("multiply");
 			GameObject getFame = GameObject.Find("get fames");
 			getFame.SetActive(false);
-			int mul = int.Parse(multiply.GetComponent<TextMeshProUGUI>().text[1].ToString());
+			ulong mul = ulong.Parse(multiply.GetComponent<TextMeshProUGUI>().text[1].ToString());
 			if(mul>4||mul<1)
             {
 				mul = 1;
             }
-			int fame = mul*(int)GameObject.Find("FileHandler").GetComponent<FileHandler>().load("fames","temp");
+			ulong fame = mul*(ulong)GameObject.Find("FileHandler").GetComponent<FileHandler>().load("fames","temp");
 			GameObject.Find("FileHandler").GetComponent<FileHandler>().save("fames", fame,"temp");
 			multiply.GetComponent<TextMeshProUGUI>().text = "+"+((mul-1)*(fame/mul)).ToString();
 
@@ -146,16 +146,18 @@ public class ADManager : MonoBehaviour
 		
 	}
 
+	public int purchaseCount=1;
+
 	public void ShowInterstitial(int type=1)
 	{
 		GameManager gm = GameObject.Find("GameManager").GetComponent<GameManager>();
 		if(type==2)
         {
-			int fames = (int)GameObject.Find("FileHandler").GetComponent<FileHandler>().load("fames", "temp");
-			int currentFames = (int)GameObject.Find("FileHandler").GetComponent<FileHandler>().load("fames");
+			ulong fames = (ulong)GameObject.Find("FileHandler").GetComponent<FileHandler>().load("fames", "temp");
+			ulong currentFames = (ulong)GameObject.Find("FileHandler").GetComponent<FileHandler>().load("fames");
 			GameObject.Find("FileHandler").GetComponent<FileHandler>().save("fames", fames+ currentFames);
 		}
-		if (RewardVideoPlayed|| PlayerPrefs.GetInt("buyCrystals", 0)>0)
+		if (RewardVideoPlayed|| PlayerPrefs.GetInt("buyCrystals", 0)>=purchaseCount)
         {
 			RewardVideoPlayed = false;
 			gm.goto_home();

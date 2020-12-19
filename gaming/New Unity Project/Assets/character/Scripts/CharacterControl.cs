@@ -86,7 +86,7 @@ public class CharacterControl : MonoBehaviour
             //pm.state = PuppetMaster.State.Dead;
             pm.Kill(PuppetMaster.StateSettings.Default);
             GameObject.Find("Canvas").transform.Find("game").gameObject.SetActive(false);
-            Invoke("Continue", 3);
+            Invoke("Continue", 5);
         }
         
     }

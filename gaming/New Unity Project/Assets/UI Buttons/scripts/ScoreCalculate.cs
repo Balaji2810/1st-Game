@@ -18,7 +18,7 @@ public class ScoreCalculate : MonoBehaviour
         Invoke("showScore", 1f);
     }
 
-    int score;
+    ulong score;
     void showScore()
     {
         scoreObj.SetActive(true);
@@ -30,23 +30,23 @@ public class ScoreCalculate : MonoBehaviour
 
     void highScore()
     {
-        if(score>PlayerPrefs.GetInt("highscore",0))
+        if(score>System.Convert.ToUInt64(PlayerPrefs.GetString("highscore","0")))
         {
             cup.SetActive(true);
-            PlayerPrefs.SetInt("highscore", score);
+            PlayerPrefs.SetString("highscore", score+"");
         }
-        else if(PlayerPrefs.GetInt("highscore", 0)>0)
+        else if(System.Convert.ToUInt64(PlayerPrefs.GetString("highscore")) > 0)
         {
             highscore.SetActive(true);
-            highscoretext.text = "High Score\n"+PlayerPrefs.GetInt("highscore").ToString();
+            highscoretext.text = "High Score\n"+PlayerPrefs.GetString("highscore");
         }
         Invoke("getmultiply", 0.25f);
     }
 
-    IEnumerator countScore(int start, int max)
+    IEnumerator countScore(ulong start, ulong max)
     {   
         yield return new WaitForSeconds(1/(1000));
-        start = Mathf.Clamp(start, 0, max);
+        start = (ulong)Mathf.Clamp(start, 0, max);
         fames.text = start.ToString();
         if(start==max)
         {

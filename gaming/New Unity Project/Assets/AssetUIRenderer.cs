@@ -14,7 +14,7 @@ public class AssetUIRenderer : MonoBehaviour
     public GameObject main;
     public TextMeshProUGUI key, item,points,cost;
     public GameObject info;
-    public ScrollRect SR;
+    
 
     public FileHandler file;
     public GameObject bottom1, bottom2,bottomEmpty,ActiveButton_on,ActiveButton_Off;
@@ -125,7 +125,7 @@ public class AssetUIRenderer : MonoBehaviour
     {
         main.SetActive(false);
         info.SetActive(true);
-        SR.verticalNormalizedPosition = 1;
+       
     }
 
     public void goto_obstacles()

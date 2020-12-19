@@ -11,7 +11,7 @@ public class Road_Renderer : MonoBehaviour
     public GameObject Asset;
     public GameObject main;
     public GameObject info;
-    public ScrollRect SR;
+    
 
     public FileHandler file;
     public TextMeshProUGUI key,points,cost;
@@ -127,7 +127,7 @@ public class Road_Renderer : MonoBehaviour
     {
         main.SetActive(false);
         info.SetActive(true);
-        SR.verticalNormalizedPosition = 1;
+        
     }
 
     public void goto_obstacles()
