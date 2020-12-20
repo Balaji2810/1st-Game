@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f707aa057c48284ba06351a1d82f2f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  filename: runner/system.data32
-  ScoreFile: runner/main.data32
-  temp: runner/temp.data32
+  filename: runner/test/system.data32
+  ScoreFile: runner/test/main.data32
+  temp: runner/test/temp.data32
   password: Ishu@2816

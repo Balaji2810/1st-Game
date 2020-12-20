@@ -10,7 +10,13 @@ public class FileHandler : MonoBehaviour
     public string temp;
     public string password;
 
-    
+    private void Start()
+    {
+        print(filename);
+        print(ScoreFile);
+        print(temp);
+        print(password);
+    }
 
     public void save(string key,ulong data,string file="main")
     {

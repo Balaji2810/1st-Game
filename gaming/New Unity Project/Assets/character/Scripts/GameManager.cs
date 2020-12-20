@@ -32,7 +32,8 @@ public class GameManager : MonoBehaviour
         loadPlayer();
 
        //FPS : 60 
-        Application.targetFrameRate = 60;    
+       //Application.targetFrameRate = 200;    
+       
     }
 
     public void buyCrystals(int crystals) 
