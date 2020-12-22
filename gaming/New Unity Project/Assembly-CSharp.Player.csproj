@@ -119,6 +119,7 @@
     <Compile Include="Assets\IronSource\Scripts\IronSourceEvents.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\Behaviours\BehaviourFall.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\PuppetMasterSetup.cs" />
+    <Compile Include="Assets\AD Manager\NoAdsText.cs" />
     <Compile Include="Assets\UI Buttons\scripts\load_fame_and_gems.cs" />
     <Compile Include="Assets\AudioManager\AudioListenerConfig.cs" />
     <Compile Include="Assets\ProceduralUIImage\Scripts\ProceduralImageModifier.cs" />
@@ -314,7 +315,6 @@
     <Compile Include="Assets\character\Scripts\Swipe.cs" />
     <Compile Include="Assets\UIERuntime\Samples\RepeatGame\RepeatGame.cs" />
     <Compile Include="Assets\UI Buttons\scripts\TapToContinue.cs" />
-    <Compile Include="Assets\AD Manager\NoAdsText.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -56,23 +56,23 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@8.2.0\ShaderLibrary\ShaderTypes.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@8.3.1\ShaderLibrary\ShaderTypes.cs" />
   </ItemGroup>
   <ItemGroup>
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@8.2.0\ShaderLibrary\Input.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@8.2.0\ShaderLibrary\Core.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@8.2.0\ShaderLibrary\SurfaceInput.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@8.2.0\ShaderLibrary\UnityInput.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@8.2.0\ShaderLibrary\Lighting.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@8.2.0\ShaderLibrary\Particles.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@8.2.0\ShaderLibrary\Deprecated.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@8.2.0\ShaderLibrary\DeclareOpaqueTexture.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@8.2.0\ShaderLibrary\ShaderGraphFunctions.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@8.2.0\ShaderLibrary\ShaderTypes.cs.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@8.2.0\ShaderLibrary\Unity.RenderPipelines.Universal.ShaderLibrary.asmdef" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@8.2.0\ShaderLibrary\Shadows.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@8.2.0\ShaderLibrary\MetaInput.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@8.2.0\ShaderLibrary\DeclareDepthTexture.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@8.3.1\ShaderLibrary\Input.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@8.3.1\ShaderLibrary\Core.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@8.3.1\ShaderLibrary\SurfaceInput.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@8.3.1\ShaderLibrary\UnityInput.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@8.3.1\ShaderLibrary\Lighting.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@8.3.1\ShaderLibrary\Particles.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@8.3.1\ShaderLibrary\Deprecated.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@8.3.1\ShaderLibrary\DeclareOpaqueTexture.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@8.3.1\ShaderLibrary\ShaderGraphFunctions.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@8.3.1\ShaderLibrary\ShaderTypes.cs.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@8.3.1\ShaderLibrary\Unity.RenderPipelines.Universal.ShaderLibrary.asmdef" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@8.3.1\ShaderLibrary\Shadows.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@8.3.1\ShaderLibrary\MetaInput.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@8.3.1\ShaderLibrary\DeclareDepthTexture.hlsl" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.1.14f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.dll</HintPath>
     </Reference>

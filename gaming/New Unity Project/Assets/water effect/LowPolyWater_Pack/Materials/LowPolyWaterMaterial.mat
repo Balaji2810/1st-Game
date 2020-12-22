@@ -22,9 +22,9 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: LowPolyWaterMaterial
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-  m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _EMISSION
-  m_LightmapFlags: 1
-  m_EnableInstancingVariants: 0
+  m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _EMISSION _ENVIRONMENTREFLECTIONS_OFF _SPECULARHIGHLIGHTS_OFF
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 3000
   stringTagMap:
@@ -161,7 +161,7 @@ Material:
     - _Displacement: 0.27863377
     - _DisplacementTiling: 18.586807
     - _DstBlend: 10
-    - _EnvironmentReflections: 1
+    - _EnvironmentReflections: 0
     - _FadeExp: 0.91503274
     - _FoamWaveDependency: 0.10205479
     - _FresnelPower: 1.7931035
@@ -190,7 +190,7 @@ Material:
     - _SkyBoxReflection: 0.426
     - _Smoothness: 0.678
     - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
+    - _SpecularHighlights: 0
     - _Speed: 0.4137931
     - _SrcBlend: 1
     - _Surface: 1

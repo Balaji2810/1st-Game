@@ -56,16 +56,16 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.shadergraph@8.2.0\ShaderGraphLibrary\DummyShaderGraphLibrary.cs" />
+    <Compile Include="Library\PackageCache\com.unity.shadergraph@8.3.1\ShaderGraphLibrary\DummyShaderGraphLibrary.cs" />
   </ItemGroup>
   <ItemGroup>
-     <None Include="Library\PackageCache\com.unity.shadergraph@8.2.0\ShaderGraphLibrary\ShaderVariablesFunctions.hlsl" />
-     <None Include="Library\PackageCache\com.unity.shadergraph@8.2.0\ShaderGraphLibrary\Functions.hlsl" />
-     <None Include="Library\PackageCache\com.unity.shadergraph@8.2.0\ShaderGraphLibrary\GeometricTools.hlsl" />
-     <None Include="Library\PackageCache\com.unity.shadergraph@8.2.0\ShaderGraphLibrary\ShaderVariables.hlsl" />
-     <None Include="Library\PackageCache\com.unity.shadergraph@8.2.0\ShaderGraphLibrary\ShaderConfig.cs.hlsl" />
-     <None Include="Library\PackageCache\com.unity.shadergraph@8.2.0\ShaderGraphLibrary\ShaderVariablesMatrixDefsLegacyUnity.hlsl" />
-     <None Include="Library\PackageCache\com.unity.shadergraph@8.2.0\ShaderGraphLibrary\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.asmdef" />
+     <None Include="Library\PackageCache\com.unity.shadergraph@8.3.1\ShaderGraphLibrary\ShaderVariablesFunctions.hlsl" />
+     <None Include="Library\PackageCache\com.unity.shadergraph@8.3.1\ShaderGraphLibrary\Functions.hlsl" />
+     <None Include="Library\PackageCache\com.unity.shadergraph@8.3.1\ShaderGraphLibrary\GeometricTools.hlsl" />
+     <None Include="Library\PackageCache\com.unity.shadergraph@8.3.1\ShaderGraphLibrary\ShaderVariables.hlsl" />
+     <None Include="Library\PackageCache\com.unity.shadergraph@8.3.1\ShaderGraphLibrary\ShaderConfig.cs.hlsl" />
+     <None Include="Library\PackageCache\com.unity.shadergraph@8.3.1\ShaderGraphLibrary\ShaderVariablesMatrixDefsLegacyUnity.hlsl" />
+     <None Include="Library\PackageCache\com.unity.shadergraph@8.3.1\ShaderGraphLibrary\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.1.14f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\mono\Managed\UnityEngine.dll</HintPath>
     </Reference>
