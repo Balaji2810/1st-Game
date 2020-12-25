@@ -22,20 +22,21 @@ public class Continue : MonoBehaviour
     }
     public GameObject matrialManager;
     public void CharacterContinue()
-    {
-        
+    { 
         float pos =10;
         GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<CharacterControl>().SpeedMod=3;
+        var temp = new List<float>();
         foreach (Transform child in RoadGen.transform)
         {
-            if(child.gameObject.name== "DummyRoad(Clone)")
+            if(child.gameObject.activeSelf)
             {
-                pos += child.position.z;
-                break;
+               temp.Add(child.position.z);
+               
             }
         }
+        temp.Sort();
         GameObject.Find("GameManager").GetComponent<GameManager>().Startgame = false;
-        GameObject.Find("GameManager").GetComponent<GameManager>().loadPlayer(pos);
+        GameObject.Find("GameManager").GetComponent<GameManager>().loadPlayer(temp[0]+pos);
         matrialManager.SetActive(true);
         gameObject.SetActive(false);
         

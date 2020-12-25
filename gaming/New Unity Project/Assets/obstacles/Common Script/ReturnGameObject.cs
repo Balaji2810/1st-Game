@@ -12,7 +12,7 @@ public class ReturnGameObject : MonoBehaviour
         go = this.gameObject;
     }
 
-    // Update is called once per frame
+    
     public GameObject Object()
     {
         go = this.gameObject;

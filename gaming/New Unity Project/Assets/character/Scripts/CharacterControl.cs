@@ -119,7 +119,7 @@ public class CharacterControl : MonoBehaviour
     }
 
 
-    // Update is called once per frame
+    
     void FixedUpdate()
     {
         
@@ -129,12 +129,16 @@ public class CharacterControl : MonoBehaviour
             return;
         }
 
-       
-               
-        
+
+
+        else if (speed > 21.0f)
+        {
+            speed += (Time.deltaTime / 100.0f);
+            animator.SetInteger("speed", 3);
+        }
         else if(speed>17.0f)
         {
-            speed += (Time.deltaTime / 55.0f);
+            speed += (Time.deltaTime / 65.0f);
             animator.SetInteger("speed", 2);
         }
         else if(speed>6.0f)

@@ -134,6 +134,7 @@
     <Compile Include="Assets\character\RootMotion\Shared Scripts\Singleton.cs" />
     <Compile Include="Assets\character\RootMotion\Shared Scripts\InspectorComment.cs" />
     <Compile Include="Assets\PolyFew\Scripts\NonEditor-Scripts\EditorCoroutineExtensions.cs" />
+    <Compile Include="Assets\obstacles\Sci-Fic\scripts\Barrels.cs" />
     <Compile Include="Assets\RoadGen\Script\SimpleRoad.cs" />
     <Compile Include="Assets\UI Buttons\scripts\ScoreCalculate.cs" />
     <Compile Include="Assets\character\Scripts\GameManager.cs" />
@@ -238,6 +239,7 @@
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\PuppetMasterModes.cs" />
     <Compile Include="Assets\obstacles\package\NonConvexMeshCollider\NonConvexMeshCollider.cs" />
     <Compile Include="Assets\UIERuntime\Samples\TaskList\TaskList.cs" />
+    <Compile Include="Assets\RoadGen\Script\RoadPool.cs" />
     <Compile Include="Assets\PolyFew\ThirdParty\AsImpL\Scripts\Dataset\ModelUtil.cs" />
     <Compile Include="Assets\PolyFew\ThirdParty\AsImpL\Scripts\Dataset\DataSet.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\InitialVelocity.cs" />
@@ -248,6 +250,7 @@
     <Compile Include="Assets\testing\ObstacleGen.cs" />
     <Compile Include="Assets\PolyFew\demo\Scripts\FlyCamera.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\PuppetMasterTools.cs" />
+    <Compile Include="Assets\Script\ObjectPooling.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\Planet.cs" />
     <Compile Include="Assets\Asset Scene\FreeLookController.cs" />
     <Compile Include="Assets\IronSource\Scripts\IronSource.cs" />
@@ -290,6 +293,7 @@
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\PuppetScaling.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\Grab.cs" />
     <Compile Include="Assets\character\RootMotion\Shared Scripts\LayerMaskExtensions.cs" />
+    <Compile Include="Assets\obstacles\Common Script\ResetPosition.cs" />
     <Compile Include="Assets\Script\ScrollPosition.cs" />
     <Compile Include="Assets\ProceduralUIImage\Scripts\Modifiers\RoundModifier.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\PropPickUpTrigger.cs" />
@@ -315,6 +319,7 @@
     <Compile Include="Assets\character\Scripts\Swipe.cs" />
     <Compile Include="Assets\UIERuntime\Samples\RepeatGame\RepeatGame.cs" />
     <Compile Include="Assets\UI Buttons\scripts\TapToContinue.cs" />
+    <Compile Include="Assets\obstacles\Common Script\ObstaclePool.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -1,31 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class GuardRail : MonoBehaviour
 {
-    public GameObject obj;
+    public GameObject[] obj;
     public int Type;
 
-    List<int> RandomList(int n, int min, int max)
+    List<int> RandomList(int count, int min, int max)
     {
         List<int> list = new List<int>();
-        int temp;
-        while (list.Count != n)
+        for (int i = min; i < max; i++)
         {
-            temp = Random.Range(min, max);
-            if (list.Contains(temp))
-            {
-                continue;
-            }
-            list.Add(temp);
+            list.Add(i);
         }
-
+        list = list.OrderBy(x => Random.value).Take(count).ToList();
         return list;
     }
 
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
         var pos = new List<float>() { -2,-1,0,1,2 };
         switch (Type)
@@ -33,24 +28,30 @@ public class GuardRail : MonoBehaviour
             case 1:
                 {
                     GameObject go;
-                  
+                    CubeDiable();
                     foreach (int x in RandomList(2, 0, pos.Count))
                     {
-                        go = Instantiate(obj);
+                        go = obj[x];
                         go.transform.parent = gameObject.transform;
                         go.transform.localPosition = new Vector3(pos[x], 2, 0);
+                        go.transform.localRotation = new Quaternion(0, 0, 0, 0);
+                        go.GetComponentInChildren<Rigidbody>().velocity = go.GetComponentInChildren<Rigidbody>().angularVelocity = new Vector3(0, 0, 0);
+                        go.SetActive(true);
                     }
                 }
                 break;
             case 2:
                 {
                     GameObject go;
-
+                    CubeDiable();
                     foreach (int x in RandomList(3, 0, pos.Count))
                     {
-                        go = Instantiate(obj);
+                        go = obj[x];
                         go.transform.parent = gameObject.transform;
                         go.transform.localPosition = new Vector3(pos[x], 2, 0);
+                        go.transform.localRotation = new Quaternion(0, 0, 0, 0);
+                        go.GetComponentInChildren<Rigidbody>().velocity = go.GetComponentInChildren<Rigidbody>().angularVelocity = new Vector3(0, 0, 0);
+                        go.SetActive(true);
                     }
                 }
                 break;
@@ -59,9 +60,12 @@ public class GuardRail : MonoBehaviour
                     for(int i=0;i<5;i++)
                     {
                         GameObject go;
-                        go = Instantiate(obj);
+                        go = obj[i];
                         go.transform.parent = gameObject.transform;
                         go.transform.localPosition = new Vector3(pos[i], 2, 0);
+                        go.transform.localRotation = new Quaternion(0, 0, 0, 0);
+                        go.GetComponentInChildren<Rigidbody>().velocity = go.GetComponentInChildren<Rigidbody>().angularVelocity = new Vector3(0, 0, 0);
+                        go.SetActive(true);
                     }
                 }
                 break;
@@ -71,9 +75,12 @@ public class GuardRail : MonoBehaviour
     }
 
 
-    // Update is called once per frame
-    void Update()
+    
+    void CubeDiable()
     {
-        
+        foreach(GameObject go in obj)
+        {
+            go.SetActive(false);
+        }
     }
 }

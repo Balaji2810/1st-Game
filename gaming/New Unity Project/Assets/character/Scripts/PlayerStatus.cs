@@ -23,7 +23,7 @@ public class PlayerStatus : MonoBehaviour
     // Start is called before the first frame update
     
 
-    // Update is called once per frame
+    
     void FixedUpdate()
     {
        if(puppet.state == PuppetMaster.State.Alive && !AnimationDeath)

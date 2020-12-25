@@ -18,11 +18,7 @@ public class randomJump : MonoBehaviour
         StartCoroutine(jump(Random.Range(2f, 4f)));
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
     IEnumerator jump(float time)
     {

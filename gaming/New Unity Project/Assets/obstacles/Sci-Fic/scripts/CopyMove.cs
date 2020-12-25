@@ -7,7 +7,7 @@ public class CopyMove : MonoBehaviour
     private PlayerStatus player;
     public new Animation animation;
 
-    // Update is called once per frame
+    
     void Update()
     {
         try

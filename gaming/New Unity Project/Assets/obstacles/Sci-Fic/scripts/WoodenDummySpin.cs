@@ -16,7 +16,7 @@ public class WoodenDummySpin : MonoBehaviour
         transform.Rotate(Random.Range(0, 360) * StartingAngle);
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         currentEulerAngles += Angle * Time.deltaTime * speed;

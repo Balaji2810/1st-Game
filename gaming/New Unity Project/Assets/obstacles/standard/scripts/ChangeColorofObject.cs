@@ -16,7 +16,7 @@ public class ChangeColorofObject : MonoBehaviour
         gameObject.GetComponent<Renderer>().material.SetFloat("_Glossiness", 1f);
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         

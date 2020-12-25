@@ -16,7 +16,7 @@ public class jump : MonoBehaviour
         
     }
 
-    // Update is called once per frame
+    
     void FixedUpdate()
     {
         try

@@ -5,7 +5,7 @@ using UnityEngine;
 public class TapToContinue : MonoBehaviour
 {
     public GameObject gamePanel;
-    // Update is called once per frame
+    
     void Update()
     {
         if(Input.GetMouseButtonDown(0))

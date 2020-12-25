@@ -16,7 +16,7 @@ public class FameMove : MonoBehaviour
         getPoint();
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         if((new Vector3(pos.x,pos.y, transform.position.z)- transform.position ).magnitude>0.15f)

@@ -11,7 +11,7 @@ namespace RootMotion.Demos {
 		public float force = 10f;
 		public ParticleSystem blood;
 
-		// Update is called once per frame
+		
 		void Update () {
 			if (Input.GetMouseButtonDown(0)) {
 				Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);

@@ -34,7 +34,7 @@ public class fogFollow : MonoBehaviour
     }
 
 
-    // Update is called once per frame
+    
     void Update()
     {
         try

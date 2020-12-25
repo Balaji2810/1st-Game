@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 using System.Runtime.CompilerServices;
 using UnityEngine.UI;
 using System.Linq.Expressions;
+using System;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,7 +21,6 @@ public class GameManager : MonoBehaviour
 
     public GameObject main, game, info, pause, resume, setting;
     public Text resumeCount;
-    public ScrollRect SR;
     public TimeManager timeManage;
 
 
@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
     
     
 
-    public GameObject Char, HDChar;
+    public GameObject Char;
     public void loadPlayer(float pos = 4)
     {
 
@@ -58,11 +58,7 @@ public class GameManager : MonoBehaviour
             Destroy(go);
         }
 
-        if (PlayerPrefs.GetInt("HDCharacter", 1) == 1)
-        {
-            go = Instantiate(HDChar);
-        }
-        else
+       
         {
             go = Instantiate(Char);
         }
@@ -72,6 +68,8 @@ public class GameManager : MonoBehaviour
         
     }
 
+    [NonSerializable]
+    public float deadLocation;
 
     
     public void updatePoints()
@@ -249,4 +247,8 @@ public class GameManager : MonoBehaviour
 
 
 
+}
+
+internal class NonSerializableAttribute : Attribute
+{
 }

@@ -139,6 +139,7 @@ GameObject:
   - component: {fileID: 2098464524256356904}
   - component: {fileID: 6086033613720374582}
   - component: {fileID: -3132053304801902338}
+  - component: {fileID: 5948823333705630396}
   m_Layer: 19
   m_Name: Simple Rectangle 3
   m_TagString: Untagged
@@ -186,3 +187,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 063aa53629d13024db95cdf8cf205afc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5948823333705630396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098464524256356906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 440ebf3e000fcc04e9cb374a4b54826c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  go: {fileID: 2098464523015093362}
+  pos: {x: 0, y: 0, z: 0}
+  posBool: 1
+  rot: {x: 0, y: 0, z: 0, w: 0}
+  rotBool: 1

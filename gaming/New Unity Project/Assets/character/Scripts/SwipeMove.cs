@@ -18,7 +18,7 @@ public class SwipeMove : MonoBehaviour
 
     int leftright = 0;
 
-    // Update is called once per frame
+    
     void Update()
     {
         if (gameManager.Startgame && status.puppet.state == PuppetMaster.State.Alive && !status.AnimationDeath)

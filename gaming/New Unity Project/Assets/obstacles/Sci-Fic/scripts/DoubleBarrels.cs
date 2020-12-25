@@ -20,9 +20,6 @@ public class DoubleBarrels : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
+    
 }

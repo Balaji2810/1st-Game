@@ -17,7 +17,7 @@ public class MaterialManager : MonoBehaviour
         Invoke("TapToContinue", 2.5f);
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         foreach (Material material in materials)

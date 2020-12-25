@@ -1,13 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 
 public class ReleaseConstrains : MonoBehaviour
 {
+    Rigidbody rb;
+    private void OnEnable()
+    {
+        rb = GetComponent<Rigidbody>();
+        rb.constraints = RigidbodyConstraints.FreezePositionY;
+    }
     private void OnCollisionEnter(Collision collision)
     {
-        Rigidbody rb = GetComponent<Rigidbody>();
-
-        rb.constraints = 0;
+        if(collision.gameObject.name!= "Fame(Clone)")
+        {
+            
+            rb.constraints = 0;
+        }
+        
     }
 }

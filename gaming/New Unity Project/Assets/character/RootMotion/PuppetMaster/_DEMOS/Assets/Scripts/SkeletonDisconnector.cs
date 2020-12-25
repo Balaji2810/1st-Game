@@ -19,7 +19,7 @@ namespace RootMotion.Demos
         public PropMuscle propMuscle;
         public PuppetMasterProp prop;
 
-        // Update is called once per frame
+        
         void Update()
         {
             // Switching modes

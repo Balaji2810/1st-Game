@@ -8,30 +8,29 @@ public class side_environment : MonoBehaviour
     public Vector2 cubeCount,cubeHeight;
     public float height, width;
     public float down;
-    public GameObject cube;
     // Start is called before the first frame update
     void Start()
     {
         roadsize += 2;
-        for (int i=0;i< Random.Range(cubeCount.x, cubeCount.y + 1); i++)
+
+        Transform[] trans = GetComponentsInChildren<Transform>();
+
+        for (int i = 1; i < (int)trans.Length / 2; i++)
         {
-            GameObject go = Instantiate(cube);
-            go.transform.parent = transform;
-            go.transform.localPosition = new Vector3(Random.Range(-width,-roadsize / 2), Random.Range(cubeHeight.x, cubeHeight.y) - down, Random.Range(-height, height));
+
             
+            trans[i].localPosition = new Vector3(Random.Range(-width, -roadsize/2), Random.Range(cubeHeight.x, cubeHeight.y) - down, Random.Range(-height, height));
+
         }
 
-        for (int i = 0; i < Random.Range(cubeCount.x, cubeCount.y + 1); i++)
+        for (int i = (int)trans.Length / 2; i < trans.Length; i++)
         {
-            GameObject go = Instantiate(cube);
-            go.transform.parent = transform;
-            go.transform.localPosition = new Vector3(Random.Range(roadsize / 2,width), Random.Range(cubeHeight.x, cubeHeight.y) - down, Random.Range(-height, height));         
+
+            
+            trans[i].localPosition = new Vector3(Random.Range(roadsize/2, width), Random.Range(cubeHeight.x, cubeHeight.y) - down, Random.Range(-height, height));
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
+    
 }

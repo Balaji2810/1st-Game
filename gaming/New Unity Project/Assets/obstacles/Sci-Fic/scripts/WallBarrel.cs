@@ -23,9 +23,5 @@ public class WallBarrel : MonoBehaviour
         go.transform.localPosition = new Vector3(Random.Range(-2, 3), 1.75f, 0);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 }

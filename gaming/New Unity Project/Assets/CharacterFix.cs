@@ -50,7 +50,7 @@ public class CharacterFix : MonoBehaviour
         }
         Time.fixedDeltaTime = time;
     }
-    // Update is called once per frame
+    
     void Update()
     {
         

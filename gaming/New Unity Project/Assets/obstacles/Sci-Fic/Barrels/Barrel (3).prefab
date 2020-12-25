@@ -55,7 +55,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5137658622037620701}
-  - component: {fileID: -9117092963641148799}
+  - component: {fileID: 1653186345204098744}
   m_Layer: 16
   m_Name: Barrel (3)
   m_TagString: Untagged
@@ -78,7 +78,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-9117092963641148799
+--- !u!114 &1653186345204098744
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -87,10 +87,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 5137658622037620702}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe0afde1350c61444abe1c2f08c95b1e, type: 3}
+  m_Script: {fileID: 11500000, guid: 440ebf3e000fcc04e9cb374a4b54826c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
+  go: {fileID: 5136621087173521790}
+  pos: {x: 0, y: 0.5, z: 0}
+  posBool: 1
+  rot: {x: 0, y: 0, z: 0, w: 0}
+  rotBool: 1
 --- !u!1001 &5137658621035756148
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -14,7 +14,7 @@ namespace RootMotion.Demos {
 		public float force = 10f;
 		public ParticleSystem particles;
 
-        // Update is called once per frame
+        
 		void Update () {
             //Debug.Log(puppetMaster.GetMuscle(head).state.muscleWeightMlp);
 

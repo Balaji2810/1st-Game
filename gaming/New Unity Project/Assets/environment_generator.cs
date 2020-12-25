@@ -6,7 +6,7 @@ using UnityEngine.ProBuilder;
 public class environment_generator : MonoBehaviour
 {
 
-    public GameObject sideEnv;
+    
     PlayerStatus ps;
     public int bufferLength;
     public float length;
@@ -18,12 +18,13 @@ public class environment_generator : MonoBehaviour
     void Start()
     {
         currentPos = 0;
+        StartCoroutine(update());
     }
 
-    // Update is called once per frame
-    void Update()
+    
+    IEnumerator update()
     {
-
+        
         try
         {
             ps = GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<PlayerStatus>();
@@ -36,12 +37,13 @@ public class environment_generator : MonoBehaviour
         {
             
         }
-        
+        yield return new WaitForSeconds(0.5f);
+        StartCoroutine(update());
     }
 
     void Spawn()
     {
-        GameObject go = Instantiate(sideEnv);
+        GameObject go = ObjectPooling.instance.SpawnFormPool("side");
         go.transform.parent = transform;
         go.transform.localPosition = new Vector3(go.transform.localPosition.x, go.transform.localPosition.y, currentPos);
         go.name = go.name.Replace("Clone", (count++).ToString());

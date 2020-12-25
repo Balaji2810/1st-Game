@@ -11,7 +11,7 @@ public class UIPosition : MonoBehaviour
         
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         var x = Screen.width - Screen.width / position.x;

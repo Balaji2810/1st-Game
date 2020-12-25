@@ -12,7 +12,8 @@ public class Spinner : MonoBehaviour
     private int ChangeInSpeed;
     private int SpinAngle;
 
-    void Start()
+    Vector3 force; 
+    void OnEnable()
     {
         //transform.Rotate(Random.Range(0,360)* StartingAngle);
         
@@ -25,16 +26,19 @@ public class Spinner : MonoBehaviour
             SpinAngle = -1;
         }
 
-        ChangeInSpeed = Random.Range(100, 250);
+        ChangeInSpeed = Random.Range(4, 10);
         
+        gameObject.GetComponent<Rigidbody>().centerOfMass = Vector3.zero;
+        gameObject.GetComponent<Rigidbody>().angularVelocity = force = (SpinAngle * Angle * (ChangeInSpeed + speed));
 
+        StartCoroutine(spinForce());
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+
+   IEnumerator spinForce()
     {
-        gameObject.GetComponent<Rigidbody>().AddTorque( SpinAngle *Time.unscaledDeltaTime*Angle*ChangeInSpeed*speed,ForceMode.VelocityChange);
-        
-        
+        yield return new WaitForSecondsRealtime(0.5f);
+        gameObject.GetComponent<Rigidbody>().angularVelocity = force;
+        StartCoroutine(spinForce());
     }
 }

@@ -86,12 +86,12 @@
     <Compile Include="Library\PackageCache\com.unity.postprocessing@3.0.1\PostProcessing\Editor\Effects\AutoExposureEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.postprocessing@3.0.1\PostProcessing\Editor\Utils\GlobalSettings.cs" />
     <Compile Include="Library\PackageCache\com.unity.postprocessing@3.0.1\PostProcessing\Editor\PostProcessLayerEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.postprocessing@3.0.1\PostProcessing\Editor\Effects\MotionBlurEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.postprocessing@3.0.1\PostProcessing\Editor\Attributes\DecoratorAttribute.cs" />
     <Compile Include="Library\PackageCache\com.unity.postprocessing@3.0.1\PostProcessing\Editor\Effects\DefaultPostProcessEffectEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.postprocessing@3.0.1\PostProcessing\Editor\PostProcessProfileEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.postprocessing@3.0.1\PostProcessing\Editor\Effects\LensDistortionEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.postprocessing@3.0.1\PostProcessing\Editor\Utils\Styling.cs" />
-    <Compile Include="Library\PackageCache\com.unity.postprocessing@3.0.1\PostProcessing\Editor\Effects\MotionBlurEditor.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Library\PackageCache\com.unity.postprocessing@3.0.1\PostProcessing\Editor\Unity.Postprocessing.Editor.asmdef" />

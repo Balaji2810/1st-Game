@@ -15,7 +15,7 @@ public class DragMove : MonoBehaviour
     }
 
     Touch touch;
-    // Update is called once per frame
+    
     void Update()
     {
         

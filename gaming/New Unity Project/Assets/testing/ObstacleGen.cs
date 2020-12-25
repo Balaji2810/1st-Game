@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -7,31 +8,36 @@ public class ObstacleGen : MonoBehaviour
 {
     Collider[] roads;
     public LayerMask layer;
+    public int minDistance = 15;
     AvailablePrefabs AP;
     private void Start()
     {
         AP = GameObject.Find("Available Prefabs").GetComponent<AvailablePrefabs>();
         Obstacles = AP.obstacles;
         SingleObstacles = AP.obstaclesSinglePos;
+        Gen();
+        Gen();
+        Gen();
+        StartCoroutine(obstacleGen());
     }
 
     public Vector2 offDistance;
 
     int tragetDistance = 0;
 
-    List<GameObject> Obstacles,SingleObstacles;
-    // Update is called once per frame
-    void FixedUpdate()
+    List<GameObject> Obstacles, SingleObstacles;
+
+    void Gen()
     {
         try
         {
             float distance = GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<PlayerStatus>().MovedDistance;
             if(tragetDistance<(distance+offDistance.y))
             {
-                tragetDistance += (15+Random.Range(0,11));
-                if(tragetDistance > (distance + offDistance.x)&& Random.Range(0, 3) != 0)
+                tragetDistance += (minDistance+ UnityEngine.Random.Range(0,11));
+                if(tragetDistance > (distance + offDistance.x)&& UnityEngine.Random.Range(0, 3) != 0)
                 {
-                    place(new Vector3(0,0,tragetDistance));
+                    place(new Vector3(0,0, tragetDistance));
                 }
             }
             
@@ -40,7 +46,13 @@ public class ObstacleGen : MonoBehaviour
         {
 
         }
-        //place();
+    }
+    IEnumerator obstacleGen()
+    {
+
+        Gen();
+        yield return new WaitForSeconds(0.7f);
+        StartCoroutine(obstacleGen());
     }
 
     void place(Vector3 pos)
@@ -52,6 +64,7 @@ public class ObstacleGen : MonoBehaviour
         foreach (Collider road in roads)
         {
             roadString.Add(road.gameObject.name);
+
         }
 
         if(roadString.Count>0)
@@ -64,9 +77,18 @@ public class ObstacleGen : MonoBehaviour
                 }
 
                 GameObject go;
-                go = Instantiate(Obstacles[Random.Range(0, Obstacles.Count)]);
+                go = ObjectPooling.instance.SpawnFormPool("obstacles");
+                go.GetComponent<ObstaclePool>().GetObstacle(Obstacles[UnityEngine.Random.Range(0, Obstacles.Count)].name);
                 go.transform.parent = transform;
                 go.transform.localPosition = new Vector3(go.transform.localPosition.x, go.transform.localPosition.y, tragetDistance);
+                try
+                {
+                    go.GetComponentInChildren<position>().enabled = true;
+                }
+                catch
+                {
+
+                }
             }
             else
             {
@@ -75,54 +97,55 @@ public class ObstacleGen : MonoBehaviour
                     return;
                 }
 
-                var roads = roadString.OrderBy(x => Random.value).ToList<string>();
+                var roads = roadString.OrderBy(x => UnityEngine.Random.value).ToList<string>();
 
-                int obs = Mathf.Clamp(Random.Range(1, roads.Count - 1),1,roads.Count);
+                int obs = Mathf.Clamp(UnityEngine.Random.Range(1, roads.Count - 1),1,roads.Count);
                 for(int i=0;i<obs;i++)
                 {
-                    switch(roads[i])
+                    GameObject go;
+                    go = ObjectPooling.instance.SpawnFormPool("obstacles");
+                    go.GetComponent<ObstaclePool>().GetObstacle(SingleObstacles[UnityEngine.Random.Range(0, SingleObstacles.Count)].name);
+                    try
+                    {
+                        go.GetComponentInChildren<position>().enabled = false;
+                    }
+                    catch
+                    {
+
+                    }
+                    switch (roads[i])
                     {
                         case "L1":
                             {
-                                GameObject go;
-                                go = Instantiate(SingleObstacles[Random.Range(0, SingleObstacles.Count)]);
-                                Destroy(go.GetComponent<position>());
+                                
                                 go.transform.parent = transform;
                                 go.transform.localPosition = new Vector3(-2, 4, tragetDistance);
                             }
                             break;
                         case "L2":
                             {
-                                GameObject go;
-                                go = Instantiate(SingleObstacles[Random.Range(0, SingleObstacles.Count)]);
-                                Destroy(go.GetComponent<position>());
+                                
                                 go.transform.parent = transform;
                                 go.transform.localPosition = new Vector3(-1, 4, tragetDistance);
                             }
                             break;
                         case "R1":
                             {
-                                GameObject go;
-                                go = Instantiate(SingleObstacles[Random.Range(0, SingleObstacles.Count)]);
-                                Destroy(go.GetComponent<position>());
+                                
                                 go.transform.parent = transform;
                                 go.transform.localPosition = new Vector3(2, 4, tragetDistance);
                             }
                             break;
                         case "R2":
                             {
-                                GameObject go;
-                                go = Instantiate(SingleObstacles[Random.Range(0, SingleObstacles.Count)]);
-                                Destroy(go.GetComponent<position>());
+                               
                                 go.transform.parent = transform;
                                 go.transform.localPosition = new Vector3(1, 4, tragetDistance);
                             }
                             break;
                         case "M":
                             {
-                                GameObject go;
-                                go = Instantiate(SingleObstacles[Random.Range(0, SingleObstacles.Count)]);
-                                Destroy(go.GetComponent<position>());
+                                
                                 go.transform.parent = transform;
                                 go.transform.localPosition = new Vector3(0, 4, tragetDistance);
                             }

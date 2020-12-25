@@ -12,18 +12,20 @@ public class spider_bot : MonoBehaviour
     public GameObject Explosion;
     private bool Exploded;
 
-    void Start()
+    void OnEnable()
     {
         Exploded=false;
+        transform.Find("SPIDER_BOT").gameObject.SetActive(true);
+        Explosion.SetActive(false);
     }
 
     
-    IEnumerator DestroyExplosion(GameObject go)
+    IEnumerator DestroyExplosion()
     {
         yield return new WaitForSeconds(delayTime);
 
-        Destroy(go);
-        Destroy(gameObject);
+        Explosion.SetActive(false);
+        gameObject.SetActive(false);
 
     }
 
@@ -34,13 +36,14 @@ public class spider_bot : MonoBehaviour
     void Explode()
     {
         Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
-        
-        foreach(Collider obj in colliders)
+        StartCoroutine(DestroyExplosion());
+        foreach (Collider obj in colliders)
         {
-
+            Explosion.SetActive(true);
             //GameObject mesh = gameObject.
             transform.Find("SPIDER_BOT").gameObject.SetActive(false);
             GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<CharacterControl>().DeadRagdoll();
+            
             if (obj.gameObject.layer==14&&obj.gameObject.GetComponent<Rigidbody>()!=null)
             {
                 float Distance = Vector3.Distance(obj.gameObject.transform.position, this.transform.position);
@@ -57,11 +60,11 @@ public class spider_bot : MonoBehaviour
 
         }
         //GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<CharacterControl>().ExplodeJump(force);
-        GameObject go = Instantiate(Explosion, transform.position, transform.rotation);
+        
 
         //Destroy(go);
 
-        StartCoroutine(DestroyExplosion(go));
+        
 
     }
 

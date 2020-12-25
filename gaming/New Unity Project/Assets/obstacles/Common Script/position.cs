@@ -9,16 +9,12 @@ public class position : MonoBehaviour
     [Range(0, 2)]
     public int max =2;
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
         
         transform.position = new Vector3(Random.Range(min, max+1), transform.position.y, transform.position.z);
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

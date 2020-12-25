@@ -12,7 +12,7 @@ public class FreeLookController : MonoBehaviour
 
     private Touch touch;
     public float speed;
-    // Update is called once per frame
+    
     void Update()
     {
         if(Input.touchCount>0)

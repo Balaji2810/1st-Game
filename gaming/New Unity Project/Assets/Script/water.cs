@@ -12,7 +12,7 @@ public class water : MonoBehaviour
         
     }
 
-    // Update is called once per frame
+    
     void FixedUpdate()
     {
         try

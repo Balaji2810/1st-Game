@@ -13,7 +13,7 @@ public class Swipe : MonoBehaviour
 
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         tap = swipeLeft = swipeRight = swipeUp = swipeDown = false;

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6184742390921012625}
   - component: {fileID: -7420099122233044703}
   - component: {fileID: 1827352546570909902}
+  - component: {fileID: 4197262521819953372}
   m_Layer: 19
   m_Name: Jumping Spider
   m_TagString: Untagged
@@ -73,6 +74,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 063aa53629d13024db95cdf8cf205afc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4197262521819953372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6184742390921012627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 440ebf3e000fcc04e9cb374a4b54826c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  go: {fileID: 9003512132457490895}
+  pos: {x: 0, y: 0.25, z: 0}
+  posBool: 1
+  rot: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+  rotBool: 1
+  setActive: 1
 --- !u!54 &1743121028660184324
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -89,20 +108,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 122
   m_CollisionDetection: 0
---- !u!136 &6089365897367255716
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9003512132457490895}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.58
-  m_Height: 1.33
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.64, z: -0.24}
 --- !u!114 &5038709971754186086
 MonoBehaviour:
   m_ObjectHideFlags: 0
