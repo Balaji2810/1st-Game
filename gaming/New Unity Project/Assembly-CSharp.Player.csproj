@@ -267,7 +267,6 @@
     <Compile Include="Assets\character\RootMotion\Shared Scripts\BipedNaming.cs" />
     <Compile Include="Assets\UI Buttons\scripts\fps.cs" />
     <Compile Include="Assets\character\RootMotion\Shared Demo Assets\Scripts\Character Controllers\CharacterAnimationThirdPerson.cs" />
-    <Compile Include="Assets\obstacles\Common Script\position.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\RaycastShooter.cs" />
     <Compile Include="Assets\UI Buttons\scripts\GridLayoutAutoExpand.cs" />
     <Compile Include="Assets\ThrowBall\BallDestroy.cs" />
@@ -320,6 +319,7 @@
     <Compile Include="Assets\UIERuntime\Samples\RepeatGame\RepeatGame.cs" />
     <Compile Include="Assets\UI Buttons\scripts\TapToContinue.cs" />
     <Compile Include="Assets\obstacles\Common Script\ObstaclePool.cs" />
+    <Compile Include="Assets\obstacles\Common Script\PositionObj.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

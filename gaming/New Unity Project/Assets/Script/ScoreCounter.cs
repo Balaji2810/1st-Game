@@ -15,6 +15,7 @@ public class ScoreCounter : MonoBehaviour
         ap = GameObject.Find("Available Prefabs").GetComponent<AvailablePrefabs>();
     }
     PlayerStatus player;
+    /*
     void LateUpdate()
     {
 
@@ -43,8 +44,23 @@ public class ScoreCounter : MonoBehaviour
         {
 
         }
-    }
+    }*/
 
+    private void OnTriggerEnter(Collider other)
+    {
+        
+        if (ap != null)
+        {
+            ulong currentPoints = (ulong)File.load("fames", "temp");
+
+            if (ap.AllObjectValues.ContainsKey(other.name))
+            {
+                File.save("fames", ap.AllObjectValues[other.name].points + currentPoints, "temp");
+            }
+            GameObject.Find("GameManager").GetComponent<GameManager>().updatePoints();
+            
+        }
+    }
 }
 
 

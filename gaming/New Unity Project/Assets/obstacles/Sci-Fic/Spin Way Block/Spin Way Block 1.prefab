@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3458760691425303839}
   - component: {fileID: 3458760691425303838}
   - component: {fileID: 6419540754601487314}
-  - component: {fileID: -705487473004013277}
   m_Layer: 19
   m_Name: Spin Way Block 1
   m_TagString: Untagged
@@ -43,11 +42,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3458760691425303837}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 106f271d6be0a4c42ba75360b9bef51d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7d98698fd03638a439ad0d45f5b3b924, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  min: -1
-  max: 1
+  min: -2
+  max: 2
 --- !u!65 &6419540754601487314
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61,18 +60,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-705487473004013277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3458760691425303837}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 063aa53629d13024db95cdf8cf205afc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &3458760692558155440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,6 +169,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9200330401654163827, guid: 70290d946af357a46ae0d722c4b9de1f,
         type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200330401654163827, guid: 70290d946af357a46ae0d722c4b9de1f,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -197,6 +189,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9200330401654163827, guid: 70290d946af357a46ae0d722c4b9de1f,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200330401654163827, guid: 70290d946af357a46ae0d722c4b9de1f,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
@@ -209,16 +206,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9200330401654163827, guid: 70290d946af357a46ae0d722c4b9de1f,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9200330401654163827, guid: 70290d946af357a46ae0d722c4b9de1f,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9200330401654163827, guid: 70290d946af357a46ae0d722c4b9de1f,
         type: 3}

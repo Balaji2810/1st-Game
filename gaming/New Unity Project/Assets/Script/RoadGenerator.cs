@@ -51,25 +51,30 @@ public class RoadGenerator : MonoBehaviour
         StartCoroutine(roadGen());
     }
 
+    GameObject go;
     void SpawnRoad()
     {
         dummyRoad();
-        GameObject go;
-        //actualRoad
-        if(Roads.Count>0)
+
+        if (Random.Range(0, 3) == 0)
         {
-            go = ObjectPooling.instance.SpawnFormPool("roads");
-            go.GetComponent<RoadPool>().GetRoad(Roads[Random.Range(0,Roads.Count)].name);
-            go.transform.SetParent(null);
-            go.transform.position = Vector3.forward * roadSpawn;
-            roadSpawn += roadLength;
+            //actualRoad
+            if (Roads.Count > 0)
+            {
+                go = ObjectPooling.instance.SpawnFormPool("roads");
+                go.GetComponent<RoadPool>().GetRoad(Roads[Random.Range(0, Roads.Count)].name);
+                go.transform.SetParent(null);
+                go.transform.position = Vector3.forward * roadSpawn;
+                roadSpawn += roadLength;
+            }
         }
+        
         
     }
 
     void dummyRoad()
     {
-        GameObject go;
+        
         //dummyRoad
         go = ObjectPooling.instance.SpawnFormPool("roads");
         go.transform.parent = transform;

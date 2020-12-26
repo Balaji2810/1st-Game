@@ -87,6 +87,7 @@ public class CharacterControl : MonoBehaviour
             pm.Kill(PuppetMaster.StateSettings.Default);
             GameObject.Find("Canvas").transform.Find("game").gameObject.SetActive(false);
             Invoke("Continue", 5);
+            gameManager.deadLocation = status.MovedDistance;
         }
         
     }

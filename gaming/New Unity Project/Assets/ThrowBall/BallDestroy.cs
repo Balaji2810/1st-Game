@@ -8,6 +8,11 @@ public class BallDestroy : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
 
-        Destroy(gameObject, DestoryAfter);
+        Invoke("disable",DestoryAfter);
+    }
+
+    void disable()
+    {
+        gameObject.SetActive(false);
     }
 }

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6184742390921012624}
   - component: {fileID: 6184742390921012625}
   - component: {fileID: -7420099122233044703}
-  - component: {fileID: 1827352546570909902}
   - component: {fileID: 4197262521819953372}
   m_Layer: 19
   m_Name: Jumping Spider
@@ -44,7 +43,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6184742390921012627}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 106f271d6be0a4c42ba75360b9bef51d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7d98698fd03638a439ad0d45f5b3b924, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   min: -2
@@ -62,18 +61,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1827352546570909902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6184742390921012627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 063aa53629d13024db95cdf8cf205afc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &4197262521819953372
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -71,7 +71,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3685467127081018979}
   - component: {fileID: 5429453576580283499}
-  - component: {fileID: 8482212898517254505}
   - component: {fileID: 8183759699649979959}
   m_Layer: 19
   m_Name: Walking Spider
@@ -108,18 +107,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8482212898517254505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3685467127081018976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 063aa53629d13024db95cdf8cf205afc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &8183759699649979959
 MonoBehaviour:
   m_ObjectHideFlags: 0

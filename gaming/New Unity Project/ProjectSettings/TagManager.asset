@@ -9,6 +9,7 @@ TagManager:
   - body
   - LeftHand
   - RightHand
+  - position
   layers:
   - Default
   - TransparentFX

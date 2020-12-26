@@ -6,19 +6,21 @@ public class ObstaclePool : MonoBehaviour
 {
     public GameObject[] obstacles;
 
-    public void GetObstacle(string obstacleName)
+    public GameObject GetObstacle(string obstacleName)
     {
-        
+        GameObject go = null;
         foreach (GameObject obstacle in obstacles)
         {
             if (obstacle.name == obstacleName)
             {
                 obstacle.SetActive(true);
+                go = obstacle;
             }
             else
             {
                 obstacle.SetActive(false);
             }
         }
+        return go;
     }
 }

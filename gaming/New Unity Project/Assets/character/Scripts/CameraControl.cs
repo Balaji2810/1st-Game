@@ -190,7 +190,7 @@ public class CameraControl : MonoBehaviour
         }
         catch
         {
-            Debug.Log((PlayerPrefs.GetString("name") ));
+            
         }
 
     }

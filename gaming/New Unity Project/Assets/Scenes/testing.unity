@@ -70037,6 +70037,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2395536442445937317, guid: 866d9d40325f6d14db8e8a553934db6c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4743479042815130816, guid: 866d9d40325f6d14db8e8a553934db6c,
         type: 3}
       propertyPath: m_RootOrder
@@ -70097,5 +70102,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ObstaclePool
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3465944745737261416, guid: 866d9d40325f6d14db8e8a553934db6c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 866d9d40325f6d14db8e8a553934db6c, type: 3}

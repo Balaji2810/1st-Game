@@ -10,12 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2199311556845205926}
   - component: {fileID: 5187952683462904181}
-  - component: {fileID: 2199311556845205925}
   - component: {fileID: 3356878971486638834}
-  - component: {fileID: -7786174319851185399}
   m_Layer: 19
   m_Name: Simple Cube
-  m_TagString: Untagged
+  m_TagString: position
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2199311556845205924}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2199311556601299624}
@@ -48,24 +46,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   go: {fileID: 2199311556601299668}
-  pos: {x: 0, y: 0, z: 0}
+  pos: {x: 0, y: 1, z: 0}
   posBool: 1
   rot: {x: 0, y: 0, z: 0, w: 0}
   rotBool: 1
---- !u!114 &2199311556845205925
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2199311556845205924}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 106f271d6be0a4c42ba75360b9bef51d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  min: -2
-  max: 2
+  setActive: 0
 --- !u!65 &3356878971486638834
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -79,18 +64,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-7786174319851185399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2199311556845205924}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 063aa53629d13024db95cdf8cf205afc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &3205391055030969892
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -111,7 +84,7 @@ PrefabInstance:
     - target: {fileID: 3674462426380903564, guid: b2bf70120b0a47f428179f8a248a0965,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3674462426380903564, guid: b2bf70120b0a47f428179f8a248a0965,
         type: 3}

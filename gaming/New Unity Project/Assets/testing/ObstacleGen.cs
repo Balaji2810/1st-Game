@@ -37,7 +37,7 @@ public class ObstacleGen : MonoBehaviour
                 tragetDistance += (minDistance+ UnityEngine.Random.Range(0,11));
                 if(tragetDistance > (distance + offDistance.x)&& UnityEngine.Random.Range(0, 3) != 0)
                 {
-                    place(new Vector3(0,0, tragetDistance));
+                    place(new Vector3(0,0, (int)tragetDistance));
                 }
             }
             
@@ -78,17 +78,15 @@ public class ObstacleGen : MonoBehaviour
 
                 GameObject go;
                 go = ObjectPooling.instance.SpawnFormPool("obstacles");
-                go.GetComponent<ObstaclePool>().GetObstacle(Obstacles[UnityEngine.Random.Range(0, Obstacles.Count)].name);
-                go.transform.parent = transform;
-                go.transform.localPosition = new Vector3(go.transform.localPosition.x, go.transform.localPosition.y, tragetDistance);
-                try
+                var temp = go.GetComponent<ObstaclePool>().GetObstacle(Obstacles[UnityEngine.Random.Range(0, Obstacles.Count)].name);
+                if(temp.tag == "position")
                 {
-                    go.GetComponentInChildren<position>().enabled = true;
+                    //temp.transform.localPosition = new Vector3(UnityEngine.Random.Range(-2,3), temp.transform.localPosition.y, temp.transform.localPosition.z);
+                    go.transform.localPosition = new Vector3(UnityEngine.Random.Range(-2, 3), go.transform.localPosition.y, tragetDistance);
                 }
-                catch
-                {
-
-                }
+                //go.transform.parent = transform;
+                
+                
             }
             else
             {
@@ -96,61 +94,64 @@ public class ObstacleGen : MonoBehaviour
                 {
                     return;
                 }
+                
 
                 var roads = roadString.OrderBy(x => UnityEngine.Random.value).ToList<string>();
+
+                string g = "";
+                
 
                 int obs = Mathf.Clamp(UnityEngine.Random.Range(1, roads.Count - 1),1,roads.Count);
                 for(int i=0;i<obs;i++)
                 {
                     GameObject go;
                     go = ObjectPooling.instance.SpawnFormPool("obstacles");
-                    go.GetComponent<ObstaclePool>().GetObstacle(SingleObstacles[UnityEngine.Random.Range(0, SingleObstacles.Count)].name);
-                    try
-                    {
-                        go.GetComponentInChildren<position>().enabled = false;
-                    }
-                    catch
-                    {
+                    
+                    var temp = go.GetComponent<ObstaclePool>().GetObstacle(SingleObstacles[UnityEngine.Random.Range(0, SingleObstacles.Count)].name);
 
-                    }
+
+                    g += " " + roads[i];
+
+
                     switch (roads[i])
                     {
                         case "L1":
                             {
                                 
-                                go.transform.parent = transform;
-                                go.transform.localPosition = new Vector3(-2, 4, tragetDistance);
+                                //go.transform.parent = transform;
+                                go.transform.localPosition = new Vector3(-2, go.transform.localPosition.y, tragetDistance);
                             }
                             break;
                         case "L2":
                             {
                                 
-                                go.transform.parent = transform;
-                                go.transform.localPosition = new Vector3(-1, 4, tragetDistance);
+                                //go.transform.parent = transform;
+                                go.transform.localPosition = new Vector3(-1, go.transform.localPosition.y, tragetDistance);
                             }
                             break;
                         case "R1":
                             {
                                 
-                                go.transform.parent = transform;
-                                go.transform.localPosition = new Vector3(2, 4, tragetDistance);
+                                //go.transform.parent = transform;
+                                go.transform.localPosition = new Vector3(2, go.transform.localPosition.y, tragetDistance);
                             }
                             break;
                         case "R2":
                             {
                                
-                                go.transform.parent = transform;
-                                go.transform.localPosition = new Vector3(1, 4, tragetDistance);
+                                //go.transform.parent = transform;
+                                go.transform.localPosition = new Vector3(1, go.transform.localPosition.y, tragetDistance);
                             }
                             break;
                         case "M":
                             {
                                 
-                                go.transform.parent = transform;
-                                go.transform.localPosition = new Vector3(0, 4, tragetDistance);
+                                //go.transform.parent = transform;
+                                go.transform.localPosition = new Vector3(0, go.transform.localPosition.y, tragetDistance);
                             }
                             break;
                     }
+                    go.name = "ObstaclePool(Clone) " + g;
                 }
 
 

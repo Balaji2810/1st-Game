@@ -17,7 +17,7 @@ public class Barrels : MonoBehaviour
             case 1:
                 go = objects[Random.Range(0, objects.Length)];
                 go.transform.parent = gameObject.transform;
-                go.transform.localPosition = new Vector3(Random.Range(-2, 3), 0, 0);
+                go.transform.localPosition = new Vector3(0, 0, 0);
                 go.transform.localRotation = new Quaternion(0,0,0,0);
                 go.GetComponentInChildren<Rigidbody>().velocity = go.GetComponentInChildren<Rigidbody>().angularVelocity = new Vector3(0,0,0);      
                 go.SetActive(true);
