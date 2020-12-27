@@ -132,7 +132,8 @@ public class Road_Renderer : MonoBehaviour
 
     public void goto_obstacles()
     {
-        SceneManager.LoadScene("Asset", LoadSceneMode.Single);
+        LoadManager.instance.LoadScene("Asset");
+        //SceneManager.LoadScene("Asset", LoadSceneMode.Single);
     }
 
     public void goto_roads()
@@ -153,7 +154,8 @@ public class Road_Renderer : MonoBehaviour
 
     public void goto_home()
     {
-        SceneManager.LoadScene("Game", LoadSceneMode.Single);
+        LoadManager.instance.LoadScene("Game");
+        //SceneManager.LoadScene("Game", LoadSceneMode.Single);
     }
 
     public void ActiveButton_On_Clicked()

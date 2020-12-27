@@ -40,9 +40,10 @@ public class environment_generator : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         StartCoroutine(update());
     }
-
+    public GameObject prefab;
     void Spawn()
     {
+        //GameObject go = Instantiate(prefab);
         GameObject go = ObjectPooling.instance.SpawnFormPool("side");
         go.transform.parent = transform;
         go.transform.localPosition = new Vector3(go.transform.localPosition.x, go.transform.localPosition.y, currentPos);

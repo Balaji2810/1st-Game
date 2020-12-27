@@ -135,7 +135,8 @@ public class AssetUIRenderer : MonoBehaviour
 
     public void goto_roads()
     {
-        SceneManager.LoadScene("roads", LoadSceneMode.Single);
+        LoadManager.instance.LoadScene("roads");
+        //SceneManager.LoadScene("roads", LoadSceneMode.Single);
     }
 
     public void topLeft()
@@ -160,7 +161,8 @@ public class AssetUIRenderer : MonoBehaviour
 
     public void goto_home()
     {
-        SceneManager.LoadScene("Game", LoadSceneMode.Single);
+        LoadManager.instance.LoadScene("Game");
+        //SceneManager.LoadScene("Game", LoadSceneMode.Single);
     }
 
     public void ActiveButton_On_Clicked()

@@ -77,9 +77,11 @@ public class ObstacleGen : MonoBehaviour
                 }
 
                 GameObject go;
+                //go = Instantiate(Obstacles[UnityEngine.Random.Range(0, Obstacles.Count)]);
                 go = ObjectPooling.instance.SpawnFormPool("obstacles");
                 var temp = go.GetComponent<ObstaclePool>().GetObstacle(Obstacles[UnityEngine.Random.Range(0, Obstacles.Count)].name);
                 if(temp.tag == "position")
+                //if (go.tag == "position")
                 {
                     //temp.transform.localPosition = new Vector3(UnityEngine.Random.Range(-2,3), temp.transform.localPosition.y, temp.transform.localPosition.z);
                     go.transform.localPosition = new Vector3(UnityEngine.Random.Range(-2, 3), go.transform.localPosition.y, tragetDistance);
@@ -105,8 +107,8 @@ public class ObstacleGen : MonoBehaviour
                 for(int i=0;i<obs;i++)
                 {
                     GameObject go;
+                    //go = Instantiate(SingleObstacles[UnityEngine.Random.Range(0, SingleObstacles.Count)]);
                     go = ObjectPooling.instance.SpawnFormPool("obstacles");
-                    
                     var temp = go.GetComponent<ObstaclePool>().GetObstacle(SingleObstacles[UnityEngine.Random.Range(0, SingleObstacles.Count)].name);
 
 

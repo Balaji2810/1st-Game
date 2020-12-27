@@ -102,7 +102,8 @@ public class GameManager : MonoBehaviour
 
     public void goto_build()
     {
-        SceneManager.LoadScene("Asset", LoadSceneMode.Single);
+        LoadManager.instance.LoadScene("Asset");
+        //SceneManager.LoadScene("Asset", LoadSceneMode.Single);
     }
 
     public void goto_pause()
@@ -169,7 +170,8 @@ public class GameManager : MonoBehaviour
     public void goto_home()
     {
         timeManage.pause(false);
-        SceneManager.LoadScene("Game", LoadSceneMode.Single);
+        LoadManager.instance.LoadScene("Game");
+        //SceneManager.LoadScene("Game", LoadSceneMode.Single);
     }
 
     public GameObject shop;

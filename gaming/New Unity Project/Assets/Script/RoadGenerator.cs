@@ -61,6 +61,7 @@ public class RoadGenerator : MonoBehaviour
             //actualRoad
             if (Roads.Count > 0)
             {
+                //go = Instantiate(Roads[Random.Range(0, Roads.Count)]);
                 go = ObjectPooling.instance.SpawnFormPool("roads");
                 go.GetComponent<RoadPool>().GetRoad(Roads[Random.Range(0, Roads.Count)].name);
                 go.transform.SetParent(null);
@@ -74,8 +75,9 @@ public class RoadGenerator : MonoBehaviour
 
     void dummyRoad()
     {
-        
+
         //dummyRoad
+        //go = Instantiate(DummyRoad);
         go = ObjectPooling.instance.SpawnFormPool("roads");
         go.transform.parent = transform;
         go.transform.position = Vector3.forward * roadSpawn;

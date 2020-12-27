@@ -21,6 +21,7 @@ public class ThrowBall : MonoBehaviour
             Vector3 dir = r.GetPoint(1) - r.GetPoint(0);
 
             // position of spanwed object could be 'GetPoint(0).. 1.. 2' half random choice ;)
+            //go = Instantiate(prefab);
             go = ObjectPooling.instance.SpawnFormPool("balls");
 
             go.transform.position = r.GetPoint(2);
@@ -48,5 +49,6 @@ public class ThrowBall : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
         go.SetActive(false);
+        //Destroy(go);
     }
 }
