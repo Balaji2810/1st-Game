@@ -2462,19 +2462,19 @@
                     "source": "C:\\Users\\Balaji\\Documents\\GitHub\\1st-Game\\gaming\\New Unity Project\\Temp\\gradleOut\\launcher\\src\\main\\res\\values-v28\\styles.xml",
                     "from": {
                         "startLines": "2",
-                        "startColumns": "0",
-                        "startOffsets": "53",
+                        "startColumns": "2",
+                        "startOffsets": "55",
                         "endLines": "4",
-                        "endColumns": "8",
-                        "endOffsets": "229"
+                        "endColumns": "10",
+                        "endOffsets": "230"
                     },
                     "to": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
                         "endLines": "4",
-                        "endColumns": "8",
-                        "endOffsets": "229"
+                        "endColumns": "10",
+                        "endOffsets": "228"
                     }
                 }
             ]
@@ -3969,6 +3969,25 @@
             "outputFile": "C:\\Users\\Balaji\\Documents\\GitHub\\1st-Game\\gaming\\New Unity Project\\Temp\\gradleOut\\launcher\\build\\intermediates\\res\\merged\\release\\values_values.arsc.flat",
             "map": [
                 {
+                    "source": "C:\\Users\\Balaji\\.gradle\\caches\\transforms-2\\files-2.1\\6232089465c0440b9922cb62b5e9cc81\\com.google.android.gms.play-services-ads-lite-19.4.0\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "4,14",
+                        "startColumns": "0,0",
+                        "startOffsets": "167,661",
+                        "endLines": "11,20",
+                        "endColumns": "8,20",
+                        "endOffsets": "560,836"
+                    },
+                    "to": {
+                        "startLines": "139,159",
+                        "startColumns": "4,4",
+                        "startOffsets": "8309,9356",
+                        "endLines": "146,165",
+                        "endColumns": "8,20",
+                        "endOffsets": "8702,9531"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Balaji\\.gradle\\caches\\transforms-2\\files-2.1\\25a86418cd5f5fb0e0fa98b4559da7df\\androidx.coordinatorlayout.coordinatorlayout-1.0.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,102,3,13",
@@ -3985,25 +4004,6 @@
                         "endLines": "2,158,182,271",
                         "endColumns": "60,12,24,24",
                         "endOffsets": "161,9351,10437,15648"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Balaji\\.gradle\\caches\\transforms-2\\files-2.1\\1add75f2d3b3d2d3e711a6cdbfb5ad09\\com.google.android.gms.play-services-ads-lite-19.4.0\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "4,14",
-                        "startColumns": "0,0",
-                        "startOffsets": "167,661",
-                        "endLines": "11,20",
-                        "endColumns": "8,20",
-                        "endOffsets": "560,836"
-                    },
-                    "to": {
-                        "startLines": "139,159",
-                        "startColumns": "4,4",
-                        "startOffsets": "8309,9356",
-                        "endLines": "146,165",
-                        "endColumns": "8,20",
-                        "endOffsets": "8702,9531"
                     }
                 },
                 {

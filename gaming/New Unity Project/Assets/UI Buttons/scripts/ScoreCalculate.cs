@@ -35,27 +35,50 @@ public class ScoreCalculate : MonoBehaviour
             cup.SetActive(true);
             PlayerPrefs.SetString("highscore", score+"");
         }
-        else if(System.Convert.ToUInt64(PlayerPrefs.GetString("highscore")) > 0)
+        else if(PlayerPrefs.GetString("highscore","0")=="0" && score==0)
         {
             highscore.SetActive(true);
-            highscoretext.text = "High Score\n"+PlayerPrefs.GetString("highscore");
+            highscoretext.text = "Better Luck Next Time";
         }
-        Invoke("getmultiply", 0.25f);
+        else
+        {
+            highscore.SetActive(true);
+            highscoretext.text = "High Score\n" + PlayerPrefs.GetString("highscore");
+        }
+        if(score==0)
+        {
+            StartCoroutine(enableObject(home, 0.5f));
+        }
+        else
+        {
+            Invoke("getmultiply", 0.25f);
+        }
+        
     }
 
     IEnumerator countScore(ulong start, ulong max)
     {   
-        yield return new WaitForSeconds(1/(1000));
-        start = (ulong)Mathf.Clamp(start, 0, max);
-        fames.text = start.ToString();
+        
+        
         if(start==max)
         {
             Invoke("highScore",0.25f);
         }
-        else
+        var percent = max * 0.01f;
+        float d = 0;
+        while(start!=max)
         {
-            StartCoroutine(countScore(start+11,max));
+            d += percent;
+            start = (ulong)Mathf.Clamp(d, 0, max);
+            fames.text = GameObject.Find("GameManager").GetComponent<GameManager>().numberMiniFormat(start);
+            if (start == max)
+            {
+                Invoke("highScore", 0.25f);
+            }
+            yield return new WaitForSeconds(4/100);
         }
+        
+
     }
 
     int mulIndex;
@@ -81,7 +104,7 @@ public class ScoreCalculate : MonoBehaviour
         {
             StartCoroutine(enableObject(getFames,0.5f));
             
-            if((int)multiplyText.text[1]>50)
+            if((int)multiplyText.text[1]>50) // 50 represents ASCII code
             {
                 getFames.GetComponent<Animation>().Play();
             }

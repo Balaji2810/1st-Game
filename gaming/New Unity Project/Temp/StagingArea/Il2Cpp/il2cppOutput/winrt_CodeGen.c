@@ -82,7 +82,7 @@ static const int32_t s_InvokerIndices[16] =
 	26,
 	26,
 	31,
-	2852,
+	2853,
 };
 extern const Il2CppCodeGenModule g_winrtCodeGenModule;
 const Il2CppCodeGenModule g_winrtCodeGenModule = 

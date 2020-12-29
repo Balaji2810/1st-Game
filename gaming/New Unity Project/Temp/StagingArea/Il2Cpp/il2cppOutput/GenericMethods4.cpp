@@ -9204,6 +9204,8 @@ public:
 	uint64_t ___points_1;
 	// System.UInt64 AvailablePrefabs_data::cost
 	uint64_t ___cost_2;
+	// System.UInt64 AvailablePrefabs_data::crystal
+	uint64_t ___crystal_3;
 
 public:
 	inline static int32_t get_offset_of_status_0() { return static_cast<int32_t>(offsetof(data_t3B19AC8391E6CBBF7F9A56BDA404D4F6EE02F2D4, ___status_0)); }
@@ -9230,6 +9232,14 @@ public:
 	{
 		___cost_2 = value;
 	}
+
+	inline static int32_t get_offset_of_crystal_3() { return static_cast<int32_t>(offsetof(data_t3B19AC8391E6CBBF7F9A56BDA404D4F6EE02F2D4, ___crystal_3)); }
+	inline uint64_t get_crystal_3() const { return ___crystal_3; }
+	inline uint64_t* get_address_of_crystal_3() { return &___crystal_3; }
+	inline void set_crystal_3(uint64_t value)
+	{
+		___crystal_3 = value;
+	}
 };
 
 // Native definition for P/Invoke marshalling of AvailablePrefabs/data
@@ -9238,6 +9248,7 @@ struct data_t3B19AC8391E6CBBF7F9A56BDA404D4F6EE02F2D4_marshaled_pinvoke
 	char* ___status_0;
 	uint64_t ___points_1;
 	uint64_t ___cost_2;
+	uint64_t ___crystal_3;
 };
 // Native definition for COM marshalling of AvailablePrefabs/data
 struct data_t3B19AC8391E6CBBF7F9A56BDA404D4F6EE02F2D4_marshaled_com
@@ -9245,6 +9256,7 @@ struct data_t3B19AC8391E6CBBF7F9A56BDA404D4F6EE02F2D4_marshaled_com
 	Il2CppChar* ___status_0;
 	uint64_t ___points_1;
 	uint64_t ___cost_2;
+	uint64_t ___crystal_3;
 };
 
 // BrainFailProductions.PolyFewRuntime.MeshCombiner_BlendShape
@@ -38786,8 +38798,10 @@ public:
 	uint64_t ___points_3;
 	// System.UInt64 AvailablePrefabs_Object::cost
 	uint64_t ___cost_4;
+	// System.UInt64 AvailablePrefabs_Object::crystal
+	uint64_t ___crystal_5;
 	// System.Int32 AvailablePrefabs_Object::pos
-	int32_t ___pos_5;
+	int32_t ___pos_6;
 
 public:
 	inline static int32_t get_offset_of_go_0() { return static_cast<int32_t>(offsetof(Object_tC44533ED151413C158C7B0EFA4EF00C92B59174F, ___go_0)); }
@@ -38832,12 +38846,20 @@ public:
 		___cost_4 = value;
 	}
 
-	inline static int32_t get_offset_of_pos_5() { return static_cast<int32_t>(offsetof(Object_tC44533ED151413C158C7B0EFA4EF00C92B59174F, ___pos_5)); }
-	inline int32_t get_pos_5() const { return ___pos_5; }
-	inline int32_t* get_address_of_pos_5() { return &___pos_5; }
-	inline void set_pos_5(int32_t value)
+	inline static int32_t get_offset_of_crystal_5() { return static_cast<int32_t>(offsetof(Object_tC44533ED151413C158C7B0EFA4EF00C92B59174F, ___crystal_5)); }
+	inline uint64_t get_crystal_5() const { return ___crystal_5; }
+	inline uint64_t* get_address_of_crystal_5() { return &___crystal_5; }
+	inline void set_crystal_5(uint64_t value)
 	{
-		___pos_5 = value;
+		___crystal_5 = value;
+	}
+
+	inline static int32_t get_offset_of_pos_6() { return static_cast<int32_t>(offsetof(Object_tC44533ED151413C158C7B0EFA4EF00C92B59174F, ___pos_6)); }
+	inline int32_t get_pos_6() const { return ___pos_6; }
+	inline int32_t* get_address_of_pos_6() { return &___pos_6; }
+	inline void set_pos_6(int32_t value)
+	{
+		___pos_6 = value;
 	}
 };
 
@@ -38849,7 +38871,8 @@ struct Object_tC44533ED151413C158C7B0EFA4EF00C92B59174F_marshaled_pinvoke
 	char* ___name_2;
 	uint64_t ___points_3;
 	uint64_t ___cost_4;
-	int32_t ___pos_5;
+	uint64_t ___crystal_5;
+	int32_t ___pos_6;
 };
 // Native definition for COM marshalling of AvailablePrefabs/Object
 struct Object_tC44533ED151413C158C7B0EFA4EF00C92B59174F_marshaled_com
@@ -38859,7 +38882,8 @@ struct Object_tC44533ED151413C158C7B0EFA4EF00C92B59174F_marshaled_com
 	Il2CppChar* ___name_2;
 	uint64_t ___points_3;
 	uint64_t ___cost_4;
-	int32_t ___pos_5;
+	uint64_t ___crystal_5;
+	int32_t ___pos_6;
 };
 
 // Cinemachine.CinemachineBlendDefinition

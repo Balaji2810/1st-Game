@@ -9,6 +9,7 @@ using System.Runtime.CompilerServices;
 using UnityEngine.UI;
 using System.Linq.Expressions;
 using System;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -24,7 +25,7 @@ public class GameManager : MonoBehaviour
     public TimeManager timeManage;
 
 
-    public Text currentPoints;
+    public TextMeshProUGUI currentPoints;
 
     public int frameTraget;
     private void Awake()

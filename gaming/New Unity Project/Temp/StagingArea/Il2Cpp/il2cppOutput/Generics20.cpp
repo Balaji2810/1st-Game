@@ -3073,6 +3073,8 @@ public:
 	uint64_t ___points_1;
 	// System.UInt64 AvailablePrefabs_data::cost
 	uint64_t ___cost_2;
+	// System.UInt64 AvailablePrefabs_data::crystal
+	uint64_t ___crystal_3;
 
 public:
 	inline static int32_t get_offset_of_status_0() { return static_cast<int32_t>(offsetof(data_t3B19AC8391E6CBBF7F9A56BDA404D4F6EE02F2D4, ___status_0)); }
@@ -3099,6 +3101,14 @@ public:
 	{
 		___cost_2 = value;
 	}
+
+	inline static int32_t get_offset_of_crystal_3() { return static_cast<int32_t>(offsetof(data_t3B19AC8391E6CBBF7F9A56BDA404D4F6EE02F2D4, ___crystal_3)); }
+	inline uint64_t get_crystal_3() const { return ___crystal_3; }
+	inline uint64_t* get_address_of_crystal_3() { return &___crystal_3; }
+	inline void set_crystal_3(uint64_t value)
+	{
+		___crystal_3 = value;
+	}
 };
 
 // Native definition for P/Invoke marshalling of AvailablePrefabs/data
@@ -3107,6 +3117,7 @@ struct data_t3B19AC8391E6CBBF7F9A56BDA404D4F6EE02F2D4_marshaled_pinvoke
 	char* ___status_0;
 	uint64_t ___points_1;
 	uint64_t ___cost_2;
+	uint64_t ___crystal_3;
 };
 // Native definition for COM marshalling of AvailablePrefabs/data
 struct data_t3B19AC8391E6CBBF7F9A56BDA404D4F6EE02F2D4_marshaled_com
@@ -3114,6 +3125,7 @@ struct data_t3B19AC8391E6CBBF7F9A56BDA404D4F6EE02F2D4_marshaled_com
 	Il2CppChar* ___status_0;
 	uint64_t ___points_1;
 	uint64_t ___cost_2;
+	uint64_t ___crystal_3;
 };
 
 // BrainFailProductions.PolyFewRuntime.MeshCombiner_BlendShapeFrame

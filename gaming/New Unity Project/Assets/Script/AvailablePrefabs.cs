@@ -15,8 +15,8 @@ public class AvailablePrefabs : MonoBehaviour
         public string name;
         public ulong points;
         public ulong cost;
+        public ulong crystal;
         public int pos;
-        
     }
 
     public struct data
@@ -24,6 +24,7 @@ public class AvailablePrefabs : MonoBehaviour
         public string status;
         public ulong points;
         public ulong cost;
+        public ulong crystal;
     }
 
     
@@ -80,6 +81,7 @@ public class AvailablePrefabs : MonoBehaviour
                 if (Testing)
                 {
                     go.cost = obj.cost;
+                    go.crystal = obj.crystal;
                     go.points = obj.points;
                     go.status = obj.status.ToString();
                     ObjectDetails.Add(name, go);
@@ -95,6 +97,7 @@ public class AvailablePrefabs : MonoBehaviour
                     else
                     {
                         go.cost = obj.cost;
+                        go.crystal = obj.crystal;
                         go.points = obj.points;
                         go.status = obj.status.ToString();
 

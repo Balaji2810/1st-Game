@@ -79,7 +79,7 @@
 45        android:supportsRtl="true" >
 45-->[:com.ironsource.sdk.mediationsdk-7.0.4:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\3a07f5318972fe5e8bbf51197fcddd4c\com.ironsource.sdk.mediationsdk-7.0.4\AndroidManifest.xml:16:9-35
 46        <activity
-46-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:28:9-48:20
+46-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:28:9-45:20
 47            android:name="com.unity3d.player.UnityPlayerActivity"
 47-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:29:13-66
 48            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
@@ -112,214 +112,202 @@
 61-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:43:17-57
 62                android:value="true" />
 62-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:44:17-37
-63            <meta-data
-63-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:45:13-47:40
-64                android:name="android.notch_support"
-64-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:46:17-53
-65                android:value="true" />
-65-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:47:17-37
-66        </activity>
-67
+63        </activity>
+64
+65        <meta-data
+65-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:47:9-49:33
+66            android:name="unity.splash-mode"
+66-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:48:13-45
+67            android:value="0" />
+67-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:49:13-30
 68        <meta-data
-68-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:50:9-52:33
-69            android:name="unity.splash-mode"
-69-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:51:13-45
-70            android:value="0" />
-70-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:52:13-30
+68-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:50:9-52:36
+69            android:name="unity.splash-enable"
+69-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:51:13-47
+70            android:value="True" />
+70-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:52:13-33
 71        <meta-data
-71-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:53:9-55:36
-72            android:name="unity.splash-enable"
-72-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:54:13-47
-73            android:value="True" />
-73-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:55:13-33
+71-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:53:9-55:68
+72            android:name="unity.build-id"
+72-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:54:13-42
+73            android:value="9711948f-1619-4244-90ad-ac6ece3f5c18" />
+73-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:55:13-65
 74        <meta-data
-74-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:56:9-58:50
-75            android:name="notch.config"
-75-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:57:13-40
-76            android:value="portrait|landscape" />
-76-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:58:13-47
-77        <meta-data
-77-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:59:9-61:68
-78            android:name="unity.build-id"
-78-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:60:13-42
-79            android:value="f697ec88-8332-42e7-b0ab-f16e8ce7a897" />
-79-->[:unityLibrary] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:61:13-65
-80        <meta-data
-80-->[:billing-3.0.1:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\c9554d945926ca2a2a5caaeae18097fc\billing-3.0.1\AndroidManifest.xml:13:9-15:37
-81            android:name="com.google.android.play.billingclient.version"
-81-->[:billing-3.0.1:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\c9554d945926ca2a2a5caaeae18097fc\billing-3.0.1\AndroidManifest.xml:14:13-73
-82            android:value="3.0.1" />
-82-->[:billing-3.0.1:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\c9554d945926ca2a2a5caaeae18097fc\billing-3.0.1\AndroidManifest.xml:15:13-34
-83
-84        <activity
-84-->[:billing-3.0.1:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\c9554d945926ca2a2a5caaeae18097fc\billing-3.0.1\AndroidManifest.xml:17:9-21:75
-85            android:name="com.android.billingclient.api.ProxyBillingActivity"
-85-->[:billing-3.0.1:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\c9554d945926ca2a2a5caaeae18097fc\billing-3.0.1\AndroidManifest.xml:18:13-78
-86            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-86-->[:billing-3.0.1:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\c9554d945926ca2a2a5caaeae18097fc\billing-3.0.1\AndroidManifest.xml:19:13-96
-87            android:exported="false"
-87-->[:billing-3.0.1:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\c9554d945926ca2a2a5caaeae18097fc\billing-3.0.1\AndroidManifest.xml:20:13-37
-88            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-88-->[:billing-3.0.1:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\c9554d945926ca2a2a5caaeae18097fc\billing-3.0.1\AndroidManifest.xml:21:13-72
-89        <activity
-89-->[:com.facebook.android.audience-network-sdk-6.2.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\fd5d5f5e3a24c90ddf2daf5cfd99b0c5\com.facebook.android.audience-network-sdk-6.2.0\AndroidManifest.xml:7:5-220
-90            android:name="com.facebook.ads.AudienceNetworkActivity"
-90-->[:com.facebook.android.audience-network-sdk-6.2.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\fd5d5f5e3a24c90ddf2daf5cfd99b0c5\com.facebook.android.audience-network-sdk-6.2.0\AndroidManifest.xml:7:15-70
-91            android:configChanges="keyboardHidden|orientation|screenSize"
-91-->[:com.facebook.android.audience-network-sdk-6.2.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\fd5d5f5e3a24c90ddf2daf5cfd99b0c5\com.facebook.android.audience-network-sdk-6.2.0\AndroidManifest.xml:7:71-132
-92            android:exported="false"
-92-->[:com.facebook.android.audience-network-sdk-6.2.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\fd5d5f5e3a24c90ddf2daf5cfd99b0c5\com.facebook.android.audience-network-sdk-6.2.0\AndroidManifest.xml:7:133-157
-93            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-93-->[:com.facebook.android.audience-network-sdk-6.2.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\fd5d5f5e3a24c90ddf2daf5cfd99b0c5\com.facebook.android.audience-network-sdk-6.2.0\AndroidManifest.xml:7:158-217
-94
-95        <provider
-95-->[:com.facebook.android.audience-network-sdk-6.2.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\fd5d5f5e3a24c90ddf2daf5cfd99b0c5\com.facebook.android.audience-network-sdk-6.2.0\AndroidManifest.xml:8:5-175
-96            android:name="com.facebook.ads.AudienceNetworkContentProvider"
-96-->[:com.facebook.android.audience-network-sdk-6.2.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\fd5d5f5e3a24c90ddf2daf5cfd99b0c5\com.facebook.android.audience-network-sdk-6.2.0\AndroidManifest.xml:8:15-77
-97            android:authorities="com.ibhut.runner.AudienceNetworkContentProvider"
-97-->[:com.facebook.android.audience-network-sdk-6.2.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\fd5d5f5e3a24c90ddf2daf5cfd99b0c5\com.facebook.android.audience-network-sdk-6.2.0\AndroidManifest.xml:8:78-147
-98            android:exported="false" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
-98-->[:com.facebook.android.audience-network-sdk-6.2.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\fd5d5f5e3a24c90ddf2daf5cfd99b0c5\com.facebook.android.audience-network-sdk-6.2.0\AndroidManifest.xml:8:148-172
-99        <activity
-99-->[:com.google.android.gms.play-services-ads-lite-19.4.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\6232089465c0440b9922cb62b5e9cc81\com.google.android.gms.play-services-ads-lite-19.4.0\AndroidManifest.xml:24:5-254
-100            android:name="com.google.android.gms.ads.AdActivity"
-100-->[:com.google.android.gms.play-services-ads-lite-19.4.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\6232089465c0440b9922cb62b5e9cc81\com.google.android.gms.play-services-ads-lite-19.4.0\AndroidManifest.xml:24:15-67
-101            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-101-->[:com.google.android.gms.play-services-ads-lite-19.4.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\6232089465c0440b9922cb62b5e9cc81\com.google.android.gms.play-services-ads-lite-19.4.0\AndroidManifest.xml:24:68-177
+74-->[:billing-3.0.1:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\c9554d945926ca2a2a5caaeae18097fc\billing-3.0.1\AndroidManifest.xml:13:9-15:37
+75            android:name="com.google.android.play.billingclient.version"
+75-->[:billing-3.0.1:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\c9554d945926ca2a2a5caaeae18097fc\billing-3.0.1\AndroidManifest.xml:14:13-73
+76            android:value="3.0.1" />
+76-->[:billing-3.0.1:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\c9554d945926ca2a2a5caaeae18097fc\billing-3.0.1\AndroidManifest.xml:15:13-34
+77
+78        <activity
+78-->[:billing-3.0.1:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\c9554d945926ca2a2a5caaeae18097fc\billing-3.0.1\AndroidManifest.xml:17:9-21:75
+79            android:name="com.android.billingclient.api.ProxyBillingActivity"
+79-->[:billing-3.0.1:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\c9554d945926ca2a2a5caaeae18097fc\billing-3.0.1\AndroidManifest.xml:18:13-78
+80            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+80-->[:billing-3.0.1:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\c9554d945926ca2a2a5caaeae18097fc\billing-3.0.1\AndroidManifest.xml:19:13-96
+81            android:exported="false"
+81-->[:billing-3.0.1:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\c9554d945926ca2a2a5caaeae18097fc\billing-3.0.1\AndroidManifest.xml:20:13-37
+82            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+82-->[:billing-3.0.1:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\c9554d945926ca2a2a5caaeae18097fc\billing-3.0.1\AndroidManifest.xml:21:13-72
+83        <activity
+83-->[:com.facebook.android.audience-network-sdk-6.2.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\fd5d5f5e3a24c90ddf2daf5cfd99b0c5\com.facebook.android.audience-network-sdk-6.2.0\AndroidManifest.xml:7:5-220
+84            android:name="com.facebook.ads.AudienceNetworkActivity"
+84-->[:com.facebook.android.audience-network-sdk-6.2.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\fd5d5f5e3a24c90ddf2daf5cfd99b0c5\com.facebook.android.audience-network-sdk-6.2.0\AndroidManifest.xml:7:15-70
+85            android:configChanges="keyboardHidden|orientation|screenSize"
+85-->[:com.facebook.android.audience-network-sdk-6.2.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\fd5d5f5e3a24c90ddf2daf5cfd99b0c5\com.facebook.android.audience-network-sdk-6.2.0\AndroidManifest.xml:7:71-132
+86            android:exported="false"
+86-->[:com.facebook.android.audience-network-sdk-6.2.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\fd5d5f5e3a24c90ddf2daf5cfd99b0c5\com.facebook.android.audience-network-sdk-6.2.0\AndroidManifest.xml:7:133-157
+87            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+87-->[:com.facebook.android.audience-network-sdk-6.2.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\fd5d5f5e3a24c90ddf2daf5cfd99b0c5\com.facebook.android.audience-network-sdk-6.2.0\AndroidManifest.xml:7:158-217
+88
+89        <provider
+89-->[:com.facebook.android.audience-network-sdk-6.2.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\fd5d5f5e3a24c90ddf2daf5cfd99b0c5\com.facebook.android.audience-network-sdk-6.2.0\AndroidManifest.xml:8:5-175
+90            android:name="com.facebook.ads.AudienceNetworkContentProvider"
+90-->[:com.facebook.android.audience-network-sdk-6.2.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\fd5d5f5e3a24c90ddf2daf5cfd99b0c5\com.facebook.android.audience-network-sdk-6.2.0\AndroidManifest.xml:8:15-77
+91            android:authorities="com.ibhut.runner.AudienceNetworkContentProvider"
+91-->[:com.facebook.android.audience-network-sdk-6.2.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\fd5d5f5e3a24c90ddf2daf5cfd99b0c5\com.facebook.android.audience-network-sdk-6.2.0\AndroidManifest.xml:8:78-147
+92            android:exported="false" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+92-->[:com.facebook.android.audience-network-sdk-6.2.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\fd5d5f5e3a24c90ddf2daf5cfd99b0c5\com.facebook.android.audience-network-sdk-6.2.0\AndroidManifest.xml:8:148-172
+93        <activity
+93-->[:com.google.android.gms.play-services-ads-lite-19.4.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\6232089465c0440b9922cb62b5e9cc81\com.google.android.gms.play-services-ads-lite-19.4.0\AndroidManifest.xml:24:5-254
+94            android:name="com.google.android.gms.ads.AdActivity"
+94-->[:com.google.android.gms.play-services-ads-lite-19.4.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\6232089465c0440b9922cb62b5e9cc81\com.google.android.gms.play-services-ads-lite-19.4.0\AndroidManifest.xml:24:15-67
+95            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+95-->[:com.google.android.gms.play-services-ads-lite-19.4.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\6232089465c0440b9922cb62b5e9cc81\com.google.android.gms.play-services-ads-lite-19.4.0\AndroidManifest.xml:24:68-177
+96            android:exported="false"
+96-->[:com.google.android.gms.play-services-ads-lite-19.4.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\6232089465c0440b9922cb62b5e9cc81\com.google.android.gms.play-services-ads-lite-19.4.0\AndroidManifest.xml:24:178-202
+97            android:theme="@android:style/Theme.Translucent" />
+97-->[:com.google.android.gms.play-services-ads-lite-19.4.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\6232089465c0440b9922cb62b5e9cc81\com.google.android.gms.play-services-ads-lite-19.4.0\AndroidManifest.xml:24:203-251
+98
+99        <provider
+99-->[:com.google.android.gms.play-services-ads-lite-19.4.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\6232089465c0440b9922cb62b5e9cc81\com.google.android.gms.play-services-ads-lite-19.4.0\AndroidManifest.xml:25:5-191
+100            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+100-->[:com.google.android.gms.play-services-ads-lite-19.4.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\6232089465c0440b9922cb62b5e9cc81\com.google.android.gms.play-services-ads-lite-19.4.0\AndroidManifest.xml:25:15-78
+101            android:authorities="com.ibhut.runner.mobileadsinitprovider"
+101-->[:com.google.android.gms.play-services-ads-lite-19.4.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\6232089465c0440b9922cb62b5e9cc81\com.google.android.gms.play-services-ads-lite-19.4.0\AndroidManifest.xml:25:79-139
 102            android:exported="false"
-102-->[:com.google.android.gms.play-services-ads-lite-19.4.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\6232089465c0440b9922cb62b5e9cc81\com.google.android.gms.play-services-ads-lite-19.4.0\AndroidManifest.xml:24:178-202
-103            android:theme="@android:style/Theme.Translucent" />
-103-->[:com.google.android.gms.play-services-ads-lite-19.4.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\6232089465c0440b9922cb62b5e9cc81\com.google.android.gms.play-services-ads-lite-19.4.0\AndroidManifest.xml:24:203-251
+102-->[:com.google.android.gms.play-services-ads-lite-19.4.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\6232089465c0440b9922cb62b5e9cc81\com.google.android.gms.play-services-ads-lite-19.4.0\AndroidManifest.xml:25:140-164
+103            android:initOrder="100" />
+103-->[:com.google.android.gms.play-services-ads-lite-19.4.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\6232089465c0440b9922cb62b5e9cc81\com.google.android.gms.play-services-ads-lite-19.4.0\AndroidManifest.xml:25:165-188
 104
-105        <provider
-105-->[:com.google.android.gms.play-services-ads-lite-19.4.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\6232089465c0440b9922cb62b5e9cc81\com.google.android.gms.play-services-ads-lite-19.4.0\AndroidManifest.xml:25:5-191
-106            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
-106-->[:com.google.android.gms.play-services-ads-lite-19.4.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\6232089465c0440b9922cb62b5e9cc81\com.google.android.gms.play-services-ads-lite-19.4.0\AndroidManifest.xml:25:15-78
-107            android:authorities="com.ibhut.runner.mobileadsinitprovider"
-107-->[:com.google.android.gms.play-services-ads-lite-19.4.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\6232089465c0440b9922cb62b5e9cc81\com.google.android.gms.play-services-ads-lite-19.4.0\AndroidManifest.xml:25:79-139
-108            android:exported="false"
-108-->[:com.google.android.gms.play-services-ads-lite-19.4.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\6232089465c0440b9922cb62b5e9cc81\com.google.android.gms.play-services-ads-lite-19.4.0\AndroidManifest.xml:25:140-164
-109            android:initOrder="100" />
-109-->[:com.google.android.gms.play-services-ads-lite-19.4.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\6232089465c0440b9922cb62b5e9cc81\com.google.android.gms.play-services-ads-lite-19.4.0\AndroidManifest.xml:25:165-188
-110
-111        <service
-111-->[:com.google.android.gms.play-services-ads-lite-19.4.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\6232089465c0440b9922cb62b5e9cc81\com.google.android.gms.play-services-ads-lite-19.4.0\AndroidManifest.xml:26:5-116
-112            android:name="com.google.android.gms.ads.AdService"
-112-->[:com.google.android.gms.play-services-ads-lite-19.4.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\6232089465c0440b9922cb62b5e9cc81\com.google.android.gms.play-services-ads-lite-19.4.0\AndroidManifest.xml:26:14-65
-113            android:enabled="true"
-113-->[:com.google.android.gms.play-services-ads-lite-19.4.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\6232089465c0440b9922cb62b5e9cc81\com.google.android.gms.play-services-ads-lite-19.4.0\AndroidManifest.xml:26:66-88
-114            android:exported="false" />
-114-->[:com.google.android.gms.play-services-ads-lite-19.4.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\6232089465c0440b9922cb62b5e9cc81\com.google.android.gms.play-services-ads-lite-19.4.0\AndroidManifest.xml:26:89-113
-115
-116        <meta-data
-116-->[:com.google.android.gms.play-services-basement-17.3.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\9e62d129f4a8c048b01b611c5233cae0\com.google.android.gms.play-services-basement-17.3.0\AndroidManifest.xml:23:9-25:69
-117            android:name="com.google.android.gms.version"
-117-->[:com.google.android.gms.play-services-basement-17.3.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\9e62d129f4a8c048b01b611c5233cae0\com.google.android.gms.play-services-basement-17.3.0\AndroidManifest.xml:24:13-58
-118            android:value="@integer/google_play_services_version" />
-118-->[:com.google.android.gms.play-services-basement-17.3.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\9e62d129f4a8c048b01b611c5233cae0\com.google.android.gms.play-services-basement-17.3.0\AndroidManifest.xml:25:13-66
-119
-120        <activity
-120-->[:com.ironsource.adapters.tapjoyadapter-4.1.15:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\8c802737668b53b2c3dcc0cc19d1def5\com.ironsource.adapters.tapjoyadapter-4.1.15\AndroidManifest.xml:15:9-19:86
-121            android:name="com.tapjoy.TJAdUnitActivity"
-121-->[:com.ironsource.adapters.tapjoyadapter-4.1.15:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\8c802737668b53b2c3dcc0cc19d1def5\com.ironsource.adapters.tapjoyadapter-4.1.15\AndroidManifest.xml:16:13-55
-122            android:configChanges="orientation|keyboardHidden|screenSize"
-122-->[:com.ironsource.adapters.tapjoyadapter-4.1.15:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\8c802737668b53b2c3dcc0cc19d1def5\com.ironsource.adapters.tapjoyadapter-4.1.15\AndroidManifest.xml:17:13-74
-123            android:hardwareAccelerated="true"
-123-->[:com.ironsource.adapters.tapjoyadapter-4.1.15:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\8c802737668b53b2c3dcc0cc19d1def5\com.ironsource.adapters.tapjoyadapter-4.1.15\AndroidManifest.xml:18:13-47
-124            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
-124-->[:com.ironsource.adapters.tapjoyadapter-4.1.15:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\8c802737668b53b2c3dcc0cc19d1def5\com.ironsource.adapters.tapjoyadapter-4.1.15\AndroidManifest.xml:19:13-83
-125        <activity
-125-->[:com.ironsource.adapters.tapjoyadapter-4.1.15:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\8c802737668b53b2c3dcc0cc19d1def5\com.ironsource.adapters.tapjoyadapter-4.1.15\AndroidManifest.xml:20:9-24:75
-126            android:name="com.tapjoy.TJContentActivity"
-126-->[:com.ironsource.adapters.tapjoyadapter-4.1.15:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\8c802737668b53b2c3dcc0cc19d1def5\com.ironsource.adapters.tapjoyadapter-4.1.15\AndroidManifest.xml:21:13-56
-127            android:configChanges="orientation|keyboardHidden|screenSize"
-127-->[:com.ironsource.adapters.tapjoyadapter-4.1.15:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\8c802737668b53b2c3dcc0cc19d1def5\com.ironsource.adapters.tapjoyadapter-4.1.15\AndroidManifest.xml:22:13-74
-128            android:hardwareAccelerated="true"
-128-->[:com.ironsource.adapters.tapjoyadapter-4.1.15:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\8c802737668b53b2c3dcc0cc19d1def5\com.ironsource.adapters.tapjoyadapter-4.1.15\AndroidManifest.xml:23:13-47
-129            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-129-->[:com.ironsource.adapters.tapjoyadapter-4.1.15:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\8c802737668b53b2c3dcc0cc19d1def5\com.ironsource.adapters.tapjoyadapter-4.1.15\AndroidManifest.xml:24:13-72
-130        <activity
-130-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:15:9-19:74
-131            android:name="com.unity3d.services.ads.adunit.AdUnitActivity"
-131-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:16:13-74
-132            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
-132-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:17:13-170
-133            android:hardwareAccelerated="true"
-133-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:18:13-47
-134            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-134-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:19:13-71
-135        <activity
-135-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:20:9-24:86
-136            android:name="com.unity3d.services.ads.adunit.AdUnitTransparentActivity"
-136-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:21:13-85
-137            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
-137-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:22:13-170
-138            android:hardwareAccelerated="true"
-138-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:23:13-47
-139            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
-139-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:24:13-83
-140        <activity
-140-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:25:9-29:86
-141            android:name="com.unity3d.services.ads.adunit.AdUnitTransparentSoftwareActivity"
-141-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:26:13-93
-142            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
-142-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:27:13-170
-143            android:hardwareAccelerated="false"
-143-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:28:13-48
-144            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
-144-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:29:13-83
-145        <activity
-145-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:30:9-34:74
-146            android:name="com.unity3d.services.ads.adunit.AdUnitSoftwareActivity"
-146-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:31:13-82
-147            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
-147-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:32:13-170
-148            android:hardwareAccelerated="false"
-148-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:33:13-48
-149            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-149-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:34:13-71
-150        <activity
-150-->[:com.ironsource.sdk.mediationsdk-7.0.4:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\3a07f5318972fe5e8bbf51197fcddd4c\com.ironsource.sdk.mediationsdk-7.0.4\AndroidManifest.xml:17:9-20:50
-151            android:name="com.ironsource.sdk.controller.ControllerActivity"
-151-->[:com.ironsource.sdk.mediationsdk-7.0.4:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\3a07f5318972fe5e8bbf51197fcddd4c\com.ironsource.sdk.mediationsdk-7.0.4\AndroidManifest.xml:18:13-76
-152            android:configChanges="orientation|screenSize"
-152-->[:com.ironsource.sdk.mediationsdk-7.0.4:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\3a07f5318972fe5e8bbf51197fcddd4c\com.ironsource.sdk.mediationsdk-7.0.4\AndroidManifest.xml:19:13-59
-153            android:hardwareAccelerated="true" />
-153-->[:com.ironsource.sdk.mediationsdk-7.0.4:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\3a07f5318972fe5e8bbf51197fcddd4c\com.ironsource.sdk.mediationsdk-7.0.4\AndroidManifest.xml:20:13-47
-154        <activity
-154-->[:com.ironsource.sdk.mediationsdk-7.0.4:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\3a07f5318972fe5e8bbf51197fcddd4c\com.ironsource.sdk.mediationsdk-7.0.4\AndroidManifest.xml:21:9-25:64
-155            android:name="com.ironsource.sdk.controller.InterstitialActivity"
-155-->[:com.ironsource.sdk.mediationsdk-7.0.4:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\3a07f5318972fe5e8bbf51197fcddd4c\com.ironsource.sdk.mediationsdk-7.0.4\AndroidManifest.xml:22:13-78
-156            android:configChanges="orientation|screenSize"
-156-->[:com.ironsource.sdk.mediationsdk-7.0.4:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\3a07f5318972fe5e8bbf51197fcddd4c\com.ironsource.sdk.mediationsdk-7.0.4\AndroidManifest.xml:23:13-59
-157            android:hardwareAccelerated="true"
-157-->[:com.ironsource.sdk.mediationsdk-7.0.4:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\3a07f5318972fe5e8bbf51197fcddd4c\com.ironsource.sdk.mediationsdk-7.0.4\AndroidManifest.xml:24:13-47
-158            android:theme="@android:style/Theme.Translucent" />
-158-->[:com.ironsource.sdk.mediationsdk-7.0.4:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\3a07f5318972fe5e8bbf51197fcddd4c\com.ironsource.sdk.mediationsdk-7.0.4\AndroidManifest.xml:25:13-61
-159        <activity
-159-->[:com.ironsource.sdk.mediationsdk-7.0.4:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\3a07f5318972fe5e8bbf51197fcddd4c\com.ironsource.sdk.mediationsdk-7.0.4\AndroidManifest.xml:26:9-30:64
-160            android:name="com.ironsource.sdk.controller.OpenUrlActivity"
-160-->[:com.ironsource.sdk.mediationsdk-7.0.4:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\3a07f5318972fe5e8bbf51197fcddd4c\com.ironsource.sdk.mediationsdk-7.0.4\AndroidManifest.xml:27:13-73
-161            android:configChanges="orientation|screenSize"
-161-->[:com.ironsource.sdk.mediationsdk-7.0.4:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\3a07f5318972fe5e8bbf51197fcddd4c\com.ironsource.sdk.mediationsdk-7.0.4\AndroidManifest.xml:28:13-59
-162            android:hardwareAccelerated="true"
-162-->[:com.ironsource.sdk.mediationsdk-7.0.4:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\3a07f5318972fe5e8bbf51197fcddd4c\com.ironsource.sdk.mediationsdk-7.0.4\AndroidManifest.xml:29:13-47
-163            android:theme="@android:style/Theme.Translucent" />
-163-->[:com.ironsource.sdk.mediationsdk-7.0.4:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\3a07f5318972fe5e8bbf51197fcddd4c\com.ironsource.sdk.mediationsdk-7.0.4\AndroidManifest.xml:30:13-61
-164
-165        <receiver android:name="com.tapjoy.TapjoyReceiver" /> <!-- AdMob -->
-165-->[:com.tapjoy.tapjoy-android-sdk-12.7.1:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\ce468d7b53aa6cf687568d5f0f6db0d5\com.tapjoy.tapjoy-android-sdk-12.7.1\AndroidManifest.xml:34:9-62
-165-->[:com.tapjoy.tapjoy-android-sdk-12.7.1:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\ce468d7b53aa6cf687568d5f0f6db0d5\com.tapjoy.tapjoy-android-sdk-12.7.1\AndroidManifest.xml:34:19-59
-166        <!-- As Requiered By Admob please add your App ID -->
-167        <!-- <meta-data -->
-168        <!-- android:name="com.google.android.gms.ads.APPLICATION_ID" -->
-169        <!-- android:value="YOUR_ADMOB_APP_ID"/> -->
-170        <meta-data
-170-->[:unityLibrary:IronSource.plugin] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\IronSource.plugin\build\intermediates\library_manifest\release\AndroidManifest.xml:25:9-27:70
-171            android:name="com.google.android.gms.ads.APPLICATION_ID"
-171-->[:unityLibrary:IronSource.plugin] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\IronSource.plugin\build\intermediates\library_manifest\release\AndroidManifest.xml:26:13-69
-172            android:value="ca-app-pub-4929679470856332~2092697750" />
-172-->[:unityLibrary:IronSource.plugin] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\IronSource.plugin\build\intermediates\library_manifest\release\AndroidManifest.xml:27:13-67
-173    </application>
-174
-175</manifest>
+105        <service
+105-->[:com.google.android.gms.play-services-ads-lite-19.4.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\6232089465c0440b9922cb62b5e9cc81\com.google.android.gms.play-services-ads-lite-19.4.0\AndroidManifest.xml:26:5-116
+106            android:name="com.google.android.gms.ads.AdService"
+106-->[:com.google.android.gms.play-services-ads-lite-19.4.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\6232089465c0440b9922cb62b5e9cc81\com.google.android.gms.play-services-ads-lite-19.4.0\AndroidManifest.xml:26:14-65
+107            android:enabled="true"
+107-->[:com.google.android.gms.play-services-ads-lite-19.4.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\6232089465c0440b9922cb62b5e9cc81\com.google.android.gms.play-services-ads-lite-19.4.0\AndroidManifest.xml:26:66-88
+108            android:exported="false" />
+108-->[:com.google.android.gms.play-services-ads-lite-19.4.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\6232089465c0440b9922cb62b5e9cc81\com.google.android.gms.play-services-ads-lite-19.4.0\AndroidManifest.xml:26:89-113
+109
+110        <meta-data
+110-->[:com.google.android.gms.play-services-basement-17.3.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\9e62d129f4a8c048b01b611c5233cae0\com.google.android.gms.play-services-basement-17.3.0\AndroidManifest.xml:23:9-25:69
+111            android:name="com.google.android.gms.version"
+111-->[:com.google.android.gms.play-services-basement-17.3.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\9e62d129f4a8c048b01b611c5233cae0\com.google.android.gms.play-services-basement-17.3.0\AndroidManifest.xml:24:13-58
+112            android:value="@integer/google_play_services_version" />
+112-->[:com.google.android.gms.play-services-basement-17.3.0:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\9e62d129f4a8c048b01b611c5233cae0\com.google.android.gms.play-services-basement-17.3.0\AndroidManifest.xml:25:13-66
+113
+114        <activity
+114-->[:com.ironsource.adapters.tapjoyadapter-4.1.15:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\8c802737668b53b2c3dcc0cc19d1def5\com.ironsource.adapters.tapjoyadapter-4.1.15\AndroidManifest.xml:15:9-19:86
+115            android:name="com.tapjoy.TJAdUnitActivity"
+115-->[:com.ironsource.adapters.tapjoyadapter-4.1.15:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\8c802737668b53b2c3dcc0cc19d1def5\com.ironsource.adapters.tapjoyadapter-4.1.15\AndroidManifest.xml:16:13-55
+116            android:configChanges="orientation|keyboardHidden|screenSize"
+116-->[:com.ironsource.adapters.tapjoyadapter-4.1.15:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\8c802737668b53b2c3dcc0cc19d1def5\com.ironsource.adapters.tapjoyadapter-4.1.15\AndroidManifest.xml:17:13-74
+117            android:hardwareAccelerated="true"
+117-->[:com.ironsource.adapters.tapjoyadapter-4.1.15:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\8c802737668b53b2c3dcc0cc19d1def5\com.ironsource.adapters.tapjoyadapter-4.1.15\AndroidManifest.xml:18:13-47
+118            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+118-->[:com.ironsource.adapters.tapjoyadapter-4.1.15:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\8c802737668b53b2c3dcc0cc19d1def5\com.ironsource.adapters.tapjoyadapter-4.1.15\AndroidManifest.xml:19:13-83
+119        <activity
+119-->[:com.ironsource.adapters.tapjoyadapter-4.1.15:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\8c802737668b53b2c3dcc0cc19d1def5\com.ironsource.adapters.tapjoyadapter-4.1.15\AndroidManifest.xml:20:9-24:75
+120            android:name="com.tapjoy.TJContentActivity"
+120-->[:com.ironsource.adapters.tapjoyadapter-4.1.15:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\8c802737668b53b2c3dcc0cc19d1def5\com.ironsource.adapters.tapjoyadapter-4.1.15\AndroidManifest.xml:21:13-56
+121            android:configChanges="orientation|keyboardHidden|screenSize"
+121-->[:com.ironsource.adapters.tapjoyadapter-4.1.15:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\8c802737668b53b2c3dcc0cc19d1def5\com.ironsource.adapters.tapjoyadapter-4.1.15\AndroidManifest.xml:22:13-74
+122            android:hardwareAccelerated="true"
+122-->[:com.ironsource.adapters.tapjoyadapter-4.1.15:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\8c802737668b53b2c3dcc0cc19d1def5\com.ironsource.adapters.tapjoyadapter-4.1.15\AndroidManifest.xml:23:13-47
+123            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+123-->[:com.ironsource.adapters.tapjoyadapter-4.1.15:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\8c802737668b53b2c3dcc0cc19d1def5\com.ironsource.adapters.tapjoyadapter-4.1.15\AndroidManifest.xml:24:13-72
+124        <activity
+124-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:15:9-19:74
+125            android:name="com.unity3d.services.ads.adunit.AdUnitActivity"
+125-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:16:13-74
+126            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+126-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:17:13-170
+127            android:hardwareAccelerated="true"
+127-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:18:13-47
+128            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+128-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:19:13-71
+129        <activity
+129-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:20:9-24:86
+130            android:name="com.unity3d.services.ads.adunit.AdUnitTransparentActivity"
+130-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:21:13-85
+131            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+131-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:22:13-170
+132            android:hardwareAccelerated="true"
+132-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:23:13-47
+133            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+133-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:24:13-83
+134        <activity
+134-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:25:9-29:86
+135            android:name="com.unity3d.services.ads.adunit.AdUnitTransparentSoftwareActivity"
+135-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:26:13-93
+136            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+136-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:27:13-170
+137            android:hardwareAccelerated="false"
+137-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:28:13-48
+138            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+138-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:29:13-83
+139        <activity
+139-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:30:9-34:74
+140            android:name="com.unity3d.services.ads.adunit.AdUnitSoftwareActivity"
+140-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:31:13-82
+141            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+141-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:32:13-170
+142            android:hardwareAccelerated="false"
+142-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:33:13-48
+143            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+143-->[:com.ironsource.adapters.unityadsadapter-4.3.8:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\0b141083496ad0a091129f9565447b93\com.ironsource.adapters.unityadsadapter-4.3.8\AndroidManifest.xml:34:13-71
+144        <activity
+144-->[:com.ironsource.sdk.mediationsdk-7.0.4:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\3a07f5318972fe5e8bbf51197fcddd4c\com.ironsource.sdk.mediationsdk-7.0.4\AndroidManifest.xml:17:9-20:50
+145            android:name="com.ironsource.sdk.controller.ControllerActivity"
+145-->[:com.ironsource.sdk.mediationsdk-7.0.4:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\3a07f5318972fe5e8bbf51197fcddd4c\com.ironsource.sdk.mediationsdk-7.0.4\AndroidManifest.xml:18:13-76
+146            android:configChanges="orientation|screenSize"
+146-->[:com.ironsource.sdk.mediationsdk-7.0.4:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\3a07f5318972fe5e8bbf51197fcddd4c\com.ironsource.sdk.mediationsdk-7.0.4\AndroidManifest.xml:19:13-59
+147            android:hardwareAccelerated="true" />
+147-->[:com.ironsource.sdk.mediationsdk-7.0.4:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\3a07f5318972fe5e8bbf51197fcddd4c\com.ironsource.sdk.mediationsdk-7.0.4\AndroidManifest.xml:20:13-47
+148        <activity
+148-->[:com.ironsource.sdk.mediationsdk-7.0.4:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\3a07f5318972fe5e8bbf51197fcddd4c\com.ironsource.sdk.mediationsdk-7.0.4\AndroidManifest.xml:21:9-25:64
+149            android:name="com.ironsource.sdk.controller.InterstitialActivity"
+149-->[:com.ironsource.sdk.mediationsdk-7.0.4:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\3a07f5318972fe5e8bbf51197fcddd4c\com.ironsource.sdk.mediationsdk-7.0.4\AndroidManifest.xml:22:13-78
+150            android:configChanges="orientation|screenSize"
+150-->[:com.ironsource.sdk.mediationsdk-7.0.4:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\3a07f5318972fe5e8bbf51197fcddd4c\com.ironsource.sdk.mediationsdk-7.0.4\AndroidManifest.xml:23:13-59
+151            android:hardwareAccelerated="true"
+151-->[:com.ironsource.sdk.mediationsdk-7.0.4:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\3a07f5318972fe5e8bbf51197fcddd4c\com.ironsource.sdk.mediationsdk-7.0.4\AndroidManifest.xml:24:13-47
+152            android:theme="@android:style/Theme.Translucent" />
+152-->[:com.ironsource.sdk.mediationsdk-7.0.4:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\3a07f5318972fe5e8bbf51197fcddd4c\com.ironsource.sdk.mediationsdk-7.0.4\AndroidManifest.xml:25:13-61
+153        <activity
+153-->[:com.ironsource.sdk.mediationsdk-7.0.4:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\3a07f5318972fe5e8bbf51197fcddd4c\com.ironsource.sdk.mediationsdk-7.0.4\AndroidManifest.xml:26:9-30:64
+154            android:name="com.ironsource.sdk.controller.OpenUrlActivity"
+154-->[:com.ironsource.sdk.mediationsdk-7.0.4:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\3a07f5318972fe5e8bbf51197fcddd4c\com.ironsource.sdk.mediationsdk-7.0.4\AndroidManifest.xml:27:13-73
+155            android:configChanges="orientation|screenSize"
+155-->[:com.ironsource.sdk.mediationsdk-7.0.4:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\3a07f5318972fe5e8bbf51197fcddd4c\com.ironsource.sdk.mediationsdk-7.0.4\AndroidManifest.xml:28:13-59
+156            android:hardwareAccelerated="true"
+156-->[:com.ironsource.sdk.mediationsdk-7.0.4:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\3a07f5318972fe5e8bbf51197fcddd4c\com.ironsource.sdk.mediationsdk-7.0.4\AndroidManifest.xml:29:13-47
+157            android:theme="@android:style/Theme.Translucent" />
+157-->[:com.ironsource.sdk.mediationsdk-7.0.4:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\3a07f5318972fe5e8bbf51197fcddd4c\com.ironsource.sdk.mediationsdk-7.0.4\AndroidManifest.xml:30:13-61
+158
+159        <receiver android:name="com.tapjoy.TapjoyReceiver" /> <!-- AdMob -->
+159-->[:com.tapjoy.tapjoy-android-sdk-12.7.1:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\ce468d7b53aa6cf687568d5f0f6db0d5\com.tapjoy.tapjoy-android-sdk-12.7.1\AndroidManifest.xml:34:9-62
+159-->[:com.tapjoy.tapjoy-android-sdk-12.7.1:] C:\Users\Balaji\.gradle\caches\transforms-2\files-2.1\ce468d7b53aa6cf687568d5f0f6db0d5\com.tapjoy.tapjoy-android-sdk-12.7.1\AndroidManifest.xml:34:19-59
+160        <!-- As Requiered By Admob please add your App ID -->
+161        <!-- <meta-data -->
+162        <!-- android:name="com.google.android.gms.ads.APPLICATION_ID" -->
+163        <!-- android:value="YOUR_ADMOB_APP_ID"/> -->
+164        <meta-data
+164-->[:unityLibrary:IronSource.plugin] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\IronSource.plugin\build\intermediates\library_manifest\release\AndroidManifest.xml:25:9-27:70
+165            android:name="com.google.android.gms.ads.APPLICATION_ID"
+165-->[:unityLibrary:IronSource.plugin] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\IronSource.plugin\build\intermediates\library_manifest\release\AndroidManifest.xml:26:13-69
+166            android:value="ca-app-pub-4929679470856332~2092697750" />
+166-->[:unityLibrary:IronSource.plugin] C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\IronSource.plugin\build\intermediates\library_manifest\release\AndroidManifest.xml:27:13-67
+167    </application>
+168
+169</manifest>

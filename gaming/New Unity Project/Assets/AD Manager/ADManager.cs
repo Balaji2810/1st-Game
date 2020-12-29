@@ -47,8 +47,8 @@ public class ADManager : MonoBehaviour
 
 		IronSource.Agent.validateIntegration();
 		IronSource.Agent.init(App_Key);
-		
 
+		//ShowBanner();
 	}
 
 	void OnEnable()
@@ -132,7 +132,7 @@ public class ADManager : MonoBehaviour
     {
 		if (CurrentDevice == Device.Android || CurrentDevice == Device.IOS)
 		{
-			IronSource.Agent.loadBanner(IronSourceBannerSize.BANNER, IronSourceBannerPosition.BOTTOM);
+			IronSource.Agent.loadBanner(IronSourceBannerSize.SMART, IronSourceBannerPosition.BOTTOM);
 		}
 		
 	}

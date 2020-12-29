@@ -60,7 +60,7 @@ public class CharacterControl : MonoBehaviour
     public GameObject swipe2move, drag2move;
     public void MoveType()
     {
-        if(PlayerPrefs.GetInt("SwipeToMove",1)==1)
+        if(PlayerPrefs.GetInt("Control", 0)==0)
         {
             swipe2move.SetActive(true);
             drag2move.SetActive(false);

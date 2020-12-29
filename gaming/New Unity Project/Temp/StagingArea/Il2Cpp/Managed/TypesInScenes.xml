@@ -83,6 +83,7 @@
 		<type fullname="BrainFailProductions.PolyFew.DataContainer" preserve="nothing"/>
 		<type fullname="BrainFailProductions.PolyFew.PolyFewHost" preserve="nothing"/>
 		<type fullname="CameraControl" preserve="nothing"/>
+		<type fullname="CameraSettings" preserve="nothing"/>
 		<type fullname="CharacterControl" preserve="nothing"/>
 		<type fullname="CharacterFix" preserve="nothing"/>
 		<type fullname="Continue" preserve="nothing"/>
@@ -105,7 +106,6 @@
 		<type fullname="MentalCube" preserve="nothing"/>
 		<type fullname="MentalRoad" preserve="nothing"/>
 		<type fullname="MeshCombine" preserve="nothing"/>
-		<type fullname="NoAdsText" preserve="nothing"/>
 		<type fullname="ObjectPooling" preserve="nothing"/>
 		<type fullname="ObstacleGen" preserve="nothing"/>
 		<type fullname="ObstaclePool" preserve="nothing"/>
@@ -123,6 +123,7 @@
 		<type fullname="RootMotion.Comments" preserve="nothing"/>
 		<type fullname="RootMotion.Dynamics.BehaviourPuppet" preserve="nothing"/>
 		<type fullname="RootMotion.Dynamics.PuppetMaster" preserve="nothing"/>
+		<type fullname="RoundModifier" preserve="nothing"/>
 		<type fullname="ScoreCalculate" preserve="nothing"/>
 		<type fullname="ScoreCounter" preserve="nothing"/>
 		<type fullname="ScrollPosition" preserve="nothing"/>
@@ -199,6 +200,7 @@
 		<type fullname="UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.TextMeshPro">
+		<type fullname="TMPro.TMP_Dropdown" preserve="nothing"/>
 		<type fullname="TMPro.TMP_FontAsset" preserve="nothing"/>
 		<type fullname="TMPro.TMP_Settings" preserve="nothing"/>
 		<type fullname="TMPro.TMP_SpriteAsset" preserve="nothing"/>

@@ -69,6 +69,7 @@
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\LayerSetup.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\Way Block\Scripts\WoodenBlock.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\walking.cs" />
+    <Compile Include="Assets\Script\fps.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\ElectricShock.cs" />
     <Compile Include="Assets\ProceduralUIImage\Scripts\ProceduralImage.cs" />
     <Compile Include="Assets\PolyFew\Scripts\NonEditor-Scripts\ObjectMaterialLinks.cs" />
@@ -182,6 +183,7 @@
     <Compile Include="Assets\AudioManager\OnCollisionSound.cs" />
     <Compile Include="Assets\IronSource\Scripts\IronSourceIAgent.cs" />
     <Compile Include="Assets\character\RootMotion\Shared Scripts\Warning.cs" />
+    <Compile Include="Assets\Script\LoadManager.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\PuppetMasterStates.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\WoodenDummySpin.cs" />
     <Compile Include="Assets\Script\AvailablePrefabs.cs" />
@@ -299,6 +301,7 @@
     <Compile Include="Assets\RoadGen\Script\MentalRoad.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\CharacterAnimationMeleeDemo.cs" />
     <Compile Include="Assets\PolyFew\demo\Scripts\PolygonReduction.cs" />
+    <Compile Include="Assets\Script\LoadEvent.cs" />
     <Compile Include="Assets\character\RootMotion\Baker\Scripts\Baker.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\CreateRagdollInRuntime.cs" />
     <Compile Include="Assets\PolyFew\ThirdParty\AsImpL\Scripts\ImportOptions.cs" />
@@ -319,9 +322,7 @@
     <Compile Include="Assets\character\Scripts\Swipe.cs" />
     <Compile Include="Assets\UIERuntime\Samples\RepeatGame\RepeatGame.cs" />
     <Compile Include="Assets\UI Buttons\scripts\TapToContinue.cs" />
-    <Compile Include="Assets\Script\fps.cs" />
-    <Compile Include="Assets\Script\LoadManager.cs" />
-    <Compile Include="Assets\Script\LoadEvent.cs" />
+    <Compile Include="Assets\Script\CameraSettings.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

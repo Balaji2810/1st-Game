@@ -32,8 +32,7 @@ public class CharacterFix : MonoBehaviour
             pm.pinPow = pinPow;
             pm.pinDistanceFalloff = pinDistanceFalloff;
 
-            time = Time.fixedDeltaTime;
-            Time.fixedDeltaTime = 0.02f;
+            Time.fixedDeltaTime = PlayerPrefs.GetFloat("Physics",0.02f);
         }
     }
 
@@ -48,11 +47,8 @@ public class CharacterFix : MonoBehaviour
              pm.pinDistanceFalloff = oldPinDistanceFalloff;
             
         }
-        Time.fixedDeltaTime = time;
+        Time.fixedDeltaTime = PlayerPrefs.GetFloat("Physics", 0.02f);
     }
     
-    void Update()
-    {
-        
-    }
+   
 }

@@ -83,12 +83,13 @@ public class ObstacleGen : MonoBehaviour
                 if(temp.tag == "position")
                 //if (go.tag == "position")
                 {
-                    //temp.transform.localPosition = new Vector3(UnityEngine.Random.Range(-2,3), temp.transform.localPosition.y, temp.transform.localPosition.z);
-                    go.transform.localPosition = new Vector3(UnityEngine.Random.Range(-2, 3), go.transform.localPosition.y, tragetDistance);
+                    temp.transform.localPosition = new Vector3(UnityEngine.Random.Range(-2,3), temp.transform.localPosition.y, temp.transform.localPosition.z);
+                    //go.transform.localPosition = new Vector3(UnityEngine.Random.Range(-2, 3), go.transform.localPosition.y, tragetDistance);
                 }
+                go.transform.localPosition = new Vector3(go.transform.localPosition.x, go.transform.localPosition.y, tragetDistance);
                 //go.transform.parent = transform;
-                
-                
+
+
             }
             else
             {

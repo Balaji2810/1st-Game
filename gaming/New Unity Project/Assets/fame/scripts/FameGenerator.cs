@@ -17,7 +17,8 @@ public class FameGenerator : MonoBehaviour
             if(d > (currentPos+20))
             {
                 currentPos = d;
-                GameObject fame = Instantiate(go);
+                //GameObject fame = Instantiate(go);
+                GameObject fame = ObjectPooling.instance.SpawnFormPool("fames");
                 fame.transform.parent = gameObject.transform;
                 fame.transform.position = new Vector3(fame.transform.position.x, fame.transform.position.y, d + distance);
             }

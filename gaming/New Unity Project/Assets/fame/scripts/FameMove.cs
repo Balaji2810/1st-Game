@@ -12,7 +12,8 @@ public class FameMove : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        
+        fame.SetActive(true);
+        effect.SetActive(false);
         getPoint();
     }
 
@@ -45,14 +46,20 @@ public class FameMove : MonoBehaviour
     }
 
     public GameObject fame, effect;
-    private void OnCollisionEnter(Collision collision)
+    void disable()
+    {
+        gameObject.SetActive(false);
+    }
+
+    private void OnTriggerEnter(Collider collision)
     {
         if(collision.gameObject.layer==14)
         {
             fame.SetActive(false);
             Destroy(gameObject.GetComponent<BoxCollider>());
             effect.SetActive(true);
-            Destroy(gameObject, 0.75f);
+            //Destroy(gameObject, 0.75f);
+            Invoke("disable", 0.75f);
         }
         else if (collision.gameObject.layer==9)
         {

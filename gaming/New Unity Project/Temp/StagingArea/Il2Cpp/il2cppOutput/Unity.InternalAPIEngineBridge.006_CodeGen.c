@@ -58,7 +58,7 @@ static const int32_t s_InvokerIndices[9] =
 	154,
 	154,
 	169,
-	1573,
+	1560,
 	0,
 };
 extern const Il2CppCodeGenModule g_Unity_InternalAPIEngineBridge_006CodeGenModule;

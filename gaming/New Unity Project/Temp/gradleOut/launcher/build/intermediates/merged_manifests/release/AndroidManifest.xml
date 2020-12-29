@@ -60,9 +60,6 @@
             <meta-data
                 android:name="unityplayer.UnityActivity"
                 android:value="true" />
-            <meta-data
-                android:name="android.notch_support"
-                android:value="true" />
         </activity>
 
         <meta-data
@@ -72,11 +69,8 @@
             android:name="unity.splash-enable"
             android:value="True" />
         <meta-data
-            android:name="notch.config"
-            android:value="portrait|landscape" />
-        <meta-data
             android:name="unity.build-id"
-            android:value="f697ec88-8332-42e7-b0ab-f16e8ce7a897" />
+            android:value="9711948f-1619-4244-90ad-ac6ece3f5c18" />
         <meta-data
             android:name="com.google.android.play.billingclient.version"
             android:value="3.0.1" />

@@ -278,7 +278,6 @@ UnityEngine.Application::get_unityVersion
 UnityEngine.Application::get_version
 UnityEngine.Application::OpenURL
 UnityEngine.Application::Quit
-UnityEngine.Application::set_targetFrameRate
 UnityEngine.Application::get_platform
 UnityEngine.AsyncOperation::get_isDone
 UnityEngine.AsyncOperation::get_progress
@@ -1637,9 +1636,11 @@ UnityEngine.PlayerConnectionInternal::RegisterInternal
 UnityEngine.PlayerConnectionInternal::SendMessage
 UnityEngine.PlayerConnectionInternal::UnregisterInternal
 UnityEngine.PlayerPrefs::HasKey
+UnityEngine.PlayerPrefs::TrySetFloat
 UnityEngine.PlayerPrefs::TrySetInt
 UnityEngine.PlayerPrefs::TrySetSetString
 UnityEngine.PlayerPrefs::GetInt
+UnityEngine.PlayerPrefs::GetFloat
 UnityEngine.PlayerPrefs::GetString
 UnityEngine.PlayerPrefs::DeleteKey
 UnityEngine.PlayerPrefs::Save
