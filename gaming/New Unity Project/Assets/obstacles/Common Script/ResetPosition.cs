@@ -22,7 +22,7 @@ public class ResetPosition : MonoBehaviour
 
     IEnumerator fun()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.01f);
         
         if (posBool )
         {

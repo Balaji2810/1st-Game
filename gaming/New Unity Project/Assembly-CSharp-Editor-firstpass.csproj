@@ -799,6 +799,10 @@
       <Project>{70015FC3-3862-1AF5-F32A-24A70627D1CE}</Project>
       <Name>Unity.Recorder</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.DeviceSimulator.Tests.Common.csproj">
+      <Project>{50A0D428-8671-C000-675B-A97ABE536F37}</Project>
+      <Name>Unity.DeviceSimulator.Tests.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Universal.Runtime.csproj">
       <Project>{B5194CF7-DA83-5569-4AA1-84FCCFEFE5C0}</Project>
       <Name>Unity.RenderPipelines.Universal.Runtime</Name>
@@ -846,6 +850,10 @@
     <ProjectReference Include="Unity.InternalAPIEngineBridge.006.csproj">
       <Project>{65E538E0-E5EC-D409-9491-E9888E5F2F90}</Project>
       <Name>Unity.InternalAPIEngineBridge.006</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.DeviceSimulator.Editor.csproj">
+      <Project>{6CC13DB3-BAAF-3882-ED3D-6E918AE7A859}</Project>
+      <Name>Unity.DeviceSimulator.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
       <Project>{E895022B-FC6B-89DE-F24E-8C8D305353A4}</Project>

@@ -229,5 +229,59 @@ public class Road_Renderer : MonoBehaviour
 
     }
 
+    public GameObject NotEnoughFames, NotEnoughCrystals,loadFame,loadCrystal;
+
+    public void BuyButton(string name)
+    {
+        ES3Settings settings = new ES3Settings(ES3.EncryptionType.AES, file.password);
+        if (file.exist(previousChild))
+        {
+            //FileHandler file = GameObject.Find("FileHandler").GetComponent<FileHandler>();
+            var currentValue = file.load(name);
+            AvailablePrefabs.data temp = (AvailablePrefabs.data)ES3.Load(previousChild, file.filename, settings);
+            if(name== "fames")
+            {
+                if(currentValue>=temp.cost)
+                {
+                    file.save(name, currentValue- temp.cost);
+                    loadFame.GetComponent<load_fame_and_gems>().fun();
+                    
+                }
+                else
+                {
+                    NotEnoughFames.SetActive(true);
+                    NotEnoughCrystals.SetActive(false);
+                    return;
+                }
+            }
+            else if(name== "crystals")
+            {
+                if (currentValue >= temp.crystal)
+                {
+                    file.save(name, currentValue - temp.crystal);
+                    loadCrystal.GetComponent<load_fame_and_gems>().fun();
+                    
+                }
+                else
+                {
+                    NotEnoughCrystals.SetActive(true);
+                    NotEnoughFames.SetActive(false);
+                    return;
+                }
+            }
+            else
+            {
+                Debug.LogWarning("Unknown name for fetching data");
+                return;
+            }
+            temp.status = "active";
+            AP.AllObjectValues[previousChild] = temp;
+            ES3.Save(previousChild, temp, file.filename, settings);
+            getKey(keyIndex);
+        }
+
+
+    }
+
 
 }

@@ -56,10 +56,10 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.recorder@2.3.0-preview.3\Runtime\Base\RefHandle.cs" />
+    <Compile Include="Library\PackageCache\com.unity.recorder@2.5.2\Runtime\Base\RefHandle.cs" />
   </ItemGroup>
   <ItemGroup>
-     <None Include="Library\PackageCache\com.unity.recorder@2.3.0-preview.3\Runtime\Base\Unity.Recorder.Base.asmdef" />
+     <None Include="Library\PackageCache\com.unity.recorder@2.5.2\Runtime\Base\Unity.Recorder.Base.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.1.14f1\Editor\Data\PlaybackEngines\AndroidPlayer\Variations\il2cpp\Managed\UnityEngine.dll</HintPath>
     </Reference>

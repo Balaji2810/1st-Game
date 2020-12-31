@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637442039793671795
-    m_Hash: 1537821698
+      ticks: 637448443531606095
+    m_Hash: 1556261820
   m_LockFileStatus:
     m_FilePath: C:/Users/Balaji/Documents/GitHub/1st-Game/gaming/New Unity Project/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637442039802230330
-    m_Hash: 2038131460
+      ticks: 637448443541114847
+    m_Hash: 1051680238
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -332,6 +332,79 @@ m_PackageAssets:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
         revision: fa825106f349f996acff22f718845eab46ca2d7c
+        path: 
+    - packageId: com.unity.device-simulator@2.2.4-preview
+      testable: 0
+      isDirectDependency: 1
+      version: 2.2.4-preview
+      source: 1
+      resolvedPath: C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Library\PackageCache\com.unity.device-simulator@2.2.4-preview
+      assetPath: Packages/com.unity.device-simulator
+      name: com.unity.device-simulator
+      displayName: Device Simulator
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: Device Simulator is an alternative to the traditional Unity editor
+        Game window. By simulating Screen and SystemInfo class behavior, Device Simulator
+        aims to give an accurate picture of how an app will look on a device.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.0-preview
+        - 1.1.0-preview
+        - 1.2.0-preview
+        - 1.3.0-preview
+        - 2.0.0-preview
+        - 2.1.0-preview
+        - 2.1.1-preview
+        - 2.2.0-preview
+        - 2.2.1-preview
+        - 2.2.2-preview
+        - 2.2.3-preview
+        - 2.2.4-preview
+        compatible:
+        - 1.0.0-preview
+        - 1.1.0-preview
+        - 1.2.0-preview
+        - 1.3.0-preview
+        - 2.0.0-preview
+        - 2.1.0-preview
+        - 2.1.1-preview
+        - 2.2.0-preview
+        - 2.2.1-preview
+        - 2.2.2-preview
+        - 2.2.3-preview
+        - 2.2.4-preview
+        verified: 
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - Device
+      - Simulator
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637423377200000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: git+https://github.com/Unity-Technologies/com.unity.device-simulator.git
+        revision: 3c683c5ac7b113081f5777f51e778db6956638f0
         path: 
     - packageId: com.unity.ext.nunit@1.0.0
       testable: 0
@@ -1058,12 +1131,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.purchasing.git
         revision: f07d4c5151eb13fff9661b62816f29772a916fe8
         path: 
-    - packageId: com.unity.recorder@2.3.0-preview.3
+    - packageId: com.unity.recorder@2.5.2
       testable: 0
       isDirectDependency: 1
-      version: 2.3.0-preview.3
+      version: 2.5.2
       source: 1
-      resolvedPath: C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Library\PackageCache\com.unity.recorder@2.3.0-preview.3
+      resolvedPath: C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Library\PackageCache\com.unity.recorder@2.5.2
       assetPath: Packages/com.unity.recorder
       name: com.unity.recorder
       displayName: Unity Recorder
@@ -1073,8 +1146,8 @@ m_PackageAssets:
         url: 
       category: 
       type: 
-      description: Unity Recorder allows the recording of Animation clips, Videos
-        and Images directly from the Unity Editor.
+      description: 'The Unity Recorder allows you to capture and save data from the
+        Unity Editor during Play Mode: animations, videos, images, audio, and more.'
       status: 4
       errors: []
       versions:
@@ -1103,7 +1176,7 @@ m_PackageAssets:
         verified: 
       dependencies:
       - name: com.unity.timeline
-        version: 1.0.0
+        version: 1.2.17
       resolvedDependencies:
       - name: com.unity.timeline
         version: 1.4.3
@@ -1136,13 +1209,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637366622610000000
+      datePublishedTicks: 637441792190000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: git+https://github.com/Unity-Technologies/com.unity.recorder.git
-        revision: 696e9e3178c6fd110e73bcc999a7b1b9a0e95da3
+        revision: 9780f9380f74708c464bbf0cf4a02b1fb7ea136f
         path: 
     - packageId: com.unity.render-pipelines.universal@8.3.1
       testable: 0

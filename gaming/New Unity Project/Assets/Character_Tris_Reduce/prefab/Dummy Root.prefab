@@ -3089,7 +3089,7 @@ GameObject:
   - component: {fileID: 3793763969356548629}
   - component: {fileID: 4178978120650558667}
   m_Layer: 8
-  m_Name: Puppet (1)
+  m_Name: Puppet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
