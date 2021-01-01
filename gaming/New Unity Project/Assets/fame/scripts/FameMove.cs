@@ -8,16 +8,24 @@ public class FameMove : MonoBehaviour
     public float high, low;
     float left = -2, right = 2.001f;
 
+    public ulong points=10;
+
     Vector2 pos;
     // Start is called before the first frame update
     void Awake()
     {
         fame.SetActive(true);
-        effect.SetActive(false);
+        
         getPoint();
     }
 
-    
+    void OnEnable()
+    {
+        fame.SetActive(true);
+
+        getPoint();
+    }
+
     void Update()
     {
         if((new Vector3(pos.x,pos.y, transform.position.z)- transform.position ).magnitude>0.15f)
@@ -48,6 +56,7 @@ public class FameMove : MonoBehaviour
     public GameObject fame, effect;
     void disable()
     {
+        effect.SetActive(false);
         gameObject.SetActive(false);
     }
 
@@ -56,10 +65,12 @@ public class FameMove : MonoBehaviour
         if(collision.gameObject.layer==14)
         {
             fame.SetActive(false);
-            Destroy(gameObject.GetComponent<BoxCollider>());
+            //Destroy(gameObject.GetComponent<BoxCollider>());
             effect.SetActive(true);
             //Destroy(gameObject, 0.75f);
             Invoke("disable", 0.75f);
+            GameObject.Find("FileHandler").GetComponent<FileHandler>().save("fames", points, "temp");
+            GameObject.Find("GameManager").GetComponent<GameManager>().updatePoints();
         }
         else if (collision.gameObject.layer==9)
         {

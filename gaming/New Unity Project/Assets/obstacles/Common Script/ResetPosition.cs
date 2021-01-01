@@ -10,8 +10,13 @@ public class ResetPosition : MonoBehaviour
     public bool posBool;
     public Quaternion rot;
     public bool rotBool, setActive;
-    
-    
+
+    private void Awake()
+    {
+        StartCoroutine(fun());
+
+    }
+
     private void OnEnable()
     {
         StartCoroutine(fun());

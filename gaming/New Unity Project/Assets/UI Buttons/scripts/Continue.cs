@@ -28,7 +28,7 @@ public class Continue : MonoBehaviour
             Destroy(go);
         }
     }
-    public GameObject matrialManager;
+    
     public void CharacterContinue()
     { 
         float pos =10;
@@ -37,6 +37,7 @@ public class Continue : MonoBehaviour
         Transform go = null;
         foreach (Transform child in RoadGen.transform)
         {
+            print("check");
             if(child.gameObject.activeSelf)
             {
                 var v =  GameObject.Find("GameManager").GetComponent<GameManager>().deadLocation - child.position.z;
@@ -53,7 +54,7 @@ public class Continue : MonoBehaviour
         GameObject.Find("GameManager").GetComponent<GameManager>().Startgame = false;
         GameObject.Find("GameManager").GetComponent<GameManager>().loadPlayer(go.position.z+pos);
         GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<CharacterControl>().SpeedMod = 3;
-        matrialManager.SetActive(true);
+        
         gameObject.SetActive(false);
 
         
