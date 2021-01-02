@@ -8776,7 +8776,6 @@ MonoBehaviour:
   notEnoughCrystals: {fileID: 880478736}
   RoadGen: {fileID: 1433925372}
   fade: {r: 0.2627451, g: 0.2627451, b: 0.2627451, a: 1}
-  matrialManager: {fileID: 0}
 --- !u!1 &526466615
 GameObject:
   m_ObjectHideFlags: 0
@@ -23516,7 +23515,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 720, y: -113.63636}
+  m_AnchoredPosition: {x: 720, y: -113.636475}
   m_SizeDelta: {x: 720, y: 464.54544}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1808088093
@@ -28601,7 +28600,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Char
       value: 
-      objectReference: {fileID: 3733392460000782387, guid: b1a3fe353a35f914f8e4e4c8d9525ca5,
+      objectReference: {fileID: 191337173366684647, guid: ef281fed1a29f014ba7e1f1b6d30a6db,
         type: 3}
     - target: {fileID: 8351398993884363806, guid: 8cafe11bde7c67349bbf5c60c82da9da,
         type: 3}
