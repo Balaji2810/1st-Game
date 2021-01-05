@@ -167,9 +167,6 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_State: {fileID: 8554854253816873156}
     m_Position: {x: 1140, y: 370, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -3929534796942165329}
-    m_Position: {x: 1175, y: 435, z: 0}
   m_ChildStateMachines:
   - serializedVersion: 1
     m_StateMachine: {fileID: 123058316048050313}
@@ -755,32 +752,6 @@ AnimatorTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 1
---- !u!1102 &-3929534796942165329
-AnimatorState:
-  serializedVersion: 5
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Sliding
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 001a57299d151a946894040bbcc318c6, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
 --- !u!1109 &-3859082938959804774
 AnimatorTransition:
   m_ObjectHideFlags: 1
@@ -1694,7 +1665,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Slide_Fwd_InPlace
-  m_Speed: 0.75
+  m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 3712422318487158722}
@@ -1708,7 +1679,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 58184d0ad1eaee448adbd5948f80859a, type: 2}
+  m_Motion: {fileID: 7400012, guid: bb1ba91cd4963a34a8a606fdd7b2529c, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

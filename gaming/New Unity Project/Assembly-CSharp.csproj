@@ -188,6 +188,7 @@
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\PuppetMasterStates.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\WoodenDummySpin.cs" />
     <Compile Include="Assets\Script\AvailablePrefabs.cs" />
+    <Compile Include="Assets\AD Manager\BannerController.cs" />
     <Compile Include="Assets\PolyFew\Scripts\NonEditor-Scripts\HandleControlsUtility.cs" />
     <Compile Include="Assets\PolyFew\Scripts\NonEditor-Scripts\Extensions.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\Scripts\Behaviours\BehaviourBase.cs" />
@@ -323,7 +324,6 @@
     <Compile Include="Assets\character\Scripts\Swipe.cs" />
     <Compile Include="Assets\UIERuntime\Samples\RepeatGame\RepeatGame.cs" />
     <Compile Include="Assets\UI Buttons\scripts\TapToContinue.cs" />
-    <Compile Include="Assets\AD Manager\BannerController.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -587,6 +587,9 @@
     </Reference>
     <Reference Include="winrt">
       <HintPath>Assets\Plugins\UnityPurchasing\winrt\winrt.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+      <HintPath>Library\PackageCache\com.unity.burst@1.2.0-preview.12\Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.1.14f1\Editor\Data\PlaybackEngines\AppleTVSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -1123,6 +1126,30 @@
     <ProjectReference Include="Unity.UI.Runtime.Editor.csproj">
       <Project>{5429CE19-F0AF-7389-5790-C0F7E4643954}</Project>
       <Name>Unity.UI.Runtime.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Burst.csproj">
+      <Project>{09957A3B-A9AD-1116-F6B8-63E3EAC85BAF}</Project>
+      <Name>Unity.Burst</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Burst.Editor.csproj">
+      <Project>{4F6A4041-B7F5-35B9-F9EB-DAD15AF0B4FA}</Project>
+      <Name>Unity.Burst.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Animation.Rigging.csproj">
+      <Project>{41814039-8E61-C375-62C0-11EA01512971}</Project>
+      <Name>Unity.Animation.Rigging</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Mathematics.csproj">
+      <Project>{A234A5C4-A4BF-BA7C-3857-6B622CBA206E}</Project>
+      <Name>Unity.Mathematics</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Animation.Rigging.Editor.csproj">
+      <Project>{9C28BAEF-8F68-75ED-EADD-0329C310BF16}</Project>
+      <Name>Unity.Animation.Rigging.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Mathematics.Editor.csproj">
+      <Project>{426E94C6-6E1D-8C6F-D2FC-2C93A73561BA}</Project>
+      <Name>Unity.Mathematics.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
