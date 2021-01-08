@@ -36,7 +36,7 @@ public class ObstacleGen : MonoBehaviour
             if(tragetDistance<(distance+offDistance.y))
             {
                 tragetDistance += (minDistance+ UnityEngine.Random.Range(RandomDistance.x, RandomDistance.y));
-                if(tragetDistance > (distance + offDistance.x)&& UnityEngine.Random.Range(0, 5) != 0)
+                if(tragetDistance > (distance + offDistance.x)&& UnityEngine.Random.Range(0, 10) != 0)
                 {
                     place(new Vector3(0,0, (int)tragetDistance));
                 }

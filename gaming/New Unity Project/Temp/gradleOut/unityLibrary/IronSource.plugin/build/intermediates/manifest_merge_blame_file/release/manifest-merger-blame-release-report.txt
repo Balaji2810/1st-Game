@@ -1,0 +1,39 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="com.Company.ProductName"
+5    android:installLocation="preferExternal"
+6    android:versionCode="1"
+7    android:versionName="1.0" >
+8
+9    <uses-sdk android:targetSdkVersion="16" />
+9-->C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\IronSource.plugin\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\IronSource.plugin\AndroidManifest.xml:9:5-67
+11-->C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\IronSource.plugin\AndroidManifest.xml:9:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\IronSource.plugin\AndroidManifest.xml:10:5-79
+12-->C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\IronSource.plugin\AndroidManifest.xml:10:22-76
+13
+14    <application>
+14-->C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\IronSource.plugin\AndroidManifest.xml:12:5-24:19
+15
+16        <!-- AdMob -->
+17
+18
+19        <!-- As Requiered By Admob please add your App ID -->
+20
+21
+22        <!-- <meta-data -->
+23        <!-- android:name="com.google.android.gms.ads.APPLICATION_ID" -->
+24        <!-- android:value="YOUR_ADMOB_APP_ID"/> -->
+25        <meta-data
+25-->C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\IronSource.plugin\AndroidManifest.xml:21:3-127
+26            android:name="com.google.android.gms.ads.APPLICATION_ID"
+26-->C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\IronSource.plugin\AndroidManifest.xml:21:14-70
+27            android:value="ca-app-pub-4929679470856332~2092697750" />
+27-->C:\Users\Balaji\Documents\GitHub\1st-Game\gaming\New Unity Project\Temp\gradleOut\unityLibrary\IronSource.plugin\AndroidManifest.xml:21:71-125
+28    </application>
+29
+30</manifest>

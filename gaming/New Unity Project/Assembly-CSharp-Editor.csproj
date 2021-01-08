@@ -101,6 +101,7 @@
     <Compile Include="Assets\ProceduralUIImage\Editor\ProceduralImageEditorUtility.cs" />
     <Compile Include="Assets\IronSource\Editor\IronSourceMenu.cs" />
     <Compile Include="Assets\character\RootMotion\Editor\Baker\Helpers\SaveClipFolderPanel.cs" />
+    <Compile Include="Assets\ScreenshotUtility\Editor\ScreenshotUtility.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\ExternalDependencyManager\Editor\GoogleRegistries.xml" />

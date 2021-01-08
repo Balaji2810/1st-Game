@@ -68,6 +68,7 @@
     <Compile Include="Assets\Script\FileHandler.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\LayerSetup.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\Way Block\Scripts\WoodenBlock.cs" />
+    <Compile Include="Assets\character\Scripts\HintText.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\walking.cs" />
     <Compile Include="Assets\Script\fps.cs" />
     <Compile Include="Assets\obstacles\Sci-Fic\scripts\ElectricShock.cs" />
@@ -124,6 +125,7 @@
     <Compile Include="Assets\AD Manager\NoAdsText.cs" />
     <Compile Include="Assets\UI Buttons\scripts\load_fame_and_gems.cs" />
     <Compile Include="Assets\AudioManager\AudioListenerConfig.cs" />
+    <Compile Include="Assets\SwipeDetector\SwipeDetector.cs" />
     <Compile Include="Assets\ProceduralUIImage\Scripts\ProceduralImageModifier.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\NavMeshPuppet.cs" />
     <Compile Include="Assets\character\RootMotion\PuppetMaster\_DEMOS\Assets\Scripts\UserControlAIMelee.cs" />
@@ -324,8 +326,6 @@
     <Compile Include="Assets\character\Scripts\Swipe.cs" />
     <Compile Include="Assets\UIERuntime\Samples\RepeatGame\RepeatGame.cs" />
     <Compile Include="Assets\UI Buttons\scripts\TapToContinue.cs" />
-    <Compile Include="Assets\character\Scripts\HintText.cs" />
-    <Compile Include="Assets\SwipeDetector\SwipeDetector.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -364,6 +364,7 @@
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\UIERuntime\Samples\RepeatGame\Resources\RepeatGame\RepeatGame.uss" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\ScreenshotUtility\Readme.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\Fonts\Roboto\LICENSE.txt" />
      <None Include="Assets\obstacles\package\NonConvexMeshCollider\ReadMe.txt" />
