@@ -69,7 +69,8 @@ public class FameMove : MonoBehaviour
             effect.SetActive(true);
             //Destroy(gameObject, 0.75f);
             Invoke("disable", 0.75f);
-            GameObject.Find("FileHandler").GetComponent<FileHandler>().save("fames", points, "temp");
+            
+            GameObject.Find("FileHandler").GetComponent<FileHandler>().save("fames", points+ GameObject.Find("FileHandler").GetComponent<FileHandler>().load("fames","temp"), "temp");
             GameObject.Find("GameManager").GetComponent<GameManager>().updatePoints();
         }
         else if (collision.gameObject.layer==9)

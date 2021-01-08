@@ -191,7 +191,7 @@ public class CharacterControl : MonoBehaviour
                 moveDirection = new Vector3(0, 0, 1);
                 moveDirection = transform.TransformDirection(moveDirection);
                 moveDirection *= speed;
-                if ((Input.GetButton("Jump") || Input.GetKey(KeyCode.W)||swipe.SwipeUp) && jumpDelayTime==jump)
+                if ((Input.GetButton("Jump") || Input.GetKey(KeyCode.W)||swipe.swipeUp) && jumpDelayTime==jump)
                 {
                     status.isJump = true;
                     moveDirection.y = jumpSpeed;
@@ -205,7 +205,7 @@ public class CharacterControl : MonoBehaviour
                     status.isJump = false;
                 }
 
-                if (Input.GetKey(KeyCode.S)||swipe.SwipeDown)
+                if (Input.GetKey(KeyCode.S)||swipe.swipeDown)
                 {
                     
                     //sliding = true;

@@ -99,7 +99,7 @@ public class CameraControl : MonoBehaviour
                 {
                     offset = new Vector3(temp.x * 1, temp.y - 1.5f, temp.z * -1f);
 
-                    transform.position = Vector3.Lerp(transform.position, new Vector3(player.LeftRight, player.GroundLevel + offset.y + offset.y, player.MovedDistance + offset.z), Time.deltaTime);
+                    transform.position = Vector3.Lerp(transform.position, new Vector3(player.LeftRight, player.GroundLevel + offset.y + offset.y, player.MovedDistance + offset.z), Time.deltaTime*2);
                     transform.LookAt(player.LookAt);
                 }
                 else

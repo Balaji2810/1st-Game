@@ -5,19 +5,17 @@ using UnityEngine;
 public class Swipe : MonoBehaviour
 {
     // Start is called before the first frame update
-    private bool tap, swipeLeft, swipeRight, swipeUp, swipeDown;
+    public bool tap, swipeLeft, swipeRight, swipeUp, swipeDown;
     private bool isDragging = false;
     private Vector2 startTouch, swipeDelta;
-    void Start()
-    {
-
-    }
+    
 
     
     void Update()
     {
         tap = swipeLeft = swipeRight = swipeUp = swipeDown = false;
 
+        /*
         #region Standalone Inputs
         if (Input.GetMouseButtonDown(0))
         {
@@ -31,13 +29,14 @@ public class Swipe : MonoBehaviour
             Reset();
         }
         #endregion
+        */
 
         #region Mobile Inputs
         if (Input.touches.Length > 0)
         {
             if (Input.touches[0].phase == TouchPhase.Began)
             {
-                tap = true;
+                //tap = true;
                 isDragging = true;
                 startTouch = Input.touches[0].position;
             }
@@ -49,6 +48,7 @@ public class Swipe : MonoBehaviour
         }
 
         #endregion
+        
 
         swipeDelta = Vector2.zero;
 
@@ -58,11 +58,14 @@ public class Swipe : MonoBehaviour
             {
                 swipeDelta = Input.touches[0].position - startTouch;
             }
+            /*
             else if (Input.GetMouseButton(0))
             {
                 swipeDelta = (Vector2)Input.mousePosition - startTouch;
             }
+            */
         }
+        
 
         if (swipeDelta.magnitude > 50)
         {
@@ -94,16 +97,18 @@ public class Swipe : MonoBehaviour
 
     }
 
+    
     private void Reset()
     {
         startTouch = swipeDelta = Vector2.zero;
         isDragging = false;
     }
+    
 
-    public Vector2 SwipeDelta { get { return swipeDelta; } }
-    public bool SwipeLeft { get { return swipeLeft; } }
-    public bool SwipeRight { get { return swipeRight; } }
-    public bool SwipeUp { get { return swipeUp; } }
-    public bool SwipeDown { get { return swipeDown; } }
-    public bool Tap { get { return tap; } }
+    //public Vector2 SwipeDelta { get { return swipeDelta; } }
+    //public bool SwipeLeft { get { return swipeLeft; } }
+    //public bool SwipeRight { get { return swipeRight; } }
+    //public bool SwipeUp { get { return swipeUp; } }
+    //public bool SwipeDown { get { return swipeDown; } }
+   // public bool Tap { get { return tap; } }
 }

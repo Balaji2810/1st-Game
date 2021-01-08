@@ -43,7 +43,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 922afa75f518892438654406cbcc7089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerName: player
   Startgame: 0
   File: {fileID: 0}
-  m_MainMenuScreen: {fileID: 0}
-  m_GameScreen: {fileID: 0}
+  fix: {fileID: 0}
+  ball: {fileID: 0}
+  main: {fileID: 0}
+  game: {fileID: 0}
+  info: {fileID: 0}
+  pause: {fileID: 0}
+  resume: {fileID: 0}
+  setting: {fileID: 0}
+  resumeCount: {fileID: 0}
+  timeManage: {fileID: 0}
+  currentPoints: {fileID: 0}
+  frameTraget: 0
+  Char: {fileID: 0}
+  deadLocation: 0
+  shop: {fileID: 0}
+  NoAds: {fileID: 0}
+  FG: {fileID: 0}

@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
     
 
     public GameObject Char;
-    public void loadPlayer(float pos = 4)
+    public void loadPlayer(float pos = 6)
     {
 
         GameObject go;

@@ -9,6 +9,7 @@ public class ObstacleGen : MonoBehaviour
     Collider[] roads;
     public LayerMask layer;
     public int minDistance = 15;
+    public Vector2Int RandomDistance;
     AvailablePrefabs AP;
     private void Start()
     {
@@ -34,8 +35,8 @@ public class ObstacleGen : MonoBehaviour
             float distance = GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<PlayerStatus>().MovedDistance;
             if(tragetDistance<(distance+offDistance.y))
             {
-                tragetDistance += (minDistance+ UnityEngine.Random.Range(0,11));
-                if(tragetDistance > (distance + offDistance.x)&& UnityEngine.Random.Range(0, 3) != 0)
+                tragetDistance += (minDistance+ UnityEngine.Random.Range(RandomDistance.x, RandomDistance.y));
+                if(tragetDistance > (distance + offDistance.x)&& UnityEngine.Random.Range(0, 5) != 0)
                 {
                     place(new Vector3(0,0, (int)tragetDistance));
                 }
@@ -54,6 +55,7 @@ public class ObstacleGen : MonoBehaviour
         yield return new WaitForSeconds(0.7f);
         StartCoroutine(obstacleGen());
     }
+
 
     void place(Vector3 pos)
     {

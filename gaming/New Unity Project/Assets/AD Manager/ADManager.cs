@@ -130,6 +130,10 @@ public class ADManager : MonoBehaviour
 
 	public void ShowBanner()
     {
+		if(PlayerPrefs.GetInt("buyCrystals", 0) >= purchaseCount)
+        {
+			return;
+        }
 		if (CurrentDevice == Device.Android || CurrentDevice == Device.IOS)
 		{
 			IronSource.Agent.loadBanner(IronSourceBannerSize.SMART, IronSourceBannerPosition.BOTTOM);

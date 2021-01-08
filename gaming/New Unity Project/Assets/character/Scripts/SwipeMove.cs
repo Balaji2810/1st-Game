@@ -23,12 +23,12 @@ public class SwipeMove : MonoBehaviour
     {
         if (gameManager.Startgame && status.puppet.state == PuppetMaster.State.Alive && !status.AnimationDeath)
         {
-            if (Input.GetKeyDown(KeyCode.A) || swipe.SwipeLeft)
+            if (Input.GetKeyDown(KeyCode.A) || swipe.swipeLeft)
             {
                 leftright -= 1;
             }
 
-            if (Input.GetKeyDown(KeyCode.D) || swipe.SwipeRight)
+            if (Input.GetKeyDown(KeyCode.D) || swipe.swipeRight)
             {
                 leftright += 1;
             }

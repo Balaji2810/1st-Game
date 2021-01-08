@@ -349,11 +349,11 @@
     <Reference Include="winrt">
       <HintPath>Assets\Plugins\UnityPurchasing\winrt\winrt.dll</HintPath>
     </Reference>
-    <Reference Include="ICSharpCode.NRefactory">
-      <HintPath>Library\PackageCache\com.unity.render-pipelines.core@8.3.1\Editor\ShaderGenerator\ICSharpCode.NRefactory.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Burst.Unsafe">
       <HintPath>Library\PackageCache\com.unity.burst@1.2.0-preview.12\Unity.Burst.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.NRefactory">
+      <HintPath>Library\PackageCache\com.unity.render-pipelines.core@8.3.1\Editor\ShaderGenerator\ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -742,6 +742,10 @@
       <Project>{F7D55AFE-DF87-7AB8-E785-0391F74D7323}</Project>
       <Name>Unity.RenderPipelines.Universal.Shaders</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Burst.csproj">
+      <Project>{09957A3B-A9AD-1116-F6B8-63E3EAC85BAF}</Project>
+      <Name>Unity.Burst</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.UI.Runtime.csproj">
       <Project>{A0B74544-1CF8-79D3-1987-B69A14DFA110}</Project>
       <Name>Unity.UI.Runtime</Name>
@@ -761,6 +765,10 @@
     <ProjectReference Include="Unity.InternalAPIEditorBridge.006.csproj">
       <Project>{F422DA6A-BF98-E2DA-9498-A19A54C1253C}</Project>
       <Name>Unity.InternalAPIEditorBridge.006</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Burst.Editor.csproj">
+      <Project>{4F6A4041-B7F5-35B9-F9EB-DAD15AF0B4FA}</Project>
+      <Name>Unity.Burst.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Core.Editor.csproj">
       <Project>{D695347E-0C6C-508E-57B7-4CAD14E2C055}</Project>
@@ -797,6 +805,10 @@
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
       <Project>{9A1C864E-BEA1-EEFB-CA45-CF9C1E24C27E}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Animation.Rigging.csproj">
+      <Project>{41814039-8E61-C375-62C0-11EA01512971}</Project>
+      <Name>Unity.Animation.Rigging</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Recorder.csproj">
       <Project>{70015FC3-3862-1AF5-F32A-24A70627D1CE}</Project>
@@ -858,6 +870,10 @@
       <Project>{6CC13DB3-BAAF-3882-ED3D-6E918AE7A859}</Project>
       <Name>Unity.DeviceSimulator.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Mathematics.csproj">
+      <Project>{A234A5C4-A4BF-BA7C-3857-6B622CBA206E}</Project>
+      <Name>Unity.Mathematics</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
       <Project>{E895022B-FC6B-89DE-F24E-8C8D305353A4}</Project>
       <Name>Unity.2D.Sprite.Editor</Name>
@@ -869,6 +885,10 @@
     <ProjectReference Include="Unity.2D.Tilemap.Editor.csproj">
       <Project>{804DA0BF-D17B-4A1D-912D-B68881B89E22}</Project>
       <Name>Unity.2D.Tilemap.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Animation.Rigging.Editor.csproj">
+      <Project>{9C28BAEF-8F68-75ED-EADD-0329C310BF16}</Project>
+      <Name>Unity.Animation.Rigging.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="com.unity.cinemachine.editor.csproj">
       <Project>{86C0D13B-294A-B7B7-CBCB-55B8969EF4E1}</Project>
@@ -886,6 +906,10 @@
       <Project>{466F2432-0E03-37C5-E9F2-340EA6769BA5}</Project>
       <Name>Unity.ShaderGraph.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Mathematics.Editor.csproj">
+      <Project>{426E94C6-6E1D-8C6F-D2FC-2C93A73561BA}</Project>
+      <Name>Unity.Mathematics.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Core.ShaderLibrary.csproj">
       <Project>{58F7A281-B47E-53F4-5705-3B0D6BDFCAB3}</Project>
       <Name>Unity.RenderPipelines.Core.ShaderLibrary</Name>
@@ -901,30 +925,6 @@
     <ProjectReference Include="Unity.UI.Runtime.Editor.csproj">
       <Project>{5429CE19-F0AF-7389-5790-C0F7E4643954}</Project>
       <Name>Unity.UI.Runtime.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Burst.csproj">
-      <Project>{09957A3B-A9AD-1116-F6B8-63E3EAC85BAF}</Project>
-      <Name>Unity.Burst</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Burst.Editor.csproj">
-      <Project>{4F6A4041-B7F5-35B9-F9EB-DAD15AF0B4FA}</Project>
-      <Name>Unity.Burst.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Animation.Rigging.csproj">
-      <Project>{41814039-8E61-C375-62C0-11EA01512971}</Project>
-      <Name>Unity.Animation.Rigging</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Mathematics.csproj">
-      <Project>{A234A5C4-A4BF-BA7C-3857-6B622CBA206E}</Project>
-      <Name>Unity.Mathematics</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Animation.Rigging.Editor.csproj">
-      <Project>{9C28BAEF-8F68-75ED-EADD-0329C310BF16}</Project>
-      <Name>Unity.Animation.Rigging.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Mathematics.Editor.csproj">
-      <Project>{426E94C6-6E1D-8C6F-D2FC-2C93A73561BA}</Project>
-      <Name>Unity.Mathematics.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

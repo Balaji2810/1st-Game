@@ -7,7 +7,7 @@ using UnityEngine.UI.ProceduralImage;
 
 public class Continue : MonoBehaviour
 {
-    public GameObject score;
+    public GameObject score,TapToContinue;
     public float delay = 6;
     public GameObject close, crystal,video,notEnoughCrystals,RoadGen;
     public Color fade;
@@ -28,7 +28,9 @@ public class Continue : MonoBehaviour
             Destroy(go);
         }
     }
-    
+
+    public LayerMask layer;
+
     public void CharacterContinue()
     { 
         float pos =10;
@@ -37,7 +39,7 @@ public class Continue : MonoBehaviour
         Transform go = null;
         foreach (Transform child in RoadGen.transform)
         {
-            print("check");
+            
             if(child.gameObject.activeSelf)
             {
                 var v =  GameObject.Find("GameManager").GetComponent<GameManager>().deadLocation - child.position.z;
@@ -50,11 +52,19 @@ public class Continue : MonoBehaviour
 
             }
         }
-        
+        Collider[] colliders = Physics.OverlapBox(new Vector3(0,0,go.position.z + pos), new Vector3(3, 3, 4),Quaternion.identity, layer);
+        foreach(Collider collider in colliders)
+        {
+            
+            if(collider.transform.parent.tag=="Obstacle")
+            {
+                collider.transform.parent.gameObject.SetActive(false);
+            }
+        }
         GameObject.Find("GameManager").GetComponent<GameManager>().Startgame = false;
         GameObject.Find("GameManager").GetComponent<GameManager>().loadPlayer(go.position.z+pos);
         GameObject.Find(PlayerPrefs.GetString("name")).GetComponentInChildren<CharacterControl>().SpeedMod = 3;
-        
+        TapToContinue.SetActive(true);
         gameObject.SetActive(false);
 
         

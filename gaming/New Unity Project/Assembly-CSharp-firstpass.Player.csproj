@@ -419,6 +419,9 @@
     <Reference Include="Unity.InternalAPIEditorBridge.006">
       <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.006.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Burst.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
@@ -467,6 +470,9 @@
     <Reference Include="Unity.2D.Tilemap.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Animation.Rigging.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Animation.Rigging.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="com.unity.cinemachine.editor">
       <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
@@ -479,20 +485,14 @@
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.UI.Runtime.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.UI.Runtime.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Animation.Rigging.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Animation.Rigging.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Purchasing.Common">
       <HintPath>Assets\Plugins\UnityPurchasing\Bin\Purchasing.Common.dll</HintPath>
@@ -880,6 +880,10 @@
       <Project>{F7D55AFE-DF87-7AB8-E785-0391F74D7323}</Project>
       <Name>Unity.RenderPipelines.Universal.Shaders</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Burst.csproj">
+      <Project>{09957A3B-A9AD-1116-F6B8-63E3EAC85BAF}</Project>
+      <Name>Unity.Burst</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.UI.Runtime.csproj">
       <Project>{A0B74544-1CF8-79D3-1987-B69A14DFA110}</Project>
       <Name>Unity.UI.Runtime</Name>
@@ -899,6 +903,10 @@
     <ProjectReference Include="UnityEngine.Purchasing.csproj">
       <Project>{60E50788-F519-F318-7586-8D399E470216}</Project>
       <Name>UnityEngine.Purchasing</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Animation.Rigging.csproj">
+      <Project>{41814039-8E61-C375-62C0-11EA01512971}</Project>
+      <Name>Unity.Animation.Rigging</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Recorder.csproj">
       <Project>{70015FC3-3862-1AF5-F32A-24A70627D1CE}</Project>
@@ -932,6 +940,10 @@
       <Project>{65E538E0-E5EC-D409-9491-E9888E5F2F90}</Project>
       <Name>Unity.InternalAPIEngineBridge.006</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Mathematics.csproj">
+      <Project>{A234A5C4-A4BF-BA7C-3857-6B622CBA206E}</Project>
+      <Name>Unity.Mathematics</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Postprocessing.Runtime.csproj">
       <Project>{EC514AB4-9D49-B529-1299-8F5C8E6B6447}</Project>
       <Name>Unity.Postprocessing.Runtime</Name>
@@ -943,18 +955,6 @@
     <ProjectReference Include="Unity.TextMeshPro.csproj">
       <Project>{C1BD0D23-76E5-0DB8-F998-DF084AAB2E0D}</Project>
       <Name>Unity.TextMeshPro</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Burst.csproj">
-      <Project>{09957A3B-A9AD-1116-F6B8-63E3EAC85BAF}</Project>
-      <Name>Unity.Burst</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Animation.Rigging.csproj">
-      <Project>{41814039-8E61-C375-62C0-11EA01512971}</Project>
-      <Name>Unity.Animation.Rigging</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Mathematics.csproj">
-      <Project>{A234A5C4-A4BF-BA7C-3857-6B622CBA206E}</Project>
-      <Name>Unity.Mathematics</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

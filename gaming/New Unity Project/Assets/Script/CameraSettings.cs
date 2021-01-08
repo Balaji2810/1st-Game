@@ -25,7 +25,8 @@ public class CameraSettings : MonoBehaviour
         else
         {
             volume.SetActive(true);
-            cam.GetUniversalAdditionalCameraData().antialiasing = AntialiasingMode.FastApproximateAntialiasing;
+            //cam.GetUniversalAdditionalCameraData().antialiasing = AntialiasingMode.FastApproximateAntialiasing;
+            cam.GetUniversalAdditionalCameraData().antialiasing = AntialiasingMode.SubpixelMorphologicalAntiAliasing;
             cam.GetUniversalAdditionalCameraData().renderPostProcessing = true;
 
         }
