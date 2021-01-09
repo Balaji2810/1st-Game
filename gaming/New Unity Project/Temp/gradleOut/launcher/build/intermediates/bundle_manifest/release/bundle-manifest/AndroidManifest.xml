@@ -70,7 +70,7 @@
             android:value="True" />
         <meta-data
             android:name="unity.build-id"
-            android:value="953ba176-9663-4fe8-85f5-9fe7a3874442" />
+            android:value="8fe73a6e-88d6-4b40-9fa0-1fe4c538cb93" />
         <meta-data
             android:name="com.google.android.play.billingclient.version"
             android:value="3.0.1" />
