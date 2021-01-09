@@ -3648,4 +3648,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Game.unity
   - Assets/Scenes/Asset.unity
   - Assets/Scenes/roads.unity
-  playerPath: C:/Users/Balaji/Documents/GitHub/1st-Game/gaming/New Unity Project/Game/Android/testing.apk
+  playerPath: C:/Users/Balaji/Documents/GitHub/1st-Game/gaming/New Unity Project/Game/Android/testing.aab
